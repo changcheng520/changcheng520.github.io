@@ -1,0 +1,11 @@
+
+include:  
+- _next/
+- "_*.html"  
+- "_*.js"  
+- "_*.json"
+- "_*.jpg"  
+- "_*.jpeg"  
+- "_*.png"  
+- "_*.gif"  
+    
