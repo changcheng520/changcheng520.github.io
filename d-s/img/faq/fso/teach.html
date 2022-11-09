@@ -1,0 +1,76 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title>修改FSO权限-XP</title>
+    <style type="text/css">
+        body {
+            background: #fff
+        }
+
+        p {
+            color: #ff0000;
+            font-size: 14px;
+            font-weight: bold;
+            margin-top: 20px;
+            text-align: left
+        }
+
+        #b {
+            width: 940px;
+            min-height: 500px;
+            height: auto !important;
+            height: 500px;
+            overflow: auto;
+            +overflow: visible;
+            background: #CCCCCC;
+            border: 1px #666666 solid;
+            text-align: center;
+            margin-bottom: 10px;
+            padding-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body style="color:#000000; font-size:13px; margin:10px; text-align:left">
+    <div align="center">
+        <div id="b">
+            <p>1.先打开文件夹选项，去除勾选“使用简单文件共享”</p>
+            <hr />
+            <img src="teach/1.gif" /><br />
+        </div>
+        <div id="b">
+            <p>2.右键“C盘”选择属性，按图示设置参数</p>
+            <hr />
+            <img src="teach/2.gif" /><br />
+        </div>
+        <div id="b">
+            <p>3.进入控制面板-管理工具-计算机管理，按图示增加新用户</p>
+            <hr />
+            <img src="teach/3.gif" /><br />
+        </div>
+        <div id="b" style="height:1300px;">
+            <p>4.添加完以后对准刚添加的用户名属性，按图示设置</p>
+            <hr />
+            <img src="teach/4.gif" />
+            <hr />
+            <img src="teach/5.gif" /><br />
+        </div>
+        <div id="b">
+            <p>5.进入控制面板-管理工具-IIS（信息服务），进入“匿名访问和身份验证控制”，按图示把新建的用户添加到“匿名访问使用的用户”中。</p>
+            <hr />
+            <img src="teach/6.gif" /><br />
+        </div>
+        <div id="b">
+            <p>6.如果仍然无法通过FSO权限，则需要新建一个虚拟目录，并且按示意图分配权限，OK。</p>
+            <hr />
+            <img src="teach/c1.gif" />
+            <hr />
+            <img src="teach/c2.gif" /><br />
+        </div>
+
+    </div>
+</body>
+
+</html>

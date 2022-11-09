@@ -1,0 +1,384 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js ie ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js ie ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js ie ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js ie ie9"> <![endif]-->
+<!--[if !IE]><!--> <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js"> <!--<![endif]-->
+
+<head>
+    <meta name="viewport" content="width=device-width, user-scalable=yes" />
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
+    <meta charset="utf-8"/>
+    <title>Search Box | Dsure Front-end Development Framework</title>
+    <meta name="description" content="Improve the efficiency of CSS/HTML website based development and responsive layout.">
+
+    <!-- Jquery.min begin -->
+    <script src="js/jquery.min.js?1.7.1" ></script>
+    <!-- / Jquery.min end -->
+    
+    <!-- URL Hash Compatible(IE5+) begin -->
+    <script src="js/jquery.hashchange.js" ></script>
+	<script>
+		//hash
+		var turl = "";
+    </script> 
+
+    <!-- URL Hash Compatible(IE5+) end -->
+    
+    
+    <!-- Dsure  Development Framework  begin  -->
+    
+        <link rel="stylesheet" type="text/css" href="../../dsure/dsure.flat.css" />
+        <script src="../../dsure/dsure.modernizr.js"></script>
+        <!--[if lt IE 9]>  
+            <script src="../../dsure/dsure.respond.js"></script>  
+        <![endif]-->  
+    
+        <!--[if lt IE 7 ]>
+            <script src="../../dsure/dsure.png.js"></script>
+            <script>
+            DD_belatedPNG.fix('img, a, span, h1, h2, h3, em, section, header');
+            document.execCommand("BackgroundImageCache", false, true);
+            </script>
+        <![endif]-->
+
+    
+    <!-- /Dsure Development Framework  end   -->
+    
+
+    
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+
+    
+
+
+</head>
+<body>
+
+    <!--  loading  -->
+    <div id="loading"></div> 
+    <div id="back-top"><a href="#">Top</a></div>
+
+    <!--  menu  -->
+        <nav id="menu">
+            <div class="main-menu">
+        
+                <ul>
+                    <li class="web-title"><a href="/d-s/Dsure">Dsure</a></li>
+                    <li class="line"></li>
+                    <li class="active"><a href="/d-s/Dsure">Welcome Page</a></li>
+                    <li><a href="/d-s/Dsure/detail-base.html">Base Structure<b>*Required*</b></a></li>
+                    <li><a href="/d-s/Dsure/detail-base2.html">Base Stylesheets<b>*Common*</b></a></li>
+                    <li><a href="/d-s/Dsure/detail-text.html">Text</a></li>
+                    <li><a href="/d-s/Dsure/detail-buttons.html">Buttons</a></li>
+                    <li><a href="/d-s/Dsure/detail-forms.html">Forms</a></li>
+                    <li><a href="/d-s/Dsure/detail-tables.html">Tables</a></li>
+                    <li><a href="/d-s/Dsure/detail-grids.html">Grids</a></li>
+                    <li><a href="/d-s/Dsure/detail-layouts.html">Layouts</a></li>
+                    <li><a href="/d-s/Dsure/detail-icons.html">Icons</a></li>
+                    <li><a href="/d-s/Dsure/detail-img.html">Images</a></li>
+                    <li><a href="/d-s/Dsure/detail-line.html">Dividing Line</a></li>
+                    <li><a href="/d-s/Dsure/detail-paginators.html">Paginators</a></li>
+                    <li><a href="/d-s/Dsure/detail-navigation.html">Navigation</a></li>
+                    <li><a href="/d-s/Dsure/detail-classification.html">Classification</a></li>
+                    <li><a href="/d-s/Dsure/detail-striking.html">Striking</a></li>
+                    <li class="active"><a href="/d-s/Dsure/detail-search.html">Search Box</a></li> 
+                    <li><a href="/d-s/Dsure/detail-tags.html">Tags</a></li> 
+                   
+                </ul>
+
+                            
+            </div>
+           
+         </nav>
+         
+     <!--  /menu  -->
+     
+    
+     
+     <section id="content">
+         <div class="show">
+          
+          <!-- /////////////////   Content    Begin /////////////////// -->
+          
+          
+      <div class="dsure-title-nav dsure-no-hover dsure-bg-silver dsure-radius-small dsure-b-shadow f-i15">
+        <h1>Search Box</h1>
+      </div>
+
+      <div id="dir-nav" class="dir-nav dsure-no-hover dsure-bg-silver">
+          <a class="close" data-close="0" href="javascript:">×</a>
+          <div class="clear"></div>
+          <span class="t">Catalog</span>
+          <a href="javascript:" id="b-s1" onClick="navScrollTo('#s1');" >Style 1</a>
+          <a href="javascript:" id="b-s2" onClick="navScrollTo('#s2');" >Style 2</a>
+          <a href="javascript:" id="b-s3" onClick="navScrollTo('#s3');" >Style 3</a>
+          <a href="javascript:" id="b-s4" onClick="navScrollTo('#s4');" >Style 4</a>
+                 
+      </div>
+
+
+      <div class="clear"></div>
+      
+      <div class="codeBox">
+
+   
+            <p class="dsure-tip dsure-tip-success">
+              <i class="dsure-icon dsure-icon-bulb"></i>Use any of the available classes of <strong>Base Stylesheets</strong> to quickly create a custom style. 
+              
+            </p>
+       
+
+      </div><!--  /.codeBox -->
+      
+      
+        <div class="codeBox d-class-area" id="s1">
+           
+           <h2>(1) Style 1</h2>
+           
+          
+            <div class="codeBox-content">
+            
+                <form class="dsure-form-search">
+                    <input class="dsure-form-search-b dsure-btn-t-white dsure-bg-blue" type="submit" value="Search" />
+                    <input class="dsure-form-search-t" size="22" type="text" placeholder="Search"/> 
+                </form>
+                
+                <div class="clear ma-t20"></div>
+
+                <form class="dsure-form-search">
+                    <input class="dsure-form-search-t" size="22" type="text" placeholder="Search"/>
+                    <input class="dsure-form-search-b dsure-btn-t-white dsure-bg-blue" type="submit" value="Search" />
+                </form>
+                
+                <div class="clear ma-t20"></div>
+                
+                
+                <form class="dsure-form-search">
+                    <input class="dsure-form-search-t dsure-radius-big" size="22" type="text" placeholder="Search" />
+                    <input class="dsure-form-search-b dsure-btn-t-white dsure-bg-black dsure-radius-big ma-l10" type="submit" value="Search" />
+                </form>
+                
+                <div class="clear ma-t20"></div>
+                
+                
+                <form class="dsure-form-search">
+                    <input class="dsure-form-search-t" size="22" type="text" placeholder="Search"/>
+                    <button type="submit" class="dsure-form-search-b dsure-btn-t-white dsure-bg-blue"><i class="dsure-icon dsure-icon-search"></i></button>
+                </form>
+                   
+                
+
+            </div><!--  /.codeBox-content -->
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML Code:</span>
+
+&lt;form class="<span class="im-class">dsure-form-search</span>"&gt;
+    &lt;input class="<span class="im-class">dsure-form-search-b dsure-btn-t-white dsure-bg-blue</span>" type="submit" value="Search" /&gt;
+	&lt;input class="<span class="im-class">dsure-form-search-t</span>" size="22" type="text" placeholder="Search"/&gt;
+&lt;/form&gt;
+
+&lt;form class="<span class="im-class">dsure-form-search</span>"&gt;
+	&lt;input class="<span class="im-class">dsure-form-search-t</span>" size="22" type="text" placeholder="Search"/&gt;
+	&lt;input class="<span class="im-class">dsure-form-search-b dsure-btn-t-white dsure-bg-blue</span>" type="submit" value="Search" /&gt;
+&lt;/form&gt;
+
+&lt;form class="<span class="im-class">dsure-form-search</span>"&gt;
+	&lt;input class="<span class="im-class">dsure-form-search-t dsure-radius-big</span>" size="22" type="text" placeholder="Search" /&gt;
+	&lt;input class="<span class="im-class">dsure-form-search-b dsure-btn-t-white dsure-bg-black dsure-radius-big ma-l10</span>" type="submit" value="Search" /&gt;
+&lt;/form&gt;
+
+&lt;form class="<span class="im-class">dsure-form-search</span>"&gt;
+	&lt;input class="<span class="im-class">dsure-form-search-t</span>" size="22" type="text" placeholder="Search"/&gt;
+	&lt;button type="submit" class="<span class="im-class">dsure-form-search-b dsure-btn-t-white dsure-bg-blue</span>"&gt;&lt;i class="<span class="im-class">dsure-icon dsure-icon-search</span>"&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;/form&gt;
+            </pre>
+
+
+
+        </div><!--  /.codeBox -->
+      
+      
+
+        <div class="codeBox d-class-area" id="s2">
+           
+           <h2>(2) Style 2</h2>
+           
+          
+            <div class="codeBox-content">
+
+                <form class="dsure-form-search dsure-form-search-comb dsure-form-search-comb-left">
+                    <input class="dsure-form-search-t" size="20" type="text" placeholder="Search"/>
+                    <button type="submit" class="dsure-form-search-b"><i class="dsure-icon dsure-icon-search"></i></button>
+                </form>
+                
+                <div class="clear ma-t20"></div>
+
+                <form class="dsure-form-search dsure-form-search-comb">
+                    <input class="dsure-form-search-t" size="22" type="text" placeholder="Search"/>
+                    <button type="submit" class="dsure-form-search-b"><i class="dsure-icon dsure-icon-search"></i></button>
+                </form>
+                
+                <div class="clear ma-t20"></div>
+        
+                <form class="dsure-form-search dsure-form-search-comb">
+                    <input class="dsure-form-search-t dsure-radius-big" size="22" type="text" placeholder="Search"/>
+                    <button type="submit" class="dsure-form-search-b"><i class="dsure-icon dsure-icon-search"></i></button>
+                </form>
+                         
+                         
+                         
+                         
+                              
+
+            </div><!--  /.codeBox-content -->
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML Code:</span>
+
+&lt;form class="<span class="im-class">dsure-form-search dsure-form-search-comb dsure-form-search-comb-left</span>"&gt;
+	&lt;input class="<span class="im-class">dsure-form-search-t</span>" size="20" type="text" placeholder="Search"/&gt;
+	&lt;button type="submit" class="<span class="im-class">dsure-form-search-b</span>"&gt;&lt;i class="<span class="im-class">dsure-icon dsure-icon-search</span>"&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;/form&gt;
+
+&lt;form class="<span class="im-class">dsure-form-search dsure-form-search-comb</span>"&gt;
+	&lt;input class="<span class="im-class">dsure-form-search-t</span>" size="22" type="text" placeholder="Search"/&gt;
+	&lt;button type="submit" class="<span class="im-class">dsure-form-search-b</span>"&gt;&lt;i class="<span class="im-class">dsure-icon dsure-icon-search</span>"&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;/form&gt;
+
+&lt;form class="<span class="im-class">dsure-form-search dsure-form-search-comb</span>"&gt;
+	&lt;input class="<span class="im-class">dsure-form-search-t dsure-radius-big</span>" size="22" type="text" placeholder="Search"/&gt;
+	&lt;button type="submit" class="<span class="im-class">dsure-form-search-b</span>"&gt;&lt;i class="<span class="im-class">dsure-icon dsure-icon-search</span>"&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;/form&gt;
+
+            </pre>
+
+
+
+        </div><!--  /.codeBox -->
+
+
+        <div class="codeBox d-class-area" id="s3">
+           
+           <h2>(3) Style 3</h2>
+           
+          
+            <div class="codeBox-content">
+
+      
+                <form class="dsure-form-search dsure-form-search-nobg" style="padding:.2em .8em; background:#FAF3C5">
+                    <input class="dsure-form-search-t" size="20" type="text" placeholder="Search"/>
+                    <button type="submit" class="dsure-form-search-b"><i class="dsure-icon dsure-icon-search"></i></button>
+                </form>
+                    
+                              
+
+            </div><!--  /.codeBox-content -->
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML Code:</span>
+
+&lt;form class="<span class="im-class">dsure-form-search dsure-form-search-nobg</span>" style="<span class="im-style">padding:.2em .8em; background:#FAF3C5</span>"&gt;
+	&lt;input class="<span class="im-class">dsure-form-search-t</span>" size="20" type="text" placeholder="Search"/&gt;
+	&lt;button type="submit" class="<span class="im-class">dsure-form-search-b</span>"&gt;&lt;i class="<span class="im-class">dsure-icon dsure-icon-search</span>"&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;/form&gt;
+            </pre>
+
+
+
+        </div><!--  /.codeBox -->
+        
+        
+        <div class="codeBox d-class-area" id="s4">
+           
+           <h2>(4) Style 4</h2>
+           
+
+            <div class="codeBox-content">
+
+      
+                <form class="dsure-form-search dsure-form-search-select dsure-form-search-comb">
+                    <span class="dsure-selectBox">
+                        <span class="dsure-selectBox-inner">
+                            <select>
+                                  <option>Category 1</option>
+                                  <option>Category 2</option>
+                            </select>
+                        </span>
+                    </span>
+                    <input class="dsure-form-search-t" size="20" type="text" placeholder="Search"/>
+                    <button type="submit" class="dsure-form-search-b"><i class="dsure-icon dsure-icon-search"></i></button>
+                </form>
+                    
+                              
+
+            </div><!--  /.codeBox-content -->
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML Code:</span>
+
+
+&lt;form class="<span class="im-class">dsure-form-search dsure-form-search-select dsure-form-search-comb</span>"&gt;
+    &lt;span class="<span class="im-class">dsure-selectBox</span>"&gt;
+        &lt;span class="<span class="im-class">dsure-selectBox-inner</span>"&gt;
+            &lt;select&gt;
+                  &lt;option&gt;Category 1&lt;/option&gt;
+                  &lt;option&gt;Category 2&lt;/option&gt;
+            &lt;/select&gt;
+        &lt;/span&gt;
+    &lt;/span&gt;
+    &lt;input class="<span class="im-class">dsure-form-search-t</span>" size="20" type="text" placeholder="Search"/&gt;
+    &lt;button type="submit" class="<span class="im-class">dsure-form-search-b</span>"&gt;&lt;i class="<span class="im-class">dsure-icon dsure-icon-search</span>"&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;/form&gt;
+    
+            </pre>
+
+
+
+        </div><!--  /.codeBox -->
+           
+          
+          <!-- /////////////////   Content    End /////////////////// -->
+
+    
+
+        </div>
+
+         <footer>
+         
+            <hr>
+           
+            <p>This Product is released under a <a href="http://creativecommons.org/licenses/by-nc/3.0/deed.zh" target="_blank">Creative Commons Attribution 3.0</a> License. It only learning and exchange.</p>
+            <p>
+            &copy;2014 <a href="/d-s/Dsure">Dsure Front-end Development Framework</a> |  Author: <a href="/" target="_blank">没位道</a>
+         
+         <div style="display:none">
+                 <script id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+        <script>
+            if (typeof(LA) !== 'undefined') LA.init({id: "JdyfUJi3RdCZVi9F",ck: "JdyfUJi3RdCZVi9F"});
+        </script>
+         </div>
+           
+           
+      
+          
+            </p>
+             
+         </footer>
+
+     </section>
+     
+     
+
+     
+    
+    <script src="js/jquery.scroller.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/theme.hash.js"></script> <!-- After the main.js -->
+     
+  
+
+</body>
+</html>
+

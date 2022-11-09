@@ -1,0 +1,1203 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js ie ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js ie ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js ie ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js ie ie9"> <![endif]-->
+<!--[if !IE]><!--> <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js"> <!--<![endif]-->
+
+<head>
+    <meta name="viewport" content="width=device-width, user-scalable=yes" />
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
+    <meta charset="utf-8"/>
+    <title>Layouts | Dsure Front-end Development Framework</title>
+    <meta name="description" content="Improve the efficiency of CSS/HTML website based development and responsive layout.">
+
+    <!-- Jquery.min begin -->
+    <script src="js/jquery.min.js?1.7.1" ></script>
+    <!-- / Jquery.min end -->
+    
+    <!-- URL Hash Compatible(IE5+) begin -->
+    <script src="js/jquery.hashchange.js" ></script>
+	<script>
+		//hash
+		var turl = "";
+    </script> 
+
+    <!-- URL Hash Compatible(IE5+) end -->
+    
+    
+    <!-- Dsure  Development Framework  begin  -->
+    
+        <link rel="stylesheet" type="text/css" href="../../dsure/dsure.flat.css" />
+        <script src="../../dsure/dsure.modernizr.js"></script>
+        <!--[if lt IE 9]>  
+            <script src="../../dsure/dsure.respond.js"></script>  
+        <![endif]-->  
+    
+        <!--[if lt IE 7 ]>
+            <script src="../../dsure/dsure.png.js"></script>
+            <script>
+            DD_belatedPNG.fix('img, a, span, h1, h2, h3, em, section, header');
+            document.execCommand("BackgroundImageCache", false, true);
+            </script>
+        <![endif]-->
+
+    
+    <!-- /Dsure Development Framework  end   -->
+    
+
+    
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+
+    
+
+
+</head>
+<body>
+
+    <!--  loading  -->
+    <div id="loading"></div> 
+    <div id="back-top"><a href="#">Top</a></div>
+
+    <!--  menu  -->
+        <nav id="menu">
+            <div class="main-menu">
+        
+                <ul>
+                    <li class="web-title"><a href="/d-s/Dsure">Dsure</a></li>
+                    <li class="line"></li>
+                    <li><a href="/d-s/Dsure">Welcome Page</a></li>
+                    <li><a href="/d-s/Dsure/detail-base.html">Base Structure<b>*Required*</b></a></li>
+                    <li><a href="/d-s/Dsure/detail-base2.html">Base Stylesheets<b>*Common*</b></a></li>
+                    <li><a href="/d-s/Dsure/detail-text.html">Text</a></li>
+                    <li><a href="/d-s/Dsure/detail-buttons.html">Buttons</a></li>
+                    <li><a href="/d-s/Dsure/detail-forms.html">Forms</a></li>
+                    <li><a href="/d-s/Dsure/detail-tables.html">Tables</a></li>
+                    <li><a href="/d-s/Dsure/detail-grids.html">Grids</a></li>
+                    <li class="active"><a href="/d-s/Dsure/detail-layouts.html">Layouts</a></li>
+                    <li><a href="/d-s/Dsure/detail-icons.html">Icons</a></li>
+                    <li><a href="/d-s/Dsure/detail-img.html">Images</a></li>
+                    <li><a href="/d-s/Dsure/detail-line.html">Dividing Line</a></li>
+                    <li><a href="/d-s/Dsure/detail-paginators.html">Paginators</a></li>
+                    <li><a href="/d-s/Dsure/detail-navigation.html">Navigation</a></li>
+                    <li><a href="/d-s/Dsure/detail-classification.html">Classification</a></li>
+                    <li><a href="/d-s/Dsure/detail-striking.html">Striking</a></li>
+                    <li><a href="/d-s/Dsure/detail-search.html">Search Box</a></li> 
+                    <li><a href="/d-s/Dsure/detail-tags.html">Tags</a></li> 
+                   
+                </ul>
+
+                            
+            </div>
+           
+         </nav>
+         
+     <!--  /menu  -->
+     
+    
+     
+     <section id="content">
+         <div class="show">
+          
+          <!-- /////////////////   Content    Begin /////////////////// -->
+          
+          
+      <div class="dsure-title-nav dsure-no-hover dsure-bg-silver dsure-radius-small dsure-b-shadow f-i15">
+        <h1>Layouts</h1>
+      </div>
+
+      <div id="dir-nav" class="dir-nav dsure-no-hover dsure-bg-silver">
+          <a class="close" data-close="0" href="javascript:">×</a>
+          <div class="clear"></div>
+          <span class="t">Catalog</span>
+          <a href="javascript:" id="b-s1" onClick="navScrollTo('#s1');" >ol,ul,li</a>
+          <a href="javascript:" id="b-s2" onClick="navScrollTo('#s2');" >dl,dt,dd</a>
+          
+      </div>
+
+
+      <div class="clear"></div>
+      
+      <div class="codeBox">
+
+            <p class="dsure-tip dsure-tip-success">
+              <i class="dsure-icon dsure-icon-bulb"></i>Use any of the available classes of <strong>Base Stylesheets</strong> to quickly create a custom style. 
+            </p>
+
+      </div><!--  /.codeBox -->
+      
+      
+        <div class="codeBox d-class-area" id="s1">
+           
+           <h2>(1) &lt;ol&gt;、&lt;ul&gt;、&lt;li&gt;</h2>
+       
+            <div class="codeBox-content">
+                
+            
+                    <table class="dsure-table dsure-table-bordered ma-b20" style="width:100%">
+                        <thead>
+                            <tr>
+                                <th style="width:200px;" class="dsure-table-t-center">Icon</th>
+                                <th>HTML Code</th>
+                            </tr>
+                        </thead>
+                    
+                        <tbody>
+                        
+                            <tr class="dsure-table-odd">
+                                <td class="dsure-table-t-center">
+                                  <img src="../../dsure/img/ds-bullet-1.PNG">
+                                </td>
+                                
+                                <td>
+                                 &lt;ul class="dsure-list-li dsure-list-img1"&gt;...&lt;/ul&gt;
+                                </td>
+                            </tr>
+  
+                            <tr>
+                            
+                                <td class="dsure-table-t-center">
+                                   <img src="../../dsure/img/ds-bullet-1-2.PNG">
+                                </td>
+                                
+                                <td>
+                                   &lt;ul class="dsure-list-li dsure-list-img2"&gt;...&lt;/ul&gt;
+                                </td>
+                            </tr>
+                            
+                            <tr class="dsure-table-odd">
+                                <td class="dsure-table-t-center">
+                                  <img src="../../dsure/img/ds-bullet-2.PNG">
+                                </td>
+                                
+                                <td>
+                                 &lt;ul class="dsure-list-li dsure-list-img3"&gt;...&lt;/ul&gt;
+                                </td>
+                            </tr>
+  
+                            <tr>
+                            
+                                <td class="dsure-table-t-center">
+                                   <img src="../../dsure/img/ds-bullet-2-2.PNG">
+                                </td>
+                                
+                                <td>
+                                   &lt;ul class="dsure-list-li dsure-list-img4"&gt;...&lt;/ul&gt;
+                                </td>
+                            </tr>
+                            
+                            <tr class="dsure-table-odd">
+                                <td class="dsure-table-t-center">
+                                  <img src="../../dsure/img/ds-bullet-3.PNG">
+                                </td>
+                                
+                                <td>
+                                 &lt;ul class="dsure-list-li dsure-list-img5"&gt;...&lt;/ul&gt;
+                                </td>
+                            </tr>
+  
+                            <tr>
+                            
+                                <td class="dsure-table-t-center">
+                                   <img src="../../dsure/img/ds-bullet-3-2.PNG">
+                                </td>
+                                
+                                <td>
+                                  &lt;ul class="dsure-list-li dsure-list-img6"&gt;...&lt;/ul&gt;
+                                </td>
+                            </tr>
+                            <tr class="dsure-table-odd">
+                                <td class="dsure-table-t-center">
+                                  <img src="../../dsure/img/ds-bullet-4.PNG">
+                                </td>
+                                
+                                <td>
+                                 &lt;ul class="dsure-list-li dsure-list-img7"&gt;...&lt;/ul&gt;
+                                </td>
+                            </tr>
+  
+                            <tr>
+                            
+                                <td class="dsure-table-t-center">
+                                   <img src="../../dsure/img/ds-bullet-4-2.PNG">
+                                </td>
+                                
+                                <td>
+                                  &lt;ul class="dsure-list-li dsure-list-img8"&gt;...&lt;/ul&gt;
+                                </td>
+                            </tr>
+                            <tr class="dsure-table-odd">
+                                <td class="dsure-table-t-center">
+                                  <img src="../../dsure/img/ds-bullet-5.PNG">
+                                </td>
+                                
+                                <td>
+                                 &lt;ul class="dsure-list-li dsure-list-img9"&gt;...&lt;/ul&gt;
+                                </td>
+                            </tr>
+  
+                            <tr>
+                            
+                                <td class="dsure-table-t-center">
+                                   <img src="../../dsure/img/ds-bullet-5-2.PNG">
+                                </td>
+                                
+                                <td>
+                                  &lt;ul class="dsure-list-li dsure-list-img10"&gt;...&lt;/ul&gt;
+                                </td>
+                            </tr>
+                            <tr class="dsure-table-odd">
+                                <td class="dsure-table-t-center">
+                                  <img src="../../dsure/img/ds-bullet-6.PNG">
+                                </td>
+                                
+                                <td>
+                                 &lt;ul class="dsure-list-li dsure-list-img11"&gt;...&lt;/ul&gt;
+                                </td>
+                            </tr>
+  
+                            <tr>
+                            
+                                <td class="dsure-table-t-center">
+                                   <img src="../../dsure/img/ds-bullet-6-2.PNG">
+                                </td>
+                                
+                                <td>
+                                  &lt;ul class="dsure-list-li dsure-list-img12"&gt;...&lt;/ul&gt;
+                                </td>
+                            </tr>
+                            
+                           
+  
+                        </tbody>
+                    </table>
+                    
+                    <h3><i class="dsure-icon dsure-icon-file"></i> No date</h3>
+                    
+                    <ul class="dsure-list-li dsure-list-img1">
+                        <li><a href="#">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</a></li>
+                        <li><a href="#">Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like). </a></li>
+                        <li><a href="#">Simply dummy text of the printing and typesetting industry.</a></li>
+                    </ul>
+  
+                 
+            </div><!--  /.codeBox-content -->
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML Code:</span>
+
+&lt;ul class="<span class="im-class">dsure-list-li dsure-list-img1</span>"&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry.&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Simply dummy text of the printing and typesetting industry.&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+      
+            </pre>
+
+
+            <div class="codeBox-content">
+            
+                   <h3><i class="dsure-icon dsure-icon-file"></i> Right Date </h3>
+ 
+                    <ul class="dsure-list-li dsure-list-img1">
+                        <li><a href="#">Lorem Ipsum is simply dummy text of the printing and typesetting industry.<span class="dsure-list-date">2014.2.1</span></a></li>
+                        <li><a href="#">Lorem Ipsum is simply dummy text of the printing and typesetting industry.<span class="dsure-list-date">2014.2.1</span></a></li>
+                        <li><a href="#">Lorem Ipsum is simply dummy text of the printing and typesetting industry.<span class="dsure-list-date">2014.2.1</span></a></li>
+                    </ul>
+  
+                 
+            </div><!--  /.codeBox-content -->
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML Code:</span>
+
+&lt;ul class="<span class="im-class">dsure-list-li dsure-list-img1</span>"&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry.&lt;span class="<span class="im-class">dsure-list-date</span>"&gt;2014.2.1&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry.&lt;span class="<span class="im-class">dsure-list-date</span>"&gt;2014.2.1&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry.&lt;span class="<span class="im-class">dsure-list-date</span>"&gt;2014.2.1&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+      
+            </pre>
+
+
+            <div class="codeBox-content">
+            
+                   <h3><i class="dsure-icon dsure-icon-file"></i> Three Column <strong class="t3">( You need sets the width of <strong>&lt;li&gt;</strong> as a percentage. )</strong></h3>
+ 
+                    <ul class="dsure-list-li dsure-list-img1 dsure-li-inlineblock">
+                        <li style="width:33%"><a href="#">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</a></li>
+                        <li style="width:33%"><a href="#">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</a></li>
+                        <li style="width:33%"><a href="#">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</a></li>
+                        <li style="width:33%"><a href="#">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</a></li>
+                        <li style="width:33%"><a href="#">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</a></li>
+                        <li style="width:33%"><a href="#">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</a></li>
+                    </ul>
+
+                 
+            </div><!--  /.codeBox-content -->
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML Code:</span>
+
+&lt;ul class="<span class="im-class">dsure-list-li dsure-list-img1 dsure-li-inlineblock</span>"&gt;
+    &lt;li style="<span class="im-style">width:33%</span>"&gt;&lt;a href="#"&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry.&lt;/a&gt;&lt;/li&gt;
+    &lt;li style="<span class="im-style">width:33%</span>"&gt;&lt;a href="#"&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry.&lt;/a&gt;&lt;/li&gt;
+    &lt;li style="<span class="im-style">width:33%</span>"&gt;&lt;a href="#"&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry.&lt;/a&gt;&lt;/li&gt;
+    &lt;li style="<span class="im-style">width:33%</span>"&gt;&lt;a href="#"&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry.&lt;/a&gt;&lt;/li&gt;
+    &lt;li style="<span class="im-style">width:33%</span>"&gt;&lt;a href="#"&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry.&lt;/a&gt;&lt;/li&gt;
+    &lt;li style="<span class="im-style">width:33%</span>"&gt;&lt;a href="#"&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry.&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+      
+            </pre>
+            
+            
+            
+            <div class="codeBox-content">
+
+                    <h3><i class="dsure-icon dsure-icon-file"></i> Two Column <strong class="t3">( You need sets the width of <strong>&lt;li&gt;</strong> as a percentage. )</strong></h3>
+                    
+                    <ul class="dsure-list-li dsure-list-img1 dsure-li-inlineblock">
+                        <li style="width:49.5%"><a href="#">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</a></li>
+                        <li style="width:49.53%"><a href="#">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</a></li>
+                        <li style="width:49.5%"><a href="#">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</a></li>
+
+                    </ul>
+
+                 
+            </div><!--  /.codeBox-content -->
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML Code:</span>
+
+&lt;ul class="<span class="im-class">dsure-list-li dsure-list-img1 dsure-li-inlineblock</span>"&gt;
+    &lt;li style="<span class="im-style">width:49.5%</span>"&gt;&lt;a href="#"&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry.&lt;/a&gt;&lt;/li&gt;
+    &lt;li style="<span class="im-style">width:49.53%</span>"&gt;&lt;a href="#"&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry.&lt;/a&gt;&lt;/li&gt;
+    &lt;li style="<span class="im-style">width:49.5%</span>"&gt;&lt;a href="#"&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry.&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+      
+            </pre>
+            
+            <div class="codeBox-content">
+            
+                    
+                    <h3><i class="dsure-icon dsure-icon-file"></i> Fluid</h3>
+                    
+                    <ul class="dsure-list-li dsure-list-img1 dsure-li-inlineblock">
+                        <li><a href="#">Demo text</a></li>
+                        <li><a href="#">Demo text</a></li>
+                        <li><a href="#">Demo text</a></li>
+                        <li><a href="#">Demo text</a></li>
+                        <li><a href="#">Demo text</a></li>
+                        <li><a href="#">Demo text</a></li>
+                    </ul>
+  
+  
+                 
+            </div><!--  /.codeBox-content -->
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML Code:</span>
+
+&lt;ul class="<span class="im-class">dsure-list-li dsure-list-img1 dsure-li-inlineblock</span>"&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Demo text&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Demo text&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Demo text&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Demo text&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Demo text&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Demo text&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+      
+            </pre>
+
+
+            <div class="codeBox-content">
+            
+                    
+                    <h3><i class="dsure-icon dsure-icon-file"></i> Fluid and Center Align</h3>
+                    
+                    <ul class="dsure-list-li dsure-list-li-center dsure-list-img1 dsure-li-inlineblock">
+                        <li><a href="#">Center text</a></li>
+                        <li><a href="#">Center text</a></li>
+                        <li><a href="#">Center text</a></li>
+                    </ul>
+  
+  
+                 
+            </div><!--  /.codeBox-content -->
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML Code:</span>
+
+&lt;ul class="<span class="im-class">dsure-list-li dsure-list-li-center dsure-list-img1 dsure-li-inlineblock</span>"&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Center text&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Center text&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Center text&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+      
+            </pre>
+
+
+
+            <div class="codeBox-content">
+
+                    <h3><i class="dsure-icon dsure-icon-file"></i> Bulleted list</h3>
+                    
+                      <ol class="dsure-list-ol dsure-list-ol-type1"> 
+                         <li><a href="#">Text</a></li>
+                         <li><a href="#">Text</a></li>
+                         <li><a href="#">Text</a></li>
+                      </ol>
+
+                      <ol class="dsure-list-ol dsure-list-ol-type2 ma-t20"> 
+                         <li><a href="#">Text</a></li>
+                         <li><a href="#">Text</a></li>
+                         <li><a href="#">Text</a></li>
+                      </ol>
+                      
+                      <ol class="dsure-list-ol dsure-list-ol-type3 ma-t20"> 
+                         <li><a href="#">Text</a></li>
+                         <li><a href="#">Text</a></li>
+                         <li><a href="#">Text</a></li>
+                      </ol>
+                      
+                      <ol class="dsure-list-ol dsure-list-ol-type4 ma-t20"> 
+                         <li><a href="#">Text</a></li>
+                         <li><a href="#">Text</a></li>
+                         <li><a href="#">Text</a></li>
+                      </ol>
+                      
+                      <ol class="dsure-list-ol dsure-list-ol-type5 ma-t20"> 
+                         <li><a href="#">Text</a></li>
+                         <li><a href="#">Text</a></li>
+                         <li><a href="#">Text</a></li>
+                      </ol>
+                      
+                 
+            </div><!--  /.codeBox-content -->
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML Code:</span>
+
+&lt;ol class="<span class="im-class">dsure-list-ol dsure-list-ol-type1</span>"&gt; 
+ &lt;li&gt;&lt;a href="#"&gt;Text&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#"&gt;Text&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#"&gt;Text&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ol class="<span class="im-class">dsure-list-ol dsure-list-ol-type2</span>"&gt; 
+ &lt;li&gt;&lt;a href="#"&gt;Text&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#"&gt;Text&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#"&gt;Text&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ol class="<span class="im-class">dsure-list-ol dsure-list-ol-type3</span>"&gt; 
+ &lt;li&gt;&lt;a href="#"&gt;Text&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#"&gt;Text&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#"&gt;Text&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ol class="<span class="im-class">dsure-list-ol dsure-list-ol-type4</span>"&gt; 
+ &lt;li&gt;&lt;a href="#"&gt;Text&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#"&gt;Text&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#"&gt;Text&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;ol class="<span class="im-class">dsure-list-ol dsure-list-ol-type5</span>"&gt; 
+ &lt;li&gt;&lt;a href="#"&gt;Text&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#"&gt;Text&lt;/a&gt;&lt;/li&gt;
+ &lt;li&gt;&lt;a href="#"&gt;Text&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+            </pre>
+            
+            
+            
+
+            <div class="codeBox-content">
+            
+                    
+                    <h3><i class="dsure-icon dsure-icon-file"></i> Grid List</h3>
+                    
+                    <ul class="dsure-list-li">
+                        <li>
+                            <span class="dsure-row">
+                                  <span class="dsure-small-3 dsure-columns bg-column1">3/12 Left text</span>
+                                  <span class="dsure-small-9 dsure-columns bg-column2">9/12 Right text</span>
+                            </span> 
+                        </li>
+                        
+                        <li>
+                            <span class="dsure-row">
+                                  <span class="dsure-small-3 dsure-columns bg-column1">3/12 Left text</span>
+                                  <span class="dsure-small-9 dsure-columns bg-column2">9/12 Right text</span>
+                            </span> 
+                        </li>
+                        
+                        <li>
+                            <span class="dsure-row">
+                                  <span class="dsure-small-3 dsure-columns bg-column1">3/12 Left text</span>
+                                  <span class="dsure-small-9 dsure-columns bg-column2">9/12 Right text</span>
+                            </span> 
+                        </li>
+                    </ul>
+  
+  
+                 
+            </div><!--  /.codeBox-content -->
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML Code:</span>
+
+&lt;ul class="<span class="im-class">dsure-list-li</span>"&gt;
+    &lt;li&gt;
+        &lt;span class="<span class="im-class">dsure-row</span>"&gt;
+              &lt;span class="<span class="im-class">dsure-small-3 dsure-columns</span>"&gt;3/12 Left text&lt;/span&gt;
+              &lt;span class="<span class="im-class">dsure-small-9 dsure-columns</span>"&gt;9/12 Right text&lt;/span&gt;
+        &lt;/span&gt; 
+    &lt;/li&gt;
+    
+    &lt;li&gt;
+        &lt;span class="<span class="im-class">dsure-row</span>"&gt;
+              &lt;span class="<span class="im-class">dsure-small-3 dsure-columns</span>"&gt;3/12 Left text&lt;/span&gt;
+              &lt;span class="<span class="im-class">dsure-small-9 dsure-columns</span>"&gt;9/12 Right text&lt;/span&gt;
+        &lt;/span&gt; 
+    &lt;/li&gt;
+    
+    &lt;li&gt;
+        &lt;span class="<span class="im-class">dsure-row</span>"&gt;
+              &lt;span class="<span class="im-class">dsure-small-3 dsure-columns</span>"&gt;3/12 Left text&lt;/span&gt;
+              &lt;span class="<span class="im-class">dsure-small-9 dsure-columns</span>"&gt;9/12 Right text&lt;/span&gt;
+        &lt;/span&gt; 
+    &lt;/li&gt;
+&lt;/ul&gt;
+      
+            </pre>
+
+            <div class="codeBox-content">
+            
+                    
+                    <h3><i class="dsure-icon dsure-icon-file"></i> Fluid and Grid List <strong class="t3">( You need sets the width of <strong>&lt;li&gt;</strong> as a percentage. )</strong></h3>
+                    
+                    
+                    <ul class="dsure-list-li dsure-li-inlineblock">
+                        <li style="width:49.5%">
+                            <span class="dsure-row">
+                                  <span class="dsure-small-3 dsure-columns bg-column1">Text</span>
+                                  <span class="dsure-small-9 dsure-columns bg-column2">Text</span>
+                            </span> 
+                        </li>
+                        
+                        <li style="width:49.5%">
+                            <span class="dsure-row">
+                                  <span class="dsure-small-3 dsure-columns bg-column1">Text</span>
+                                  <span class="dsure-small-9 dsure-columns bg-column2">Text</span>
+                            </span> 
+                        </li>
+                        
+                        <li style="width:49.5%">
+                            <span class="dsure-row">
+                                  <span class="dsure-small-3 dsure-columns bg-column1">Text</span>
+                                  <span class="dsure-small-9 dsure-columns bg-column2">Text</span>
+                            </span> 
+                        </li>
+                        
+                        <li style="width:49.5%">
+                            <span class="dsure-row">
+                                  <span class="dsure-small-3 dsure-columns bg-column1">Text</span>
+                                  <span class="dsure-small-9 dsure-columns bg-column2">Text</span>
+                            </span> 
+                        </li>
+                        
+                        <li style="width:49.5%">
+                            <span class="dsure-row">
+                                  <span class="dsure-small-3 dsure-columns bg-column1">Text</span>
+                                  <span class="dsure-small-9 dsure-columns bg-column2">Text</span>
+                            </span> 
+                        </li>                     
+                        
+                        
+                    </ul>
+  
+  
+                 
+            </div><!--  /.codeBox-content -->
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML Code:</span>
+
+&lt;ul class="<span class="im-class">dsure-list-li dsure-li-inlineblock</span>"&gt;
+    &lt;li style="<span class="im-style">width:49.5%</span>"&gt;
+        &lt;span class="<span class="im-class">dsure-row</span>"&gt;
+              &lt;span class="<span class="im-class">dsure-small-3 dsure-columns</span>"&gt;Text&lt;/span&gt;
+              &lt;span class="<span class="im-class">dsure-small-9 dsure-columns</span>"&gt;Text&lt;/span&gt;
+        &lt;/span&gt; 
+    &lt;/li&gt;
+    
+    &lt;li style="<span class="im-style">width:49.5%</span>"&gt;
+        &lt;span class="<span class="im-class">dsure-row</span>"&gt;
+              &lt;span class="<span class="im-class">dsure-small-3 dsure-columns</span>"&gt;Text&lt;/span&gt;
+              &lt;span class="<span class="im-class">dsure-small-9 dsure-columns</span>"&gt;Text&lt;/span&gt;
+        &lt;/span&gt; 
+    &lt;/li&gt;
+    
+    &lt;li style="<span class="im-style">width:49.5%</span>"&gt;
+        &lt;span class="<span class="im-class">dsure-row</span>"&gt;
+              &lt;span class="<span class="im-class">dsure-small-3 dsure-columns</span>"&gt;Text&lt;/span&gt;
+              &lt;span class="<span class="im-class">dsure-small-9 dsure-columns</span>"&gt;Text&lt;/span&gt;
+        &lt;/span&gt; 
+    &lt;/li&gt;
+    
+    &lt;li style="<span class="im-style">width:49.5%</span>"&gt;
+        &lt;span class="<span class="im-class">dsure-row</span>"&gt;
+              &lt;span class="<span class="im-class">dsure-small-3 dsure-columns</span>"&gt;Text&lt;/span&gt;
+              &lt;span class="<span class="im-class">dsure-small-9 dsure-columns</span>"&gt;Text&lt;/span&gt;
+        &lt;/span&gt; 
+    &lt;/li&gt;
+    
+    &lt;li style="<span class="im-style">width:49.5%</span>"&gt;
+        &lt;span class="<span class="im-class">dsure-row</span>"&gt;
+              &lt;span class="<span class="im-class">dsure-small-3 dsure-columns</span>"&gt;Text&lt;/span&gt;
+              &lt;span class="<span class="im-class">dsure-small-9 dsure-columns</span>"&gt;Text&lt;/span&gt;
+        &lt;/span&gt; 
+    &lt;/li&gt;                      
+&lt;/ul&gt;
+
+
+
+      
+            </pre>
+
+
+        </div><!--  /.codeBox -->
+      
+      
+      
+        <div class="codeBox d-class-area" id="s2">
+           
+           <h2>(2) &lt;dl&gt;、&lt;dt&gt;、&lt;dd&gt;</h2>
+           
+            <div class="codeBox-content">
+                
+
+                    <h3><i class="dsure-icon dsure-icon-file"></i> Two Column <strong class="t3">( You could sets the width of <strong>&lt;dt&gt;</strong>. )</strong></h3>
+                   
+                    
+                         <dl class="dsure-list-dl ma-t20"> 
+                            <dt style="padding:5px;"><a href="#"><img width="80" src="css/images/335x260-1.jpg"></a></dt>
+                            <dd> 
+                                  <h3><a href="#">Title</a></h3>
+                                  <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                  </p>    
+                            </dd> 
+                         </dl>    
+  
+                         <dl class="dsure-list-dl ma-t20"> 
+                            <dt style="padding:5px;"><a href="#"><img width="120" src="css/images/335x260-2.jpg"></a></dt>
+                            <dd> 
+                                  <h3><a href="#">Title</a></h3>
+                                  <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                                  </p>    
+                            </dd> 
+                         </dl>    
+  
+                         <dl class="dsure-list-dl ma-t20"> 
+                            <dt style="padding:5px;"><a href="#"><img width="160" src="css/images/335x260-3.jpg"></a></dt>
+                            <dd> 
+                                  <h3><a href="#">Title</a></h3>
+                                  <p>
+                                    It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                  </p>    
+                            </dd> 
+                         </dl>   
+  
+                 
+            </div><!--  /.codeBox-content -->
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML Code:</span>
+
+&lt;dl class="<span class="im-class">dsure-list-dl</span>"&gt; 
+    &lt;dt style="<span class="im-style">padding:5px;</span>"&gt;&lt;a href="#"&gt;&lt;img width="80" src="css/images/335x260-1.jpg"&gt;&lt;/a&gt;&lt;/dt&gt;
+    &lt;dd&gt; 
+          &lt;h3&gt;&lt;a href="#"&gt;Title&lt;/a&gt;&lt;/h3&gt;
+          &lt;p&gt;
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+          &lt;/p&gt;    
+    &lt;/dd&gt; 
+&lt;/dl&gt;    
+
+&lt;dl class="<span class="im-class">dsure-list-dl</span>"&gt; 
+    &lt;dt style="<span class="im-style">padding:5px;</span>"&gt;&lt;a href="#"&gt;&lt;img width="120" src="css/images/335x260-2.jpg"&gt;&lt;/a&gt;&lt;/dt&gt;
+    &lt;dd&gt; 
+          &lt;h3&gt;&lt;a href="#"&gt;Title&lt;/a&gt;&lt;/h3&gt;
+          &lt;p&gt;
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+          &lt;/p&gt;    
+    &lt;/dd&gt; 
+&lt;/dl&gt;    
+
+&lt;dl class="<span class="im-class">dsure-list-dl</span>"&gt; 
+    &lt;dt style="<span class="im-style">padding:5px;</span>"&gt;&lt;a href="#"&gt;&lt;img width="160" src="css/images/335x260-3.jpg"&gt;&lt;/a&gt;&lt;/dt&gt;
+    &lt;dd&gt; 
+          &lt;h3&gt;&lt;a href="#"&gt;Title&lt;/a&gt;&lt;/h3&gt;
+          &lt;p&gt;
+            It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+          &lt;/p&gt;    
+    &lt;/dd&gt; 
+&lt;/dl&gt; 
+            </pre>
+
+
+            <div class="codeBox-content">
+                
+
+                    <h3><i class="dsure-icon dsure-icon-file"></i> Horizontal Fluid <strong class="t3">( You could sets the width of <strong>&lt;dt&gt;</strong>.)</strong></h3>
+                    
+
+                         <dl class="dsure-list-dl dsure-list-dl-fluid ma-t20" style="width:33%"> 
+                            <dt style="padding:5px;"><a href="#"><img width="80" src="css/images/335x260-1.jpg"></a></dt>
+                            <dd> 
+                                  <h3><a href="#">Title</a></h3>
+                                  <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                  </p>    
+                            </dd> 
+                         </dl>    
+  
+                         <dl class="dsure-list-dl dsure-list-dl-fluid ma-t20" style="width:33%"> 
+                            <dt style="padding:5px;"><a href="#"><img width="80" src="css/images/335x260-2.jpg"></a></dt>
+                            <dd> 
+                                  <h3><a href="#">Title</a></h3>
+                                  <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                  </p>    
+                            </dd> 
+                         </dl>    
+  
+                         <dl class="dsure-list-dl dsure-list-dl-fluid ma-t20" style="width:33%"> 
+                            <dt style="padding:5px;"><a href="#"><img width="80" src="css/images/335x260-3.jpg"></a></dt>
+                            <dd> 
+                                  <h3><a href="#">Title</a></h3>
+                                  <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                  </p>    
+                            </dd> 
+                         </dl>    
+  
+                         <dl class="dsure-list-dl dsure-list-dl-fluid ma-t20" style="width:33%"> 
+                            <dt style="padding:5px;"><a href="#"><img width="80" src="css/images/335x260-4.jpg"></a></dt>
+                            <dd> 
+                                  <h3><a href="#">Title</a></h3>
+                                  <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                  </p>    
+                            </dd> 
+                         </dl>    
+  
+                         <dl class="dsure-list-dl dsure-list-dl-fluid ma-t20" style="width:33%"> 
+                            <dt style="padding:5px;"><a href="#"><img width="80" src="css/images/335x260-2.jpg"></a></dt>
+                            <dd> 
+                                  <h3><a href="#">Title</a></h3>
+                                  <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                  </p>    
+                            </dd> 
+                         </dl>    
+  
+  
+
+                 
+            </div><!--  /.codeBox-content -->
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML Code:</span>
+
+&lt;dl class="<span class="im-class">dsure-list-dl dsure-list-dl-fluid</span>" style="<span class="im-style">width:33%</span>"&gt; 
+    &lt;dt style="<span class="im-style">padding:5px;</span>"&gt;&lt;a href="#"&gt;&lt;img width="80" src="css/images/335x260-1.jpg"&gt;&lt;/a&gt;&lt;/dt&gt;
+    &lt;dd&gt; 
+          &lt;h3&gt;&lt;a href="#"&gt;Title&lt;/a&gt;&lt;/h3&gt;
+          &lt;p&gt;
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+          &lt;/p&gt;    
+    &lt;/dd&gt; 
+&lt;/dl&gt;    
+
+&lt;dl class="<span class="im-class">dsure-list-dl dsure-list-dl-fluid</span>" style="<span class="im-style">width:33%</span>"&gt; 
+    &lt;dt style="<span class="im-style">padding:5px;</span>"&gt;&lt;a href="#"&gt;&lt;img width="80" src="css/images/335x260-2.jpg"&gt;&lt;/a&gt;&lt;/dt&gt;
+    &lt;dd&gt; 
+          &lt;h3&gt;&lt;a href="#"&gt;Title&lt;/a&gt;&lt;/h3&gt;
+          &lt;p&gt;
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+          &lt;/p&gt;    
+    &lt;/dd&gt; 
+&lt;/dl&gt;    
+
+&lt;dl class="<span class="im-class">dsure-list-dl dsure-list-dl-fluid</span>" style="<span class="im-style">width:33%</span>"&gt; 
+&lt;dt style="<span class="im-style">padding:5px;</span>"&gt;&lt;a href="#"&gt;&lt;img width="80" src="css/images/335x260-3.jpg"&gt;&lt;/a&gt;&lt;/dt&gt;
+&lt;dd&gt; 
+      &lt;h3&gt;&lt;a href="#"&gt;Title&lt;/a&gt;&lt;/h3&gt;
+      &lt;p&gt;
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+      &lt;/p&gt;    
+&lt;/dd&gt; 
+&lt;/dl&gt;    
+
+&lt;dl class="<span class="im-class">dsure-list-dl dsure-list-dl-fluid</span>" style="<span class="im-style">width:33%</span>"&gt; 
+    &lt;dt style="<span class="im-style">padding:5px;</span>"&gt;&lt;a href="#"&gt;&lt;img width="80" src="css/images/335x260-4.jpg"&gt;&lt;/a&gt;&lt;/dt&gt;
+    &lt;dd&gt; 
+          &lt;h3&gt;&lt;a href="#"&gt;Title&lt;/a&gt;&lt;/h3&gt;
+          &lt;p&gt;
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+          &lt;/p&gt;    
+    &lt;/dd&gt; 
+&lt;/dl&gt;    
+
+&lt;dl class="<span class="im-class">dsure-list-dl dsure-list-dl-fluid</span>" style="<span class="im-style">width:33%</span>"&gt; 
+    &lt;dt style="<span class="im-style">padding:5px;</span>"&gt;&lt;a href="#"&gt;&lt;img width="80" src="css/images/335x260-2.jpg"&gt;&lt;/a&gt;&lt;/dt&gt;
+    &lt;dd&gt; 
+          &lt;h3&gt;&lt;a href="#"&gt;Title&lt;/a&gt;&lt;/h3&gt;
+          &lt;p&gt;
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+          &lt;/p&gt;    
+    &lt;/dd&gt; 
+&lt;/dl&gt;    
+
+            </pre>
+
+
+            <div class="codeBox-content">
+                
+
+                    <h3><i class="dsure-icon dsure-icon-file"></i> Vertical Fluid <strong class="t3">( You could sets the width of <strong>&lt;dt&gt;</strong>.)</strong></h3>
+                    
+                    
+                         <dl class="dsure-list-dl dsure-list-dl-fluid dsure-list-dl-fluid-v ma-t20" style="width:33%"> 
+                            <dt style="padding:5px;"><a href="#"><img src="css/images/335x260-1.jpg"></a></dt>
+                            <dd> 
+                                  <h3><a href="#">Title</a></h3>
+                                  <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                  </p>    
+                            </dd> 
+                         </dl>    
+  
+                         <dl class="dsure-list-dl dsure-list-dl-fluid dsure-list-dl-fluid-v ma-t20" style="width:33%"> 
+                            <dt style="padding:5px;"><a href="#"><img src="css/images/335x260-2.jpg"></a></dt>
+                            <dd> 
+                                  <h3><a href="#">Title</a></h3>
+                                  <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                  </p>    
+                            </dd> 
+                         </dl>    
+  
+                         <dl class="dsure-list-dl dsure-list-dl-fluid dsure-list-dl-fluid-v ma-t20" style="width:33%"> 
+                            <dt style="padding:5px;"><a href="#"><img src="css/images/335x260-3.jpg"></a></dt>
+                            <dd> 
+                                  <h3><a href="#">Title</a></h3>
+                                  <p>
+                                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+                                  </p>    
+                            </dd> 
+                         </dl>    
+  
+
+  
+
+                 
+            </div><!--  /.codeBox-content -->
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML Code:</span>
+
+&lt;dl class="<span class="im-class">dsure-list-dl dsure-list-dl-fluid dsure-list-dl-fluid-v</span>" style="<span class="im-style">width:33%</span>"&gt; 
+    &lt;dt style="<span class="im-style">padding:5px;</span>"&gt;&lt;a href="#"&gt;&lt;img src="css/images/335x260-1.jpg"&gt;&lt;/a&gt;&lt;/dt&gt;
+    &lt;dd&gt; 
+          &lt;h3&gt;&lt;a href="#"&gt;Title&lt;/a&gt;&lt;/h3&gt;
+          &lt;p&gt;
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+          &lt;/p&gt;    
+    &lt;/dd&gt; 
+&lt;/dl&gt;    
+
+&lt;dl class="<span class="im-class">dsure-list-dl dsure-list-dl-fluid dsure-list-dl-fluid-v</span>" style="<span class="im-style">width:33%</span>"&gt; 
+    &lt;dt style="<span class="im-style">padding:5px;</span>"&gt;&lt;a href="#"&gt;&lt;img src="css/images/335x260-2.jpg"&gt;&lt;/a&gt;&lt;/dt&gt;
+    &lt;dd&gt; 
+          &lt;h3&gt;&lt;a href="#"&gt;Title&lt;/a&gt;&lt;/h3&gt;
+          &lt;p&gt;
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+          &lt;/p&gt;    
+    &lt;/dd&gt; 
+&lt;/dl&gt;    
+
+&lt;dl class="<span class="im-class">dsure-list-dl dsure-list-dl-fluid dsure-list-dl-fluid-v</span>" style="<span class="im-style">width:33%</span>"&gt; 
+    &lt;dt style="<span class="im-style">padding:5px;</span>"&gt;&lt;a href="#"&gt;&lt;img src="css/images/335x260-3.jpg"&gt;&lt;/a&gt;&lt;/dt&gt;
+    &lt;dd&gt; 
+          &lt;h3&gt;&lt;a href="#"&gt;Title&lt;/a&gt;&lt;/h3&gt;
+          &lt;p&gt;
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+          &lt;/p&gt;    
+    &lt;/dd&gt; 
+&lt;/dl&gt;    
+            </pre>
+
+
+            <div class="codeBox-content">
+                
+
+                    <h3><i class="dsure-icon dsure-icon-file"></i> Card Fluid</h3>
+
+
+                         <dl class="dsure-list-dl dsure-list-dl-info dsure-list-dl-fluid ma-t20 ma-r20" style="width:45%"> 
+                            <dt style="width:20%"><strong>Author Name：</strong></dt>
+                            <dd style="width:80%">Luca Flores</dd> 
+      
+                            <dt style="width:20%"><strong>Age：</strong></dt>
+                            <dd style="width:80%">38</dd>   
+                            
+                            <dt style="width:20%"><strong>Description：</strong></dt>
+                            <dd style="width:80%">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</dd>       
+
+                         </dl>    
+                         
+                         
+                         <dl class="dsure-list-dl dsure-list-dl-info dsure-list-dl-fluid ma-t20 ma-r20" style="width:45%"> 
+                            <dt style="width:20%"><strong>Author Name：</strong></dt>
+                            <dd style="width:80%">Luca Flores</dd> 
+      
+                            <dt style="width:20%"><strong>Age：</strong></dt>
+                            <dd style="width:80%">38</dd>   
+                            
+                            <dt style="width:20%"><strong>Description：</strong></dt>
+                            <dd style="width:80%">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</dd>       
+
+                         </dl>   
+                         
+                         
+                         <dl class="dsure-list-dl dsure-list-dl-info dsure-list-dl-fluid ma-t20 ma-r20" style="width:45%"> 
+                            <dt style="width:20%"><strong>Author Name：</strong></dt>
+                            <dd style="width:80%">Luca Flores</dd> 
+      
+                            <dt style="width:20%"><strong>Age：</strong></dt>
+                            <dd style="width:80%">38</dd>   
+                            
+                            <dt style="width:20%"><strong>Description：</strong></dt>
+                            <dd style="width:80%">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</dd>       
+
+                         </dl>            
+                        
+                 
+            </div><!--  /.codeBox-content -->
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML Code:</span>
+
+&lt;dl class="<span class="im-class">dsure-list-dl dsure-list-dl-info dsure-list-dl-fluid</span>" style="<span class="im-style">width:45%</span>"&gt; 
+    &lt;dt style="<span class="im-style">width:20%</span>"&gt;&lt;strong&gt;Author Name：&lt;/strong&gt;&lt;/dt&gt;
+    &lt;dd style="<span class="im-style">width:80%</span>"&gt;Luca Flores&lt;/dd&gt; 
+    
+    &lt;dt style="<span class="im-style">width:20%</span>"&gt;&lt;strong&gt;Age：&lt;/strong&gt;&lt;/dt&gt;
+    &lt;dd style="<span class="im-style">width:80%</span>"&gt;38&lt;/dd&gt;   
+    
+    &lt;dt style="<span class="im-style">width:20%</span>"&gt;&lt;strong&gt;Description：&lt;/strong&gt;&lt;/dt&gt;
+    &lt;dd style="<span class="im-style">width:80%</span>"&gt;There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.&lt;/dd&gt;       
+&lt;/dl&gt;    
+
+
+&lt;dl class="<span class="im-class">dsure-list-dl dsure-list-dl-info dsure-list-dl-fluid</span>" style="<span class="im-style">width:45%</span>"&gt; 
+    &lt;dt style="<span class="im-style">width:20%</span>"&gt;&lt;strong&gt;Author Name：&lt;/strong&gt;&lt;/dt&gt;
+    &lt;dd style="<span class="im-style">width:80%</span>"&gt;Luca Flores&lt;/dd&gt; 
+    
+    &lt;dt style="<span class="im-style">width:20%</span>"&gt;&lt;strong&gt;Age：&lt;/strong&gt;&lt;/dt&gt;
+    &lt;dd style="<span class="im-style">width:80%</span>"&gt;38&lt;/dd&gt;   
+    
+    &lt;dt style="<span class="im-style">width:20%</span>"&gt;&lt;strong&gt;Description：&lt;/strong&gt;&lt;/dt&gt;
+    &lt;dd style="<span class="im-style">width:80%</span>"&gt;There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.&lt;/dd&gt;       
+&lt;/dl&gt;   
+
+
+&lt;dl class="<span class="im-class">dsure-list-dl dsure-list-dl-info dsure-list-dl-fluid</span>" style="<span class="im-style">width:45%</span>"&gt; 
+    &lt;dt style="<span class="im-style">width:20%</span>"&gt;&lt;strong&gt;Author Name：&lt;/strong&gt;&lt;/dt&gt;
+    &lt;dd style="<span class="im-style">width:80%</span>"&gt;Luca Flores&lt;/dd&gt; 
+    
+    &lt;dt style="<span class="im-style">width:20%</span>"&gt;&lt;strong&gt;Age：&lt;/strong&gt;&lt;/dt&gt;
+    &lt;dd style="<span class="im-style">width:80%</span>"&gt;38&lt;/dd&gt;   
+    
+    &lt;dt style="<span class="im-style">width:20%</span>"&gt;&lt;strong&gt;Description：&lt;/strong&gt;&lt;/dt&gt;
+    &lt;dd style="<span class="im-style">width:80%</span>"&gt;There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.&lt;/dd&gt;       
+&lt;/dl&gt;              
+            </pre>
+
+
+
+            <div class="codeBox-content">
+                
+
+                    <h3><i class="dsure-icon dsure-icon-file"></i> Card and Figure Fluid</h3>
+
+               
+
+                         <dl class="dsure-list-dl dsure-list-dl-info dsure-list-dl-fluid ma-t20 ma-r20" style="width:35%; padding-left:10%"> 
+                         
+                            <dt class="dsure-list-dl-info-img">
+                                <a href="#"><img width="80" height="120" src="css/images/335x260-1.jpg"></a>
+                            </dt>
+                            <dd class="dsure-list-dl-info-img"></dd>
+                         
+                            <dt style="width:12%"><strong>Name：</strong></dt>
+                            <dd style="width:78%">Luca Flores</dd> 
+      
+                            <dt style="width:12%"><strong>Age：</strong></dt>
+                            <dd style="width:78%">38</dd>   
+                            
+                            <dt style="width:12%"><strong>Description：</strong></dt>
+                            <dd style="width:78%">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</dd>       
+
+                         </dl>    
+                         
+                         <dl class="dsure-list-dl dsure-list-dl-info dsure-list-dl-fluid ma-t20 ma-r20" style="width:35%; padding-left:10%"> 
+                         
+                            <dt class="dsure-list-dl-info-img">
+                                <a href="#"><img width="80" height="120" src="css/images/335x260-2.jpg"></a>
+                            </dt>
+                            <dd class="dsure-list-dl-info-img"></dd>
+                         
+                            <dt style="width:12%"><strong>Name：</strong></dt>
+                            <dd style="width:78%">Luca Flores</dd> 
+      
+                            <dt style="width:12%"><strong>Age：</strong></dt>
+                            <dd style="width:78%">38</dd>   
+                            
+                            <dt style="width:12%"><strong>Description：</strong></dt>
+                            <dd style="width:78%">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</dd>       
+
+                         </dl>    
+                         
+                         <dl class="dsure-list-dl dsure-list-dl-info dsure-list-dl-fluid ma-t20 ma-r20" style="width:35%; padding-left:10%"> 
+                         
+                            <dt class="dsure-list-dl-info-img">
+                                <a href="#"><img width="80" height="120" src="css/images/335x260-3.jpg"></a>
+                            </dt>
+                            <dd class="dsure-list-dl-info-img"></dd>
+                         
+                            <dt style="width:12%"><strong>Name：</strong></dt>
+                            <dd style="width:78%">Luca Flores</dd> 
+      
+                            <dt style="width:12%"><strong>Age：</strong></dt>
+                            <dd style="width:78%">38</dd>   
+                            
+                            <dt style="width:12%"><strong>Description：</strong></dt>
+                            <dd style="width:78%">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</dd>       
+
+                         </dl>    
+                         
+                        
+                 
+            </div><!--  /.codeBox-content -->
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML Code:</span>
+
+&lt;dl class="<span class="im-class">dsure-list-dl dsure-list-dl-info dsure-list-dl-fluid</span>" style="<span class="im-style">width:35%; padding-left:10%</span>"&gt; 
+
+    &lt;dt class="<span class="im-class">dsure-list-dl-info-img</span>"&gt;
+        &lt;a href="#"&gt;&lt;img width="80" height="120" src="css/images/335x260-1.jpg"&gt;&lt;/a&gt;
+    &lt;/dt&gt;
+    &lt;dd class="<span class="im-class">dsure-list-dl-info-img</span>"&gt;&lt;/dd&gt;
+    
+    &lt;dt style="<span class="im-style">width:12%</span>"&gt;&lt;strong&gt;Name：&lt;/strong&gt;&lt;/dt&gt;
+    &lt;dd style="<span class="im-style">width:78%</span>"&gt;Luca Flores&lt;/dd&gt; 
+    
+    &lt;dt style="<span class="im-style">width:12%</span>"&gt;&lt;strong&gt;Age：&lt;/strong&gt;&lt;/dt&gt;
+    &lt;dd style="<span class="im-style">width:78%</span>"&gt;38&lt;/dd&gt;   
+    
+    &lt;dt style="<span class="im-style">width:12%</span>"&gt;&lt;strong&gt;Description：&lt;/strong&gt;&lt;/dt&gt;
+    &lt;dd style="<span class="im-style">width:78%</span>"&gt;There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.&lt;/dd&gt;       
+
+&lt;/dl&gt;    
+
+&lt;dl class="<span class="im-class">dsure-list-dl dsure-list-dl-info dsure-list-dl-fluid</span>" style="<span class="im-style">width:35%; padding-left:10%</span>"&gt; 
+
+    &lt;dt class="<span class="im-class">dsure-list-dl-info-img</span>"&gt;
+        &lt;a href="#"&gt;&lt;img width="80" height="120" src="css/images/335x260-2.jpg"&gt;&lt;/a&gt;
+    &lt;/dt&gt;
+    &lt;dd class="<span class="im-class">dsure-list-dl-info-img</span>"&gt;&lt;/dd&gt;
+    
+    &lt;dt style="<span class="im-style">width:12%</span>"&gt;&lt;strong&gt;Name：&lt;/strong&gt;&lt;/dt&gt;
+    &lt;dd style="<span class="im-style">width:78%</span>"&gt;Luca Flores&lt;/dd&gt; 
+    
+    &lt;dt style="<span class="im-style">width:12%</span>"&gt;&lt;strong&gt;Age：&lt;/strong&gt;&lt;/dt&gt;
+    &lt;dd style="<span class="im-style">width:78%</span>"&gt;38&lt;/dd&gt;   
+    
+    &lt;dt style="<span class="im-style">width:12%</span>"&gt;&lt;strong&gt;Description：&lt;/strong&gt;&lt;/dt&gt;
+    &lt;dd style="<span class="im-style">width:78%</span>"&gt;There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.&lt;/dd&gt;       
+
+&lt;/dl&gt;    
+
+&lt;dl class="<span class="im-class">dsure-list-dl dsure-list-dl-info dsure-list-dl-fluid</span>" style="<span class="im-style">width:35%; padding-left:10%</span>"&gt; 
+
+    &lt;dt class="<span class="im-class">dsure-list-dl-info-img</span>"&gt;
+        &lt;a href="#"&gt;&lt;img width="80" height="120" src="css/images/335x260-3.jpg"&gt;&lt;/a&gt;
+    &lt;/dt&gt;
+    &lt;dd class="<span class="im-class">dsure-list-dl-info-img</span>"&gt;&lt;/dd&gt;
+    
+    &lt;dt style="<span class="im-style">width:12%</span>"&gt;&lt;strong&gt;Name：&lt;/strong&gt;&lt;/dt&gt;
+    &lt;dd style="<span class="im-style">width:78%</span>"&gt;Luca Flores&lt;/dd&gt; 
+    
+    &lt;dt style="<span class="im-style">width:12%</span>"&gt;&lt;strong&gt;Age：&lt;/strong&gt;&lt;/dt&gt;
+    &lt;dd style="<span class="im-style">width:78%</span>"&gt;38&lt;/dd&gt;   
+    
+    &lt;dt style="<span class="im-style">width:12%</span>"&gt;&lt;strong&gt;Description：&lt;/strong&gt;&lt;/dt&gt;
+    &lt;dd style="<span class="im-style">width:78%</span>"&gt;There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.&lt;/dd&gt;       
+
+&lt;/dl&gt;             
+            </pre>
+
+
+
+        </div><!--  /.codeBox -->  
+          
+          <!-- /////////////////   Content    End /////////////////// -->
+
+    
+
+        </div>
+
+         <footer>
+         
+            <hr>
+           
+            <p>This Product is released under a <a href="http://creativecommons.org/licenses/by-nc/3.0/deed.zh" target="_blank">Creative Commons Attribution 3.0</a> License. It only learning and exchange.</p>
+            <p>
+            &copy;2014 <a href="/d-s/Dsure">Dsure Front-end Development Framework</a> |  Author: <a href="/" target="_blank">没位道</a>
+         
+         <div style="display:none">
+                 <script id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+        <script>
+            if (typeof(LA) !== 'undefined') LA.init({id: "JdyfUJi3RdCZVi9F",ck: "JdyfUJi3RdCZVi9F"});
+        </script>
+         </div>
+           
+           
+      
+          
+            </p>
+             
+         </footer>
+
+     </section>
+     
+     
+
+     
+    
+    <script src="js/jquery.scroller.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/theme.hash.js"></script> <!-- After the main.js -->
+     
+  
+
+</body>
+</html>
+

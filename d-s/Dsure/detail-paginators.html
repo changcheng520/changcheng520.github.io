@@ -1,0 +1,437 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js ie ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js ie ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js ie ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js ie ie9"> <![endif]-->
+<!--[if !IE]><!--> <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js"> <!--<![endif]-->
+
+<head>
+    <meta name="viewport" content="width=device-width, user-scalable=yes" />
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
+    <meta charset="utf-8"/>
+    <title>Paginators | Dsure Front-end Development Framework</title>
+    <meta name="description" content="Improve the efficiency of CSS/HTML website based development and responsive layout.">
+
+    <!-- Jquery.min begin -->
+    <script src="js/jquery.min.js?1.7.1" ></script>
+    <!-- / Jquery.min end -->
+    
+    <!-- URL Hash Compatible(IE5+) begin -->
+    <script src="js/jquery.hashchange.js" ></script>
+	<script>
+		//hash
+		var turl = "";
+    </script> 
+
+    <!-- URL Hash Compatible(IE5+) end -->
+    
+    
+    <!-- Dsure  Development Framework  begin  -->
+    
+        <link rel="stylesheet" type="text/css" href="../../dsure/dsure.flat.css" />
+        <script src="../../dsure/dsure.modernizr.js"></script>
+        <!--[if lt IE 9]>  
+            <script src="../../dsure/dsure.respond.js"></script>  
+        <![endif]-->  
+    
+        <!--[if lt IE 7 ]>
+            <script src="../../dsure/dsure.png.js"></script>
+            <script>
+            DD_belatedPNG.fix('img, a, span, h1, h2, h3, em, section, header');
+            document.execCommand("BackgroundImageCache", false, true);
+            </script>
+        <![endif]-->
+
+    
+    <!-- /Dsure Development Framework  end   -->
+    
+
+    
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+
+    
+
+
+</head>
+<body>
+
+    <!--  loading  -->
+    <div id="loading"></div> 
+    <div id="back-top"><a href="#">Top</a></div>
+
+    <!--  menu  -->
+        <nav id="menu">
+            <div class="main-menu">
+        
+                <ul>
+                    <li class="web-title"><a href="/d-s/Dsure">Dsure</a></li>
+                    <li class="line"></li>
+                    <li class="active"><a href="/d-s/Dsure">Welcome Page</a></li>
+                    <li><a href="/d-s/Dsure/detail-base.html">Base Structure<b>*Required*</b></a></li>
+                    <li><a href="/d-s/Dsure/detail-base2.html">Base Stylesheets<b>*Common*</b></a></li>
+                    <li><a href="/d-s/Dsure/detail-text.html">Text</a></li>
+                    <li><a href="/d-s/Dsure/detail-buttons.html">Buttons</a></li>
+                    <li><a href="/d-s/Dsure/detail-forms.html">Forms</a></li>
+                    <li><a href="/d-s/Dsure/detail-tables.html">Tables</a></li>
+                    <li><a href="/d-s/Dsure/detail-grids.html">Grids</a></li>
+                    <li><a href="/d-s/Dsure/detail-layouts.html">Layouts</a></li>
+                    <li><a href="/d-s/Dsure/detail-icons.html">Icons</a></li>
+                    <li><a href="/d-s/Dsure/detail-img.html">Images</a></li>
+                    <li><a href="/d-s/Dsure/detail-line.html">Dividing Line</a></li>
+                    <li class="active"><a href="/d-s/Dsure/detail-paginators.html">Paginators</a></li>
+                    <li><a href="/d-s/Dsure/detail-navigation.html">Navigation</a></li>
+                    <li><a href="/d-s/Dsure/detail-classification.html">Classification</a></li>
+                    <li><a href="/d-s/Dsure/detail-striking.html">Striking</a></li>
+                    <li><a href="/d-s/Dsure/detail-search.html">Search Box</a></li> 
+                    <li><a href="/d-s/Dsure/detail-tags.html">Tags</a></li> 
+                   
+                </ul>
+
+                            
+            </div>
+           
+         </nav>
+         
+     <!--  /menu  -->
+     
+    
+     
+     <section id="content">
+         <div class="show">
+          
+          <!-- /////////////////   Content    Begin /////////////////// -->
+          
+          
+      <div class="dsure-title-nav dsure-no-hover dsure-bg-silver dsure-radius-small dsure-b-shadow f-i15">
+        <h1>Paginators</h1>
+      </div>
+
+      <div id="dir-nav" class="dir-nav dsure-no-hover dsure-bg-silver">
+          <a class="close" data-close="0" href="javascript:">×</a>
+          <div class="clear"></div>
+          <span class="t">Catalog</span>
+          <a href="javascript:" id="b-s1" onClick="navScrollTo('#s1');" >ul,li</a>
+          <a href="javascript:" id="b-s2" onClick="navScrollTo('#s2');" >a</a>
+          <a href="javascript:" id="b-s3" onClick="navScrollTo('#s3');" >custom</a>
+      </div>
+
+
+      <div class="clear"></div>
+      
+      <div class="codeBox">
+
+            <p class="dsure-tip dsure-tip-success">
+              <i class="dsure-icon dsure-icon-bulb"></i>Use any of the available classes of <strong>Base Stylesheets</strong> to quickly create a custom style. 
+            </p>
+
+      </div><!--  /.codeBox -->
+      
+      
+        <div class="codeBox d-class-area" id="s1">
+           
+           <h2>(1) &lt;li&gt;</h2>
+          
+            <div class="codeBox-content">
+            
+                 
+                   
+                    <ul class="dsure-page dsure-page-s1">
+                        <li class="prev"><a href="#">&#171;</a></li>
+                        <li><a href="#">7</a></li>
+                        <li><a href="#">8</a></li>
+                        <li><b>3</b></li>
+                        <li><a href="#">10</a></li>
+                        <li><a href="#">11</a></li>
+                        <li><a href="#">12</a></li>
+                        <li class="next"><a href="#">&#187;</a></li>
+                    </ul>
+                    
+                    <ul class="dsure-page dsure-page-s1">
+                        <li><a href="#" class="prev">Previous</a></li>
+                        <li><a href="#">233</a></li>
+                        <li><a href="#">234</a></li>
+                        <li><b>235</b></li>
+                        <li><a href="#">236</a></li>
+                        <li><a href="#"  class="next">Next</a></li>
+                    </ul>
+
+                    <ul class="dsure-page dsure-page-s2">
+                        <li><a class="prev" href="#">Previous</a></li>
+                        <li><a href="#">7</a></li>
+                        <li><a href="#">8</a></li>
+                        <li><b>9</b></li>
+                        <li><a href="#">10</a></li>
+                        <li><a href="#">11</a></li>
+                        <li><a href="#">12</a></li>
+                        <li><a class="next" href="#">Next</a></li>
+                    </ul>
+
+
+            </div><!--  /.codeBox-content -->
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML Code:</span>
+
+&lt;ul class="<span class="im-class">dsure-page dsure-page-s1</span>"&gt;
+    &lt;li class="<span class="im-class">prev</span>"&gt;&lt;a href="#"&gt;&amp;#171;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;7&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;8&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;b&gt;3&lt;/b&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;10&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;11&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;12&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="<span class="im-class">next</span>"&gt;&lt;a href="#"&gt;&amp;#187;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ul class="<span class="im-class">dsure-page dsure-page-s1</span>"&gt;
+    &lt;li&gt;&lt;a href="#" class="<span class="im-class">prev</span>"&gt;Previous&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;233&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;234&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;b&gt;235&lt;/b&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;236&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"  class="<span class="im-class">next</span>"&gt;Next&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ul class="<span class="im-class">dsure-page dsure-page-s2</span>"&gt;
+    &lt;li&gt;&lt;a class="<span class="im-class">prev</span>" href="#"&gt;Previous&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;7&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;8&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;b&gt;9&lt;/b&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;10&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;11&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;12&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a class="<span class="im-class">next</span>" href="#"&gt;Next&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+      
+            </pre>
+
+            <div class="codeBox-content">
+            
+                   
+                    <ul class="dsure-page dsure-page-nospace">
+                        <li class="prev"><a href="#">&#171;</a></li>
+                        <li><a href="#">7</a></li>
+                        <li><a href="#">8</a></li>
+                        <li><b>3</b></li>
+                        <li><a href="#">10</a></li>
+                        <li><a href="#">11</a></li>
+                        <li><a href="#">12</a></li>
+                        <li class="next"><a href="#">&#187;</a></li>
+                    </ul>
+  
+
+                 
+            </div><!--  /.codeBox-content -->
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML Code:</span>
+
+&lt;ul class="<span class="im-class">dsure-page dsure-page-nospace</span>"&gt;
+    &lt;li class="<span class="im-class">prev</span>"&gt;&lt;a href="#"&gt;&amp;#171;&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;7&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;8&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;b&gt;3&lt;/b&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;10&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;11&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;12&lt;/a&gt;&lt;/li&gt;
+    &lt;li class="<span class="im-class">next</span>"&gt;&lt;a href="#"&gt;&amp;#187;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+      
+            </pre>
+
+
+        </div><!--  /.codeBox -->
+      
+        <div class="codeBox d-class-area" id="s2">
+           
+           <h2>(2) &lt;a&gt;</h2>
+          
+            <div class="codeBox-content">
+            
+                   
+                    <div class="dsure-page dsure-page-a dsure-page-s1">
+                        <a class="prev" href="#">&#171;</a>
+                        <a href="#">7</a>
+                        <a href="#">8</a>
+                        <b>3</b>
+                        <a href="#">10</a>
+                        <a href="#">11</a>
+                        <a href="#">12</a>
+                        <a class="next" href="#">&#187;</a>
+                    </div>
+                    
+                    <div class="dsure-page dsure-page-a dsure-page-s2">
+                        <a class="prev" href="#">Previous</a>
+                        <a href="#">223</a>
+                        <b>224</b>
+                        <a href="#">225</a>
+                        <a href="#">226</a>
+                        <a class="next" href="#">Next</a>
+                    </div>
+
+            </div><!--  /.codeBox-content -->
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML Code:</span>
+
+&lt;div class="<span class="im-class">dsure-page dsure-page-a dsure-page-s1</span>"&gt;
+    &lt;a class="<span class="im-class">prev</span>" href="#"&gt;&amp;#171;&lt;/a&gt;
+    &lt;a href="#"&gt;7&lt;/a&gt;
+    &lt;a href="#"&gt;8&lt;/a&gt;
+    &lt;b&gt;3&lt;/b&gt;
+    &lt;a href="#"&gt;10&lt;/a&gt;
+    &lt;a href="#"&gt;11&lt;/a&gt;
+    &lt;a href="#"&gt;12&lt;/a&gt;
+    &lt;a class="<span class="im-class">next</span>" href="#"&gt;&amp;#187;&lt;/a&gt;
+&lt;/div&gt;
+
+&lt;div class="<span class="im-class">dsure-page dsure-page-a dsure-page-s2</span>"&gt;
+    &lt;a class="<span class="im-class">prev</span>" href="#"&gt;Previous&lt;/a&gt;
+    &lt;a href="#"&gt;223&lt;/a&gt;
+    &lt;b&gt;224&lt;/b&gt;
+    &lt;a href="#"&gt;225&lt;/a&gt;
+    &lt;a href="#"&gt;226&lt;/a&gt;
+    &lt;a class="<span class="im-class">next</span>" href="#"&gt;Next&lt;/a&gt;
+&lt;/div&gt;
+
+
+
+            </pre>
+
+            <div class="codeBox-content">
+            
+              
+                    <div class="dsure-page dsure-page-a dsure-page-nospace">
+                        <a class="prev" href="#">&#171;</a>
+                        <a href="#">7</a>
+                        <a href="#">8</a>
+                        <b>3</b>
+                        <a href="#">10</a>
+                        <a href="#">11</a>
+                        <a href="#">12</a>
+                        <a class="next" href="#">&#187;</a>
+                    </div>
+
+                 
+            </div><!--  /.codeBox-content -->
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML Code:</span>
+
+&lt;div class="<span class="im-class">dsure-page dsure-page-a dsure-page-nospace</span>"&gt;
+    &lt;a class="<span class="im-class">prev</span>" href="#"&gt;&amp;#171;&lt;/a&gt;
+    &lt;a href="#"&gt;7&lt;/a&gt;
+    &lt;a href="#"&gt;8&lt;/a&gt;
+    &lt;b&gt;3&lt;/b&gt;
+    &lt;a href="#"&gt;10&lt;/a&gt;
+    &lt;a href="#"&gt;11&lt;/a&gt;
+    &lt;a href="#"&gt;12&lt;/a&gt;
+    &lt;a class="<span class="im-class">next</span>" href="#"&gt;&amp;#187;&lt;/a&gt;
+&lt;/div&gt;
+      
+            </pre>
+
+
+        </div><!--  /.codeBox -->
+
+
+
+        <div class="codeBox d-class-area" id="s3">
+           
+           <h2>(3) Custom Stylesheets</h2>
+
+            <pre> 
+<span class="bl dsure-bg-black html dsure-radius-small">CSS Code:</span>      
+            
+
+.dsure-page a,
+.dsure-page b{
+	padding:.4em .6em;/*This is the minimum value.*/
+}
+
+.dsure-page.dsure-page-a a,.dsure-page.dsure-page-a b{
+	padding:.4em .6em;/*This is the minimum value.*/
+}
+.dsure-page a:hover{
+	text-decoration:none;	
+}
+.dsure-page .prev a,
+.dsure-page .next a,
+.dsure-page a.prev,
+.dsure-page a.next {
+	
+}
+
+
+.dsure-page a:focus,
+.dsure-page a:active,
+.dsure-page b{
+	border:1px solid #BFBFBF; 
+	font-weight:bold; 
+	background:#d7d7d7;
+	-mo-z-box-shadow:0 1px 5px #b2b2b2 inset,0px 1px 1px #fff;
+	-web-kit-box-shadow:0 1px 5px #b2b2b2 inset,0px 1px 1px #fff;
+	box-shadow:0 2px 2px #b8b8b8 inset,0px 1px 1px #fff;
+}
+
+.dsure-page.dsure-page-nospace a{
+	background:#EBEBEB;
+}
+.dsure-page.dsure-page-nospace a:hover{
+	background:#F7F7F7;
+	border:none
+}
+.dsure-page.dsure-page-nospace a:focus,
+.dsure-page.dsure-page-nospace a:active,
+.dsure-page.dsure-page-nospace b{
+	border:none
+}
+      </pre>
+
+
+
+        </div><!--  /.codeBox -->   
+          
+          <!-- /////////////////   Content    End /////////////////// -->
+
+    
+
+        </div>
+
+         <footer>
+         
+            <hr>
+           
+            <p>This Product is released under a <a href="http://creativecommons.org/licenses/by-nc/3.0/deed.zh" target="_blank">Creative Commons Attribution 3.0</a> License. It only learning and exchange.</p>
+            <p>
+            &copy;2014 <a href="/d-s/Dsure">Dsure Front-end Development Framework</a> |  Author: <a href="/" target="_blank">没位道</a>
+         
+         <div style="display:none">
+                 <script id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+        <script>
+            if (typeof(LA) !== 'undefined') LA.init({id: "JdyfUJi3RdCZVi9F",ck: "JdyfUJi3RdCZVi9F"});
+        </script>
+         </div>
+           
+           
+      
+          
+            </p>
+             
+         </footer>
+
+     </section>
+     
+     
+
+     
+    
+    <script src="js/jquery.scroller.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/theme.hash.js"></script> <!-- After the main.js -->
+     
+  
+
+</body>
+</html>
+

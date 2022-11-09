@@ -1,0 +1,460 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js ie ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js ie ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js ie ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js ie ie9"> <![endif]-->
+<!--[if !IE]><!--> <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js"> <!--<![endif]-->
+
+<head>
+    <meta name="viewport" content="width=device-width, user-scalable=yes" />
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
+    <meta charset="utf-8"/>
+    <title>Navigation | Dsure Front-end Development Framework</title>
+    <meta name="description" content="Improve the efficiency of CSS/HTML website based development and responsive layout.">
+
+    <!-- Jquery.min begin -->
+    <script src="js/jquery.min.js?1.7.1" ></script>
+    <!-- / Jquery.min end -->
+    
+    <!-- URL Hash Compatible(IE5+) begin -->
+    <script src="js/jquery.hashchange.js" ></script>
+	<script>
+		//hash
+		var turl = "";
+    </script> 
+
+    <!-- URL Hash Compatible(IE5+) end -->
+    
+    
+    <!-- Dsure  Development Framework  begin  -->
+    
+        <link rel="stylesheet" type="text/css" href="../../dsure/dsure.flat.css" />
+        <script src="../../dsure/dsure.modernizr.js"></script>
+        <!--[if lt IE 9]>  
+            <script src="../../dsure/dsure.respond.js"></script>  
+        <![endif]-->  
+    
+        <!--[if lt IE 7 ]>
+            <script src="../../dsure/dsure.png.js"></script>
+            <script>
+            DD_belatedPNG.fix('img, a, span, h1, h2, h3, em, section, header');
+            document.execCommand("BackgroundImageCache", false, true);
+            </script>
+        <![endif]-->
+
+    
+    <!-- /Dsure Development Framework  end   -->
+    
+
+    
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+
+    
+
+
+</head>
+<body>
+
+    <!--  loading  -->
+    <div id="loading"></div> 
+    <div id="back-top"><a href="#">Top</a></div>
+
+    <!--  menu  -->
+        <nav id="menu">
+            <div class="main-menu">
+        
+                <ul>
+                    <li class="web-title"><a href="/d-s/Dsure">Dsure</a></li>
+                    <li class="line"></li>
+                    <li><a href="/d-s/Dsure">Welcome Page</a></li>
+                    <li><a href="/d-s/Dsure/detail-base.html">Base Structure<b>*Required*</b></a></li>
+                    <li><a href="/d-s/Dsure/detail-base2.html">Base Stylesheets<b>*Common*</b></a></li>
+                    <li><a href="/d-s/Dsure/detail-text.html">Text</a></li>
+                    <li><a href="/d-s/Dsure/detail-buttons.html">Buttons</a></li>
+                    <li><a href="/d-s/Dsure/detail-forms.html">Forms</a></li>
+                    <li><a href="/d-s/Dsure/detail-tables.html">Tables</a></li>
+                    <li><a href="/d-s/Dsure/detail-grids.html">Grids</a></li>
+                    <li><a href="/d-s/Dsure/detail-layouts.html">Layouts</a></li>
+                    <li><a href="/d-s/Dsure/detail-icons.html">Icons</a></li>
+                    <li><a href="/d-s/Dsure/detail-img.html">Images</a></li>
+                    <li><a href="/d-s/Dsure/detail-line.html">Dividing Line</a></li>
+                    <li><a href="/d-s/Dsure/detail-paginators.html">Paginators</a></li>
+                    <li class="active"><a href="/d-s/Dsure/detail-navigation.html">Navigation</a></li>
+                    <li><a href="/d-s/Dsure/detail-classification.html">Classification</a></li>
+                    <li><a href="/d-s/Dsure/detail-striking.html">Striking</a></li>
+                    <li><a href="/d-s/Dsure/detail-search.html">Search Box</a></li> 
+                    <li><a href="/d-s/Dsure/detail-tags.html">Tags</a></li> 
+                   
+                </ul>
+
+                            
+            </div>
+           
+         </nav>
+         
+     <!--  /menu  -->
+     
+    
+     
+     <section id="content">
+         <div class="show">
+          
+          <!-- /////////////////   Content    Begin /////////////////// -->
+          
+
+      <div class="dsure-title-nav dsure-no-hover dsure-bg-silver dsure-radius-small dsure-b-shadow f-i15">
+        <h1>Navigation</h1>
+      </div>
+
+      <div id="dir-nav" class="dir-nav dsure-no-hover dsure-bg-silver">
+          <a class="close" data-close="0" href="javascript:">×</a>
+          <div class="clear"></div>
+          <span class="t">Catalog</span>
+          <a href="javascript:" id="b-s1" onClick="navScrollTo('#s1');" >Horizontal</a>
+          <a href="javascript:" id="b-s2" onClick="navScrollTo('#s2');" >Vertical</a>
+          <a href="javascript:" id="b-s3" onClick="navScrollTo('#s3');" >Custom</a>
+          <a href="javascript:" id="b-s4" onClick="navScrollTo('#s4');" >Breadcrumbs</a>
+      </div>
+
+
+      <div class="clear"></div>
+      
+      <div class="codeBox">
+
+            <p class="dsure-tip">
+              <i class="dsure-icon dsure-icon-bulb"></i> Responsive Support.
+            </p>
+
+            <p class="dsure-tip dsure-tip-success">
+              <i class="dsure-icon dsure-icon-bulb"></i>Use any of the available classes of <strong>Base Stylesheets</strong> to quickly create a custom style. 
+              
+            </p>
+
+                   
+
+      </div><!--  /.codeBox -->
+      
+      
+        <div class="codeBox d-class-area" id="s1">
+           
+           <h2>(1) Horizontal</h2>
+          
+            <div class="codeBox-content">
+
+      
+                    <nav class="dsure-nav" style="height:200px">
+                        <ul class="nav">
+                            
+                            <li class="item"><a href="#" >Menu</a></li>
+                            <li class="item"><a href="#">Menu</a></li>
+                            
+                            <li class="item"><a href="#">Menu</a></li>
+                            
+                            <li class="item navSelected"><a href="#">Level menu</a> 
+                                <ul class="sub" style="display:block">
+                                    <li class="sub-item"><a href="#">Menu</a></li>
+                                    <li class="sub-item"><a href="#">Menu</a></li>
+                                    <li class="sub-item"><a href="#">Menu text</a></li>
+                                    <li class="sub-item"><a href="#">Menu text effects</a></li>
+                                </ul>
+                            </li>
+                            
+                            <li class="item"><a href="#">Hierarchical  menu</a> </li>
+                            <li class="item"><a href="#">Hierarchical  menu</a></li>
+                            
+                        </ul>
+                    </nav>
+                    
+                    
+
+            </div><!--  /.codeBox-content -->
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML Code:</span>
+
+&lt;nav class="<span class="im-class">dsure-nav</span>"&gt;
+    &lt;ul class="<span class="im-class">nav</span>"&gt;
+        
+        &lt;li class="<span class="im-class">item</span>"&gt;&lt;a href="#" &gt;Menu&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="<span class="im-class">item</span>"&gt;&lt;a href="#"&gt;Menu&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="<span class="im-class">item</span>"&gt;&lt;a href="#"&gt;Menu&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="<span class="im-class">item navSelected</span>"&gt;&lt;a href="#"&gt;Level menu&lt;/a&gt; 
+            &lt;ul class="<span class="im-class">sub</span>"&gt;
+                &lt;li class="<span class="im-class">sub-item</span>"&gt;&lt;a href="#"&gt;Menu&lt;/a&gt;&lt;/li&gt;
+                &lt;li class="<span class="im-class">sub-item</span>"&gt;&lt;a href="#"&gt;Menu&lt;/a&gt;&lt;/li&gt;
+                &lt;li class="<span class="im-class">sub-item</span>"&gt;&lt;a href="#"&gt;Menu text&lt;/a&gt;&lt;/li&gt;
+                &lt;li class="<span class="im-class">sub-item</span>"&gt;&lt;a href="#"&gt;Menu text effects&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;
+        
+        &lt;li class="<span class="im-class">item</span>"&gt;&lt;a href="#"&gt;Hierarchical  menu&lt;/a&gt; &lt;/li&gt;
+        &lt;li class="<span class="im-class">item</span>"&gt;&lt;a href="#"&gt;Hierarchical  menu&lt;/a&gt;&lt;/li&gt;
+        
+    &lt;/ul&gt;
+&lt;/nav&gt;
+            </pre>
+
+
+
+        </div><!--  /.codeBox -->
+      
+        <div class="codeBox d-class-area" id="s2">
+           
+           <h2>(2) Vertical</h2>
+          
+            <div class="codeBox-content">
+            
+                    <nav class="dsure-nav dsure-nav-vertical" style="height:250px; width:200px">
+                        <ul class="nav">
+                            
+                            <li class="item"><a href="#" >Menu</a></li>
+                            <li class="item"><a href="#">Menu</a></li>
+                            
+                            <li class="item"><a href="#">Menu</a></li>
+                            
+                            <li class="item navSelected"><a href="#">Level menu</a> 
+                                <ul class="sub" style="display:block">
+                                    <li class="sub-item"><a href="#">Menu</a></li>
+                                    <li class="sub-item"><a href="#">Menu</a></li>
+                                    <li class="sub-item"><a href="#">Menu text</a></li>
+                                    <li class="sub-item"><a href="#">Menu text effects</a></li>
+                                </ul>
+                            </li>
+                            
+                            <li class="item"><a href="#">Hierarchical  menu</a> </li>
+                            <li class="item"><a href="#">Hierarchical  menu</a></li>
+                            
+                        </ul>
+                    </nav>
+
+            </div><!--  /.codeBox-content -->
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML Code:</span>
+
+&lt;nav class="<span class="im-class">dsure-nav dsure-nav-vertical</span>" style="<span class="im-style">width:200px</span>"&gt;
+    &lt;ul class="<span class="im-class">nav</span>"&gt;
+        
+        &lt;li class="<span class="im-class">item</span>"&gt;&lt;a href="#" &gt;Menu&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="<span class="im-class">item</span>"&gt;&lt;a href="#"&gt;Menu&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="<span class="im-class">item</span>"&gt;&lt;a href="#"&gt;Menu&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="<span class="im-class">item navSelected</span>"&gt;&lt;a href="#"&gt;Level menu&lt;/a&gt; 
+            &lt;ul class="<span class="im-class">sub</span>"&gt;
+                &lt;li class="<span class="im-class">sub-item</span>"&gt;&lt;a href="#"&gt;Menu&lt;/a&gt;&lt;/li&gt;
+                &lt;li class="<span class="im-class">sub-item</span>"&gt;&lt;a href="#"&gt;Menu&lt;/a&gt;&lt;/li&gt;
+                &lt;li class="<span class="im-class">sub-item</span>"&gt;&lt;a href="#"&gt;Menu text&lt;/a&gt;&lt;/li&gt;
+                &lt;li class="<span class="im-class">sub-item</span>"&gt;&lt;a href="#"&gt;Menu text effects&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;
+        
+        &lt;li class="<span class="im-class">item</span>"&gt;&lt;a href="#"&gt;Hierarchical  menu&lt;/a&gt; &lt;/li&gt;
+        &lt;li class="<span class="im-class">item</span>"&gt;&lt;a href="#"&gt;Hierarchical  menu&lt;/a&gt;&lt;/li&gt;
+        
+    &lt;/ul&gt;
+&lt;/nav&gt;
+            </pre>
+
+        
+
+
+        </div><!--  /.codeBox -->
+
+
+        <div class="codeBox d-class-area" id="s3">
+           
+           <h2>(3) Custom Stylesheets</h2>
+       
+            
+            <pre> 
+<span class="bl dsure-bg-black html dsure-radius-small">CSS Code:</span>      
+.dsure-nav ul.nav li.item{
+	
+}
+.dsure-nav ul.nav li.item a {
+	padding:.4em .6em;/*This is the minimum value.*/
+}
+.dsure-nav ul.nav li.item a:hover,
+.dsure-nav ul.nav li.item.navSelected a,
+.dsure-nav ul.nav li.item.navSelected ul a:hover {
+	background:#EAEAEA;
+	text-decoration:none
+}
+
+/*Sub navigation*/
+.dsure-nav ul.nav ul {
+	position:absolute;
+	z-index:105;
+	display:none;
+	border:1px solid #EAEAEA;
+}
+.dsure-nav ul.nav ul li.sub-item a {
+	padding:.4em .6em;/*This is the minimum value.*/
+	text-align:left;
+	border:none;
+	font-weight:normal;
+}
+.dsure-nav ul.nav ul li.sub-item a:hover {
+	
+}
+
+.dsure-nav.dsure-nav-vertical ul.nav ul{ 
+    margin-left:100%; 
+    top:0;
+}
+
+
+@media only screen and (min-width: 480px) and (max-width: 767px){
+	
+
+    /*------Init width:470px------*/
+    
+    /*navigation*/
+    .dsure-nav ul.nav li.item a {
+        background:#272727; 
+        color:#9D9D9D; 
+        border-bottom:1px solid #484848;
+    }
+    .dsure-nav ul.nav li.item a:hover,
+    .dsure-nav ul.nav li.item.navSelected a,
+    .dsure-nav ul.nav li.item.navSelected ul a:hover{
+        background:#272727; 
+        color:#fff; 
+    }
+    .dsure-nav ul.nav li.item a{
+        color:#9D9D9D
+    }
+
+	
+}
+
+
+
+@media only screen and (max-width: 479px){
+	
+    /*------Init width:320px------*/
+    
+    /*navigation*/
+    .dsure-nav ul.nav li.item a {
+        background:#272727; 
+        color:#9D9D9D; 
+        border-bottom:1px solid #484848;
+    }
+    .dsure-nav ul.nav li.item a:hover,
+    .dsure-nav ul.nav li.item.navSelected a,
+    .dsure-nav ul.nav li.item.navSelected ul a:hover{
+        background:#272727; 
+        color:#fff; 
+    }
+    .dsure-nav ul.nav li.item a{
+        color:#9D9D9D
+    }
+    
+	
+}
+
+ 
+            </pre>
+
+
+        </div><!--  /.codeBox -->
+
+
+
+        <div class="codeBox d-class-area" id="s4">
+           
+           <h2>(4) Breadcrumbs</h2>
+
+            <div class="dsure-title-nav dsure-no-hover dsure-bg-silver dsure-radius-small dsure-b-shadow f-i10 ma-t20">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            </div>
+            
+            <div class="dsure-title-nav dsure-no-hover dsure-bg-black dsure-radius-big noborder f-c-white f-i20 ma-t20">
+               <span class="f-c-white">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+            </div>
+            
+            <div class="dsure-title-nav dsure-no-hover dsure-bg-blue f-i15 f20 f-c-white  ma-t20">
+               <span class="f-c-white">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+            </div>
+            
+            <div class="dsure-title-nav dsure-no-hover dsure-bg-silver dsure-b-shadow2 f-i10 f-f-yahei ma20">
+               Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            </div>        
+            
+            <div class="dsure-title-nav dsure-no-hover dsure-bg-silver f-i20 pa-t20 pa-b20 ma-t20">
+               Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            </div>                
+            
+            
+            
+            <pre> 
+<span class="bl dsure-bg-black html dsure-radius-small">HTML Code:</span>      
+
+&lt;div class="<span class="im-class">dsure-title-nav dsure-no-hover dsure-bg-silver dsure-radius-small dsure-b-shadow f-i10</span>"&gt;
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+&lt;/div&gt;
+
+&lt;div class="<span class="im-class">dsure-title-nav dsure-no-hover dsure-bg-black dsure-radius-big noborder f-c-white f-i20</span>"&gt;
+   Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+&lt;/div&gt;
+
+&lt;div class="<span class="im-class">dsure-title-nav dsure-no-hover dsure-bg-blue f-i15 f20 f-c-white</span>"&gt;
+   Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+&lt;/div&gt;
+
+&lt;div class="<span class="im-class">dsure-title-nav dsure-no-hover dsure-bg-silver dsure-b-shadow2 f-i10 f-f-yahei ma20</span>"&gt;
+   Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+&lt;/div&gt;        
+
+&lt;div class="<span class="im-class">dsure-title-nav dsure-no-hover dsure-bg-silver f-i20 pa-t20 pa-b20</span>"&gt;
+   Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+&lt;/div&gt;           
+            </pre>
+
+
+        </div><!--  /.codeBox -->
+  
+          
+          
+          <!-- /////////////////   Content    End /////////////////// -->
+
+    
+
+        </div>
+
+         <footer>
+         
+            <hr>
+           
+            <p>This Product is released under a <a href="http://creativecommons.org/licenses/by-nc/3.0/deed.zh" target="_blank">Creative Commons Attribution 3.0</a> License. It only learning and exchange.</p>
+            <p>
+            &copy;2014 <a href="/d-s/Dsure">Dsure Front-end Development Framework</a> |  Author: <a href="/" target="_blank">没位道</a>
+         
+         <div style="display:none">
+                 <script id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+        <script>
+            if (typeof(LA) !== 'undefined') LA.init({id: "JdyfUJi3RdCZVi9F",ck: "JdyfUJi3RdCZVi9F"});
+        </script>
+         </div>
+           
+           
+      
+          
+            </p>
+             
+         </footer>
+
+     </section>
+     
+     
+
+     
+    
+    <script src="js/jquery.scroller.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/theme.hash.js"></script> <!-- After the main.js -->
+     
+  
+
+</body>
+</html>
+

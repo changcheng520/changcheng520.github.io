@@ -1,0 +1,533 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js ie ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js ie ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js ie ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js ie ie9"> <![endif]-->
+<!--[if !IE]><!--> <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js"> <!--<![endif]-->
+
+<head>
+    <meta name="viewport" content="width=device-width, user-scalable=yes" />
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
+    <meta charset="utf-8"/>
+    <title>Text | Dsure Front-end Development Framework</title>
+    <meta name="description" content="Improve the efficiency of CSS/HTML website based development and responsive layout.">
+
+    <!-- Jquery.min begin -->
+    <script src="js/jquery.min.js?1.7.1" ></script>
+    <!-- / Jquery.min end -->
+    
+    <!-- URL Hash Compatible(IE5+) begin -->
+    <script src="js/jquery.hashchange.js" ></script>
+	<script>
+		//hash
+		var turl = "";
+    </script> 
+
+    <!-- URL Hash Compatible(IE5+) end -->
+    
+    
+    <!-- Dsure  Development Framework  begin  -->
+    
+        <link rel="stylesheet" type="text/css" href="../../dsure/dsure.flat.css" />
+        <script src="../../dsure/dsure.modernizr.js"></script>
+        <!--[if lt IE 9]>  
+            <script src="../../dsure/dsure.respond.js"></script>  
+        <![endif]-->  
+    
+        <!--[if lt IE 7 ]>
+            <script src="../../dsure/dsure.png.js"></script>
+            <script>
+            DD_belatedPNG.fix('img, a, span, h1, h2, h3, em, section, header');
+            document.execCommand("BackgroundImageCache", false, true);
+            </script>
+        <![endif]-->
+
+    
+    <!-- /Dsure Development Framework  end   -->
+    
+
+    
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+
+    
+
+
+</head>
+<body>
+
+    <!--  loading  -->
+    <div id="loading"></div> 
+    <div id="back-top"><a href="#">Top</a></div>
+
+    <!--  menu  -->
+        <nav id="menu">
+            <div class="main-menu">
+        
+                <ul>
+                    <li class="web-title"><a href="/d-s/Dsure">Dsure</a></li>
+                    <li class="line"></li>
+                    <li><a href="/d-s/Dsure">Welcome Page</a></li>
+                    <li><a href="/d-s/Dsure/detail-base.html">Base Structure<b>*Required*</b></a></li>
+                    <li><a href="/d-s/Dsure/detail-base2.html">Base Stylesheets<b>*Common*</b></a></li>
+                    <li class="active"><a href="/d-s/Dsure/detail-text.html">Text</a></li>
+                    <li><a href="/d-s/Dsure/detail-buttons.html">Buttons</a></li>
+                    <li><a href="/d-s/Dsure/detail-forms.html">Forms</a></li>
+                    <li><a href="/d-s/Dsure/detail-tables.html">Tables</a></li>
+                    <li><a href="/d-s/Dsure/detail-grids.html">Grids</a></li>
+                    <li><a href="/d-s/Dsure/detail-layouts.html">Layouts</a></li>
+                    <li><a href="/d-s/Dsure/detail-icons.html">Icons</a></li>
+                    <li><a href="/d-s/Dsure/detail-img.html">Images</a></li>
+                    <li><a href="/d-s/Dsure/detail-line.html">Dividing Line</a></li>
+                    <li><a href="/d-s/Dsure/detail-paginators.html">Paginators</a></li>
+                    <li><a href="/d-s/Dsure/detail-navigation.html">Navigation</a></li>
+                    <li><a href="/d-s/Dsure/detail-classification.html">Classification</a></li>
+                    <li><a href="/d-s/Dsure/detail-striking.html">Striking</a></li>
+                    <li><a href="/d-s/Dsure/detail-search.html">Search Box</a></li> 
+                    <li><a href="/d-s/Dsure/detail-tags.html">Tags</a></li> 
+                   
+                </ul>
+
+                            
+            </div>
+           
+         </nav>
+         
+     <!--  /menu  -->
+     
+    
+     
+     <section id="content">
+         <div class="show">
+     
+          
+          <!-- /////////////////   Content    Begin /////////////////// -->
+          
+
+			  <div class="dsure-title-nav dsure-no-hover dsure-bg-silver dsure-radius-small dsure-b-shadow f-i15">
+				<h1>Text</h1>
+			  </div>
+
+			  <div id="dir-nav" class="dir-nav dsure-no-hover dsure-bg-silver">
+				  <a class="close" data-close="0" href="javascript:">×</a>
+				  <div class="clear"></div>
+				  <span class="t">Catalog</span>
+				  <a href="javascript:" id="b-s1" onClick="navScrollTo('#s1');" >Paragraph</a>
+				  <a href="javascript:" id="b-s2" onClick="navScrollTo('#s2');" >Quote</a>
+				  <a href="javascript:" id="b-s3" onClick="navScrollTo('#s3');" >Heading</a>
+				  <a href="javascript:" id="b-s4" onClick="navScrollTo('#s4');" >Address</a>
+				  <a href="javascript:" id="b-s5" onClick="navScrollTo('#s5');" >Figure</a>
+				  <a href="javascript:" id="b-s6" onClick="navScrollTo('#s6');" >HGroup</a>
+				  <a href="javascript:" id="b-s7" onClick="navScrollTo('#s7');" >Date</a>
+				  <a href="javascript:" id="b-s8" onClick="navScrollTo('#s8');" >Typography</a>
+
+			  </div>
+
+
+			  <div class="clear"></div>
+
+			  <div class="codeBox">
+
+					<p class="dsure-tip dsure-tip-success">
+					  <i class="dsure-icon dsure-icon-bulb"></i>Use any of the available classes of <strong>Base Stylesheets</strong> to quickly create a custom style. 
+
+					</p>
+
+
+
+			  </div><!--  /.codeBox -->
+
+
+				<div class="codeBox d-class-area" id="s1">
+
+				   <h2>(1) Paragraph</h2>
+
+					<div class="codeBox-content">
+
+						   <h3><i class="dsure-icon dsure-icon-file"></i> Font sizes at 14 pixels by default </h3>
+
+						   <div class="dsure-p-article">
+
+								<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+								<p> It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+								<p>
+							   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+								</p>
+
+
+						  </div>
+
+						  <h3><i class="dsure-icon dsure-icon-file"></i>  Font sizes at 12 pixels</h3>
+
+						   <div class="dsure-p-article f12">
+
+								<p> It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+								<p>
+								Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+								</p>
+
+						  </div>  
+
+
+						  <h3><i class="dsure-icon dsure-icon-file"></i>  Font sizes at 16 pixels</h3>
+
+						   <div class="dsure-p-article f16">
+
+
+								<p>
+								Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+								</p>
+
+						  </div>  
+
+
+
+					</div><!--  /.codeBox-content -->
+
+					<pre> 
+		<span class="bl html dsure-radius-small">HTML Code:</span>
+
+		&lt;div class="<span class="im-class">dsure-p-article</span>"&gt;
+
+			&lt;p&gt;Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/p&gt;
+
+			&lt;p&gt; It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/p&gt;
+
+			&lt;p&gt;
+		   Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+			&lt;/p&gt;
+
+		&lt;/div&gt;
+
+
+		&lt;div class="<span class="im-class">dsure-p-article f12</span>"&gt;
+
+			&lt;p&gt;It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.&lt;/p&gt;
+
+			&lt;p&gt;
+			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+			&lt;/p&gt;
+
+		&lt;/div&gt;  
+
+		&lt;div class="<span class="im-class">dsure-p-article f16</span>"&gt;
+
+			&lt;p&gt;
+			Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+			&lt;/p&gt;
+
+		&lt;/div&gt;  
+
+
+
+					</pre>
+
+
+
+				</div><!--  /.codeBox -->
+
+
+
+				<div class="codeBox d-class-area" id="s2">
+
+				   <h2>(2) Quote</h2>
+
+					<div class="codeBox-content">
+
+
+							<p>Lorem Ipsum is simply dummy：</p>
+							<blockquote cite="http://www.website.org">
+								“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.”。
+								<small>From <cite>UIUX Lab</cite></small>
+							</blockquote>
+
+
+					</div><!--  /.codeBox-content -->
+
+					<pre> 
+		<span class="bl html dsure-radius-small">HTML Code:</span>
+
+		&lt;p&gt;Lorem Ipsum is simply dummy：&lt;/p&gt;
+		&lt;blockquote cite="http://www.website.org"&gt;
+			“Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.”。
+			&lt;small&gt;From &lt;cite&gt;UIUX Lab&lt;/cite&gt;&lt;/small&gt;
+		&lt;/blockquote&gt;
+					</pre>
+
+
+
+				</div><!--  /.codeBox -->
+
+				<div class="codeBox d-class-area" id="s3">
+
+				   <h2>(3) Heading</h2>
+
+					<div class="codeBox-content">
+
+
+							<h1 class="demo-tcolor">Heading</h1>
+							<h2 class="demo-tcolor">Heading</h2>
+							<h3 class="demo-tcolor">Heading</h3>
+							<h4 class="demo-tcolor">Heading</h4>
+							<h5 class="demo-tcolor">Heading</h5>
+							<h6 class="demo-tcolor">Heading</h6>
+
+
+					</div><!--  /.codeBox-content -->
+
+					<pre> 
+		<span class="bl html dsure-radius-small">HTML Code:</span>
+
+		&lt;h1&gt;Heading&lt;/h1&gt;
+		&lt;h2&gt;Heading&lt;/h2&gt;
+		&lt;h3&gt;Heading&lt;/h3&gt;
+		&lt;h4&gt;Heading&lt;/h4&gt;
+		&lt;h5&gt;Heading&lt;/h5&gt;
+		&lt;h6&gt;Heading&lt;/h6&gt;
+					</pre>
+
+
+
+				</div><!--  /.codeBox -->
+
+
+				<div class="codeBox d-class-area" id="s4">
+
+				   <h2>(4) Address</h2>
+
+					<div class="codeBox-content">
+
+
+
+							<address>
+							  <strong>Name</strong><br>
+							  Mr S Tan 200 Broadway Av WEST BEACH SA 5024 AUSTRALIA<br>
+							  BG 94107<br>
+							  <abbr title="Phone">Phone:</abbr> 123 456 7890
+							</address>
+
+							<address>
+							  <strong>Email</strong><br>
+							  <a href="mailto:#">your@email.com</a>
+							</address>
+
+
+
+					</div><!--  /.codeBox-content -->
+
+					<pre> 
+		<span class="bl html dsure-radius-small">HTML Code:</span>
+
+		&lt;address&gt;
+		  &lt;strong&gt;Name&lt;/strong&gt;&lt;br&gt;
+		  Mr S Tan 200 Broadway Av WEST BEACH SA 5024 AUSTRALIA&lt;br&gt;
+		  BG 94107&lt;br&gt;
+		  &lt;abbr title="Phone"&gt;Phone:&lt;/abbr&gt; 123 456 7890
+		&lt;/address&gt;
+
+		&lt;address&gt;
+		  &lt;strong&gt;Email&lt;/strong&gt;&lt;br&gt;
+		  &lt;a href="mailto:#"&gt;your@email.com&lt;/a&gt;
+		&lt;/address&gt;
+					</pre>
+
+
+
+				</div><!--  /.codeBox -->
+
+
+
+				<div class="codeBox d-class-area" id="s5">
+
+				   <h2>(5) Figure</h2>
+
+					<div class="codeBox-content">
+
+
+
+							<figure>
+								<img src="css/images/335x260-2.jpg" width="150">
+								<figcaption>
+									Heading and Description
+								</figcaption>
+							</figure>
+
+
+
+					</div><!--  /.codeBox-content -->
+
+					<pre> 
+		<span class="bl html dsure-radius-small">HTML Code:</span>
+
+		&lt;figure&gt;
+			&lt;img src="css/images/335x260-2.jpg" width="150"&gt;
+			&lt;figcaption&gt;
+				Heading and Description
+			&lt;/figcaption&gt;
+		&lt;/figure&gt;
+					</pre>
+
+
+
+				</div><!--  /.codeBox -->
+
+
+				<div class="codeBox d-class-area" id="s6">
+
+				   <h2>(6) HGroup</h2>
+
+					<div class="codeBox-content">
+
+
+							<hgroup>
+							  <h1 class="demo-tcolor">Site Title</h1>
+							  <h2 class="demo-tcolor">It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</h2>
+							</hgroup>
+
+							<p>Content....</p>
+
+
+
+					</div><!--  /.codeBox-content -->
+
+					<pre> 
+		<span class="bl html dsure-radius-small">HTML Code:</span>
+
+		&lt;hgroup&gt;
+		  &lt;h1&gt;Site Title&lt;/h1&gt;
+		  &lt;h2&gt;It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.&lt;/h2&gt;
+		&lt;/hgroup&gt;
+
+		&lt;p&gt;Content....&lt;/p&gt;
+					</pre>
+
+
+
+				</div><!--  /.codeBox -->
+
+
+				<div class="codeBox d-class-area" id="s7">
+
+				   <h2>(7) Date</h2>
+
+					<div class="codeBox-content">
+
+
+							<p>
+								Neque porro quisquam est qui dolorem ipsum quia dolor sit amet<time datetime="2014-02-1" pubdate>May 10, 2004</time>,quia dolor sit amet。
+							</p>
+
+
+
+					</div><!--  /.codeBox-content -->
+
+					<pre> 
+		<span class="bl html dsure-radius-small">HTML Code:</span>
+
+		&lt;p&gt;
+			 Neque porro quisquam est qui dolorem ipsum quia dolor sit amet&lt;time datetime="2014-02-1" pubdate&gt;May 10, 2004&lt;/time&gt;,quia dolor sit amet。
+		&lt;/p&gt;
+					</pre>
+
+
+
+				</div><!--  /.codeBox -->
+
+
+				<div class="codeBox d-class-area" id="s8">
+
+				   <h2>(8) Typography</h2>
+
+					<div class="codeBox-content">
+
+
+							<p class="tl">Left text</p>
+							<p class="tc">Center text</p>
+							<p class="tr">Right text</p>  
+							<p><strong>Blod text</strong></p>
+							<p><strong class="f-w-normal">Normal text</strong></p>
+							<p><span class="f-w-blod">Blod text2</span></p>
+							<p><span class="f-s-italic">Italic text</span></p>
+							<p><span class="f-f-yahei">Microsoft YaHei font</span></p>
+							<p><span class="f-d-line">Underline text</span></p>
+							<p><a href="#" class="f-d-none">Remove hyperlink underline</a></p>
+							<div class="f-i30">A 30 pixel indent</div>
+							<p><span class="f22">Font sizes at 22 pixels</span></p>
+							<p><span class="noWrap">Not wrap text</span></p>
+							<p><span class="f-c-black">Black text</span></p>
+							<p><span class="bg-column2 f-c-white">White text</span></p>
+
+
+					</div><!--  /.codeBox-content -->
+
+					<pre> 
+		<span class="bl html dsure-radius-small">HTML Code:</span>
+
+		&lt;p class="<span class="im-class">tl</span>"&gt;Left text&lt;/p&gt;
+		&lt;p class="<span class="im-class">tc</span>"&gt;Center text&lt;/p&gt;
+		&lt;p class="<span class="im-class">tr</span>"&gt;Right text&lt;/p&gt;  
+		&lt;strong&gt;Blod text&lt;/strong&gt;
+		&lt;strong class="<span class="im-class">f-w-normal</span>"&gt;Normal text&lt;/strong&gt;
+		&lt;span class="<span class="im-class">f-w-blod</span>"&gt;Blod text2&lt;/span&gt;
+		&lt;span class="<span class="im-class">f-s-italic</span>"&gt;Italic text&lt;/span&gt;
+		&lt;span class="<span class="im-class">f-f-yahei</span>"&gt;Microsoft YaHei font&lt;/span&gt;
+		&lt;span class="<span class="im-class">f-d-line</span>"&gt;Underline text&lt;/span&gt;
+		&lt;a href="#" class="<span class="im-class">f-d-none</span>"&gt;Remove hyperlink underline&lt;/a&gt;
+		&lt;div class="<span class="im-class">f-i30</span>"&gt;A 30 pixel indent&lt;/div&gt;
+		&lt;span class="<span class="im-class">f22</span>"&gt;Font sizes at 22 pixels&lt;/span&gt;
+		&lt;span class="<span class="im-class">noWrap</span>"&gt;Not wrap text&lt;/span&gt;
+		&lt;span class="<span class="im-class">f-c-black</span>"&gt;Black text&lt;/span&gt;
+		&lt;span class="<span class="im-class">f-c-white</span>"&gt;White text&lt;/span&gt;
+					</pre>
+
+
+
+				</div><!--  /.codeBox -->
+
+          
+          
+          <!-- /////////////////   Content    End /////////////////// -->
+          
+
+
+        </div>
+
+         <footer>
+         
+            <hr>
+           
+            <p>This Product is released under a <a href="http://creativecommons.org/licenses/by-nc/3.0/deed.zh" target="_blank">Creative Commons Attribution 3.0</a> License. It only learning and exchange.</p>
+            <p>
+            &copy;2014 <a href="/d-s/Dsure">Dsure Front-end Development Framework</a> |  Author: <a href="/" target="_blank">没位道</a>
+         
+         <div style="display:none">
+                 <script id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+        <script>
+            if (typeof(LA) !== 'undefined') LA.init({id: "JdyfUJi3RdCZVi9F",ck: "JdyfUJi3RdCZVi9F"});
+        </script>
+         </div>
+           
+           
+      
+          
+            </p>
+             
+         </footer>
+
+     </section>
+     
+     
+
+     
+    
+    <script src="js/jquery.scroller.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/theme.hash.js"></script> <!-- After the main.js -->
+     
+  
+
+</body>
+</html>
+
