@@ -1,0 +1,945 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js ie ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js ie ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js ie ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js ie ie9"> <![endif]-->
+<!--[if !IE]><!--> <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js"> <!--<![endif]-->
+
+<head>
+    <meta name="viewport" content="width=device-width, user-scalable=yes" />
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
+    <meta charset="utf-8"/>
+    <title>按钮|Dsure-HTML5网站,前端开发框架</title>
+    <meta name="description" content="Dsure,基于纯CSS的HTML5网站响应式开发框架,专注国内/外交互式网站开发,完美适用于Designers Site Program 全站静态系统">
+    <meta name="keywords" content="Dsure,CSS框架,HTML5网站,HTML5框架,CSS3动画,前端开发,Designers Site,全站静态系统,免费建站,响应式网站,交互式网站,自适应网站,framework">
+    <meta name="author" content="没位道">
+
+    <!-- Jquery.min begin -->
+    <script src="js/jquery.min.js?1.7.1" ></script>
+    <!-- / Jquery.min end -->
+    
+    <!-- URL Hash Compatible(IE5+) begin -->
+    <script src="js/jquery.hashchange.js" ></script>
+	<script>
+		//hash
+		var turl = "";
+    </script> 
+
+    <!-- URL Hash Compatible(IE5+) end -->
+    
+    
+    <!-- Dsure  Development Framework  begin  -->
+    
+        <link rel="stylesheet" type="text/css" href="../../dsure/dsure.flat.css" />
+        <script src="../../dsure/dsure.modernizr.js"></script>
+        <!--[if lt IE 9]>  
+            <script src="../../dsure/dsure.respond.js"></script>  
+        <![endif]-->  
+    
+        <!--[if lt IE 7 ]>
+            <script src="../../dsure/dsure.png.js"></script>
+            <script>
+            DD_belatedPNG.fix('img, a, span, h1, h2, h3, em, section, header');
+            document.execCommand("BackgroundImageCache", false, true);
+            </script>
+        <![endif]-->
+
+    
+    <!-- /Dsure Development Framework  end   -->
+    
+
+    
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+
+    
+
+
+</head>
+<body>
+
+    <!--  loading  -->
+    <div id="loading"></div> 
+    <div id="back-top"><a href="#">Top</a></div>
+
+    <!--  menu  -->
+        <nav id="menu">
+            <div class="main-menu">
+        
+                <ul>
+                    <li class="web-title"><a href="/d-s/Dsure-flat">Dsure.Flat</a></li>
+                    <li class="line"></li>
+                    <li><a href="/d-s/Dsure-flat">欢迎页面</a></li>
+                    <li><a href="/d-s/Dsure-flat/detail-base.html">基础框架 <span>(Base)</span> <b>*必须*</b></a></li>
+                    <li><a href="/d-s/Dsure-flat/detail-base2.html">样式叠加 <span>(Base)</span> <b>*通用*</b></a></li>
+                    <li><a href="/d-s/Dsure-flat/detail-text.html">内容/文本 <span>(Text)</span></a></li>
+                    <li class="active"><a href="/d-s/Dsure-flat/detail-buttons.html">按钮 <span>(Buttons)</span></a></li>
+                    <li><a href="/d-s/Dsure-flat/detail-forms.html">表单 <span>(Forms)</span></a></li>
+                    <li><a href="/d-s/Dsure-flat/detail-tables.html">表格 <span>(Tables)</span></a></li>
+                    <li><a href="/d-s/Dsure-flat/detail-grids.html">网格/栅格系统 <span>(Grids)</span> </a></li>
+                    <li><a href="/d-s/Dsure-flat/detail-layouts.html">循环列表布局 <span>(Layouts)</span></a></li>
+                    <li><a href="/d-s/Dsure-flat/detail-icons.html">图标 <span>(Icons)</span></a></li>
+                    <li><a href="/d-s/Dsure-flat/detail-img.html">图片 <span>(Images)</span></a></li>
+                    <li><a href="/d-s/Dsure-flat/detail-line.html">分割线 <span>(Dividing Line)</span></a></li>
+                    <li><a href="/d-s/Dsure-flat/detail-paginators.html">分页 <span>(Paginators)</span></a></li>
+                    <li><a href="/d-s/Dsure-flat/detail-navigation.html">导航菜单 <span>(Navigation)</span></a></li>
+                    <li><a href="/d-s/Dsure-flat/detail-classification.html">分类导航 <span>(Classification)</span></a></li>
+                    <li><a href="/d-s/Dsure-flat/detail-striking.html">醒目牌 <span>(Striking)</span></a></li>
+                    <li><a href="/d-s/Dsure-flat/detail-search.html">搜索框 <span>(Search Box)</span></a></li> 
+                    <li><a href="/d-s/Dsure-flat/detail-tags.html">标签集 <span>(Tags)</span></a></li> 
+                   
+                </ul>
+
+                            
+            </div>
+           
+         </nav>
+         
+     <!--  /menu  -->
+     
+     
+        
+    
+     
+     <section id="content">
+         <div class="show">
+          
+          <!-- /////////////////   Content    Begin /////////////////// -->
+      <div class="dsure-title-nav dsure-no-hover dsure-bg-silver dsure-radius-small f-i15">
+        <h1>按钮</h1>
+      </div>
+
+      <div id="dir-nav" class="dir-nav dsure-no-hover dsure-bg-silver">
+          <a class="close" data-close="0" href="javascript:">×</a>
+          <div class="clear"></div>
+          <span class="t">目录导航</span>
+          <a href="javascript:" id="b-s1" onClick="navScrollTo('#s1');" >CSS基础型</a>
+          <a href="javascript:" id="b-s2" onClick="navScrollTo('#s2');" >CSS扩展型</a>
+      </div>
+
+
+      <div class="clear"></div>
+      
+      <div class="codeBox">
+
+            <p class="dsure-tip dsure-tip-success">
+              <i class="dsure-icon dsure-icon-bulb"></i> 所有按钮元素都可以使用左侧导航<img src="css/images/m1.jpg" class="ma-l5 ma-r5">的所有class类进行细节样式的调整
+            </p>
+
+      </div><!--  /.codeBox -->
+       
+
+        <div class="codeBox d-class-area" id="s1">
+           
+           <h2>(1) 基于纯CSS的超链接&lt;a&gt;元素、&lt;button&gt;元素、&lt;input&gt;元素按钮</h2>
+
+            <p class="dsure-tip">
+              此类型按钮常用于表单及其网站其它内容部分,Dsure提供<strong class="t3">18</strong>种不同的基础色彩和<strong class="t3">4</strong>种大小尺寸供您选择<br>
+              如果按钮要使用白色字体，则叠加样式<code>.dsure-btn-t-white</code>
+            </p>
+
+            <div class="codeBox-content">
+            
+                  <a class="dsure-c-btn dsure-btn-t-white dsure-bg-blue" href="#">使用&lt;a&gt;标签创建的按钮</a>
+                  <br>
+                  
+                  <a class="dsure-c-btn dsure-btn-t-white dsure-bg-blue" href="#"><i class="dsure-icon dsure-icon-home2"></i>&nbsp;使用&lt;a&gt;标签创建的带图标的按钮</a>
+                  <br>
+                  <button class="dsure-c-btn dsure-btn-t-white dsure-bg-blue">使用&lt;button&gt;标签创建的按钮</button>
+                  <br>
+                  <button class="dsure-c-btn dsure-btn-t-white dsure-bg-blue"><i class="dsure-icon dsure-icon-camera2"></i>&nbsp;使用&lt;button&gt;标签创建的带图标的按钮</button>
+                  <br>
+                  <input type="submit" class="dsure-c-btn dsure-btn-t-white dsure-bg-blue dsure-c-btn-submit" value="使用&lt;input&gt;标签创建的按钮">
+
+                 
+            </div><!--  /.codeBox-content -->
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML代码:</span>
+
+&lt;a class=&quot;<span class="im-class">dsure-c-btn dsure-btn-t-white dsure-bg-blue</span>&quot; href=&quot;#&quot;&gt;按钮文字&lt;/a&gt;
+
+&lt;a class=&quot;<span class="im-class">dsure-c-btn dsure-btn-t-white dsure-bg-blue</span>&quot; href=&quot;#&quot;&gt;&lt;i class=&quot;<span class="im-class">dsure-icon dsure-icon-home2</span>&quot;&gt;&lt;/i&gt;&amp;nbsp;带图标的按钮文字&lt;/a&gt;
+
+&lt;button class=&quot;<span class="im-class">dsure-c-btn dsure-btn-t-white dsure-bg-blue</span>&quot;&gt;按钮文字&lt;/button&gt;
+
+&lt;button class=&quot;<span class="im-class">dsure-c-btn dsure-btn-t-white dsure-bg-blue</span>&quot;&gt;&lt;i class=&quot;<span class="im-class">dsure-icon dsure-icon-camera2</span>&quot;&gt;&lt;/i&gt;&amp;nbsp;带图标的按钮文字&lt;/button&gt;
+
+&lt;input type=&quot;submit&quot; class=&quot;<span class="im-class">dsure-c-btn dsure-btn-t-white dsure-bg-blue dsure-c-btn-submit</span>&quot; value=&quot;按钮文字&quot;&gt;
+            
+            </pre>
+
+
+
+            <div class="codeBox-content">
+            
+                    <table class="dsure-table dsure-table-bordered" style="width:100%">
+                        <thead>
+                            <tr>
+                                <th style="width:200px;" class="dsure-table-t-center">基础样式(默认大小)</th>
+                                <th>样式代码&nbsp;&nbsp;<small>(您可以根据需要叠加通用样式)</small> <code>拷贝到class=""的双引号中使用</code></th>
+                            </tr>
+                        </thead>
+                    
+                        <tbody>
+                        
+                        
+                            <tr class="dsure-table-odd">
+                                <td class="dsure-table-t-center">
+                                    <button class="dsure-c-btn dsure-btn-t-white dsure-bg-blue">蓝色</button>
+
+                                </td>
+                                
+                                <td>
+                                  dsure-c-btn dsure-btn-t-white dsure-bg-blue
+                                </td>
+                            </tr>
+  
+                            <tr>
+                            
+                                <td class="dsure-table-t-center">
+                                   <button class="dsure-c-btn  dsure-btn-t-white dsure-bg-black">黑色</button>
+                                
+                                </td>
+                                
+                                <td>
+                                   dsure-c-btn  dsure-btn-t-white dsure-bg-black
+                                
+                                </td>
+                            </tr>
+ 
+                        
+                        
+                            <tr class="dsure-table-odd">
+                                <td class="dsure-table-t-center">
+                                    <button class="dsure-c-btn dsure-bg-silver">银白色</button>
+
+                                </td>
+                                
+                                <td>
+                                  dsure-c-btn dsure-bg-silver
+                                </td>
+                            </tr>
+  
+                            <tr>
+                            
+                                <td class="dsure-table-t-center">
+                                   <button class="dsure-c-btn dsure-bg-gray">灰色</button>
+                                
+                                </td>
+                                
+                                <td>
+                                   dsure-c-btn dsure-bg-gray
+                                
+                                </td>
+                            </tr>
+
+
+                             <tr class="dsure-table-odd">
+                                <td class="dsure-table-t-center">
+                                    <button class="dsure-c-btn dsure-btn-t-white dsure-bg-red">红色</button>
+
+                                </td>
+                                
+                                <td>
+                                  dsure-c-btn dsure-btn-t-white dsure-bg-red
+                                </td>
+                            </tr>
+  
+                            <tr>
+                            
+                                <td class="dsure-table-t-center">
+                                   <button class="dsure-c-btn dsure-btn-t-white dsure-bg-purple">紫色</button>
+                                
+                                </td>
+                                
+                                <td>
+                                   dsure-c-btn dsure-btn-t-white dsure-bg-purple
+                                
+                                </td>
+                            </tr>
+                            
+                            <tr class="dsure-table-odd">
+                                <td class="dsure-table-t-center">
+                                    <button class="dsure-c-btn dsure-btn-t-white dsure-bg-green">绿色</button>
+
+                                </td>
+                                
+                                <td>
+                                  dsure-c-btn dsure-btn-t-white dsure-bg-green
+                                </td>
+                            </tr>
+  
+                            <tr>
+                            
+                                <td class="dsure-table-t-center">
+                                   <button class="dsure-c-btn dsure-bg-aquamarine">碧绿蓝</button>
+                                
+                                </td>
+                                
+                                <td>
+                                   dsure-c-btn dsure-bg-aquamarine
+                                
+                                </td>
+                            </tr>
+                            
+                            <tr class="dsure-table-odd">
+                                <td class="dsure-table-t-center">
+                                    <button class="dsure-c-btn dsure-btn-t-white dsure-bg-olivedrab">军绿色</button>
+
+                                </td>
+                                
+                                <td>
+                                  dsure-c-btn dsure-btn-t-white dsure-bg-olivedrab
+                                </td>
+                            </tr>
+  
+                            <tr>
+                            
+                                <td class="dsure-table-t-center">
+                                   <button class="dsure-c-btn dsure-btn-t-white dsure-bg-pink">粉红色</button>
+                                
+                                </td>
+                                
+                                <td>
+                                   dsure-c-btn dsure-btn-t-white dsure-bg-pink
+                                
+                                </td>
+                            </tr>
+                            
+
+                            
+                            <tr class="dsure-table-odd">
+                                <td class="dsure-table-t-center">
+                                    <button class="dsure-c-btn dsure-btn-t-white dsure-bg-indigo">靛青色</button>
+
+                                </td>
+                                
+                                <td>
+                                  dsure-c-btn dsure-btn-t-white dsure-bg-indigo
+                                </td>
+                            </tr>
+  
+                            <tr>
+                            
+                                <td class="dsure-table-t-center">
+                                   <button class="dsure-c-btn dsure-btn-t-white dsure-bg-orange">橙色</button>
+                                
+                                </td>
+                                
+                                <td>
+                                   dsure-c-btn dsure-btn-t-white dsure-bg-orange
+                                
+                                </td>
+                            </tr>
+                            
+                            <tr class="dsure-table-odd">
+                                <td class="dsure-table-t-center">
+                                    <button class="dsure-c-btn dsure-btn-t-white dsure-bg-brown">褐色</button>
+
+                                </td>
+                                
+                                <td>
+                                  dsure-c-btn dsure-btn-t-white dsure-bg-brown
+                                </td>
+                            </tr>
+  
+                            <tr>
+                            
+                                <td class="dsure-table-t-center">
+                                   <button class="dsure-c-btn dsure-btn-t-white dsure-bg-yellow">黄色</button>
+                                
+                                </td>
+                                
+                                <td>
+                                   dsure-c-btn dsure-btn-t-white dsure-bg-yellow
+                                
+                                </td>
+                            </tr>
+
+                            <tr class="dsure-table-odd">
+                            
+                                <td class="dsure-table-t-center">
+                                   <button class="dsure-c-btn dsure-btn-t-white dsure-bg-cadetblue">藏青</button>
+                                
+                                </td>
+                                
+                                <td>
+                                   dsure-c-btn dsure-btn-t-white dsure-bg-cadetblue
+                                
+                                </td>
+                            </tr>
+
+                            <tr>
+                            
+                                <td class="dsure-table-t-center">
+                                   <button class="dsure-c-btn dsure-bg-lemonchiffon">淡青黄</button>
+                                
+                                </td>
+                                
+                                <td>
+                                   dsure-c-btn dsure-bg-lemonchiffon
+                                
+                                </td>
+                            </tr>
+
+                            <tr class="dsure-table-odd">
+                            
+                                <td class="dsure-table-t-center">
+                                   <button class="dsure-c-btn dsure-bg-lavender">淡紫色</button>
+                                
+                                </td>
+                                
+                                <td>
+                                   dsure-c-btn dsure-bg-lavender
+                                
+                                </td>
+                            </tr>
+
+                            <tr>
+                            
+                                <td class="dsure-table-t-center">
+                                   <button class="dsure-c-btn dsure-bg-burlywood dsure-btn-t-white">原木色</button>
+                                
+                                </td>
+                                
+                                <td>
+                                   dsure-c-btn dsure-bg-burlywood dsure-btn-t-white
+                                
+                                </td>
+                            </tr>
+
+
+                        </tbody>
+                    </table>
+       
+
+                 
+            </div><!--  /.codeBox-content -->
+
+
+
+
+        </div><!--  /.codeBox -->
+      
+      
+        <div class="codeBox d-class-area" id="s2">
+           
+           <h2>(2) 基于纯CSS的超链接&lt;a&gt;元素、&lt;button&gt;元素、&lt;input&gt;元素扩展型按钮</h2>
+
+            <div class="codeBox-content">
+            
+                    <table class="dsure-table dsure-table-bordered" style="width:100%">
+                        <thead>
+                            <tr>
+                                <th style="width:200px;" class="dsure-table-t-center">扩展样式(自定义色彩)</th>
+                                <th>样式代码&nbsp;&nbsp;<small>(您可以根据需要叠加通用样式)</small> <code>拷贝到class=""的双引号中使用</code></th>
+                            </tr>
+                        </thead>
+                    
+                        <tbody>
+                        
+                            <tr class="dsure-table-odd">
+                                <td class="dsure-table-t-center">
+                                  <button class="dsure-c-btn dsure-btn-t-white dsure-bg-black">(白色字体)</button>
+                                </td>
+                                
+                                <td>
+                                  dsure-c-btn dsure-btn-t-white <span class="im-style">dsure-bg-black</span>
+                                </td>
+                            </tr>
+
+                            
+                            <tr>
+                                <td class="dsure-table-t-center">
+                                  <button class="dsure-c-btn dsure-bg-silver">(黑色字体)</button>
+                                </td>
+                                
+                                <td>
+                                  dsure-c-btn <span class="im-style">dsure-bg-silver</span>
+                                </td>
+                            </tr>
+  
+                            <tr class="dsure-table-odd">
+                            
+                                <td class="dsure-table-t-center">
+                                   ...
+                                
+                                </td>
+                                
+                                <td>
+                                   只要在基础样式的基础上叠加格式为<code>.dsure-bg-???</code>的样式即可，色彩参考左侧导航<img src="css/images/m1.jpg" class="ma-l5 ma-r5">
+                                
+                                </td>
+                            </tr>
+ 
+ 
+                        </tbody>
+                        
+                    </table>   
+
+                    <table class="dsure-table dsure-table-bordered ma-t30" style="width:100%">
+                        <thead>
+                            <tr>
+                                <th style="width:200px;" class="dsure-table-t-center">扩展样式(默认极小型)</th>
+                                <th>样式代码&nbsp;&nbsp;<small>(您可以根据需要叠加通用样式)</small> <code>拷贝到class=""的双引号中使用</code></th>
+                            </tr>
+                        </thead>
+                    
+                        <tbody>
+                        
+                            <tr class="dsure-table-odd">
+                                <td class="dsure-table-t-center">
+                                  <button class="dsure-c-btn dsure-c-btn-xsmall dsure-btn-t-white dsure-bg-blue">蓝色(极小)</button>
+                                </td>
+                                
+                                <td>
+                                  dsure-c-btn <span class="im-style">dsure-c-btn-xsmall</span> dsure-btn-t-white dsure-bg-blue
+                                </td>
+                            </tr>
+  
+                            <tr>
+                            
+                                <td class="dsure-table-t-center">
+                                   ...
+                                
+                                </td>
+                                
+                                <td>
+                                   只要在基础样式的基础上叠加样式<code>.dsure-c-btn-xsmall</code>即可
+                                
+                                </td>
+                            </tr>
+                            
+
+
+  
+                        </tbody>
+                        
+                    </table>   
+                    
+
+
+                    <table class="dsure-table dsure-table-bordered ma-t30" style="width:100%">
+                        <thead>
+                            <tr>
+                                <th style="width:200px;" class="dsure-table-t-center">扩展样式(默认小型)</th>
+                                <th>样式代码&nbsp;&nbsp;<small>(您可以根据需要叠加通用样式)</small> <code>拷贝到class=""的双引号中使用</code></th>
+                            </tr>
+                        </thead>
+                    
+                        <tbody>
+                        
+                            <tr class="dsure-table-odd">
+                                <td class="dsure-table-t-center">
+                                  <button class="dsure-c-btn dsure-c-btn-small dsure-btn-t-white dsure-bg-blue">蓝色(小)</button>
+                                </td>
+                                
+                                <td>
+                                  dsure-c-btn <span class="im-style">dsure-c-btn-small</span> dsure-btn-t-white dsure-bg-blue
+                                </td>
+                            </tr>
+  
+                            <tr>
+                            
+                                <td class="dsure-table-t-center">
+                                   ...
+                                
+                                </td>
+                                
+                                <td>
+                                   只要在基础样式的基础上叠加样式<code>.dsure-c-btn-small</code>即可
+                                
+                                </td>
+                            </tr>
+                            
+
+
+  
+                        </tbody>
+                        
+                    </table>   
+                    
+       
+       
+                    <table class="dsure-table dsure-table-bordered ma-t30" style="width:100%">
+                        <thead>
+                            <tr>
+                                <th style="width:200px;" class="dsure-table-t-center">扩展样式(默认中型)</th>
+                                <th>样式代码&nbsp;&nbsp;<small>(您可以根据需要叠加通用样式)</small> <code>拷贝到class=""的双引号中使用</code></th>
+                            </tr>
+                        </thead>
+                    
+                        <tbody>
+                        
+                            <tr class="dsure-table-odd">
+                                <td class="dsure-table-t-center">
+                                  <button class="dsure-c-btn dsure-c-btn-medium dsure-btn-t-white dsure-bg-blue">蓝色(中)</button>
+                                </td>
+                                
+                                <td>
+                                  dsure-c-btn <span class="im-style">dsure-c-btn-medium</span> dsure-btn-t-white dsure-bg-blue
+                                </td>
+                            </tr>
+  
+                            <tr>
+                            
+                                <td class="dsure-table-t-center">
+                                   ...
+                                
+                                </td>
+                                
+                                <td>
+                                   只要在基础样式的基础上叠加样式<code>.dsure-c-btn-medium</code>即可
+                                
+                                </td>
+                            </tr>
+                            
+
+
+  
+                        </tbody>
+                        
+                    </table>   
+                    
+                    
+       
+                    <table class="dsure-table dsure-table-bordered ma-t30" style="width:100%">
+                        <thead>
+                            <tr>
+                                <th style="width:200px;" class="dsure-table-t-center">扩展样式(默认大型)</th>
+                                <th>样式代码&nbsp;&nbsp;<small>(您可以根据需要叠加通用样式)</small> <code>拷贝到class=""的双引号中使用</code></th>
+                            </tr>
+                        </thead>
+                    
+                        <tbody>
+                        
+                            <tr class="dsure-table-odd">
+                                <td class="dsure-table-t-center">
+                                  <button class="dsure-c-btn dsure-c-btn-big dsure-btn-t-white dsure-bg-blue">蓝色(大)</button>
+                                </td>
+                                
+                                <td>
+                                  dsure-c-btn <span class="im-style">dsure-c-btn-big</span> dsure-btn-t-white dsure-bg-blue
+                                </td>
+                            </tr>
+  
+                            <tr>
+                            
+                                <td class="dsure-table-t-center">
+                                   ...
+                                
+                                </td>
+                                
+                                <td>
+                                   只要在基础样式的基础上叠加样式<code>.dsure-c-btn-big</code>即可
+                                
+                                </td>
+                            </tr>
+                            
+
+
+  
+                        </tbody>
+                    </table>   
+                    
+                    
+                    
+                    <table class="dsure-table dsure-table-bordered ma-t30" style="width:100%">
+                        <thead>
+                            <tr>
+                                <th style="width:200px;" class="dsure-table-t-center">扩展样式(带图标)</th>
+                                <th>HTML代码&nbsp;&nbsp;<small>(您可以根据需要叠加通用样式)</small></th>
+                            </tr>
+                        </thead>
+                    
+                        <tbody>
+                        
+                            <tr class="dsure-table-odd">
+                                <td class="dsure-table-t-center">
+                                  <button class="dsure-c-btn dsure-btn-t-white dsure-bg-blue"><i class="dsure-icon dsure-icon-camera2"></i>&nbsp;蓝色(带图标)</button>
+                                </td>
+                                
+                                <td>
+                                  &lt;button class=&quot;dsure-c-btn dsure-btn-t-white dsure-bg-blue&quot;&gt;<span class="im-style">&lt;i class=&quot;dsure-icon dsure-icon-camera2&quot;&gt;&lt;/i&gt;&amp;nbsp;</span>蓝色(带图标)&lt;/button&gt;
+                            
+                                </td>
+                            </tr>
+  
+                            <tr>
+                            
+                                <td class="dsure-table-t-center">
+                                   ...
+                                
+                                </td>
+                                
+                                <td>
+                                   在按钮文字的前面或者后面加上<code>&lt;i class=&quot;dsure-icon dsure-icon-camera2&quot;&gt;&lt;/i&gt;&amp;nbsp;</code>类型的图标html代码<br>
+                                   注意：带图标类型按钮不支持<code>&lt;input&gt;</code>元素按钮
+                                
+                                </td>
+                            </tr>
+                            
+
+
+  
+                        </tbody>
+                    </table>   
+                    
+
+                          
+                    
+                    <table class="dsure-table dsure-table-bordered ma-t30" style="width:100%">
+                        <thead>
+                            <tr>
+                                <th style="width:200px;" class="dsure-table-t-center">扩展样式(无圆角)</th>
+                                <th>样式代码&nbsp;&nbsp;<small>(您可以根据需要叠加通用样式)</small> <code>拷贝到class=""的双引号中使用</code></th>
+                            </tr>
+                        </thead>
+                    
+                        <tbody>
+                        
+                            <tr class="dsure-table-odd">
+                                <td class="dsure-table-t-center">
+                                  <button class="dsure-c-btn dsure-btn-t-white dsure-bg-blue">蓝色(去掉样式无圆角)</button><br>
+                                </td>
+                                
+                                <td>
+                                  dsure-c-btn dsure-btn-t-white dsure-bg-blue<br>
+                                </td>
+                            </tr>
+  
+                            <tr>
+                            
+                                <td class="dsure-table-t-center">
+                                   ...
+                                
+                                </td>
+                                
+                                <td>
+                                   方法1：找到格式为<code>.dsure-radius-???</code>的样式，去掉即可<br>
+                                   方法2：叠加<code>.dsure-radius-none</code>样式
+                                
+                                </td>
+                            </tr>
+                            
+
+
+  
+                        </tbody>
+                    </table>         
+  
+                     
+                    
+                    <table class="dsure-table dsure-table-bordered ma-t30" style="width:100%">
+                        <thead>
+                            <tr>
+                                <th style="width:200px;" class="dsure-table-t-center">扩展样式(小型圆角)</th>
+                                <th>样式代码&nbsp;&nbsp;<small>(您可以根据需要叠加通用样式)</small> <code>拷贝到class=""的双引号中使用</code></th>
+                            </tr>
+                        </thead>
+                    
+                        <tbody>
+                        
+                            <tr class="dsure-table-odd">
+                                <td class="dsure-table-t-center">
+                                  <button class="dsure-c-btn dsure-btn-t-white dsure-bg-blue dsure-radius-small">蓝色(小型圆角)</button>
+                                </td>
+                                
+                                <td>
+                                  dsure-c-btn dsure-btn-t-white dsure-bg-blue <span class="im-style">dsure-radius-small</span>
+                                </td>
+                            </tr>
+  
+                            <tr>
+                            
+                                <td class="dsure-table-t-center">
+                                   ...
+                                
+                                </td>
+                                
+                                <td>
+                                   只要在基础样式的基础上叠加样式<code>.dsure-radius-small</code>即可,<span class="t4">9.0版本以下IE浏览器无效</span>
+                                
+                                </td>
+                            </tr>
+                            
+
+
+  
+                        </tbody>
+                    </table>        
+                    
+                    
+                    <table class="dsure-table dsure-table-bordered ma-t30" style="width:100%">
+                        <thead>
+                            <tr>
+                                <th style="width:200px;" class="dsure-table-t-center">扩展样式(中型圆角)</th>
+                                <th>样式代码&nbsp;&nbsp;<small>(您可以根据需要叠加通用样式)</small> <code>拷贝到class=""的双引号中使用</code></th>
+                            </tr>
+                        </thead>
+                    
+                        <tbody>
+                        
+                            <tr class="dsure-table-odd">
+                                <td class="dsure-table-t-center">
+                                  <button class="dsure-c-btn dsure-btn-t-white dsure-bg-blue dsure-radius-medium">蓝色(中型圆角)</button>
+                                </td>
+                                
+                                <td>
+                                  dsure-c-btn dsure-btn-t-white dsure-bg-blue <span class="im-style">dsure-radius-medium</span>
+                                </td>
+                            </tr>
+  
+                            <tr>
+                            
+                                <td class="dsure-table-t-center">
+                                   ...
+                                
+                                </td>
+                                
+                                <td>
+                                   只要在基础样式的基础上叠加样式<code>.dsure-radius-medium</code>即可,<span class="t4">9.0版本以下IE浏览器无效</span>
+                                
+                                </td>
+                            </tr>
+                            
+
+
+  
+                        </tbody>
+                    </table>             
+                     
+                    
+                    <table class="dsure-table dsure-table-bordered ma-t30" style="width:100%">
+                        <thead>
+                            <tr>
+                                <th style="width:200px;" class="dsure-table-t-center">扩展样式(大型圆角)</th>
+                                <th>样式代码&nbsp;&nbsp;<small>(您可以根据需要叠加通用样式)</small> <code>拷贝到class=""的双引号中使用</code></th>
+                            </tr>
+                        </thead>
+                    
+                        <tbody>
+                        
+                            <tr class="dsure-table-odd">
+                                <td class="dsure-table-t-center">
+                                  <button class="dsure-c-btn dsure-btn-t-white dsure-bg-blue dsure-radius-big">蓝色(大型圆角)</button>
+                                </td>
+                                
+                                <td>
+                                  dsure-c-btn dsure-btn-t-white dsure-bg-blue <span class="im-style">dsure-radius-big</span>
+                                </td>
+                            </tr>
+  
+                            <tr>
+                            
+                                <td class="dsure-table-t-center">
+                                   ...
+                                
+                                </td>
+                                
+                                <td>
+                                   只要在基础样式的基础上叠加样式<code>.dsure-radius-big</code>即可,<span class="t4">9.0版本以下IE浏览器无效</span>
+                                
+                                </td>
+                            </tr>
+                            
+
+
+  
+                        </tbody>
+                    </table>             
+                           
+                           
+                    <table class="dsure-table dsure-table-bordered ma-t30" style="width:100%">
+                        <thead>
+                            <tr>
+                                <th style="width:200px;" class="dsure-table-t-center">扩展样式(waiting状态)</th>
+                                <th>样式代码&nbsp;&nbsp;<small>(您可以根据需要叠加通用样式)</small> <code>拷贝到class=""的双引号中使用</code></th>
+                            </tr>
+                        </thead>
+                    
+                        <tbody>
+                        
+                            <tr class="dsure-table-odd">
+                                <td class="dsure-table-t-center">
+                                  <button class="dsure-c-btn dsure-btn-t-white dsure-bg-blue dsure-waiting">蓝色waiting状态</button>
+                                </td>
+                                
+                                <td>
+                                  dsure-c-btn dsure-btn-t-white dsure-bg-blue <span class="im-style">dsure-waiting</span>
+                                </td>
+                            </tr>
+  
+                            <tr>
+                            
+                                <td class="dsure-table-t-center">
+                                   ...
+                                
+                                </td>
+                                
+                                <td>
+                                   只要在基础样式的基础上叠加样式<code>.dsure-waiting</code>即可,<span class="t4">9.0版本以下IE浏览器无效</span>
+                                
+                                </td>
+                            </tr>
+                            
+
+
+  
+                        </tbody>
+                    </table>       
+                    
+                 
+            </div><!--  /.codeBox-content -->
+
+
+
+
+        </div><!--  /.codeBox -->
+      
+          
+          <!-- /////////////////   Content    End /////////////////// -->
+
+    
+
+        </div>
+
+         <footer>
+         
+            <hr>
+           
+            <p>此开源开发框架基于<a href="/d-s/" target="_blank">Designers Site Program 全站静态系统</a>发布，提供广大网站开发者使用，并着力构建快速设计DS主题框架，设计者可以根据此开发框架设计出网站的纯HTML效果，兼容整套系统体系，再使用主题开发插件进行标签替换和修改，即可设计并使用自己的主题 (您也可以用作其它方面的开发)</p>
+
+            <p>Dsure授权开源许可证基于<a href="http://creativecommons.org/licenses/by-nc/3.0/deed.zh" target="_blank">CC BY-NC 3.0</a>,禁止任何人任何公司机构用于商业用途</p>
+            
+            <p>
+            &copy;2014 Powered By <a href="/" target="_blank">没位道</a>, <a href="/d-s/Dsure-flat">Dsure Web Development Framework</a>
+        
+  
+            &nbsp;&nbsp;        <script id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+        <script>
+            if (typeof(LA) !== 'undefined') LA.init({id: "JdyfUJi3RdCZVi9F",ck: "JdyfUJi3RdCZVi9F"});
+        </script>
+          
+            
+            
+          
+            </p>
+             
+         </footer>
+
+     </section>
+     
+     
+
+     
+    
+    <script src="js/jquery.scroller.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/theme.hash.js"></script> <!-- After the main.js -->
+     
+  
+
+</body>
+</html>
+

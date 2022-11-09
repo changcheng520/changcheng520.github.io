@@ -1,0 +1,190 @@
+/*=========User Style-Control 自定义实时样式表 （使用后台的自定义背景图和文字颜色功能来设置） */
+
+
+/*-------------------背景和通用文字颜色-------------------*/
+
+/*背景和文字颜色*/
+body { 
+ 
+ 
+
+ 
+ 
+
+
+}
+
+
+/*---------------------链接及其悬停颜色----------------*/
+
+/*页面通用-链接*/
+a:link, a:visited {
+ 
+}
+
+a:hover {
+ 
+}
+
+
+/*LOGO链接*/
+
+#web-logo a{
+ 
+}
+#web-logo a:hover{
+ 
+}
+
+/*底部链接*/
+
+#footer a{
+ 
+}
+#footer a:hover{
+ 
+}
+
+
+/*导航hover效果颜色*/
+.dsure-nav ul.nav li.item a:hover,
+.dsure-nav ul.nav li.item.navSelected a,
+.dsure-nav ul.nav li.item.navSelected ul a:hover{ } 
+
+/*导航默认的效果颜色*/
+.dsure-nav .navDefault,
+.dsure-nav ul.nav li.item.navSelected ul a {} 
+
+
+/*栏目列表标题链接*/
+.article-post h1 a,.portfolio-box h4 a{
+ 
+}
+.article-post h1 a:hover,.portfolio-box h4 a:hover{
+ 
+}
+
+
+/*侧边栏内容列表链接*/
+.web-sidebar ul li a:link,.web-sidebar ul li a:visited{
+ 
+}
+.web-sidebar ul li a:hover{
+ 
+}
+
+/*侧边栏分类列表链接*/
+.web-sidebar .side-class li a:link,.web-sidebar .side-class li a:visited{
+ 
+}
+.web-sidebar .side-class li a:hover{
+ 
+}
+
+/*侧边栏更多按钮链接*/
+.web-sidebar .side-more a{
+ 
+}
+.web-sidebar .side-more a:hover{
+ 
+}
+
+/*面包屑导航链接*/
+.dsure-title-nav a{
+color:<#css=breadcrumbs.linkcolor#>; 
+}
+.dsure-title-nav a:hover{
+color:<#css=breadcrumbs.linkHovercolor#>; 
+}
+
+
+/*首页通知公告链接*/
+.web-home-notice li a{
+ 
+}
+.web-home-notice li a:hover{
+ 
+}
+
+/*友情链接*/
+.web-links a{
+ 
+}
+.web-links a:hover{
+ 
+}
+
+/*文章内容页标签链接*/
+.tags a{
+ 
+}
+.tags a:hover{
+ 
+}
+
+
+/*---------------------其它区域文字颜色-----------------*/
+
+/*页面通用-文字颜色*/
+
+body{
+
+}
+
+/*侧边栏站内统计文字颜色*/
+.web-sidebar .sitedata{
+ 
+}
+
+/*侧边栏标题文字颜色*/
+.web-sidebar h3{
+ 
+}
+
+/*底部文字颜色*/
+#footer{
+ 
+}
+
+/*面包屑导航文字颜色*/
+.dsure-title-nav{
+ 
+}
+
+/*栏目列表标题文字颜色*/
+.article-post h1,.portfolio-box h4{
+ 
+}
+
+/*文章内容页展示文字颜色*/
+.dsure-p-article{
+ 
+}
+
+/*文章内容页标题颜色*/
+.page_header,.page_header a {
+ 
+}
+
+/*文章内容页标题子信息文字颜色*/
+.date_author{
+ 
+}
+
+
+/*评论列表文字颜色*/
+.web-commentlist li{
+ 
+}
+
+
+/*留言列表文字颜色*/
+.web-msglist{
+ 
+}
+
+/*站内微博列表文字颜色*/
+.web-mood-list{
+ 
+}
+

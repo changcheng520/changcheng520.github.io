@@ -1,0 +1,373 @@
+<!DOCTYPE HTML>
+<!--
+                ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+                ▓                                                                                  ▓
+                ▓                                                                                  ▓
+                ▓     没位道Designer's site Program 产品皮肤预览    未经允许不得仿制及转载         ▓
+                ▓     技术支持： https://www.c945.com                                               ▓
+                ▓    （此信息只在预览中出现，预览时网站的图片可能会有水印，正式下载安装后无水印）  ▓
+                ▓                                                                                  ▓
+                ▓                                                                                  ▓
+                ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+                
+-->
+
+<!--[if lt IE 7 ]> <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js ie ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js ie ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js ie ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js ie ie9"> <![endif]-->
+<!--[if !IE]><!--> <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js"> <!--<![endif]-->
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<meta charset="utf-8"/>
+<title>没位道 - Designer &#039;s  Site Program 全站静态系统 - 免费建站|个人网站建设|高端网站|UI|创意网站|建站系统|企业建站|HTML5|CSS3-案例作品</title>
+<script src="/assets-old/template_main/js/modernizr.js"  type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="../images/skins/style.css" />
+<link rel="stylesheet" type="text/css" href="main.css" />
+
+<script src="/assets-old/template_main/js/template.js"  type="text/javascript"></script>
+<script src="/assets-old/template_main/js/float_info_temp.js"  type="text/javascript"    ></script>
+<script src="/assets-old/template_main/js/jquery.min.js"  type="text/javascript"></script>
+<script src="/assets-old/template_main/js/jquery.wbox.js"  type="text/javascript"></script>
+<script src="comm.nav.js"  type="text/javascript"></script>
+
+<!--[if IE 6]>
+<script type="text/javascript" src="/assets-old/template_main/js/png.js"></script>
+<script>
+DD_belatedPNG.fix('img, a, span, h1, h2, h3, em, section, header, article, footer, .home-service li .i, #footer section .nav ul li,#footer section .msg .ft,#footer section .msg .fe,#footer section .msg .sub, .contact-sina,.contact-phone,.contact-qq,.ul_sidebar_class li, #ListPageN b');
+
+document.execCommand("BackgroundImageCache", false, true);
+</script>
+<![endif]-->
+
+<style>
+@import "caseStyle.css";
+</style>
+
+<script>
+
+var showImgTotal;
+var showImgTotal_length;
+
+$(window).load(function(){ 
+
+  $("#case_loading").animate({opacity: "0"},{queue:false,duration:800});
+  setTimeout('$("#case_loading, .case-Con").fadeOut(100);',800);
+  $("#voteWork").fadeOut(100);
+  $("#case_mainMask").fadeOut("slow");
+  $('#slideshow').css("margin-top","30px");	
+  $('#goUrl,#goBack,#editControl').css("top","45px");
+  
+	if (showImgTotal_length <=1) {
+	
+		 
+	}else{
+	     $('a#slideBtnPrev,a#slideBtnNext').fadeIn(500);	
+	}
+	
+	//图片高度获取判断
+	var thisH = Array();
+	$("#slideshow img").each(function(){   
+
+	 var imgH = $(this).height();
+	 thisH.push(imgH);
+
+	
+	});  
+	
+	var imgMaxH = Math.max.apply(Math,thisH); //图片最大高度
+
+
+  
+});
+
+
+$(document).ready(function(){
+	//默认框架的左边距离
+	var caseIframeLeftDis = $('#slideshow').offset().left; 
+	$('a#slideBtnPrev,a#slideBtnNext').fadeOut(2);
+	showImgTotal = $('#slideshow a').children("img");
+	showImgTotal_length = showImgTotal.length;
+
+	
+	//back to list
+	$("#goBack,#goBack-btn").click(  
+		function() {  
+			history.back(-1);
+
+	});		
+				
+	$('#slideshow a img').hover(function(){
+		
+		
+		
+		$(this).css("cursor","pointer");
+		
+		$(".cover", this).stop().animate({top:'0px'},{queue:false,duration:160});
+		$(".cover", this).animate({opacity:"0.9"},160);
+		$(".cover a", this).css({"color": "#3C0","font-size": "13px"});
+	}, function() {
+		$(this).css("cursor","default");
+		$(".cover", this).stop().animate({top:'113px'},{queue:false,duration:160});
+		$(".cover", this).animate({opacity:"0.6"},160);
+		$(".cover a", this).css({"color": "#fff","font-size": "12px"});
+		
+	});
+
+    //图片宽度调整
+	$("#slideshow img").each(function(){   
+		 
+     var w = 776;
+	 var h = 385;
+	 var ow = $(this).css("width");
+	 var oh = $(this).css("height");
+	 
+
+	 $(this).css("width",w);
+
+
+	});  
+	
+	var varMoveWidth = 790;
+	var thisTopWidth; //获取移动的高度变量值
+	var TopWidthTotal;
+	var TopWidthTotal_length;
+	var thisRows; //获取行数
+	var totalHeight; //获取总高度
+	
+	$("#slideBtnPrev").click(  
+		function() {  
+	
+			thisTopWidth = $('#slideshow').offset().left; 
+			TopWidthTotal = $('#slideshow').children("li");
+			TopWidthTotal_length = TopWidthTotal.length;
+			totalWidth = TopWidthTotal_length * varMoveWidth;
+
+			if ( thisTopWidth < -10 ){
+
+				$('#slideshow').animate({marginLeft:'+=' + varMoveWidth + "px"},'slow');	 //累加
+			}
+		
+	});  
+	$("#slideBtnNext").click(  
+
+		function() {  
+	
+			thisTopWidth = $('#slideshow').offset().left; 
+			TopWidthTotal = $('#slideshow').children("li");
+			TopWidthTotal_length = TopWidthTotal.length;
+			totalWidth = TopWidthTotal_length * varMoveWidth;
+
+			if ( (thisTopWidth - caseIframeLeftDis - 10) > ( -(totalWidth - varMoveWidth)) ){
+
+				$('#slideshow').animate({marginLeft:'-=' + varMoveWidth + "px"},'slow');	 //累加
+			}
+		
+	});
+	
+	
+	
+	
+});   
+</script>
+</head>
+
+<body>
+
+<script src="/assets-old/template_main/js/shortCut.js"></script>
+<script>top_shortCut();</script> 
+
+    <!-- 头部    begin -->
+    
+    <header id="header">
+
+      <!-- logo -->
+      <h2 id="logo"><a href="index.html" title="没位道视觉设计"><img src="img/logo.png" alt=""></a></h2>
+
+    </header>
+    
+    <!-- 头部    end -->
+
+  <!-- 导航  begin -->
+
+    <nav id="mainNav">
+    
+        <ul class="nav">
+            
+            <li class="navNone item"></li>
+            <li id="ZGVmYXVsdC5o" class="item"><a  title="" href="index.html" >HOME</a></li>
+            <li id="bGlzdGFydGlj" class="item"><a  title="" href="dairy.html" >DIARY</a>
+                <ul class="sub">
+                    <li class="sub-item"><a  title="" href="#" >DESIGN</a></li>
+                    <li class="sub-item"><a  title="" href="#" >NEWS</a></li>
+                </ul>
+            </li>
+            <li id="bGlzdGNhc2Vf" class="item"><a  title="" href="case.html" >PORTFOLIO</a></li>
+            <li id="bWVzc21lc3Nf" class="item"><a  title="" href="contact.html" >CONTACT</a> </li>
+            <li id="c2VsZmluZm8u" class="item"><a  title="" href="about-link.html" >ABOUT US</a> </li>
+            <li id="kiuoorrkhkkj6" class="item"><a  title="" href="mood.html" >TALK</a> </li>
+            <li class="navNone item"></li>
+            
+        </ul>
+    
+    </nav>
+
+  <!-- 导航  end-->
+  
+    
+    <!-- search board  begin -->
+    <script>searchBoardHtml();</script>
+    <!-- search board  end -->
+
+    <!--栏目导航  begin-->
+    <section id="visual-nav">
+        <div class="title">
+            <h2>案例作品<span>WORKS</span></h2>
+        </div>
+
+    </section>
+    <!-- 栏目导航  end-->  
+    
+    
+    <!-- 面包屑 -->
+    <div class="navClass">
+        <ul id="breadcrumbs">
+            <li><a href="#">原创</a></li>
+            <li><a href="#">经验分享</a></li>
+            <li><a href="#">Web Design</a></li>
+        </ul>
+    </div>
+    
+    
+     <div id="content-noside">
+     
+         <!-- 内容区  begin -->
+
+                <!--  案例作品列表   begin -->
+            
+                <div id="worksShowBox">
+                
+                     <div id="right_content">
+                
+                        <!--case_loading-->
+                        <div id="case_loading"><div class="case_loadingShow"></div></div>
+                        
+                        <!--遮罩-->
+                        <div id="case_mainMask"></div>
+                        
+                        <!--上下个案例链接-默认隐藏-->
+                        <div id="recent">
+                            <div class="bl"><a href="#"   Title="" >没位道手绘网站</a></div><div class="br"><a href="#"   Title="">Designer's site Program全站静态</a></div>
+                        </div>
+                        
+                        
+                        <div id="sliderWrapper">
+                            
+                            <a id="goUrl" href="${work_siteURL}" target="_blank">Visit</a>
+                            <a id="goBack" href="javascript:" title="返回列表">Back</a>
+                        
+                            <a id="slideBtnPrev" href="javascript:">Prev</a> <a  id="slideBtnNext" href="javascript:">Next</a> 
+                         
+                            <ul id="slideshow">
+                            
+                               <li><a href="#"><img  alt="" src="../_demo-img/900X450-1.jpg" ></a></li>
+                               <li><a href="#"><img  alt="" src="../_demo-img/900X450-2.jpg" ></a></li>
+                        
+                            </ul>
+                        </div>  
+                        
+                        
+                        
+                        
+                        <div class="caseCon">
+                            <h1>Designer's site Program全站静态程序官方网站</h1>
+                            <hr>
+                            就自己如何做配色方案，做一个简单的教程和经验分享，希望对大家有用。
+    直接取色或者盲目搭配都会降低效率，甚至失败，这里有一个小小的配色方案设计技巧，不一定人人适用，但是可以提高配色的效率，提高色彩质量，增强视觉效果。
+    
+    色彩是设计中的一个难点，也是重中之重，不靠长期积累是不行的，但是提高配色效率，减少作品配色失败率。也是有一些方法的。
+     
+    不论是做网页，还是绘画，还是其它，都可以这样进行配色方案的设计。欢迎拍砖喔
+                            <span class="i">(&nbsp;Date:2012-3-27&nbsp;Hits:19&nbsp;)</span>
+                        </div>
+                        
+                         
+                        
+                    </div><!-- End #right_content -->
+                
+
+               </div><!-- End #worksShowBox -->
+    
+
+                <!--  案例作品列表   end -->
+                
+                
+                
+         <!-- 内容区  end -->
+      
+     
+     </div>
+     
+     
+     <!-- 底部  begin  -->
+     <footer id="footer">
+         <section>
+             <span></span>
+             
+             <div class="box">
+             
+                 <!-- 关于 -->
+                 <div class="about">
+                     <h3>关于我们</h3>
+                     <p>
+                     
+没位道致力打造高质量的具有特色界面需求，视觉创意需求，品牌需求的"中小型网站、移动互联网站"产品和衍生UI产品、网站UI云服务产品。<br>QQ:546007561 2270392658(业务合作)<br>Tel：15007388445<br>Email:xizon@c945.com<br>
+
+                     </p>
+                 
+                 </div>
+                 
+                 <!-- 导航 -->
+                 <div class="nav">
+                     <h3>网站导航</h3>
+                     <ul>
+                         <li><a href="#">网站首页</a></li>
+                         <li><a href="#">关于我们</a></li>
+                         <li><a href="#">联系我们</a></li>
+                         <li><a href="#">案例展示</a></li>
+                         <li><a href="#">站内搜索</a></li>
+                         <li><a href="#">站内微博</a></li>
+                         <li><a href="#">产品</a></li>
+                     </ul>
+                 
+                 
+                 </div>
+             
+                 <!-- 留言 -->
+                 <div class="msg"><script>msgHtml();</script></div>
+                 
+             </div>
+
+         </section>
+         
+         <div class="copy">
+              <span></span>
+              <!-- 版权 -->
+              COPYRIGHT &copy; 2012  没位道设计  All Rights Reserved. Powered By <a href="/d-s">Designers site Program</a>
+         </div>
+         
+        
+     
+     
+     </footer>
+     <script src="footer.js"></script>
+     
+     <!-- 底部  end  -->
+     
+ 
+
+<script src="/assets-old/template_main/js/commFooterFun.js"></script>
+</body>
+</html>
+
+

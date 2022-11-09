@@ -1,0 +1,14 @@
+/*®à®à®à®à®à®à®à®à®à®à®à®à®à®à®à®à®à®à®à®à®à®à®à®à®àºÊ»›–‘CSS Hack®à®à®à®à®à®à®à®à®à®à®à®à®à®à®à®à®à®à®à®à®à®à®à®à®à®à®à*/
+
+/*µº∫Ω*/
+.ie6 .nav-intro{visibility:hidden}
+
+
+/*∞¥≈•*/
+.ie6  .ds-button { height: 34px; display: inline-block; padding: 0px 15px 0px 0px; background:none }
+.ie6  .ds-button-inner {background: url(img/ds-button-bg-blue.png) no-repeat -18px 0px; }
+
+.ie6 #prev,.ie7 #prev,.ie9 #prev{right:80px;;}
+.ie6 #next,.ie7 #next,.ie9 #next{right:60px;background-position:right 0;}
+
+.ie6 #footer .col{padding-left:15px}

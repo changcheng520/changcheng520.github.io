@@ -1,0 +1,65 @@
+.date_author{
+	width:93px;
+	height:62px;
+	border:1px solid #333;
+	position:absolute;
+	left:0;
+	top:0;
+	color:#6b6b6b;
+	text-align:center;
+	padding-top:5px;
+	z-index:3;
+}
+
+.date_author span{
+	font-size:30px;
+	display:block;
+	color:#333;
+	padding-top:3px;
+}
+
+.page_header,.post-content,.list-tags-box,.article-post hr{
+	margin-left:164px;
+}
+
+.post-content img{
+	max-width:100%;
+	background:#000;
+	
+}
+
+.page_header h1 a{
+	color:#272626;
+	font-weight:normal;
+	
+}
+.page_header h1 a:hover{
+	color:#f60;
+}
+
+
+/*categories*/
+.categories-list{
+	text-align:left;
+	display:block;
+	height:50px;
+
+}
+
+.categories-list li{
+	float:left;
+}
+
+.categories-list a{
+	position:relative;
+	z-index:999;
+	color:#90ac20;
+	margin-right:20px;
+	font-size:14px;
+}
+
+.categories-list a.current{
+	font-weight:bold;
+	border-bottom:2px solid #90ac20;
+	line-height:25px;
+}

@@ -1,0 +1,40 @@
+.ds-button {
+	height:34px;
+	display:inline-block;
+	padding:0px 8px 0px 0px;
+	background:url(../images/ds-button-bg-blue.png) no-repeat 100% -114px;
+	cursor:pointer;
+	-moz-transition:0;
+	-o-transition:0;
+	-webkit-transition:0;
+	-ms-transition:0;
+	transition:0;
+	margin:5px 8px 5px 2px
+}
+.ds-button:hover {
+	background-position:100% -152px;
+	-moz-transition:0;
+	-o-transition:0;
+	-webkit-transition:0;
+	-ms-transition:0;
+	transition:0;
+}
+.ds-button:active {
+	background-position:100% -190px;
+}
+.ds-button-inner {
+	color:#fff !important;
+	height:34px;
+	line-height:34px;
+	display:block;
+	text-decoration:none;
+	padding:0px 15px 0px 25px;
+	text-shadow:0 -1px 0 rgba(0,0,0,0.8);
+	background:url(../images/ds-button-bg-blue.png) no-repeat 0px 0px;
+}
+.ds-button:hover .ds-button-inner {
+	background-position:0px -38px;
+}
+.ds-button:active .ds-button-inner {
+	background-position:0px -76px;
+}

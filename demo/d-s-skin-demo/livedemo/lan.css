@@ -1,0 +1,22 @@
+/*Designer's site Program Generic CSS*/
+
+.bar-top{ height:50px; padding-top:10px; width:100%; background:url(../bar/top-bg.png) repeat-x; overflow:hidden; position:absolute; bottom:-3px; left:0}
+.bar-top span.logo{background:url(../bar/icon.png) no-repeat; display:block; float:left; margin-left:20px; width:261px; height:45px; margin-top:4px;}
+.bar-top a.close{display:block; float:right;  width:40px; height:40px; background:url(../bar/icon.png) no-repeat -257px -4px; margin-top:11px;}
+.bar-top span.u{background:url(../bar/icon.png) no-repeat -307px 0; display:block; float:right; width:132px; height:45px; margin-top:4px;}
+.bar-top a.d{background:url(../bar/icon.png) no-repeat -437px 0; display:block; float:right; width:42px; height:45px; margin-top:4px;}
+.bar-top a.d:hover{padding-left:2px}
+
+#demoBox{width:260px; height:143px; background:url(../bar/close-tip.PNG) no-repeat; position:absolute; bottom:33px; right:-555px; z-index:2;}
+a.preImg{background:url(preImg.PNG); display:block; width:123px; height:63px; position:absolute; z-index:5; top:45%; left:0}
+a.preImg:hover{margin-top:-2px}
+
+
+
+/*language*/
+#demo_language{background:url(livedemo/lan.png) no-repeat 0 -16px; width:104px; height:67px; position:fixed; _position:absolute; top:0; left:46%; z-index:9999999; text-align:center;}
+#demo_language .link{background:url(livedemo/lan.png) no-repeat; display:block; width:73px; height:22px; margin:0 auto;}
+#demo_language .chinese{background-position: -104px 0;}
+#demo_language .chinese:hover{ background-position: -179px 0;}
+#demo_language .english{background-position: -104px -22px;}
+#demo_language .english:hover{ background-position: -179px -22px;}

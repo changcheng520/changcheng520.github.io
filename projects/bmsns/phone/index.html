@@ -1,0 +1,149 @@
+<!doctype html>
+<html>
+	<head>
+		<head>
+            <meta charset="utf-8"/>
+			<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+            <title>厦门比蒙网络科技有限公司 | 商业社交树,HTML5交互产品,车社交,互联网招商,城市站加盟,车网站招商,车网站加盟</title>
+            
+            <!--   SEO begin -->
+            <link rel="icon" href="favicon.ico" type="image/x-icon">
+            <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+            <link rel="stylesheet" type="text/css" href="phone.inter.css" />
+            
+              
+            <!--   SEO begin -->
+            <meta name="keywords" content="互联网,移动互联网,比蒙网络,换租格格,汽车社交,商业社交树,HTML5交互产品,三明网站招商,车网站招商,车网站加盟,厦门网站加盟,泉州招商加盟,漳州招商加盟,南平项目招商" />
+            <meta name="description" content="比蒙正努力地打造这样一个互联网商业社交平台：颠覆传统的基于衣、食、住、行、商所延展的生活与生产模式，以“人、社会、商业、服务”为主轴，倡导线上、线下多轴进行“交叉、交往、交流、
+        交易、交互”，以全球视野整合人的社会属性和商业的资源属性，实现人、商业、社会的深度发展与动，全力探索科技创新与商业还原，在人文社会与虚拟现实中不断挖掘需求本质。" />
+            <meta name="author" content="比蒙网络" />
+            <meta name="generator" content="Designers ' Site Program" /> 
+            <meta name="robots" content="index,follow" />
+
+            <script src="jquery.min.js"></script>
+            <script type="text/javascript" src="iscroll.js"></script>
+            <script type="text/javascript">
+            
+            var myScroll;
+			
+			$(function(){
+				$(".hand").animate({marginLeft: "0px"},{duration: 500});
+				$(".hand").delay(500).animate({marginTop: "-100px"},{duration: 500});
+				$(".hand").delay(1000).fadeOut(500);
+				
+				
+			});
+
+			function updatePosition () {
+				
+				if (parseFloat(this.y) < -370){
+
+						$(document).ready(function(){  
+							$("#parallax-field3").addClass("css3-r");
+						});		
+
+				}
+				
+
+
+			}
+            
+            function loaded () {
+                myScroll = new IScroll('#wrapper', {
+                    mouseWheel: true,
+					probeType: 3,
+                    indicators: [{
+                        el: document.getElementById('parallax-field1'),
+                        resize: false,
+                        ignoreBoundaries: true,
+                        speedRatioY: 0.8
+                    }, {
+                        el: document.getElementById('parallax-field2'),
+                        resize: false,
+                        ignoreBoundaries: true,
+                        speedRatioY: 2.2
+                    }, {
+                        el: document.getElementById('parallax-field3'),
+                        resize: false,
+                        ignoreBoundaries: true,
+                        speedRatioY: 1.2
+                    }, {
+                        el: document.getElementById('parallax-field3_2'),
+                        resize: false,
+                        ignoreBoundaries: true,
+                        speedRatioY: 1.3
+                    }, {
+                        el: document.getElementById('parallax-field4'),
+                        resize: false,
+                        ignoreBoundaries: true,
+                        speedRatioY: -0.5
+                    }, {
+                        el: document.getElementById('parallax-field5'),
+                        resize: false,
+                        ignoreBoundaries: true,
+                        speedRatioY: 1.3
+                    }, {
+                        el: document.getElementById('parallax-field6'),
+                        resize: false,
+                        ignoreBoundaries: true,
+                        speedRatioY: 1.5
+                    }
+					
+					
+					
+					]
+                });
+				myScroll.on('scroll', updatePosition);
+				myScroll.on('scrollEnd', updatePosition);
+							
+            }
+            
+            document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+            
+            </script>
+
+			<style type="text/css">
+
+			
+            </style>
+</head>
+<body onload="loaded()"  oncontextmenu="return false">
+
+<div class="hand"></div>
+
+<div id="wrapper">
+    <div class="bg"><img src="parallax/phone.jpg" style="width:100%"></div>
+    <div class="parallax-field" id="parallax-field1">
+        <div id="parallax-ele1"></div>
+    </div>
+    
+    <div class="parallax-field" id="parallax-field2">
+        <div id="parallax-ele2"></div>
+    </div>
+    
+    <div class="parallax-field" id="parallax-field3">
+        <div id="parallax-ele3"></div>
+    </div>  
+
+    
+    <div class="parallax-field" id="parallax-field3_2">
+        <div id="parallax-ele3_2"></div>
+    </div>  
+    
+    <div class="parallax-field" id="parallax-field4">
+        <div id="parallax-ele4"></div>
+    </div>  
+    
+     <div class="parallax-field" id="parallax-field5">
+        <div id="parallax-ele5"></div>
+    </div>  
+    
+     <div class="parallax-field" id="parallax-field6">
+        <div id="parallax-ele6"></div>
+    </div>  
+     
+</div>
+
+
+</body>
+</html>

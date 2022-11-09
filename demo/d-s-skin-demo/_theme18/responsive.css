@@ -1,0 +1,51 @@
+				
+/*▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓响应式页面▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓*/
+
+@media (min-width: 1200px) {
+  /*无需设置*/
+}
+@media (min-width: 980px) and (max-width: 1200px) {
+  /*无需设置*/
+
+}
+
+@media (min-width: 768px) and (max-width: 980px) {
+	
+ /*此主题无响应式交互*/
+
+}
+
+
+@media (min-width: 480px) and (max-width: 768px) {
+	
+	
+	/*无需设置,若不是ipad,则系统会切换到小于ipad屏幕大小的手机版 http://www.yoursite.com/phone/index/ */
+	
+
+
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+	
+
+	/*无需设置,若不是ipad,则系统会切换到小于ipad屏幕大小的手机版 http://www.yoursite.com/phone/index/ */
+	
+
+	
+}
+
+@media (min-width: 295px) and (max-width: 320px){
+	
+
+	/*无需设置,若不是ipad,则系统会切换到小于ipad屏幕大小的手机版 http://www.yoursite.com/phone/index/ */
+
+	
+}
+
+@media (max-width: 295px){
+	
+
+	/*无需设置,若不是ipad,则系统会切换到小于ipad屏幕大小的手机版 http://www.yoursite.com/phone/index/ */
+	
+
+}

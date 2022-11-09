@@ -1,0 +1,122 @@
+/*Designer's site Program Generic CSS*/
+
+@import "../../admin/_manage_css/floatWin.css";
+@import "bar.css";
+
+/* =============================================================================
+   Base CSS
+   ========================================================================== */
+
+html{-webkit-text-size-adjust:none;} /*chrome font*/
+html.bgNone {background:none}
+html.bgNone body{background-image:none}
+
+/*roration*/
+@-webkit-keyframes mov_ico_more{0%{opacity:1;}
+100%{-webkit-transform:rotate(360deg)}}
+
+body {font: 12px Tahoma, Verdana; line-height:150%; }
+body.iframeFloatL{text-align: -moz-left !important; text-align:left; background: transparent}
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:none;outline:none;font-size:100%;}
+*:focus{outline:0;}
+ol,ul,li{list-style:none;}
+ol{list-style:decimal outside;}
+caption,th,td{text-align:left;font-weight:normal;}
+blockquote,q{quotes:none;}
+select,option{font-size:12px !important;}/*for FF,让框和input等高*/
+input{ border:none}
+p.clear{margin:20px}
+textarea {border:1px solid #ccc;  background-repeat:no-repeat; background:#FFF}
+input[type="text"],textarea{border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; -o-webkit-border-radius: 3px;}
+select {color: #000000;}
+a:link, a:visited {color: #333; text-decoration:none}
+a:hover{ text-decoration:underline;color:#138616; -moz-transition:.2s ease-in-out;-o-transition:.2s ease-in-out;-webkit-transition:.2s ease-in-out;}
+a:hover, a:active {outline: 0;}
+hr{height:1px;border:none;border-top:1px dotted #333; width:99%; }
+table {border-collapse: collapse; border-spacing: 0;}
+img{border:none}
+h1{font-size:18px;}
+h2{font-size:16px;}
+h3{font-size:15px;}
+h4{font-size:14px;}
+h5{font-size:13px;}
+h6{font-size:12px;}
+
+
+/* =============================================================================
+   HTML5 CSS
+   ========================================================================== */
+
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,audio,canvas,video,var{display:block;}
+var{display:none}
+audio:not([controls]){display:none;}
+[hidden]{display:none;}
+svg:not(:root) { overflow: hidden; }
+figure {margin: 0;}
+/* =============================================================================
+   Call CSS
+   ========================================================================== */
+
+/*框架表单*/
+.btn{ height:26px; line-height:26px; text-indent:5px; padding:5px; background:#333; padding:4px; color:#fff; border:#000 1px solid}
+
+/*盒模型*/
+.tl{text-align:left}
+.tc{text-align:center}
+.tr{text-align:right}
+
+.blo{display:block;}
+
+.pa5{padding:5px;}
+.pa10{padding:10px;}
+.pa15{padding:15px;}
+.pa20{padding:20px;}
+.pa25{padding:25px;}
+.pa30{padding:30px;}
+
+.ma5{margin:5px;}
+.ma10{margin:10px}
+.ma15{margin:15px}
+.ma20{margin:20px}
+.ma25{margin:25px}
+.mr30{margin-right:30px;}
+
+
+/*浮动*/
+.fl{float:left;}
+.fr{float:right;}
+.clear{clear:bloth;}
+
+/*定位*/
+.pa{position:absolute;}
+.pr{position:relative;}
+.pf{position:fixed!important;z-index:110}
+
+.left{left:0;}
+.right{right:0;}
+
+/*清除浮动*/
+.cf::before, .cf::after {content:"";display:table;}
+.cf::after {clear:both;}
+.cf {zoom:1;}
+.clear{clear:both}
+
+/*文字颜色*/
+.fb{color:#666}
+.fr{color:#f00}
+
+/*文本*/
+.noWrap{white-space: nowrap;text-overflow: ellipsis;overflow: hidden;}
+.f12{font-size:12px;}
+.f14{font-size:14px;}
+.f16{font-size:16px;}
+.f18{font-size:18px;}
+.f20{font-size:20px;}
+.f22{font-size:22px;}
+.f24{font-size:24px;}
+.f26{font-size:26px;}
+.f28{font-size:28px;}
+.f30{font-size:30px;}
+
+
+

@@ -1,0 +1,41 @@
+/*case-style*/
+@import "../admin/_manage_css/floatWin.css";
+
+
+/* SLIDESHOW */
+#slideshow li{ margin-bottom:30px; margin-left:10px}
+#slideshow li img{padding: 4px; border: 1px solid #ccc; max-width:600px; background-color: #eee; box-shadow: 0px 3px 6px rgba(0,0,0,0.2); -moz-box-shadow: 0px 3px 6px rgba(0,0,0,0.2); -webkit-box-shadow: 0px 3px 6px rgba(0,0,0,0.2);  behavior: url(../css/PIE.htc);/*CSS3 compatible for ie6-8*/}
+
+
+a#goUrl,a#goBack{margin-left:10px; width:112px; padding:3px 8px 3px 15px; font-style:normal; color:#F60;height:32px;line-height:32px;text-decoration:none;background:#E3E3E3;text-align:center; text-shadow: 1px 1px 1px #fff; border-radius: 25px; -moz-border-radius: 25px; -webkit-border-radius: 25px; -o-webkit-border-radius: 25px; behavior: url(../css/PIE.htc);/*CSS3 compatible for ie6-8*/ border-bottom:1px #CCC dotted}
+a#goUrl{ margin-left:-6px;}
+a#goBack {}
+a#goUrl:hover,a#goBack:hover{background:#fff; color:#000; text-shadow:none}
+
+
+
+.caseCon { margin:50px 20px 50px 0;}
+.caseCon .i{color:#999; font-size:12px;}
+.caseCon h1{margin:10px}
+
+
+#case_mainMask { width:8000px; height:100%; position:absolute; top:0; left:0; z-index:9998;}
+#case_loading{ top:130px; left:365px; position:absolute; width:321px; height:100px; z-index:9999; color:#FFF; overflow:hidden}
+#case_loading .case_loadingShow{width:250px; height:78px;}
+
+
+/*作品同步日志后的评论按钮*/
+#workcomment{text-align:left; margin:20px 0 20px ;}
+#workcomment img{border:none; margin-left:-14px;}
+
+/*作品展示页 投票区*/
+#voteWork {position:absolute; top:5px; visibility:hidden; left:626px;; z-index:351; height:150px; width:240px; text-align:left}
+#voteWork img{border:none}
+
+
+/*前台修改按钮*/
+#editControl {position:absolute; margin:0; z-index:999; top:53px; left:540px;; z-index:351; height:150px; width:240px; text-align:left;}
+
+
+/*compatible*/
+.ie6 #sliderWrapper,#slideshow{margin-top:50px}

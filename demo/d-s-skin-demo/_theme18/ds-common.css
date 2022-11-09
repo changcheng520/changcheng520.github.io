@@ -1,0 +1,318 @@
+/*
+                ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+                ▓                                                                    ▓
+                ▓                                                                    ▓
+                ▓     Designer's site program 前端页面通用样式                       ▓
+                ▓     Warning:  此样式表一般情况不用修改，任意模板前端通用           ▓
+                ▓     Design：  没位道                                               ▓
+                ▓     Version:  1.0.1                                                ▓
+                ▓                                                                    ▓
+                ▓                                                                    ▓
+                ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+				
+				
+		
+*/
+
+
+@import "../admin/_manage_css/floatWin.css";
+
+/* =============================================================================
+   Base CSS
+   ========================================================================== */
+
+html{-webkit-text-size-adjust: none;} /*chrome font*/
+html.bgNone {background:none}
+html.bgNone body{background-image:none}
+
+/*roration*/
+@-webkit-keyframes mov_ico_more{0%{opacity:1;}
+100%{-webkit-transform:rotate(360deg)}}
+
+body {font: 12px Tahoma, Verdana; line-height:150%}
+body.iframeFloatL{text-align: -moz-left !important; text-align:left; background: transparent}
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:none;outline:none;font-size:100%;}
+*:focus{outline:0;}
+ol,ul,li{list-style:none;}
+ol{list-style:decimal outside;}
+caption,th,td{text-align:left;font-weight:normal;}
+blockquote,q{quotes:none;}
+select,option{font-size:12px !important;}/*for FF,让框和input等高*/
+input{ border:none}
+
+textarea {border:1px solid #ccc;  background-repeat:no-repeat; background:#FFF}
+input[type="text"],textarea{border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; -o-webkit-border-radius: 3px;}
+select {color: #000000;}
+a:link, a:visited {color: #333; text-decoration:none}
+a:hover{ text-decoration:underline;color:#138616; -moz-transition:.2s ease-in-out;-o-transition:.2s ease-in-out;-webkit-transition:.2s ease-in-out;}
+a:hover, a:active {outline: 0;}
+hr{height:1px;border:none;border-top:1px dotted #333; width:99%; }
+table {border-collapse: collapse; border-spacing: 0;}
+img{border:none;-ms-interpolation-mode:bicubic/*解决IE图片锯齿问题*/;}
+
+blockquote:before, blockquote:after,
+q:before, q:after {content: "";}
+blockquote, q {quotes: "" "";}
+
+/* =============================================================================
+   HTML5 CSS
+   ========================================================================== */
+
+article,aside,details,figcaption,figure,footer,header,hgroup,nav,section,audio,canvas,video,var{display:block;}
+var{display:none}
+audio:not([controls]){display:none;}
+[hidden]{display:none;}
+svg:not(:root) { overflow: hidden; }
+figure {margin: 0;}
+/* =============================================================================
+   Call CSS
+   ========================================================================== */
+
+/*框架表单*/
+.btn{ height:26px; line-height:26px; text-indent:5px; padding:5px; background:#333; padding:4px; color:#fff; border:#000 1px solid}
+
+/*盒模型*/
+.tl{text-align:left}
+.tc{text-align:center}
+.tr{text-align:right}
+
+.blo{display:block;}
+
+.pa5{padding:5px;}
+.pa10{padding:10px;}
+.pa15{padding:15px;}
+.pa20{padding:20px;}
+.pa25{padding:25px;}
+.pa30{padding:30px;}
+.pa35{padding:35px;}
+
+.pa-l5{padding-left:5px;}
+.pa-l10{padding-left:10px}
+.pa-l15{padding-left:15px}
+.pa-l20{padding-left:20px}
+.pa-l25{padding-left:25px}
+.pa-l30{padding-left:30px}
+.pa-l35{padding-left:35px}
+
+.pa-r5{padding-right:5px;}
+.pa-r10{padding-right:10px}
+.pa-r15{padding-right:15px}
+.pa-r20{padding-right:20px}
+.pa-r25{padding-right:25px}
+.pa-r30{padding-right:30px}
+.pa-r35{padding-right:35px}
+
+
+.pa-t5{padding-top:5px;}
+.pa-t10{padding-top:10px}
+.pa-t15{padding-top:15px}
+.pa-t20{padding-top:20px}
+.pa-t25{padding-top:25px}
+.pa-t30{padding-top:30px}
+.pa-t35{padding-top:35px}
+
+.pa-b5{padding-bottom:5px;}
+.pa-b10{padding-bottom:10px}
+.pa-b15{padding-bottom:15px}
+.pa-b20{padding-bottom:20px}
+.pa-b25{padding-bottom:25px}
+.pa-b30{padding-bottom:30px}
+.pa-b35{padding-bottom:35px}
+
+
+.ma0{margin:0}
+.ma5{margin:5px;}
+.ma10{margin:10px}
+.ma15{margin:15px}
+.ma20{margin:20px}
+.ma25{margin:25px}
+.ma30{margin:30px}
+.ma35{margin:35px}
+.ma45{margin:45px}
+
+.ma-l5{margin-left:5px;}
+.ma-l10{margin-left:10px}
+.ma-l15{margin-left:15px}
+.ma-l20{margin-left:20px}
+.ma-l25{margin-left:25px}
+.ma-l30{margin-left:30px}
+.ma-l35{margin-left:35px}
+
+.ma-r5{margin-right:5px;}
+.ma-r10{margin-right:10px}
+.ma-r15{margin-right:15px}
+.ma-r20{margin-right:20px}
+.ma-r25{margin-right:25px}
+.ma-r30{margin-right:30px}
+.ma-r35{margin-right:35px}
+
+
+.ma-t5{margin-top:5px;}
+.ma-t10{margin-top:10px}
+.ma-t15{margin-top:15px}
+.ma-t20{margin-top:20px}
+.ma-t25{margin-top:25px}
+.ma-t30{margin-top:30px}
+.ma-t35{margin-top:35px}
+
+.ma-b5{margin-bottom:5px;}
+.ma-b10{margin-bottom:10px}
+.ma-b15{margin-bottom:15px}
+.ma-b20{margin-bottom:20px}
+.ma-b25{margin-bottom:25px}
+.ma-b30{margin-bottom:30px}
+.ma-b35{margin-bottom:35px}
+
+
+.box-center{margin:0 auto}
+
+/*文字效果*/
+.font-family-song{font-family:"宋体"}
+.font-family-heiti{font-family:"黑体"}
+.font-family-yahei{font-family:"Microsoft YaHei"}
+.font-family-default{font-family: Arial, Helvetica, sans-serif}
+.font-weight-normal {font-weight:normal}
+.font-weight-blod {font-weight:bold}
+
+.font-style-italic{ font-style:italic}
+.font-style-normal{ font-style:normal}
+.font-decoration-none{text-decoration:none}
+.font-decoration-line{text-decoration:underline}
+
+.font-lh-18{line-height:18px}
+.font-lh-20{line-height:20px}
+.font-lh-22{line-height:22px}
+.font-lh-24{line-height:24px}
+.font-lh-26{line-height:26px}
+.font-lh-28{line-height:28px}
+.font-lh-30{line-height:30px}
+.font-lh-32{line-height:32px}
+.font-lh-34{line-height:34px}
+.font-lh-36{line-height:36px}
+.font-lh-38{line-height:38px}
+.font-lh-40{line-height:40px}
+.font-lh-42{line-height:42px}
+.font-lh-44{line-height:44px}
+.font-lh-46{line-height:46px}
+.font-lh-48{line-height:48px}
+
+
+.font-size12,.font-size13,.font-size14,.font-size16,.font-size18,.font-size20,.font-size24,.font-size28,.font-size32,.font-size36,.font-size38,.font-size40{display:block; width:100%; clear:both;}
+.font-size12{font-size:12px;}
+.font-size13{font-size:13px;}
+.font-size14{font-size:14px;}
+.font-size16{font-size:16px;}
+.font-size18{font-size:18px;}
+.font-size20{font-size:20px;}
+.font-size24{font-size:24px;}
+.font-size26{font-size:26px; }
+.font-size28{font-size:28px;}
+.font-size32{font-size:32px;}
+.font-size36{font-size:36px;}
+.font-size38{font-size:38px;}
+.font-size40{font-size:40px;}
+
+
+
+
+/*浮动*/
+.fl{float:left;}
+.fr{float:right;}
+
+
+/*定位*/
+.pa{position:absolute;}
+.pr{position:relative;}
+.pf{position:fixed!important;z-index:110}
+
+.left{left:0;}
+.right{right:0;}
+
+/*清除浮动*/
+.cf::before, .cf::after {content:"";display:table;}
+.cf::after {clear:both;}
+.cf {zoom:1;}
+.clear{clear:both}
+
+.clearfix:before,
+.clearfix:after {content:"";display:table;}
+.clearfix:after {clear:both;}
+
+/* For IE 6/7 (trigger hasLayout) */
+.clearfix {zoom:1;}
+
+/*文本*/
+.noWrap{white-space: nowrap;text-overflow: ellipsis;overflow: hidden;}
+.f12{font-size:12px;}
+.f14{font-size:14px;}
+.f16{font-size:16px;}
+.f18{font-size:18px;}
+.f20{font-size:20px;}
+.f22{font-size:22px;}
+.f24{font-size:24px;}
+.f26{font-size:26px;}
+.f28{font-size:28px;}
+.f30{font-size:30px;}
+
+
+
+/* =============================================================================
+   交互通用框架
+   ========================================================================== */
+
+/*前端页面隐藏首页消息提示，只在后台登陆时提示*/
+.showMessage{visibility:hidden}
+
+
+/*前台修改按钮*/
+#editControl {margin:15px; text-align:right; position:absolute; z-index:10}
+#editControl iframe{width:155px; height:30px}
+
+
+/*首页侧边栏友情链接*/
+.sideLink{text-decoration:none;display:block}
+.sideLink img{max-height:30px;max-width:100px;}
+
+
+/*右键快速导航*/
+#rightMenuStyle{position:absolute; box-shadow: 0px 3px 3px rgba(0,0,0,0.2); -moz-box-shadow: 0px 3px 3px rgba(0,0,0,0.2); -webkit-box-shadow: 0px 3px 3px rgba(0,0,0,0.2); border-radius: 6px; -moz-border-radius: 6px; -webkit-border-radius: 6px;  -o-webkit-border-radius: 6px; padding:10px 3px 0px 3px; border:5px #ccc solid; z-index:190; width:80px; text-align:left; background:#F2F2F2;}
+#rightMenuStyle a{text-indent:15px; line-height:24px; font-size:12px; padding-bottom:3px; display:block; color:#666; border-bottom:1px #ccc dotted}
+#rightMenuStyle a:hover{color:#333; text-decoration:none}
+#rightMenuStyle .userPlant a{color:#333; background:#EEE; padding:1px 3px 2px 3px ; height:20px; overflow:hidden; display:block;  border-radius: 6px; line-height:15px; -moz-border-radius: 6px; -webkit-border-radius: 6px;  -o-webkit-border-radius: 6px; padding:10px 3px 0px 3px;margin-bottom:4px; }/*表单提示框架样式*/
+
+
+/*警告提示文字区块*/
+.tipsFloatWin{padding:15px 0 0 20px}
+#tip {display:block; width:100%; text-shadow:none}
+#tip div{padding:2px 5px 2px 5px; background:#FCE8DC; border:1px solid #F60; color:#F30; line-height:15px; height:15px; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; -o-webkit-border-radius: 3px; margin-top:5px;}
+
+/*前台快捷登录*/
+#frmLogin {line-height:35px}
+#frmLogin table td{ text-indent:20px}
+#frmLogin{line-height:25px;}
+#frmLogin input{ padding:3px 10px 3px 10px; margin-top:20px; background:#333; color:#fff; border-radius: 0px; -moz-border-radius: 0px; -webkit-border-radius: 0px; -o-webkit-border-radius: 0px;}
+#frmLogin a{ height:30px; background:#D8D8D8; width:75px;border:1px solid #fff; margin:5px;}
+#frmLogin a{background:none; color:#3C6624; margin:0 0 0 10px}
+#frmLogin #userName,#frmLogin #userPass{ background:#D0D0D0; color:#333; padding:10px;}
+#frmLogin input:hover{background:#000; color:#fff}
+
+
+/*文章内容展示Code区域*/
+.codePre{background:#fff; border:4px #B2B2B2 solid; color:#333; text-shadow:none;  padding:10px; margin-left:20px}
+
+
+/*浮动窗背景遮罩*/
+.wBox_overlayBG{background-color: #000;}/*compatible*/
+
+/*侧边栏会员面板*/
+#mainUser{width:100%; height:166px; overflow:hidden; padding:7px 0 0 3px;}
+#mainUser a{padding:1px 0px 2px 0px;}
+#mainUser a img{border:#CCC 1px solid;}
+#mainUser a:hover img{border:1px #000 solid}
+
+/*IE6浏览器提示*/
+#ie6alert{ position:absolute; color:#000; top:0; left:0; background:#FBE7A2; border:1px #F5C92E solid; height:25px; line-height:25px; width:100%; z-index:99999}
+#ie6alert a{color:#C00; }
+#ie6alert a.close{text-decoration:none; color:#000; font-size:18px}
+
+

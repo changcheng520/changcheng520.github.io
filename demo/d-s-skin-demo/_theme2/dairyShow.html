@@ -1,0 +1,414 @@
+<!DOCTYPE HTML>
+<!--
+                ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+                ▓                                                                                  ▓
+                ▓                                                                                  ▓
+                ▓     没位道Designer's site Program 产品皮肤预览    未经允许不得仿制及转载         ▓
+                ▓     技术支持： https://www.c945.com                                               ▓
+                ▓    （此信息只在预览中出现，预览时网站的图片可能会有水印，正式下载安装后无水印）  ▓
+                ▓                                                                                  ▓
+                ▓                                                                                  ▓
+                ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
+                
+-->
+
+<!--[if lt IE 7 ]> <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js ie ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js ie ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js ie ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js ie ie9"> <![endif]-->
+<!--[if !IE]><!--> <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js"> <!--<![endif]-->
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7" />
+<meta charset="utf-8"/>
+<title>没位道 - Designer &#039;s  Site Program 全站静态系统 - 免费建站|个人网站建设|高端网站|UI|创意网站|建站系统|企业建站|HTML5|CSS3-文章内容页</title>
+<script src="/assets-old/template_main/js/modernizr.js"  type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" href="../images/skins/style.css" />
+<link rel="stylesheet" type="text/css" href="main.css" />
+
+<script src="/assets-old/template_main/js/template.js"  type="text/javascript"></script>
+<script src="/assets-old/template_main/js/float_info_temp.js"  type="text/javascript"    ></script>
+<script src="/assets-old/template_main/js/jquery.min.js"  type="text/javascript"></script>
+<script src="/assets-old/template_main/js/jquery.wbox.js"  type="text/javascript"></script>
+<script src="comm.nav.js"  type="text/javascript"></script>
+
+<!--[if IE 6]>
+<script type="text/javascript" src="/assets-old/template_main/js/png.js"></script>
+<script>
+DD_belatedPNG.fix('img, a, span, h1, h2, h3, em, section, header, article, footer, .searchBox, .rslides, .commIcon, #home_imgShow li, .boxgrid, .boxgrid_work, .msg_t,.ul_sidebar_class li');
+document.execCommand("BackgroundImageCache", false, true);
+</script>
+<![endif]-->
+
+<script>
+
+var thisSite = document.location.href;
+MySite.Cookie.set("JumpRecentSite",thisSite);
+	
+
+
+//{#js:content.js.comm}
+
+function goMsgUrl(){
+	var thisUrl=MySite.Cookie.get("JumpRecentSite");
+	thisUrl=thisUrl.replace("sendSucceed","sendSucceedOK");
+	this.location.href=thisUrl;
+	
+}
+function showcommentForm(){
+		$('#commentWrite').fadeOut(200);
+		$('#commentForm').fadeIn(800);
+		
+		
+}
+
+$(document).ready(function(){
+
+	shareURL();
+
+});
+//{/js:content.js.comm}
+//{#js:content.article}
+$(document).ready(function (){
+	 
+	absolutePositionCheck("#feed_diary");
+	
+	/*----图片自适应---------*/
+	$('#right_content_tmp').imgAutoSize(0);
+	
+});
+//{/js:content.article}
+
+
+</script>
+</head>
+
+<body>
+
+
+<script src="/assets-old/template_main/js/shortCut.js"></script>
+<script>top_shortCut();</script>
+
+     <!-- 右侧快捷导航 -->
+     <div id="rightMenu"><a class="t" title="top"></a><a class="b" title="bottom"></a></div>
+     
+     
+     <!-- +++++++++++++++++++++++++侧边区容器+++++++++++++++++++++++++ begin -->
+     <aside id="sideInfo">
+        
+        <div class="bg">
+            <div class="box">
+                <div id="scrollBox">
+                
+                    <!--++++++++  侧边栏内容放置    begin   +++++++-->
+                    
+                        <h2 id="logo"><a href="index.html" title="没位道视觉设计"><img src="img/logo.png" alt="" ></a></h2>
+                        
+                        <!-- 微博 RSS -->
+                        <div class="clear">
+                            <a class="side-sina" title="新浪微博" href="#">新浪微博</a>
+                            <a class="side-rss" title="RSS订阅" href="${webLink}rss">RSS订阅</a>
+                        </div>
+                        
+                        <div class="siteImgInfo"><a href="#">形象图</a></div>
+                        
+
+                        
+                        <!-- 通用侧边栏类别 -->
+                         
+                        <ul class="ul_sidebar ul_sidebar_class">
+                            <h3 class="left_title">文章分类</h3>
+                            <li><a href="#"  title="">原创日志</a></li>
+                            <li><a href="#"  title="">新闻动态</a></li>
+                            <li><a href="#"  title="">Web Design<a class="rssLink" href="#"><img src="../images/Blog_Rss.png"  alt=""/></a></a></li>
+                        </ul>
+
+                        <!-- 通用搜索面板 -->
+                        <div id="sideSearchBoard">
+                           <form  name="searchForm" method="post" action="../s/index.html"   target="_blank" >
+                                <input name="keywords" id="keywords" type="text"  title="搜索本站内容" size="10" maxlength="50" />
+                                <select name="stable" >
+                                    <option value="article">文章</option>
+                                    <option value="works">作品</option>
+                                </select>
+                                <input name="image" class="sub" type="image" src="../images/search_button_2.gif"  alt="Search" />
+                             </form>
+                        </div>
+                        
+                        
+                        <!-- 通用侧边栏 -->
+                        
+                        <ul class="ul_sidebar" >
+                            <h3 class="left_title">最新文章</h3>
+                            <li><a  href="#"   title="">欢迎大家使用没位道 Designer's site Program全站静态产品</a><span>[2012-7-5]</span></li>
+                            <li><a  href="#"   title="">网页设计中对黑色调的理解</a><span>[2012-7-5]</span></li>
+                            <li><a  href="#"   title="">怎么提高网页配色能力,总结学习方法</a><span>[2012-7-5]</span></li>
+                            <li><a  href="#"   title="">网页设计怎样才算精通,浅谈感想</a><span>[2012-7-5]</span></li>
+                            <li><a  href="#"   title="">想方设法征服网页设计这块混乱的市场</a><span>[2012-7-5]</span></li>
+                            <li><a  href="#"   title="">商业漫画/绘本特点总结与绘制流程、前期定位</a><span>[2012-7-5]</span></li>
+                            <li><a  href="#"   title="">CSS&#160;Awards&#160;–&#160;25个具有特色的CSS网页设计欣赏</a><span>[2012-7-5]</span></li>
+                            <li><a  href="#"   title="">怎么提高网页配色能力,总结学习方法</a><span>[2012-7-5]</span></li>
+
+                        
+                        </ul>
+                        <div class="more"><a href="#"></a></div>
+
+
+                        <!-- 侧边栏标签 -->
+                        <div id="sideTagsDiv">
+                            <a href="#" title="">谣言粉碎机</a>
+                            <a href="#" title="">理性派</a>
+                            <a href="#" title="">网页设计</a>
+                            <a href="#" title="">自然控</a>
+                            <a href="#" title="">短发控</a>
+                            <a href="#" title="">没位道</a>
+                            <a href="#" title="">视觉设计</a>
+                            <a href="#" title="">配色</a>
+                            <a href="#" title="">谣言粉碎机</a>
+                            <a href="#" title="">理性派</a>
+                            <a href="#" title="">网页设计</a>
+                            <a href="#" title="">自然控</a>
+                            <a href="#" title="">短发控</a>
+                            <a href="#" title="">没位道</a>
+                            <a href="#" title="">视觉设计</a>
+                            <a href="#" title="">配色</a>
+                        
+                        </div>
+
+
+                         <!-- 站内统计 -->
+                        <div class="sitedata">
+                            <h3 class="left_title">站内统计</h3>
+                            &nbsp;&nbsp;<b >注册会员：</b>148<br/>
+                            &nbsp;&nbsp;<b>站内微博：</b>164<br/>
+                            &nbsp;&nbsp;<b>文章：</b>112<br/>
+                            &nbsp;&nbsp;<b>作品：</b>20<br/>
+                            &nbsp;&nbsp;<b>评论：</b>50<br/>
+                            &nbsp;&nbsp;<b>留言：</b>58<br/>
+                            &nbsp;&nbsp;<b>访问：</b>643094<br/>
+                            &nbsp;&nbsp;<b>在线：</b>358
+                        </div>
+                        
+
+                        
+                        
+                        <!-- 底部版权   begin -->
+                         
+                        <footer id="footer">
+                            <p>COPYRIGHT &#169; 2012  某某公司 版权所有</p>
+                            <p> ALL RIGHTS RESERVED.</p>
+                            <p> TECHNIQUE:<a href='/d-s' target='_blank'>DESIGNER'S PROGRAM</a></p>
+                            <span class="icon"></span>
+                        </footer> 
+                        
+                        <!-- 底部版权   end -->
+        
+                        
+                    <!--++++++++  侧边栏内容放置    end   +++++++-->
+                    
+                    
+                </div>
+            
+            
+            
+            
+            </div>
+        </div>
+        
+        
+        
+     </aside>
+     <em id="boundary"></em>
+     <!-- +++++++++++++++++++++++++侧边区容器+++++++++++++++++++++++++  end --> 
+     
+     
+     
+     
+     
+     <!-- +++++++++++++++++++++++++内容区容器+++++++++++++++++++++++++ begin -->
+     <div id="mainInfoContainer">
+         
+         
+          <!-- 导航  begin -->
+        
+            <em class="slide"></em>
+            
+            <nav id="mainNav">
+            
+                <ul class="nav">
+                    
+                    <li id="ZGVmYXVsdC5o" class="item"><a  title="" href="index.html" >首页</a></li>
+                    <li id="bGlzdGFydGlj" class="item"><a  title="" href="dairy.html" >博客</a>
+                        <ul class="sub">
+                            <li class="sub-item"><a  title="" href="#" >原创日志</a></li>
+                            <li class="sub-item"><a  title="" href="#" >新闻动态</a></li>
+                        </ul>
+                    </li>
+                    <li id="bGlzdGNhc2Vf" class="item"><a  title="" href="case.html" >案例展示</a></li>
+                    <li id="bWVzc21lc3Nf" class="item"><a  title="" href="contact.html" >联系我们</a> </li>
+                    <li id="c2VsZmluZm8u" class="item"><a  title="" href="about-link.html" >关于我们</a> </li>
+                    
+                </ul>
+            
+            </nav>
+        
+          <!-- 导航  end-->
+
+         
+         
+         
+        <!-- 主体内容区 begin -->
+        <article class="main">
+        
+        
+             <!-- 面包屑导航 -->
+            <!--<div id="breadCrumbsNav"><a href="#" title="首页">首页</a>&gt;<a href="#" title="">文章列表</a>&gt; 正文</div>-->
+
+          <div id="pageCustomContainer">
+                
+                
+                <!--  文章内容页  begin -->
+     
+     
+                          <!-- 前后内容 -->
+                          <div id="secFrame_recent">
+                              <div class="bl">
+                                  <a href="#"   Title="" >商业漫画/绘本特点总结与绘制流程、前期定位</a>
+                              </div>
+                              <div class="br">
+                                  <a href="#"   Title="">纽约最热闹的创业公司Foursquare办公室探访</a>
+                              </div>
+                          </div>
+                          
+                          
+                          <!-- 标题 -->
+                          <hgroup id="secFrame_title">
+                             <h1 id="Tmp_title"><span class="icon4"></span>跨平台卖广告：Twitter的新思路</h1>
+                          </hgroup>
+    
+    
+                          <!--  发布信息 -->
+                          <div id="information"> 
+                              <span class="read1">浏览</span>(41)<span class="read1"> 评论</span>(0) 分类：<a class="sort" href="#"  title="">新闻动态</a>&nbsp;作者：Xizon&nbsp; 发布时间：<time>2012-5-1 2:59:49</time> 
+                          </div>
+    
+        
+                          <!--  前台定位修改  -->
+                          <div id="editControl">
+                              <script>//</script>
+                          </div>
+    
+                          
+                          <!-- 文章内容展示 -->
+                          <div id="right_content_tmp">
+                           
+                              <section>
+                              
+                              <img src="../_demo-img/642X336.jpg" >
+<p> 去年我们就观察到Twitter在自己的第三方客户端上插播广告，但一直没有正式的合作出现。前几天，一篇关于Twitter 1.1版本API 变动的博文透露了Twitter对于强化企业合作的意图，还提及了包括HootSuite在内的几家第三方平台。就在今天HootSuite与Twitter联手发起了一项针对小企业的广告促销活动，可见Twitter选择了一条跨平台卖广告的道路。</p>
+
+ <p>在今天的广告促销活动中，约30000名HootSuite的高端客户有机会以100美金的价格在Twitter上投放广告。我们知道Twitter之前一直在研究如何为中小企业提供广告服务，现在有了结果——Twitter选择与第三方平台合作携手进军自助式广告服务产业。</p>
+
+ <p>来自Twitter的一位发言人透露这次活动只是他们的首轮试水：
+
+"我们经过层层的努力，目前对这项自助式中小企业广告服务的上线已是深思熟虑并且胸有成竹。我们正在尝试使用不同渠道去推广这项服务，这里面就包括了与HootSuite这样的公司合作。"
+
+从以上言论不难推断出Twitter与HootSuite正在接洽"更加深层次的合作"，我们近期可能就能看到更具覆盖面市场活动铺开。</p>
+
+ <p>HootSuite的发言人也针对这次促销表示了自己的看法：
+
+"目前有非常多的用户在使用Twitter进行实时会话，我们很高兴能够通过提供广告服务让用户与Twitter走得更近。目前我们和Twitter正在进行小规模的用户测试以探查市场反应，测试用户都是些初具影响力的社会新闻媒介，这些中小企业每天发出的信息可达200万条。通过与他们的合作测试我们可以发现自己的不足之处，不断地提升服务水准。"</p>
+
+ <p>事实上早在今年二月，Twitter就已经携此自助式广告平台与美国运通快递进行了一次合作。六月，Twitter又在英国开展了一轮"说出你的Twitter商业故事"比赛，评比产生最优秀的故事获得的奖励便是1000英镑的广告经费。可以看出，Twitter开拓广告产业的决心是毋庸置疑的，他们选择跨平台合作的方式大概是看中了这些第三方软件在客户管理上的优异表现</p>
+
+ <p>与Twitter的积极表现相异，对该项目也兴趣十足的Facebook似乎还没有展开具体的商业活动。</p>
+
+via TC
+                                  
+                              
+                              </section>
+            </div>
+    
+    
+    
+    
+                          <!-- 社区分享插件 -->
+                          <div id="secFrame_share">
+    
+                                <!-- Baidu Button BEGIN -->
+    
+                                <div id="bdshare" class="bdshare_t bds_tools get-codes-bdshare">
+                                    <span class="bds_more">分享到：</span>
+                                    <a class="bds_qzone"></a>
+                                    <a class="bds_tsina"></a>
+                                    <a class="bds_tqq"></a>
+                                    <a class="bds_renren"></a>
+                                    <a class="shareCount"></a>
+                                </div>
+    
+                                <script type="text/javascript" id="bdshare_js" data="type=tools&amp;uid=371320" ></script>
+                                <script type="text/javascript" id="bdshell_js"></script>
+                                <script type="text/javascript">
+                                document.getElementById("bdshell_js").src = "http://bdimg.share.baidu.com/static/js/shell_v2.js?t=" + new Date().getHours();
+                                </script>
+    
+                                <!-- Baidu Button END -->
+                                <br>
+                            
+                          </div>
+    
+
+                          
+                          <!-- tags -->
+                          <div id="secFrame_tags">
+                              <span class="relative">Tags：</span>
+                              <a href="#" >网页设计</a>&nbsp;
+                              <a href="#" >视觉设计</a>&nbsp;
+                              <a href="#" >网站建设</a>&nbsp;
+                          </div>
+    
+    
+                          
+                          
+                          <!-- 相关内容 -->
+                          <div id="secFrame_relative">
+    
+                                <div class="name"> <span class="relative">相关文章：</span> </div>
+                                <div class="con">
+        
+                                    <a href="#"   Title="" >关于网页设计师未来出路的探讨，望交流</a>
+                                    <!--  <span>2011-10-26</span> -->
+        
+                                    <a href="#"   Title="" >怎么提高网页配色能力,总结学习方法</a>
+                                    <!--  <span>2011-10-26</span> -->
+         
+                                      <div class="RelMore">
+                                          <a href="/classlist/article3_default.html"  title="DESIGN"></a>
+                                      </div>
+                                </div>
+                          </div>
+                          
+                          <!-- 评论 -->
+ 
+                           
+                           
+                     <!--  文章内容页  end -->         
+
+              </div>
+              
+              
+        </article>
+        <!-- 主体内容区 end -->
+        
+   
+     
+     </div>
+     <!-- +++++++++++++++++++++++++内容区容器+++++++++++++++++++++++++ end -->
+     
+     
+
+     <div id="scroll_b"></div>
+
+<script src="/assets-old/template_main/js/commFooterFun.js"></script>
+</body>
+</html>
+

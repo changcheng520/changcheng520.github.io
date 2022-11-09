@@ -1,0 +1,970 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js ie ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js ie ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js ie ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js ie ie9"> <![endif]-->
+<!--[if !IE]><!--> <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js"> <!--<![endif]-->
+
+<head>
+    <meta name="viewport" content="width=device-width, user-scalable=yes" />
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
+    <meta charset="utf-8"/>
+    <title>网格栅格系统|Dsure-HTML5网站,前端开发框架</title>
+    <meta name="description" content="Dsure,基于纯CSS的HTML5网站响应式开发框架,专注国内/外交互式网站开发,完美适用于Designers Site Program 全站静态系统">
+    <meta name="keywords" content="Dsure,CSS框架,HTML5网站,HTML5框架,CSS3动画,前端开发,Designers Site,全站静态系统,免费建站,响应式网站,交互式网站,自适应网站,framework">
+    <meta name="author" content="没位道">
+
+    <!-- Jquery.min begin -->
+    <script src="js/jquery.min.js?1.7.1" ></script>
+    <!-- / Jquery.min end -->
+    
+    <!-- URL Hash Compatible(IE5+) begin -->
+    <script src="js/jquery.hashchange.js" ></script>
+	<script>
+		//hash
+		var turl = "";
+    </script> 
+
+    <!-- URL Hash Compatible(IE5+) end -->
+    
+    
+    <!-- Dsure  Development Framework  begin  -->
+    
+        <link rel="stylesheet" type="text/css" href="../../dsure/dsure.css" />
+        <script src="../../dsure/dsure.modernizr.js"></script>
+        <!--[if lt IE 9]>  
+            <script src="../../dsure/dsure.respond.js"></script>  
+        <![endif]-->  
+    
+        <!--[if lt IE 7 ]>
+            <script src="../../dsure/dsure.png.js"></script>
+            <script>
+            DD_belatedPNG.fix('img, a, span, h1, h2, h3, em, section, header');
+            document.execCommand("BackgroundImageCache", false, true);
+            </script>
+        <![endif]-->
+
+    
+    <!-- /Dsure Development Framework  end   -->
+    
+
+    
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+
+    
+
+
+</head>
+<body>
+
+    <!--  loading  -->
+    <div id="loading"></div> 
+    <div id="back-top"><a href="#">Top</a></div>
+
+    <!--  menu  -->
+        <nav id="menu">
+            <div class="main-menu">
+        
+                <ul>
+                    <li class="web-title"><a href="/d-s/Dsure-cn">Dsure</a></li>
+                    <li class="line"></li>
+                    <li><a href="/d-s/Dsure-flat">欢迎页面</a></li>
+                    <li><a href="/d-s/Dsure-cn/detail-base.html">基础框架 <span>(Base)</span> <b>*必须*</b></a></li>
+                    <li><a href="/d-s/Dsure-cn/detail-base2.html">样式叠加 <span>(Base)</span> <b>*通用*</b></a></li>
+                    <li><a href="/d-s/Dsure-cn/detail-text.html">内容/文本 <span>(Text)</span></a></li>
+                    <li><a href="/d-s/Dsure-cn/detail-buttons.html">按钮 <span>(Buttons)</span></a></li>
+                    <li><a href="/d-s/Dsure-cn/detail-forms.html">表单 <span>(Forms)</span></a></li>
+                    <li><a href="/d-s/Dsure-cn/detail-tables.html">表格 <span>(Tables)</span></a></li>
+                    <li class="active"><a href="/d-s/Dsure-cn/detail-grids.html">网格/栅格系统 <span>(Grids)</span> </a></li>
+                    <li><a href="/d-s/Dsure-cn/detail-layouts.html">循环列表布局 <span>(Layouts)</span></a></li>
+                    <li><a href="/d-s/Dsure-cn/detail-icons.html">图标 <span>(Icons)</span></a></li>
+                    <li><a href="/d-s/Dsure-cn/detail-img.html">图片 <span>(Images)</span></a></li>
+                    <li><a href="/d-s/Dsure-cn/detail-line.html">分割线 <span>(Dividing Line)</span></a></li>
+                    <li><a href="/d-s/Dsure-cn/detail-paginators.html">分页 <span>(Paginators)</span></a></li>
+                    <li><a href="/d-s/Dsure-cn/detail-navigation.html">导航菜单 <span>(Navigation)</span></a></li>
+                    <li><a href="/d-s/Dsure-cn/detail-classification.html">分类导航 <span>(Classification)</span></a></li>
+                    <li><a href="/d-s/Dsure-cn/detail-striking.html">醒目牌 <span>(Striking)</span></a></li>
+                    <li><a href="/d-s/Dsure-cn/detail-search.html">搜索框 <span>(Search Box)</span></a></li> 
+                    <li><a href="/d-s/Dsure-cn/detail-tags.html">标签集 <span>(Tags)</span></a></li> 
+                   
+                </ul>
+
+                            
+            </div>
+           
+         </nav>
+         
+     <!--  /menu  -->
+     
+     
+        <section id="content">
+         <div class="show">
+          
+          <!-- /////////////////   Content    Begin /////////////////// -->
+      <div class="dsure-title-nav dsure-no-hover dsure-bg-silver dsure-radius-small dsure-b-shadow f-i15">
+        <h1>网格/栅格系统 <small>（自适应分辨率12栅格布局）</small></h1>
+      </div>
+      
+      
+      <div id="dir-nav" class="dir-nav dsure-no-hover dsure-bg-silver">
+          <a class="close" data-close="0" href="javascript:">×</a>
+          <div class="clear"></div>
+          <span class="t">目录导航</span>
+          <a href="javascript:" id="b-s1" onClick="navScrollTo('#s1');" >2:4:6</a>
+          <a href="javascript:" id="b-s2" onClick="navScrollTo('#s2');" >3:6:3</a>
+          <a href="javascript:" id="b-s3" onClick="navScrollTo('#s3');" >2:8:2</a>
+          <a href="javascript:" id="b-s4" onClick="navScrollTo('#s4');" >3:9</a>
+          <a href="javascript:" id="b-s5" onClick="navScrollTo('#s5');" >4:8</a>
+          <a href="javascript:" id="b-s6" onClick="navScrollTo('#s6');" >5:7</a>
+          <a href="javascript:" id="b-s7" onClick="navScrollTo('#s7');" >2:10</a>
+          <a href="javascript:" id="b-s8" onClick="navScrollTo('#s8');" >1:11</a>
+          <a href="javascript:" id="b-s9" onClick="navScrollTo('#s9');" >12等份</a>
+          <a href="javascript:" id="b-s10" onClick="navScrollTo('#s10');" >11等份</a>
+          <a href="javascript:" id="b-s11" onClick="navScrollTo('#s11');" >10等份</a>
+          <a href="javascript:" id="b-s12" onClick="navScrollTo('#s12');" >9等份</a>
+          <a href="javascript:" id="b-s13" onClick="navScrollTo('#s13');" >8等份</a>
+          <a href="javascript:" id="b-s14" onClick="navScrollTo('#s14');" >7等份</a>
+          <a href="javascript:" id="b-s15" onClick="navScrollTo('#s15');" >6等份</a>
+          <a href="javascript:" id="b-s16" onClick="navScrollTo('#s16');" >5等份</a>
+          <a href="javascript:" id="b-s17" onClick="navScrollTo('#s17');" >4等份</a>
+          <a href="javascript:" id="b-s18" onClick="navScrollTo('#s18');" >3等份</a>
+          <a href="javascript:" id="b-s19" onClick="navScrollTo('#s19');" >2等份</a>
+
+
+      </div>
+      
+
+      <div class="clear"></div>
+      
+      <div class="codeBox">
+            <p class="dsure-tip">
+             <i class="dsure-icon dsure-icon-bulb"></i> Dsure提供了100%宽度的自适应所有分辨率网格系统，如果您需要固定的最外层宽度，可以自己设定一个宽度，再在内部使用网格系统<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;<code>div</code>标签与<code>span</code>标签都支持网格系统
+            </p>
+            
+            <p class="dsure-tip-alert">
+             特别注意：网格系统示范的代码的<code>class=""</code>双引号内不能叠加任何通用样式或者自定义样式，如果要控制网格细节,请在包裹<code>&lt;div class=&quot;dsure-row&quot;&gt;</code>的外部容器上进行样式控制，否则可能造成网格布局错乱
+            </p>
+
+      </div><!--  /.codeBox -->
+
+        
+        <div class="codeBox d-class-area" id="s1">
+           
+           <h2>(1) 2:4:6栅格布局</h2>
+
+           
+            <p class="dsure-tip">
+            如果您需要左右相反的栅格布局，只要调换<code>&lt;div class=&quot;dsure-row&quot;&gt;</code>里面的<code>div</code>标签的先后顺序即可
+            </p>
+
+
+            <div class="codeBox-content">
+    
+                    <div class="dsure-row">
+                      <div class="dsure-small-2 dsure-columns bg-column1">2</div>
+                      <div class="dsure-small-4 dsure-columns bg-column2">4</div>
+                      <div class="dsure-small-6 dsure-columns bg-column1">6</div>
+                    </div>
+               
+                 
+            </div><!--  /.codeBox-content -->
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML代码:</span>
+
+&lt;div class="<span class="im-class">dsure-row</span>"&gt;
+      &lt;div class="<span class="im-class">dsure-small-2 dsure-columns</span>"&gt;2&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-small-4 dsure-columns</span>"&gt;4&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-small-6 dsure-columns</span>"&gt;6&lt;/div&gt;
+&lt;/div&gt;
+
+
+            </pre>
+            
+            
+        </div><!--  /.codeBox -->
+      
+      
+        <div class="codeBox d-class-area" id="s2">
+           
+           <h2>(2) 3:6:3栅格布局</h2>
+
+            <div class="codeBox-content">
+    
+
+                    <div class="dsure-row">
+                      <div class="dsure-large-3 dsure-columns bg-column1">3</div>
+                      <div class="dsure-large-6 dsure-columns bg-column2">6</div>
+                      <div class="dsure-large-3 dsure-columns bg-column1">3</div>
+                    </div>
+                    
+       
+            </div><!--  /.codeBox-content -->
+
+
+            
+            <pre> 
+<span class="bl html dsure-radius-small">HTML代码:</span>
+
+
+
+&lt;div class="<span class="im-class">dsure-row</span></span>"&gt;
+      &lt;div class="<span class="im-class">dsure-large-3 dsure-columns</span>"&gt;3&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-large-6 dsure-columns</span>"&gt;6&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-large-3 dsure-columns</span>"&gt;3&lt;/div&gt;
+&lt;/div&gt;
+
+
+            
+            </pre>
+            
+            
+        </div><!--  /.codeBox -->
+      
+      
+      
+        <div class="codeBox d-class-area" id="s3">
+           
+           <h2>(3) 2:8:2栅格布局</h2>
+
+            <div class="codeBox-content">
+
+                    
+                    <div class="dsure-row">
+                      <div class="dsure-large-2 dsure-columns bg-column1">2</div>
+                      <div class="dsure-large-8 dsure-columns bg-column2">8</div>
+                      <div class="dsure-large-2 dsure-columns bg-column1">2</div>
+                    </div>
+                    
+                
+                                 
+                 
+            </div><!--  /.codeBox-content -->
+
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML代码:</span>
+
+
+&lt;div class="<span class="im-class">dsure-row</span></span>"&gt;
+      &lt;div class="<span class="im-class">dsure-large-2 dsure-columns</span>"&gt;2&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-large-8 dsure-columns</span>"&gt;8&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-large-2 dsure-columns</span>"&gt;2&lt;/div&gt;
+&lt;/div&gt;
+
+            
+            </pre>
+            
+            
+        </div><!--  /.codeBox -->
+      
+      
+        <div class="codeBox d-class-area" id="s4">
+           
+           <h2>(4) 3:9栅格布局</h2>
+
+           
+            <p class="dsure-tip">
+            如果您需要左右相反的栅格布局，只要调换<code>&lt;div class=&quot;dsure-row&quot;&gt;</code>里面的<code>div</code>标签的先后顺序即可
+            </p>
+            
+            
+            <div class="codeBox-content">
+    
+                   
+                    
+                    <div class="dsure-row">
+                      <div class="dsure-small-3 dsure-columns bg-column1">3</div>
+                      <div class="dsure-small-9 dsure-columns bg-column2">9</div>
+                    </div>
+                        
+                
+            </div><!--  /.codeBox-content -->
+
+
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML代码:</span>
+
+
+&lt;div class="<span class="im-class">dsure-row</span></span>"&gt;
+      &lt;div class="<span class="im-class">dsure-small-3 dsure-columns</span>"&gt;3&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-small-9 dsure-columns</span>"&gt;9&lt;/div&gt;
+&lt;/div&gt;
+    
+
+            
+            </pre>
+            
+            
+        </div><!--  /.codeBox -->
+      
+      
+      
+        <div class="codeBox d-class-area" id="s5">
+           
+           <h2>(5) 4:8栅格布局</h2>
+
+           
+            <p class="dsure-tip">
+            如果您需要左右相反的栅格布局，只要调换<code>&lt;div class=&quot;dsure-row&quot;&gt;</code>里面的<code>div</code>标签的先后顺序即可
+            </p>
+
+            <div class="codeBox-content">
+    
+                  
+                    
+                    <div class="dsure-row">
+                      <div class="dsure-large-4 dsure-columns bg-column1">4</div>
+                      <div class="dsure-large-8 dsure-columns bg-column2">8</div>
+                    </div>
+                   
+                 
+            </div><!--  /.codeBox-content -->
+
+
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML代码:</span>
+
+
+&lt;div class="<span class="im-class">dsure-row</span></span>"&gt;
+      &lt;div class="<span class="im-class">dsure-large-4 dsure-columns</span>"&gt;4&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-large-8 dsure-columns</span>"&gt;8&lt;/div&gt;
+&lt;/div&gt;
+
+
+ 
+            
+            </pre>
+            
+            
+        </div><!--  /.codeBox -->
+      
+      
+      
+      
+        <div class="codeBox d-class-area" id="s6">
+           
+           <h2>(6) 5:7栅格布局</h2>
+
+           
+            <p class="dsure-tip">
+            如果您需要左右相反的栅格布局，只要调换<code>&lt;div class=&quot;dsure-row&quot;&gt;</code>里面的<code>div</code>标签的先后顺序即可
+            </p>
+            
+            <div class="codeBox-content">
+    
+                   
+                    <div class="dsure-row">
+                      <div class="dsure-large-5 dsure-columns bg-column1">5</div>
+                      <div class="dsure-large-7 dsure-columns bg-column2">7</div>
+                    </div>
+                    
+                 
+                 
+            </div><!--  /.codeBox-content -->
+
+
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML代码:</span>
+
+
+&lt;div class="<span class="im-class">dsure-row</span></span>"&gt;
+      &lt;div class="<span class="im-class">dsure-large-5 dsure-columns</span>"&gt;5&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-large-7 dsure-columns</span>"&gt;7&lt;/div&gt;
+&lt;/div&gt;
+
+ 
+            
+            </pre>
+            
+            
+        </div><!--  /.codeBox -->
+      
+      
+
+      
+      
+        <div class="codeBox d-class-area" id="s7">
+           
+           <h2>(7) 2:10栅格布局</h2>
+
+           
+            <p class="dsure-tip">
+            如果您需要左右相反的栅格布局，只要调换<code>&lt;div class=&quot;dsure-row&quot;&gt;</code>里面的<code>div</code>标签的先后顺序即可
+            </p>
+            
+            <div class="codeBox-content">
+    
+               
+                    <div class="dsure-row">
+                      <div class="dsure-small-2 dsure-columns bg-column1">2</div>
+                      <div class="dsure-small-10 dsure-columns bg-column2">10</div>
+                    </div>
+               
+
+            </div><!--  /.codeBox-content -->
+
+
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML代码:</span>
+
+
+&lt;div class="<span class="im-class">dsure-row</span></span>"&gt;
+      &lt;div class="<span class="im-class">dsure-small-2 dsure-columns</span>"&gt;2&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-small-10 dsure-columns</span>"&gt;10&lt;/div&gt;
+&lt;/div&gt;
+                
+            
+            </pre>
+            
+            
+        </div><!--  /.codeBox -->
+      
+      
+        <div class="codeBox d-class-area" id="s8">
+           
+           <h2>(8) 1:11栅格布局</h2>
+
+            <p class="dsure-tip">
+            如果您需要左右相反的栅格布局，只要调换<code>&lt;div class=&quot;dsure-row&quot;&gt;</code>里面的<code>div</code>标签的先后顺序即可
+            </p>
+            
+            <div class="codeBox-content">
+    
+                  
+                    <div class="dsure-row">
+                      <div class="dsure-large-1 dsure-columns bg-column1">1</div>
+                      <div class="dsure-large-11 dsure-columns bg-column2">11</div>
+                    </div>
+                                 
+                 
+            </div><!--  /.codeBox-content -->
+
+
+           
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML代码:</span>
+
+
+&lt;div class="<span class="im-class">dsure-row</span></span>"&gt;
+      &lt;div class="<span class="im-class">dsure-large-1 dsure-columns</span>"&gt;1&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-large-11 dsure-columns</span>"&gt;11&lt;/div&gt;
+&lt;/div&gt;
+ 
+            
+            </pre>
+            
+            
+        </div><!--  /.codeBox -->
+      
+      
+        <div class="codeBox d-class-area" id="s9">
+           
+           <h2>(9) 12等份栅格布局</h2>
+
+            <div class="codeBox-content">
+    
+                  
+                    <div class="dsure-row">
+                      <div class="dsure-large-1 dsure-columns bg-column1">12等份</div>
+                      <div class="dsure-large-1 dsure-columns bg-column2">12等份</div>
+                      <div class="dsure-large-1 dsure-columns bg-column1">12等份</div>
+                      <div class="dsure-large-1 dsure-columns bg-column2">12等份</div>
+                      <div class="dsure-large-1 dsure-columns bg-column1">12等份</div>
+                      <div class="dsure-large-1 dsure-columns bg-column2">12等份</div>
+                      <div class="dsure-large-1 dsure-columns bg-column1">12等份</div>
+                      <div class="dsure-large-1 dsure-columns bg-column2">12等份</div>
+                      <div class="dsure-large-1 dsure-columns bg-column1">12等份</div>
+                      <div class="dsure-large-1 dsure-columns bg-column2">12等份</div>
+                      <div class="dsure-large-1 dsure-columns bg-column1">12等份</div>
+                      <div class="dsure-large-1 dsure-columns bg-column2">12等份</div>
+                    </div>
+                                 
+                 
+            </div><!--  /.codeBox-content -->
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML代码:</span>
+
+
+&lt;div class="<span class="im-class">dsure-row</span></span>"&gt;
+      &lt;div class="<span class="im-class">dsure-large-1 dsure-columns</span>"&gt;12等份&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-large-1 dsure-columns</span>"&gt;12等份&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-large-1 dsure-columns</span>"&gt;12等份&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-large-1 dsure-columns</span>"&gt;12等份&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-large-1 dsure-columns</span>"&gt;12等份&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-large-1 dsure-columns</span>"&gt;12等份&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-large-1 dsure-columns</span>"&gt;12等份&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-large-1 dsure-columns</span>"&gt;12等份&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-large-1 dsure-columns</span>"&gt;12等份&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-large-1 dsure-columns</span>"&gt;12等份&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-large-1 dsure-columns</span>"&gt;12等份&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-large-1 dsure-columns</span>"&gt;12等份&lt;/div&gt;
+&lt;/div&gt;
+ 
+            
+            </pre>
+            
+            
+        </div><!--  /.codeBox -->
+        
+        
+        <div class="codeBox d-class-area" id="s10">
+           
+           <h2>(10) 11等份栅格布局</h2>
+
+            <div class="codeBox-content">
+    
+                  
+                    <div class="dsure-row">
+                      <div class="dsure-average-11 dsure-columns bg-column1">11等份</div>
+                      <div class="dsure-average-11 dsure-columns bg-column2">11等份</div>
+                      <div class="dsure-average-11 dsure-columns bg-column1">11等份</div>
+                      <div class="dsure-average-11 dsure-columns bg-column2">11等份</div>
+                      <div class="dsure-average-11 dsure-columns bg-column1">11等份</div>
+                      <div class="dsure-average-11 dsure-columns bg-column1">11等份</div>
+                      <div class="dsure-average-11 dsure-columns bg-column2">11等份</div>
+                      <div class="dsure-average-11 dsure-columns bg-column1">11等份</div>
+                      <div class="dsure-average-11 dsure-columns bg-column2">11等份</div>
+                      <div class="dsure-average-11 dsure-columns bg-column1">11等份</div>
+                      <div class="dsure-average-11 dsure-columns bg-column1">11等份</div>
+                    </div>
+                                 
+                 
+            </div><!--  /.codeBox-content -->
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML代码:</span>
+
+
+&lt;div class="<span class="im-class">dsure-row</span></span>"&gt;
+      &lt;div class="<span class="im-class">dsure-average-11 dsure-columns</span>"&gt;11等份&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-average-11 dsure-columns</span>"&gt;11等份&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-average-11 dsure-columns</span>"&gt;11等份&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-average-11 dsure-columns</span>"&gt;11等份&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-average-11 dsure-columns</span>"&gt;11等份&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-average-11 dsure-columns</span>"&gt;11等份&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-average-11 dsure-columns</span>"&gt;11等份&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-average-11 dsure-columns</span>"&gt;11等份&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-average-11 dsure-columns</span>"&gt;11等份&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-average-11 dsure-columns</span>"&gt;11等份&lt;/div&gt;   
+      &lt;div class="<span class="im-class">dsure-average-11 dsure-columns</span>"&gt;11等份&lt;/div&gt;   
+
+&lt;/div&gt;
+ 
+            
+            </pre>
+            
+            
+        </div><!--  /.codeBox -->   
+        
+        
+        <div class="codeBox d-class-area" id="s11">
+           
+           <h2>(11) 10等份栅格布局</h2>
+
+            <div class="codeBox-content">
+    
+                  
+                    <div class="dsure-row">
+                      <div class="dsure-average-10 dsure-columns bg-column1">10等份</div>
+                      <div class="dsure-average-10 dsure-columns bg-column2">10等份</div>
+                      <div class="dsure-average-10 dsure-columns bg-column1">10等份</div>
+                      <div class="dsure-average-10 dsure-columns bg-column2">10等份</div>
+                      <div class="dsure-average-10 dsure-columns bg-column1">10等份</div>
+                      <div class="dsure-average-10 dsure-columns bg-column2">10等份</div>
+                      <div class="dsure-average-10 dsure-columns bg-column1">10等份</div>
+                      <div class="dsure-average-10 dsure-columns bg-column2">10等份</div>
+                      <div class="dsure-average-10 dsure-columns bg-column1">10等份</div>
+                      <div class="dsure-average-10 dsure-columns bg-column2">10等份</div>
+                    </div>
+                                 
+                 
+            </div><!--  /.codeBox-content -->
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML代码:</span>
+
+
+&lt;div class="<span class="im-class">dsure-row</span></span>"&gt;
+      &lt;div class="<span class="im-class">dsure-average-10 dsure-columns</span>"&gt;10等份&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-average-10 dsure-columns</span>"&gt;10等份&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-average-10 dsure-columns</span>"&gt;10等份&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-average-10 dsure-columns</span>"&gt;10等份&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-average-10 dsure-columns</span>"&gt;10等份&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-average-10 dsure-columns</span>"&gt;10等份&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-average-10 dsure-columns</span>"&gt;10等份&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-average-10 dsure-columns</span>"&gt;10等份&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-average-10 dsure-columns</span>"&gt;10等份&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-average-10 dsure-columns</span>"&gt;10等份&lt;/div&gt;
+
+&lt;/div&gt;
+ 
+            
+            </pre>
+            
+            
+        </div><!--  /.codeBox -->   
+        
+        
+        <div class="codeBox d-class-area" id="s12">
+           
+           <h2>(12) 9等份栅格布局</h2>
+
+            <div class="codeBox-content">
+    
+                  
+                    <div class="dsure-row">
+                      <div class="dsure-average-9 dsure-columns bg-column1">9等份</div>
+                      <div class="dsure-average-9 dsure-columns bg-column2">9等份</div>
+                      <div class="dsure-average-9 dsure-columns bg-column1">9等份</div>
+                      <div class="dsure-average-9 dsure-columns bg-column2">9等份</div>
+                      <div class="dsure-average-9 dsure-columns bg-column1">9等份</div>
+                      <div class="dsure-average-9 dsure-columns bg-column2">9等份</div>
+                      <div class="dsure-average-9 dsure-columns bg-column1">9等份</div>
+                      <div class="dsure-average-9 dsure-columns bg-column2">9等份</div>
+                      <div class="dsure-average-9 dsure-columns bg-column1">9等份</div>
+                    </div>
+                                 
+                 
+            </div><!--  /.codeBox-content -->
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML代码:</span>
+
+
+&lt;div class="<span class="im-class">dsure-row</span></span>"&gt;
+      &lt;div class="<span class="im-class">dsure-average-9 dsure-columns</span>"&gt;9等份&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-average-9 dsure-columns</span>"&gt;9等份&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-average-9 dsure-columns</span>"&gt;9等份&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-average-9 dsure-columns</span>"&gt;9等份&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-average-9 dsure-columns</span>"&gt;9等份&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-average-9 dsure-columns</span>"&gt;9等份&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-average-9 dsure-columns</span>"&gt;9等份&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-average-9 dsure-columns</span>"&gt;9等份&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-average-9 dsure-columns</span>"&gt;9等份&lt;/div&gt;
+
+&lt;/div&gt;
+ 
+            
+            </pre>
+            
+            
+        </div><!--  /.codeBox -->   
+        
+        
+        <div class="codeBox d-class-area" id="s13">
+           
+           <h2>(13) 8等份栅格布局</h2>
+
+            <div class="codeBox-content">
+    
+                  
+                    <div class="dsure-row">
+                      <div class="dsure-average-8 dsure-columns bg-column1">8等份</div>
+                      <div class="dsure-average-8 dsure-columns bg-column2">8等份</div>
+                      <div class="dsure-average-8 dsure-columns bg-column1">8等份</div>
+                      <div class="dsure-average-8 dsure-columns bg-column2">8等份</div>
+                      <div class="dsure-average-8 dsure-columns bg-column1">8等份</div>
+                      <div class="dsure-average-8 dsure-columns bg-column2">8等份</div>
+                      <div class="dsure-average-8 dsure-columns bg-column1">8等份</div>
+                      <div class="dsure-average-8 dsure-columns bg-column2">8等份</div>
+                    </div>
+                                 
+                 
+            </div><!--  /.codeBox-content -->
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML代码:</span>
+
+
+&lt;div class="<span class="im-class">dsure-row</span></span>"&gt;
+      &lt;div class="<span class="im-class">dsure-average-8 dsure-columns</span>"&gt;8等份&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-average-8 dsure-columns</span>"&gt;8等份&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-average-8 dsure-columns</span>"&gt;8等份&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-average-8 dsure-columns</span>"&gt;8等份&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-average-8 dsure-columns</span>"&gt;8等份&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-average-8 dsure-columns</span>"&gt;8等份&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-average-8 dsure-columns</span>"&gt;8等份&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-average-8 dsure-columns</span>"&gt;8等份&lt;/div&gt;
+
+&lt;/div&gt;
+ 
+            
+            </pre>
+            
+            
+        </div><!--  /.codeBox -->   
+        
+        <div class="codeBox d-class-area" id="s14">
+           
+           <h2>(14) 7等份栅格布局</h2>
+
+            <div class="codeBox-content">
+    
+                  
+                    <div class="dsure-row">
+                      <div class="dsure-average-7 dsure-columns bg-column1">7等份</div>
+                      <div class="dsure-average-7 dsure-columns bg-column2">7等份</div>
+                      <div class="dsure-average-7 dsure-columns bg-column1">7等份</div>
+                      <div class="dsure-average-7 dsure-columns bg-column2">7等份</div>
+                      <div class="dsure-average-7 dsure-columns bg-column1">7等份</div>
+                      <div class="dsure-average-7 dsure-columns bg-column2">7等份</div>
+                      <div class="dsure-average-7 dsure-columns bg-column1">7等份</div>
+                    </div>
+                                 
+                 
+            </div><!--  /.codeBox-content -->
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML代码:</span>
+
+
+&lt;div class="<span class="im-class">dsure-row</span></span>"&gt;
+      &lt;div class="<span class="im-class">dsure-average-7 dsure-columns</span>"&gt;7等份&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-average-7 dsure-columns</span>"&gt;7等份&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-average-7 dsure-columns</span>"&gt;7等份&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-average-7 dsure-columns</span>"&gt;7等份&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-average-7 dsure-columns</span>"&gt;7等份&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-average-7 dsure-columns</span>"&gt;7等份&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-average-7 dsure-columns</span>"&gt;7等份&lt;/div&gt;
+
+&lt;/div&gt;
+ 
+            
+            </pre>
+            
+            
+        </div><!--  /.codeBox -->   
+        
+        
+
+       <div class="codeBox d-class-area" id="s15">
+           
+           <h2>(15) 6等份栅格布局</h2>
+
+            <div class="codeBox-content">
+    
+                  
+                    <div class="dsure-row">
+                      <div class="dsure-large-2 dsure-columns bg-column1">6等份</div>
+                      <div class="dsure-large-2 dsure-columns bg-column2">6等份</div>
+                      <div class="dsure-large-2 dsure-columns bg-column1">6等份</div>
+                      <div class="dsure-large-2 dsure-columns bg-column2">6等份</div>
+                      <div class="dsure-large-2 dsure-columns bg-column1">6等份</div>
+                      <div class="dsure-large-2 dsure-columns bg-column2">6等份</div>
+
+                    </div>
+                                 
+                 
+            </div><!--  /.codeBox-content -->
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML代码:</span>
+
+
+&lt;div class="<span class="im-class">dsure-row</span></span>"&gt;
+      &lt;div class="<span class="im-class">dsure-large-2 dsure-columns</span>"&gt;6等份&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-large-2 dsure-columns</span>"&gt;6等份&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-large-2 dsure-columns</span>"&gt;6等份&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-large-2 dsure-columns</span>"&gt;6等份&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-large-2 dsure-columns</span>"&gt;6等份&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-large-2 dsure-columns</span>"&gt;6等份&lt;/div&gt;
+&lt;/div&gt;
+ 
+            
+            </pre>
+            
+            
+        </div><!--  /.codeBox -->
+        
+        
+        <div class="codeBox d-class-area" id="s16">
+           
+           <h2>(16) 5等份栅格布局</h2>
+
+            <div class="codeBox-content">
+    
+                  
+                    <div class="dsure-row">
+                      <div class="dsure-average-5 dsure-columns bg-column1">5等份</div>
+                      <div class="dsure-average-5 dsure-columns bg-column2">5等份</div>
+                      <div class="dsure-average-5 dsure-columns bg-column1">5等份</div>
+                      <div class="dsure-average-5 dsure-columns bg-column2">5等份</div>
+                      <div class="dsure-average-5 dsure-columns bg-column1">5等份</div>
+                    </div>
+                                 
+                 
+            </div><!--  /.codeBox-content -->
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML代码:</span>
+
+
+&lt;div class="<span class="im-class">dsure-row</span></span>"&gt;
+      &lt;div class="<span class="im-class">dsure-average-5 dsure-columns</span>"&gt;5等份&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-average-5 dsure-columns</span>"&gt;5等份&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-average-5 dsure-columns</span>"&gt;5等份&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-average-5 dsure-columns</span>"&gt;5等份&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-average-5 dsure-columns</span>"&gt;5等份&lt;/div&gt;
+      
+
+&lt;/div&gt;
+ 
+            
+            </pre>
+            
+            
+        </div><!--  /.codeBox -->   
+
+
+        <div class="codeBox d-class-area" id="s17">
+           
+           <h2>(17) 4等份栅格布局</h2>
+
+            <div class="codeBox-content">
+    
+                  
+                    <div class="dsure-row">
+                      <div class="dsure-large-3 dsure-columns bg-column1">4等份</div>
+                      <div class="dsure-large-3 dsure-columns bg-column2">4等份</div>
+                      <div class="dsure-large-3 dsure-columns bg-column1">4等份</div>
+                      <div class="dsure-large-3 dsure-columns bg-column2">4等份</div>
+                    </div>
+                                 
+                 
+            </div><!--  /.codeBox-content -->
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML代码:</span>
+
+
+&lt;div class="<span class="im-class">dsure-row</span></span>"&gt;
+      &lt;div class="<span class="im-class">dsure-large-3 dsure-columns</span>"&gt;4等份&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-large-3 dsure-columns</span>"&gt;4等份&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-large-3 dsure-columns</span>"&gt;4等份&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-large-3 dsure-columns</span>"&gt;4等份&lt;/div&gt;
+&lt;/div&gt;
+ 
+            
+            </pre>
+            
+            
+        </div><!--  /.codeBox -->
+
+
+        <div class="codeBox d-class-area" id="s18">
+           
+           <h2>(18) 3等份栅格布局</h2>
+
+            <div class="codeBox-content">
+    
+                    <div class="dsure-row">
+                      <div class="dsure-large-4 dsure-columns bg-column1">3等份</div>
+                      <div class="dsure-large-4 dsure-columns bg-column2">3等份</div>
+                      <div class="dsure-large-4 dsure-columns bg-column1">3等份</div>
+                    </div>
+               
+                 
+            </div><!--  /.codeBox-content -->
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML代码:</span>
+
+&lt;div class="<span class="im-class">dsure-row</span>"&gt;
+      &lt;div class="<span class="im-class">dsure-large-4 dsure-columns</span>"&gt;3等份&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-large-4 dsure-columns</span>"&gt;3等份&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-large-4 dsure-columns</span>"&gt;3等份&lt;/div&gt;
+&lt;/div&gt;
+
+
+            </pre>
+            
+            
+        </div><!--  /.codeBox -->
+        
+        <div class="codeBox d-class-area" id="s19">
+           
+           <h2>(19) 2等份栅格布局</h2>
+
+            <div class="codeBox-content">
+    
+                  
+                    <div class="dsure-row">
+                      <div class="dsure-large-6 dsure-columns bg-column1">2等份</div>
+                      <div class="dsure-large-6 dsure-columns bg-column2">2等份</div>
+                    </div>
+                  
+                                 
+                 
+            </div><!--  /.codeBox-content -->
+
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML代码:</span>
+
+
+&lt;div class="<span class="im-class">dsure-row</span></span>"&gt;
+      &lt;div class="<span class="im-class">dsure-large-6 dsure-columns</span>"&gt;2等份&lt;/div&gt;
+      &lt;div class="<span class="im-class">dsure-large-6 dsure-columns</span>"&gt;2等份&lt;/div&gt;
+&lt;/div&gt;
+
+ 
+            
+            </pre>
+            
+            
+        </div><!--  /.codeBox -->
+
+          
+          <!-- /////////////////   Content    End /////////////////// -->
+
+    
+
+        </div>
+
+         <footer>
+         
+            <hr>
+           
+            <p>此开源开发框架基于<a href="/d-s/" target="_blank">Designers Site Program 全站静态系统</a>发布，提供广大网站开发者使用，并着力构建快速设计DS主题框架，设计者可以根据此开发框架设计出网站的纯HTML效果，兼容整套系统体系，再使用主题开发插件进行标签替换和修改，即可设计并使用自己的主题 (您也可以用作其它方面的开发)</p>
+
+            <p>Dsure授权开源许可证基于<a href="http://creativecommons.org/licenses/by-nc/3.0/deed.zh" target="_blank">CC BY-NC 3.0</a>,禁止任何人任何公司机构用于商业用途</p>
+            
+            <p>
+            &copy;2014 Powered By <a href="/" target="_blank">没位道</a>, <a href="/d-s/Dsure-flat">Dsure Web Development Framework</a>
+        
+  
+            &nbsp;&nbsp;        <script id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+        <script>
+            if (typeof(LA) !== 'undefined') LA.init({id: "JdyfUJi3RdCZVi9F",ck: "JdyfUJi3RdCZVi9F"});
+        </script>
+          
+            
+            
+          
+            </p>
+             
+         </footer>
+
+     </section>
+     
+     
+
+     
+    
+    <script src="js/jquery.scroller.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/theme.hash.js"></script> <!-- After the main.js -->
+     
+  
+
+</body>
+</html>
+

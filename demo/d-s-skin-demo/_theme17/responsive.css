@@ -1,0 +1,87 @@
+				
+/*▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓响应式页面▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓*/
+
+@media (min-width: 1200px) {
+  /*无需设置*/
+}
+@media (min-width: 980px) and (max-width: 1200px) {
+  /*无需设置*/
+
+}
+
+@media (min-width: 768px) and (max-width: 980px) {
+	
+		#web_wrapper{width: 780px;}
+		#sub-web_wrapper{width: 780px;}
+		#web_header{width: 780px}
+		#latest_works{ width:740px; background:none}
+		#web_footer{width:780px}
+		.portfolio-box{width:780px}
+
+		.col1{ width:195px; padding-right:40px}/*浮动-窄*/
+		.col2{ width:530px}/*浮动-宽*/
+		.col3{width:182px;}/*案例作品列表box*/
+		.col7{width:742px;}/*文章列表box*/
+		
+		
+		
+		#sliderContainer {width:700px;}
+		.rslides img{width:720px; height:274px;}
+
+		
+		#mainNav {right:20px}
+		
+		.cbox_3b{width: 150px;}
+		.fp_box{background:none}
+		
+		.cbox_large{width: 470px; padding-left:30px}
+		.cbox_small{width: 200px; padding-right:50px}
+		
+		.blog-list .cbox_small{width: 300px; padding-right:1px}
+		
+		.new-blog-list{display:none}
+		
+		.contact-box .input_textarea{width:92%; }
+		#dituContent{width:90%}
+		
+		
+		
+				
+
+
+}
+
+
+@media (min-width: 480px) and (max-width: 768px) {
+	
+	
+	/*无需设置,若不是ipad,则系统会切换到小于ipad屏幕大小的手机版 http://www.yoursite.com/phone/index/ */
+	
+
+
+}
+
+@media (min-width: 320px) and (max-width: 480px){
+	
+
+	/*无需设置,若不是ipad,则系统会切换到小于ipad屏幕大小的手机版 http://www.yoursite.com/phone/index/ */
+	
+
+	
+}
+
+@media (min-width: 295px) and (max-width: 320px){
+	
+
+	/*无需设置,若不是ipad,则系统会切换到小于ipad屏幕大小的手机版 http://www.yoursite.com/phone/index/ */
+
+	
+}
+
+@media (max-width: 295px){
+	
+
+	/*无需设置,若不是ipad,则系统会切换到小于ipad屏幕大小的手机版 http://www.yoursite.com/phone/index/ */
+	
+
+}

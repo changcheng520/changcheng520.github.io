@@ -1,0 +1,148 @@
+<!DOCTYPE HTML>
+<!--
+https://www.c945.com  没位道Designer's site Program 产品皮肤预览  未经允许不得仿制及转载
+-->
+
+<!--
+'=========================================
+'
+'    Designer's site Program 全站静态系统
+'    xizon   xizon@c945.com
+'    www.c945.com
+'    技术支持：没位道
+'    未经允许不得私自用于任何商业用途
+'
+'=========================================
+-->
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>没位道 - Designer &#039;s  Site Program 全站静态系统 - 免费建站|个人网站建设|高端网站|UI|创意网站|建站系统|企业建站|HTML5|CSS3-微博</title>
+<script src="jquery.switch.compatible.min.js?1.4.2"></script>
+</head>
+<body class="body-content">
+
+
+                 <!--++++++++++++++++++++++ 内容区   begin++++++++++++++++++++++-->
+            
+                    <div id="moodBox">
+                          
+                          
+                          <iframe id="frameEditM" style="display:none" src="../plugins/editInfo_mood" allowTransparency="true" width="100%" frameborder="0" scrolling="no" hspace="0" vspace="0" ></iframe>
+                          <span id="mood_w_load" style="display:none">发表中...</span>
+                          <span id="mood_w_chk" style="display:none">您尚未登录,直接输入您设置的 [微博校验码] 即可直接发表！</span>
+                          <span id="mood_w_chk_error" style="display:none">您输入的校验码有误,操作失败！</span>
+    
+                          <a href="javascript:" onClick="$('#frameEditM').slideDown(500);$(this).slideUp(500);$('#frameEditM').contents().find('.mood_w').css({'background':'none'});$('#frameEditM').contents().find('.b').css({'margin-left':'0','left':'0'});$('#frameEditM').contents().find('.tool').css({'margin-left':'120px'})" class="btn-write">签写微博</a>
+                          
+                           
+                       
+    
+                            <!--  微博列表    begin  -->
+                
+                
+                            <div class="moodMain">
+                                <div class="mood_t" >
+                                    <div class="mood_dig" id="moodD389">
+                                        <span id="attitudetitle"></span>
+                                        <span class="mood_dig1">
+                                            <a  href="javascript:" onClick="get_attitude('_good','389')">
+                                            <span  id="attitudeinfo0_389"></span></a>
+                                        </span> 
+                            
+                                        <span class="mood_dig2">
+                                            <a  href="javascript:" onClick="get_attitude('_bad','389')">
+                                            <span  id="attitudeinfo1_389"></span></a>
+                                        </span>
+                                        
+                                    </div>
+                                    <img src="../images/avatar/b2.jpg" alt="">
+                                    Xizon&nbsp;2012-6-16 13:24:00 说：
+                                </div>
+     
+                                <div class="mood_c" >
+                                    <p>这个世界似乎不适合用布尔代数来建模 ，自己还是规划好细节吧。</p>
+                                </div>
+                                <div class="mood_b"></div>
+                                
+                           
+                            </div>
+                            
+                            
+                            
+                            <div class="moodMain">
+                                <div class="mood_t" >
+                                    <div class="mood_dig" id="moodD340">
+                                        <span id="attitudetitle"></span>
+                                        <span class="mood_dig1">
+                                            <a  href="javascript:" onClick="get_attitude('_good','340')">
+                                            <span  id="attitudeinfo0_340"></span></a>
+                                        </span> 
+                            
+                                        <span class="mood_dig2">
+                                            <a  href="javascript:" onClick="get_attitude('_bad','340')">
+                                            <span  id="attitudeinfo1_340"></span></a>
+                                        </span>
+                                 
+                                    </div>
+                                    <img src="../images/avatar/b2.jpg" alt="" >
+                                    Xizon&nbsp;2012-6-16 13:24:00 说：
+                                </div>
+     
+                                <div class="mood_c" >
+                                    <p>(￣︶￣)>微博最伟大的改造能力，就是它可以发动左冲右突的批评力量，让每个英雄最后都变成SB！</p>
+                                </div>
+                                <div class="mood_b"></div>
+                              
+                               <pre><p><a href="#" ><img src="../_demo-img/200X135.jpg"></a></p></pre>
+                            </div>
+                            
+                            <p  class="clear"><br></p>
+                
+
+                            <!--  分页ajax输出 -->
+                            <script>
+                                $(document).ready(function(){    
+								    
+							
+                                    $.get('pageShow.html', function(data) {
+                                        
+                                        /*----分页格式化---------*/
+                                        data = data.replace("</b>&nbsp;","</b>");
+                                        data = data.replace("&nbsp;<b>","<b>");
+        
+                                        
+                                        //遍历初始化分页链接
+                                        data = data.replace(/href="/g,'href="javascript:showac_subitem(\'');
+                                        data = data.replace(/#right_content"/g,'\',\'\',1);"');
+        
+                                       $('#pageShow').html(data);
+        
+                                    });
+                                }) 
+                            </script>
+                            <span id="pageShow"></span>
+            
+                        
+                        
+                            <!--  微博列表    end  -->
+                 
+                  </div><!-- End #moodBox -->
+                  
+                  
+                  
+                <!-- +++++++++++++++++++++  内容区     end++++++++++++++++++++++++++++++++-->
+                
+                
+          
+
+     
+     <!-- 底部  begin  -->
+        <script>var turl = "/demo/d-s-skin-demo/_theme7/mood.html";</script>
+        <script src="comm.nav.js"></script>
+
+
+</body>
+</html>
+
+

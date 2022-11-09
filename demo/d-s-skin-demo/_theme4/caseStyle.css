@@ -1,0 +1,30 @@
+
+/* SLIDESHOW */
+#slideshow{margin-top:80px;}
+
+a#slideBtnPrev,a#slideBtnNext{ margin-right:5px;}
+
+.caseCon { margin:40px 10px 50px 10px; padding-right:140px;}
+.caseCon .i{color:#999; font-size:12px;}
+.caseCon h1{margin:10px}
+
+
+#case_mainMask { width:8000px; height:100%; position:absolute; top:0; left:0; z-index:9998;}
+#case_loading{ top:130px; left:365px; position:absolute; width:321px; height:100px; z-index:9999; color:#FFF; overflow:hidden}
+#case_loading .case_loadingShow{width:250px; height:78px;}
+
+
+/*作品同步日志后的评论按钮*/
+#workcomment{text-align:left; margin:20px 0 20px ;}
+#workcomment img{border:none; margin-left:-14px;}
+
+/*作品展示页 投票区*/
+#voteWork {position:absolute; top:5px; visibility:hidden; left:626px;; z-index:351; height:150px; width:240px; text-align:left}
+#voteWork img{border:none}
+
+
+/*前台修改按钮*/
+#editControl {position:absolute; margin:0; z-index:999; top:53px; left:540px;; z-index:351; height:150px; width:240px; text-align:left;}
+
+/*上下篇作品*/
+#recent{clear:both; line-height:40px; display:none/*不显示此插件*/} 
