@@ -101,7 +101,7 @@ $(function () {
 	
    //--------------------判断主题是否包含Dsure框架
    $.get( MyrootPath_Temp + "dsure/license.txt", function (result) {}).error(function() { 
-	   alert("此主题需要Dsure框架才能保证效果，您网站跟目录没有dsure/文件夹 \n请登录网站/d-s/dsure 下载框架\n(请勿删除dsure文件夹中的license.txt文件)");
+	   alert("此主题需要Dsure框架才能保证效果，您网站跟目录没有dsure/文件夹 \n请登录网站/d-s/Dsure 下载框架\n(请勿删除dsure文件夹中的license.txt文件)");
 	});
 
 	
