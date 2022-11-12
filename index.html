@@ -279,38 +279,35 @@
                     <div id="parallax_show_3">
                         <h3>Contact Me</h3>
 
-
-                        <form name="formM" method="post" action="#" target="iframeMsg" onSubmit="return false;">
+                        <form id="app-remotecomment-site">
                             <br><span id="tip_con"></span>
-                            <input name="userName" type="text" id="userName"
-                                onClick="if(this.value == 'Name') this.value='';"
-                                onBlur="if(this.value.length == 0) this.value='Name';" value="Name" />
+                            <input type="text" name="title" id="title" placeholder="Title" />
 
 
-                            <input name="url" type="text" id="url" onClick="if(this.value == 'http://') this.value='';"
-                                onBlur="if(this.value.length == 0) this.value='http://';" value="http://" />
-                            <input name="Email" type="text" id="Email"
-                                onClick="if(this.value == 'Email') this.value='';"
-                                onBlur="if(this.value.length == 0) this.value='Email';" value="Email" /><br>
+                            <input type="url" name="url" id="url" placeholder="http://" />
 
-                            <textarea name="comment" id="comment" cols="38" rows="4"
-                                onClick="if(this.value == 'Message') this.value='';if(this.value == 'message') this.value='';"
-                                onBlur="if(this.value.length == 0) this.value='Message';">Message</textarea><br>
+                            <input type="email" name="email" id="email"placeholder="Email" /><br>
 
-                            <p>Sorry, temporarily forbidden to leave a message, <br> please contact us directly via
-                                email: xizon@c945.com</p>
+                            <textarea id="content" name="content" cols="38" rows="4" placeholder="Message"></textarea><br>
 
+
+                            <input type="text" id="captcha" name="captcha" placeholder="Captcha" />
+                                
+                            <div class="app-remotecomment-captcha-section">
+                                <div class="captcha-wrapper">
+                                    <span id="app-remotecomment-refresh-session-captcha"></span>
+                                </div>
+                            </div>
+
+
+                            <a href="#" class="send"></a>
                             <div class="close"><a href="javascript:" onClick="hideContentBox('contact');"></a></div>
 
-
+                            <input type="hidden" name="toid" id="toid" value="900000000000" />
+                            <input type="hidden" name="refer" id="refer" value="https://www.c945.com/" />
+                            <input type="hidden" name="app-remotecomment-site-security" id="app-remotecomment-site-security" />
 
                         </form>
-
-
-
-                        <iframe name="iframeMsg"></iframe>
-
-
 
 
                     </div>
@@ -591,7 +588,8 @@
 
     <footer id="copy">&copy;<span>2010-2023</span> Xizon Creative <sup>v2012</sup>. All Right Reserved.</footer>
 
-
+    
+    <script src="/assets-old/skin2012_index/axios.min.js"></script>
     <script src="/assets-old/skin2012_index/app.min.js"></script>
     
     <script id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
