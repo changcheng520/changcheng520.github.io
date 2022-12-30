@@ -1,0 +1,1 @@
+self.__SSG_MANIFEST=new Set(["\u002Farticle\u002F[id]","\u002Farticles\u002Fpage\u002F[page]","\u002Farticles\u002Fsort\u002F[sort]\u002Fpage\u002F[page]","\u002Fwork-skin2012_index-iframe\u002F[id]","\u002Fwork\u002F[id]","\u002Fworks-skin2012_index-iframe.html","\u002Fworks.html"]);self.__SSG_MANIFEST_CB&&self.__SSG_MANIFEST_CB()
