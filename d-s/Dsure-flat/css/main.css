@@ -1,0 +1,516 @@
+/* =============================================================================
+   Base CSS
+   ========================================================================== */
+
+@font-face {
+    font-family:'Lato';
+	font-style: normal;
+	font-weight: 100;
+    src: url('fonts/Lato-Hairline.eot');
+    src: local('Lato Hairline'), local('Lato-Hairline'), url('fonts/Lato-Hairline.eot?#iefix') format('embedded-opentype'),
+         url('fonts/Lato-Hairline.woff') format('woff'),
+         url('fonts/Lato-Hairline.ttf') format('truetype'),
+         url('fonts/Lato-Hairline.svg#latohairline') format('svg');
+}
+
+::selection {
+    background: #333;
+    color: #fff;
+    text-shadow: none;
+}
+
+::-moz-selection {
+    background: #333;
+    color: #fff;
+    text-shadow: none;
+}
+
+body {
+    font-size: 13px;
+    color: #535353;
+    width: 100%;
+}
+
+footer {
+    color: #646464;
+    padding: 33px;
+}
+
+.dsure-title-nav {
+    color: #000;
+}
+
+.dsure-title-nav h1 small {
+    font-size: 16px;
+}
+
+
+
+/* =============================================================================
+   Main CSS
+   ========================================================================== */
+   
+.ajax-loading-text {
+    background: url(images/loader_img.gif) no-repeat 0 6px;
+    text-indent: 120px;
+    display: block;
+    font-size: 12px;
+}
+
+.width-150 {
+    width: 150px;
+}
+
+#back-top {
+    position: fixed;
+    z-index: 5;
+    right: 10px;
+    bottom: 6px;
+    background-color: #f7f7f9;
+    border: 1px solid #e1e1e8;
+    padding: 4px;
+    _display: none;
+}
+
+.dir-nav {
+    margin-top: 25px;
+    width: 80px;
+    border: 1px #D5D5D5 solid;
+    position: fixed;
+    top: 5px;
+    right: 10px;
+    z-index: 999;
+    _position: absolute;
+    overflow: hidden;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -o-webkit-border-radius: 4px;
+    -webkit-box-shadow: 0 0 15px #D9D9D9;
+    -moz-box-shadow: 0 0 15px #D9D9D9;
+    box-shadow: 0 0 15px #D9D9D9;
+}
+
+.dir-nav a {
+    display: block;
+    font-size: 12px;
+    line-height: 22px;
+    padding: 2px 5px;
+    width: 100%;
+    height: 22px;
+    text-indent: 6px;
+    color: #333;
+    border-bottom: #DDD solid 1px;
+}
+
+.ie6 .dir-nav a {
+    border-color: #D0D0D0;
+}
+
+.dir-nav a:hover,.dir-nav a.active,a.dir-nav-active,a.dir-nav-active:link,a.dir-nav-active:visited {
+    background: #333;
+    text-decoration: none;
+    color: #fff;
+}
+
+.dir-nav .t {
+    display: block;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 25px;
+    color: #333;
+    margin: 5px 0 3px 0;
+    padding-left: 8px;
+    border-bottom: #EAEAEA solid 1px;
+}
+
+.dir-nav a.close {
+    color: #333;
+    position: absolute;
+    margin-top: -5px;
+    margin-left: 58px;
+    border: none;
+}
+
+.dir-nav a.close:hover {
+    background: none;
+    color: #f00;
+}
+
+/*grids*/
+.dsure-row {
+    margin-top: 8px;
+}
+
+.dsure-row .dsure-columns {
+    text-align: center;
+    padding: 4px 0 4px 0;
+}
+
+.dsure-row .dsure-columns:not(.dsure-no-hover):hover {
+    font-weight: bold;
+    color: #fff;
+    background: #C6C6C6;
+}
+
+
+/*box*/
+#loading {
+    position: absolute;
+    top: 30px;
+    left: 50%;
+}
+
+/*menu*/
+#menu {
+    width: 200px;
+    overflow: hidden;
+    height: 100%;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: #1B1B1B;
+    -moz-box-shadow: 0px 0px 15px #000 inset;
+    -webkit-box-shadow: 0px 0px 15px #000 inset;
+    box-shadow: 0px 0px 15px #000 inset;
+    z-index: 5;
+}
+
+#menu .main-menu {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    color: #fff;
+    font-size: 12px;
+}
+
+#menu ul {
+    padding-bottom: 50px;
+}
+
+#menu ul li {
+    height: 35px;
+    text-indent: 20px;
+    line-height: 35px;
+}
+
+#menu ul li a {
+    font-size: 14px;
+    font-family: Arial;
+    color: #999;
+    display: block;
+    width: 100%;
+    height: 35px;
+}
+
+#menu ul li a span {
+    color: #676767;
+}
+
+#menu ul li a b {
+    color: #f60;
+    font-size: 12px;
+    font-weight: normal;
+    padding-left: 5px;
+}
+
+#menu ul li a:hover {
+    text-decoration: none;
+    color: #E0E0E0;
+    background: #373737;
+}
+
+#menu ul li.line {
+    height: 1px;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #282828;
+    overflow: hidden;
+    line-height: 1px;
+}
+
+#menu ul li.web-title {
+    margin: 8px 0 1px 0;
+    height: 50px;
+    line-height: 50px;
+    overflow: hidden;
+}
+
+#menu ul li.web-title a {
+    font-family: 'Lato',sans-serif;
+    font-size: 30px;
+    height: 50px;
+    line-height: 50px;
+    overflow: hidden;
+    font-weight: 100;
+    font-style: normal;
+    color: #fff;
+}
+
+#menu ul li.web-title a:hover {
+    background: none;
+    color: #505050;
+}
+
+#menu ul li a.bg-selected {
+    background: #2F91D9;
+    color: #fff;
+}
+
+#menu ul li a.bg-selected span {
+    color: #E2ECF5;
+}
+
+#menu ul li.active a {
+    background: #2F91D9 !important;
+    color: #fff !important;
+}
+
+#menu ul li.active a span {
+    color: #E2ECF5!important;
+}
+
+#menu ul li a.bg-default {
+    background: #373737;
+}
+
+#content {
+    width: auto;
+    overflow: hidden;
+    margin-left: 200px;
+    position: relative;
+}
+
+#content .show {
+    padding-left: 3%;
+    padding-top: 30px;
+    padding-right: 3%;
+}
+
+.ajax-loading-text {
+    font-size: 12px;
+}
+
+/*icons*/
+.the-icons {
+    margin-left: 0;
+    list-style: none;
+    display: block;
+    width: 90%;
+    overflow: hidden;
+}
+
+.the-icons i:hover {
+    background-color: #fff;
+}
+
+.the-icons li {
+    display: block;
+    height: 2.5em;
+    float: left;
+    width: 370px;
+    margin-right: .83333em;
+}
+
+.the-icons li code {
+    margin-left: 10px;
+    color: #333;
+    background: #E6E6E6;
+    border-color: #DDD;
+    letter-spacing: -0.2px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*table*/
+table thead code {
+    font-weight: bold;
+    background: none;
+    border: none;
+    color: #F60;
+}
+
+/*welcome*/
+.brand {
+    font-size: 80px;
+    height: 120px;
+    line-height: 150px;
+    display: block;
+    font-family: Tahoma,Geneva,sans-serif;
+    font-weight: 100;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.sub-title {
+    font-size: 20px;
+    line-height: 40px;
+    background: #EFEFEF;
+    padding: 10px 0 10px 0;
+    border-radius: 6px;
+    -moz-border-radius: 6px;
+    -webkit-border-radius: 6px;
+    -o-webkit-border-radius: 6px;
+}
+
+.sub-title h2 {
+    -moz-transition: .2s ease-in-out;
+    -o-transition: .2s ease-in-out;
+    -webkit-transition: .2s ease-in-out;
+    font-family: "Helvetica", Arial;
+}
+
+.sub-title h2:hover {
+    text-shadow: none;
+}
+
+.feature i {
+    margin-right: 6px;
+}
+
+.feature li {
+    color: #313131;
+    width: 45%;
+    margin-bottom: 5px;
+    margin-right: 2%;
+}
+
+.impText {
+    display: block;
+    text-align: left;
+    padding: 2px 4px;
+    line-height: 24px;
+}
+
+/*font*/
+.t1 {
+    color: #2685DB;
+    font-size: 14px;
+}
+
+.t2 {
+    color: #A2A2A2;
+    font-size: 14px;
+}
+
+.t3 {
+    color: #f00;
+    font-size: 14px;
+}
+
+.t4 {
+    color: #f00;
+}
+
+.t4 strong,.t3 strong {
+    color: #F90;
+    font-style: italic;
+    padding: 0 3px;
+}
+
+.demo-css-detail-table strong {
+    color: #F90;
+    font-weight: normal;
+    padding: 0 3px;
+    margin-left: .5em;
+}
+
+.demo-css-detail-table thead th strong {
+    color: #f90;
+    font-weight: normal;
+    font-size: 90%;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.demo-css-detail-table thead th {
+    vertical-align: middle;
+    font-weight: bold;
+}
+
+.demo-css-detail-table i {
+    color: #f90;
+    font-style: normal;
+}
+
+.demo-css-detail-table b {
+    display: block;
+}
+
+.demo-css-detail-table tbody code {
+    color: #333;
+    background: #E6E6E6;
+    border-color: #DDD;
+}
+
+.demo-css-detail-table-shadow thead tr {
+    background: #fff;
+}
+
+.demo-css-detail-table thead th button {
+    width: 100%;
+}
+
+/*code*/
+.codeBox {
+    margin: 0 10px 10px 0;
+    padding: 15px;
+    padding-left: 0;
+    width: 95%;
+    color: #333;
+    overflow: hidden;
+    position: relative;
+}
+
+.codeBox pre,.codeBox-content pre {
+    margin-top: 20px;
+    position: relative;
+}
+
+.codeBox-content {
+    margin: 15px 0 0 0;
+    padding: 15px 0 15px 0;
+    width: 100%;
+    background: none;
+    color: #666;
+    overflow: hidden;
+    position: relative;
+}
+
+.codeBox pre .html {
+    color: #999;
+    border-bottom-left-radius: 0;
+    -moz-border-bottom-left-radius: 0;
+    -webkit-border-bottom-left-radius: 0;
+    -o-webkit-border-bottom-left-radius: 0;
+    border-top-right-radius: 0;
+    -moz-border-top-right-radius: 0;
+    -webkit-border-top-right-radius: 0;
+    -o-webkit-border-top-right-radius: 0;
+    background: #E6E6E6;
+    border-color: #DBDBDB;
+    padding: 4px 5px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-width: 0 1px 1px 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.codeBox-content h3,.codeBox h2 {
+    color: #000;
+    letter-spacing: 1px;
+}
+
+
+/*Demo*/
+.demo-tcolor,.codeBox-content h3.demo-tcolor,.codeBox h2.demo-tcolor {
+    color: #535353;
+}
+
+.bg-column1 {
+    background: #eeeeee;
+}
+
+.bg-column2 {
+    background: #D1D1D1;
+}

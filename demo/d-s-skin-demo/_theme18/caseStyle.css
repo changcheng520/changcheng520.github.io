@@ -1,0 +1,15 @@
+/*图片展示*/
+.worksImgShowBox{margin-top:20px; width:810px; overflow:hidden; position:relative;}
+.worksImgShowBox ul{width:9999px;}
+.worksImgShowBox li{float:left; width:810px; margin:0; padding:0; height:500px;}
+.worksImgShowBox li img{ max-width:100%; margin-left:5px}
+
+
+.worksImgShowBox .dots{position:absolute;left:0;top:10px; z-index:6; cursor:pointer}
+.worksImgShowBox .dots li{width:18px; height:16px; background:url(img/slider-btn.png) no-repeat; text-indent:-9999px; float:left;}
+.worksImgShowBox .dots li.active{background:url(img/slider-btn.png) no-repeat -18px 0}
+
+
+/*返回和相关链接*/
+a#goUrl,a#goBack{margin-right:20px; text-decoration:underline }
+

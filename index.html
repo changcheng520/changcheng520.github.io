@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>没位道 - Chuckie Chang个人网站</title>
+
+    <!-- ************************************************************************
+    版本:  2012版（最终版+纪念版）
+   ************************************************************************ -->
+
+
+    <meta name="description"
+        content="没位道(Xizon Creative)是ChuckieChang的个人中文站点,记录日常生活与学习分享。基于现代互联网技术，提供跟进全球趋势的Web产品设计与开发服务。" />
+
+    <link rel="stylesheet" type="text/css" href="/assets-old/skin2012_index/main.min.css?v=2" />
+    <link rel="stylesheet" type="text/css" href="/assets-old/skin2012_index/awwwards.css" />
+
+    <link rel="icon" href="/assets/images/favicon/favicon-32x32.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="/assets/images/favicon/favicon-32x32.png" sizes="32x32" />
+    <link rel="apple-touch-icon" href="/assets/images/favicon/apple-touch-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/assets/images/favicon/apple-touch-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/assets/images/favicon/apple-touch-icon-114x114.png" />
+
+    <meta name="author" content="没位道" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.c945.com" />
+    <meta property="og:title" content="没位道 - Chuckie Chang个人网站" />
+    <meta property="og:description"
+        content="没位道(Xizon Creative)是ChuckieChang的个人中文站点,记录日常生活与学习分享。基于现代互联网技术，提供跟进全球趋势的Web产品设计与开发服务。" />
+    <meta property="og:image" content="https://www.c945.com/static-remote/files/c945-com_ec283524b17defdc57ff0f02-385x260-2-matrixflipcomapiwpcontentuploadsccomecbdefdcfffxjpg.jpg" />
+    <meta property="og:site_name" content="没位道 - Chuckie Chang个人网站" />
+
+    <link rel="canonical" href="https://www.c945.com" />
+
+
+
+    <script>
+        var bodyWidth = document.documentElement.clientWidth;
+        var bodyHeight = document.documentElement.clientHeight;
+        var screnWidth = window.screen.width;
+        var screnHeight = window.screen.height;
+
+        var mainSceneID = "#parallax_1 span, #parallax_5 div";
+        var mainSceneID_2 = "#parallax_3 span";
+        var mainSceneID_3 = "#parallax_4 span";
+        var animFlow = "#parallax_3 span";
+        var animLogo = "#logo a";
+        var closeArea_hoverArea = "#parallax_1 span, #parallax_4 span";
+        var cursorSign = "";
+
+
+        //dollGuide
+        var dollTop = 150;
+        var dollBottom = 200;
+        var dollLeft = 100;
+        var dollRight = 120;
+
+        //Parallax
+        var Parallax_speed1 = .85;
+        var Parallax_speed2 = .65;
+        var Parallax_speed3 = .35;
+        var ParallaxBackgroundWrapper = "mainBody";
+        var ParallaxBackgroundStage = "mainBody";
+        var ParallaxBackgroundID = "#moon";
+        var ParallaxBStage_left = 55;
+        var ParallaxBStage_top = 0;
+        var ParallaxB_scale = 0.07;
+        var ParallaxB_xOffset = 0;
+        var ParallaxB_yOffset = -10;
+
+
+        //element
+        var sceneBG_Anim_Bottom = -200;
+        var sceneBG_moon_Top = 20;
+        var form_close_Anim_Top = 30;
+        var parallax_showBG_Top = 501;
+        var mainSceneID_Bottom = -50;//底部场景
+        var animFlow_Bottom = -30;//底部场景
+        var linksScroll_Top = -23;
+        var topMenu_hidTop = -90;
+
+        //mainScene
+        var mainScene_delay = 2000;
+        var mainSceneID_Left = 500;
+        var mainSceneID_news_Left = -980;
+        var mainSceneID_blog_Left = 910;
+        var mainSceneID_flash_Left = -1380;
+        var mainSceneID_contact_Left = -500;
+        var mainSceneID_about_Left = -2550;
+
+        //sceneMove
+        var sceneChk = true;
+        var sceneMove_param = true;
+        var sceneMoveParallaxArea = 20;
+        var sceneMoveMinDis = 205;
+        var sceneMoveGoDis = 250;
+        var sceneMoveGoDis_multiple = 3.5;
+
+        //loader
+        var _webPrograssBarShow = "false";
+        var _mainSceneLoader_img = "";
+        var _webPrograssBar_Top = "37%";
+        var _webPrograssBar_TopPlug = "0px";
+        var _webPrograssBar_length = screnWidth;
+        var _webPrograssBar_height = 1;
+        var _webPrograssBar_fontSize = "15px";
+        var _webPrograssBar_color = "#525252";
+        var _webPrograssBar_background = "#000";
+        var _webPrograssBar_windowBackground = "none";
+        var _webPrograssBar_textColor = "#ccc";
+        var _webPrograssBar_textIndentBar = "-9999px";
+        var _webPrograssImg = "prograssImg";
+        var _webPrograssTxt = "prograssTxt";
+        var _webPrograssImgDefaultHeight = "96";
+        var _webPrograssImgDefaultWidth = "194";
+
+        if (/AppleWebKit.*Mobile/i.test(navigator.userAgent) || (/MIDP|SymbianOS|NOKIA|SAMSUNG|LG|NEC|TCL|Alcatel|BIRD|DBTEL|Dopod|PHILIPS|HAIER|LENOVO|MOT-|Nokia|SonyEricsson|SIE-|Amoi|ZTE/.test(navigator.userAgent))) {
+            if (window.location.href.indexOf("?mobile") < 0) {
+                try {
+                    if (/Android|Windows Phone|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)) {
+                        window.location.href = "/default.html";
+
+                    } else if (/iPad/i.test(navigator.userAgent)) {
+
+                    } else {
+
+                        window.location.href = "/default.html";
+                    }
+                } catch (e) { }
+            }
+        };
+
+
+
+    </script>
+    <script src="/assets-old/skin2012_index/jquery.min.js"></script>
+    <script src="/assets-old/skin2012_index/modernizr.min.js"></script>
+    <script type="text/javascript">
+
+        //for IE
+        if ($.browser.msie) {
+
+
+        } else {
+            if (/iPad/i.test(navigator.userAgent)) {
+                document.addEventListener('touchmove', function (e) { e.preventDefault(); }, false);
+            }
+        }
+
+
+
+    </script>
+
+
+</head>
+
+<body id="mainBody">
+
+
+    <!--  Awards  -->
+    <div id="awwwards" class="nominee white bottom right">
+        <a href="http://www.awwwards.com/best-websites/xizon-creative" target="_blank">Awwwards</a>
+    </div>
+
+
+    <!--blog & products link -->
+    <div id="loadingPageLink" style="visibility:hidden">
+        <a href="/default.html" target="_blank" title="没位道官方博客" class="blog"></a>
+    </div>
+
+
+    <!-- welcome  -->
+    <div id="welcome_step1">
+        <p>Welcome to xizon creative design studio (Chuckie Chang Personal Website).</p>
+    </div>
+    <div id="welcome_step2">
+        <p>I'm deaigner of china.<br>Hope you have fun here.</p>
+    </div>
+
+
+
+    <!--loading-->
+    <div id="loading"><span></span></div>
+    <div id="loading_logo_default"><span id="prograssImg_default"></span></div>
+    <div id="loading_logo"><span id="prograssImg"></span></div>
+    <div id="prograssTxt"></div>
+
+
+
+    <!-- tip -->
+    <div id="topHover_T"><span>Menu</span></div>
+
+    <!--mask-->
+    <div id="mainMask_u"></div>
+    <div id="mainMask_d"></div>
+    <div id="actionMask"></div>
+
+    <!--Menu hot-area-->
+    <div id="menuExpand">
+        <div id="NavHoverArea"></div>
+        <a class="topMenu" href="javascript:void(0)"></a>
+        <a class="bottomMenu" href="javascript:void(1)"></a>
+        <a class="bottomMenu-hover" href="javascript:void(2)"></a>
+    </div>
+
+    <!--******************************screen    start******************************-->
+
+    <header>
+        <!--navigation-->
+        <nav class="nav">
+            <ul id="nav-primary">
+                <li class="portfolio"><a href="javascript:" onClick="showContentBox('portfolio');">Portfolio</a></li>
+                <li class="news"><a href="javascript:" onClick="showContentBox('news');">News</a></li>
+                <li class="about"><a href="javascript:" onClick="showContentBox('about');">Who Am I</a></li>
+                <li class="contact"><a href="javascript:" onClick="showContentBox('contact');">Contact Me</a></li>
+                <li class="links"><a href="javascript:" onClick="showContentBox('links');">Links</a></li>
+                <li class="blog"><a href="/default.html" target="_blank">Blog</a></li>
+            </ul>
+        </nav>
+
+        <section class="role">
+            <span id="doll"></span>
+            <span id="light"></span>
+        </section>
+
+    </header>
+
+
+    <div class="page-wrapper">
+
+        <section role="main">
+
+            <div id="parallax">
+
+
+                <section class="scene-parallax-1">
+
+
+                    <div class="shooting-star shooting-star--1"></div>
+                    <div class="shooting-star shooting-star--2"></div>
+
+                    <div id="parallax_0"><span></span></div>
+                    <div id="parallax_0-1"><span></span></div>
+                    <div id="parallax_0-2"><span></span></div>
+                    <div id="parallax_0-3"><span></span></div>
+                    <div id="parallax_0-4"><span></span></div>
+                    <div id="parallax_rain"><span id="rain" class="move"></span></div>
+                    <div id="parallax_showBG"><span></span></div>
+                    <div id="parallax_showBG_mask"><span></span></div>
+                    <div id="parallax_3">
+                        <!--[if IE 6]><br><br><br><br><br><br><br><br><![endif]-->
+                        <!--[if gte IE 7]><br><br><br><br><br><br><br><![endif]--><span></span>
+                    </div>
+
+                    <!--mainScene -->
+                    <div id="parallax_1">
+
+                        <!--  loader & main scene  -->
+                        <span id="mainSceneLoader1"></span>
+
+
+                    </div>
+
+
+                    <div id="parallax_4">
+                        <!--[if IE 6]><br><br><br><br><br><br><br><br><br><br><br><br><![endif]-->
+                        <!--[if gte IE 7]><br><br><br><br><br><br><br><br><br><br><br><br><br><![endif]--><span
+                            id="mainSceneLoader2"></span>
+                    </div>
+
+
+                </section>
+
+                <section class="scene-parallax-2">
+
+                    <!--Contact-->
+
+                    <div id="parallax_show_3">
+                        <h3>Contact Me</h3>
+
+                        <form id="app-remotecomment-site">
+                            <br><span id="tip_con"></span>
+                            <input type="text" name="title" id="title" placeholder="Title" />
+
+
+                            <input type="url" name="url" id="url" placeholder="http://" />
+
+                            <input type="email" name="email" id="email"placeholder="Email" /><br>
+
+                            <textarea id="content" name="content" cols="38" rows="4" placeholder="Message"></textarea><br>
+
+
+                            <input type="text" id="captcha" name="captcha" placeholder="Captcha" />
+                                
+                            <div class="app-remotecomment-captcha-section">
+                                <div class="captcha-wrapper">
+                                    <span id="app-remotecomment-refresh-session-captcha"></span>
+                                </div>
+                            </div>
+
+
+                            <a href="#" class="send"></a>
+                            <div class="close"><a href="javascript:" onClick="hideContentBox('contact');"></a></div>
+
+                            <input type="hidden" name="toid" id="toid" value="900000000000" />
+                            <input type="hidden" name="refer" id="refer" value="https://www.c945.com/" />
+                            <input type="hidden" name="app-remotecomment-site-security" id="app-remotecomment-site-security" />
+
+                        </form>
+
+
+                    </div>
+
+                </section>
+
+                <section class="scene-parallax-3">
+
+
+                    <!--scene animation-->
+                    <div id="parallax_5">
+
+                        <div>
+                            <span id="logoShow"></span>
+                            <span id="role"></span>
+                            <span id="fire"></span>
+                            <span id="eyesWindow"></span>
+                            <span id="mainLight"></span>
+                            <span id="ef1"></span>
+                            <span id="ef2"></span>
+                            <span id="ef3"></span>
+                            <span id="tentacle"></span>
+                            <span id="largefire"></span>
+                            <span id="eyelight"></span>
+                        </div>
+                    </div>
+
+                    <!--  moon  -->
+                    <span id="moon"></span>
+
+
+                </section>
+
+                <section class="scene-parallax-4">
+
+                    <!--Case-->
+
+                    <div id="parallax_show_1">
+                        <h3>Portfolio</h3>
+                        <div class="con">
+
+
+                            <span id="caseIframeBox"><iframe name="caseIframeBox"  frameborder="0"  scrolling="no"  hspace="0" vspace="0" allowTransparency="true" src="/works-skin2012_index-iframe.html"></iframe></span>
+
+
+                        </div>
+
+
+                        <div class="close"><a href="javascript:" onClick="hideContentBox('portfolio');"></a></div>
+
+
+                    </div>
+
+
+                </section>
+
+            </div><!-- /#parallax -->
+
+
+
+
+            <!--diary and porfolio-->
+
+            <section id="newsBox" data-hidoffset="-650" data-showoffset="-180|auto">
+                <div id="newsBox_line"></div>
+                <div class="close">
+                    <a href="javascript:"
+                        onClick="hideContentBox('news');hideContentBox('portfolio');hideContentBox('contact');hideContentBox('about')"></a>
+
+                </div>
+
+
+                <div id="newsContent">
+                    <article id="artList">
+                            <ul>
+                                <li><a href="/article/implementation-process-of-grpc-and-front-end-applications-completely.html" target="_blank" title="gRPC与前端应用的完整实现过程">gRPC与前端应用的完整实现过程</a></li><li><a href="/article/year-end-summary-2022.html" target="_blank" title="年终2022">年终2022</a></li><li><a href="/article/the-confusion-of-the-front-end-framework.html" target="_blank" title="前端框架带来的疑惑与是非">前端框架带来的疑惑与是非</a></li><li><a href="/article/b214e53f0c655e422783718d.html" target="_blank" title="理解微前端 - 从部署一套自己的前端开发环境(脚手架)开始">理解微前端 - 从部署一套自己的前端开发环境(脚手架)开始</a></li><li><a href="/article/performance-and-security-optimization-guide-for-centos8-lemp-environment-2022.html" target="_blank" title="CentOS 8.0  LEMP环境的性能与安全优化指南2022版">CentOS 8.0  LEMP环境的性能与安全优化指南2022版</a></li>
+                            </ul>
+                            <span class="more"><a href="/articles/page/1.html" target="_blank" title="More">More</a></span>
+                        
+                        </article>
+                </div>
+
+            </section>
+
+
+
+
+
+            <!--topContainer-->
+            <div class="topNav_box_close">
+                <a href="javascript:void(4)" onClick="hidNowT();"></a>
+            </div>
+
+            <!--topBg-->
+            <div id="topNav_box"></div>
+
+            <!--others-->
+
+            <div class="m_shortCutImg"><span></span></div>
+            <div class="index_linkSrcImg" style="pointer-events: none;"><span></span></div>
+            <div class="index_linkSrcImg2"><span></span></div>
+
+            <!--shortCur menu-->
+            <ul class="m_shortCut">
+
+                <!-- foreign -->
+                <li id="c21"><a rel="nofollow" href="http://cssreel.com/Website/xizon-creative" target="_blank"
+                        title="CSSREEL">CSSREEL</a></li>
+                <li id="c20"><a rel="nofollow" href="http://www.gouw.nu/" target="_blank"
+                        title="gouw.nu Graphic Orgasm Ultimate Web link portal for site design links and graphics site link designs">gouw.nu
+                        Graphic Orgasm Ultimate Web link portal for site design links and graphics site link designs</a>
+                </li>
+                <li id="c5"><a rel="nofollow"
+                        href="http://www.cssdesignawards.com/sites/xizon-creative-portfolio/20065/" target="_blank"
+                        title="cssdesignawards">cssdesignawards</a></li>
+                <li id="c2"><a rel="nofollow" href="http://www.cssgarden.co.uk/profile/8413" target="_blank"
+                        title="css garden">css garden</a></li>
+                <li id="c14"><a rel="nofollow" href="http://www.designnominees.com/sites/xizon-creative" target="_blank"
+                        title="Design Nominees">Design Nominees</a></li>
+                <li id="c15"><a rel="nofollow" href="http://www.csswinner.com/details/xizon-design-studio/1270/"
+                        target="_blank" title="CSS Winner">CSS Winner</a></li>
+                <li id="c16"><a rel="nofollow" href="http://www.cssawards.net/xizon-creative/" target="_blank"
+                        title="CSS Awards">CSS Awards</a></li>
+                <li id="c6"><a rel="nofollow" href="http://101bestwebsites.com/url/www.c945.com/" target="_blank"
+                        title="101 Best Websites - CSS Showcase, Flash and Javascript portfolio">101 Best Websites - CSS
+                        Showcase, Flash and Javascript portfolio</a></li>
+                <li id="c17"><a rel="nofollow" href="http://www.csslight.com/user/detail/xizon-creative_704"
+                        target="_blank" title="csslight Featured of the Day | CSS Awards">csslight Featured of the Day |
+                        CSS Awards</a></li>
+
+                <!--******* hidden links of default *******-->
+
+                <!-- foreign -->
+                <li id="c13"><a rel="nofollow" href="http://www.quandtnet.de/sites/design/2012/xizon-creative-design/"
+                        target="_blank" title="qnt gallery">qnt gallery</a></li>
+                <li id="c4"><a rel="nofollow" href="http://www.webindexgallery.com/detail.php?id=143" target="_blank"
+                        title="Web Index Gallery">Web Index Gallery</a></li>
+                <li id="c8"><a rel="nofollow" href="http://www.bestcss.in/user/detail/xizoncreative-721" target="_blank"
+                        title="Site of The Day of Bestcss">Site of The Day of Bestcss</a></li>
+
+                <!-- china -->
+                <li id="c18"><a rel="nofollow" href="https://web.2008php.com/tu/94139.html" target="_blank"
+                        title="欧莱凯酷站欣赏">欧莱凯酷站欣赏</a></li>
+                <li id="c1"><a href="http://bbs.blueidea.com/pages.php?mod=view&id=5057" target="_blank"
+                        title="蓝色理想-品网">蓝色理想-品网</a></li>
+
+            </ul>
+
+
+            <!-- about  -->
+
+            <section id="aboutMain" data-hidoffset="-700" data-showoffset="-80|auto">
+                <div id="aboutMain_line"></div>
+                <div class="close">
+                    <a href="javascript:"
+                        onClick="hideContentBox('news');hideContentBox('portfolio');hideContentBox('contact');hideContentBox('about')"></a>
+
+                </div>
+
+                <div class="lan">
+                    <a href="#" class="chinese"></a>
+                    <a href="#" class="en"></a>
+                </div>
+
+                <div class="show">
+
+
+                    <p class="content1">My name is Chuckie Chang. This is Xizon Creative Studio which also is personal
+                        website.</p>
+                    <p class="content1">I'm a full-stack designer with over 6 years of experience in UI design, and over 4 years in Front-end development. Focus on user interface, user experience, front-end and WordPress development. I want to build things I can be proud of. 
+                        </p>
+                    <p class="content1">My hobbies are Breakdance, Skateboarding, Surfing and other extreme sports. I approach some awesome design challenges with the latest trends. I have been working so hard to build up self.</p>
+                    <p class="content1">Leave a message via xizon@c945.com</p>
+
+           
+                    <p class="content2">网站主要记录学习、技术与成长，并分享一些作品和开源。</p>
+                    <p class="content2">
+                        作者从小就爱玩电脑游戏，和各类任天堂游戏机一起长大，因为不是科班毕业，之后兴趣自修艺术设计和计算机专业相关的大学科班教材。
+                    </p>
+                    <p class="content2">喜欢大自然，喜欢大海，喜欢一个人出国旅行。想做一个探险家，街舞、自由浮潜、冲浪、滑板、无人区自驾旅行实践者，坚守个人爱好十余年。喜欢写作与幻想，喜欢创造一些工具来提高自己的办事效率和兴趣度。</p>
+              
+                    <p class="content2">更多的介绍请访问 <a href="/about.html" target="_blank">此页面</a> </p>
+            
+                    
+                    
+
+
+                </div>
+
+                <!-- scene hto-area -->
+                <a class="blankClikHover" href="javascript:void(5)"></a>
+
+
+            </section>
+
+
+
+            <!--links-->
+
+            <section id="linksMain" data-hidoffset="0" data-showoffset="-80|auto">
+
+                <h3>Links</h3>
+                <div class="show">
+
+                    <ul class="linksList">
+
+                        <li><a href="https://www.c945.com" target="_blank" title="没位道">没位道</a></li><li><a href="https://matrixflip.com/" target="_blank" title="矩阵翻转">矩阵翻转</a></li><li><a href="http://www.syg315.com" target="_blank" title="素云阁网络工作室">素云阁网络工作室</a></li><li><a href="https://molstack.com/" target="_blank" title="MolStack Studio">MolStack Studio</a></li><li><a href="http://www.easeu.com" target="_blank" title="EASEU&amp;#160;BLOG">EASEU&#160;BLOG</a></li><li><a href="http://www.mocaidea.com" target="_blank" title="Morcha&amp;#160;Design">Morcha&#160;Design</a></li><li><a href="http://www.iztwp.com" target="_blank" title="爱主题">爱主题</a></li><li><a href="http://www.shejidaren.com" target="_blank" title="设计达人">设计达人</a></li><li><a href="http://www.alexhill.cn/" target="_blank" title="Alexhill&amp;#39;s&amp;#160;Moment">Alexhill&#39;s&#160;Moment</a></li><li><a href="https://uiux.cc" target="_blank" title="UIUX&amp;#160;Lab">UIUX&#160;Lab</a></li>
+
+                    </ul>
+                </div>
+
+                <div class="close">
+                    <a class="closeBtn" href="javascript:"></a>
+                </div>
+
+            </section>
+
+
+
+
+
+            <div id="container">
+
+
+                <a href="javascript:void(6)" class="index_linkSrc_hoverArea" style="pointer-events: none"></a>
+                <a href="javascript:void(7)" class="index_linkSrc_hoverAreaT"></a>
+
+
+            </div>
+
+            <!--correct container-->
+            <div id="bottonClear"></div>
+
+            <!-- preload background-->
+            <div id="wBox" class="portfolioBoxPreload"></div>
+
+
+            <!-- moveArrow -->
+            <span id="moveArrow_right"></span>
+            <span id="moveArrow_left"></span>
+
+
+            <!-- sound -->
+            <audio class="sound-wrapper" id="sound-nav" controls preload="auto">
+                <source src="/assets-old/skin2012_index/sound/menu.mp3" />
+                <source src="/assets-old/skin2012_index/sound/menu.ogg" />
+            </audio>
+
+            <audio class="sound-wrapper" id="sound-preload" controls preload="auto" loop>
+                <source src="/assets-old/skin2012_index/sound/mainsound-preload.mp3" />
+                <source src="/assets-old/skin2012_index/sound/mainsound-preload.ogg" />
+            </audio>
+
+            <audio class="sound-wrapper" id="sound-bg" controls preload="auto" loop>
+                <source src="/assets-old/skin2012_index/sound/mainsound-bg.mp3" />
+                <source src="/assets-old/skin2012_index/sound/mainsound-bg.ogg" />
+            </audio>
+
+            <audio class="sound-wrapper" id="sound-entering" controls preload="auto">
+                <source src="/assets-old/skin2012_index/sound/entering.mp3" />
+                <source src="/assets-old/skin2012_index/sound/entering.ogg" />
+            </audio>
+
+
+
+        </section><!-- / role="main" -->
+
+    </div><!-- /.page-wrapper -->
+
+    <!--******************************screen    end******************************-->
+
+
+    <footer id="copy">&copy;<span>2010-2023</span> Xizon Creative <sup>v2012</sup>. All Right Reserved.</footer>
+
+    
+    <script src="/assets-old/skin2012_index/axios.min.js"></script>
+    <script src="/assets-old/skin2012_index/app.min.js"></script>
+    
+    <script id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+    <script>
+        if (typeof(LA) !== 'undefined') LA.init({id: "JdyfUJi3RdCZVi9F",ck: "JdyfUJi3RdCZVi9F"});
+    </script>
+</body>
+
+</html>

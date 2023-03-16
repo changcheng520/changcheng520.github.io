@@ -1,0 +1,979 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js ie ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js ie ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js ie ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js ie ie9"> <![endif]-->
+<!--[if !IE]><!--> <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js"> <!--<![endif]-->
+
+<head>
+    <meta name="viewport" content="width=device-width, user-scalable=yes" />
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
+    <meta charset="utf-8"/>
+    <title>Tables | Dsure Front-end Development Framework</title>
+    <meta name="description" content="Improve the efficiency of CSS/HTML website based development and responsive layout.">
+
+    <!-- Jquery.min begin -->
+    <script src="js/jquery.min.js?1.7.1" ></script>
+    <!-- / Jquery.min end -->
+    
+    <!-- URL Hash Compatible(IE5+) begin -->
+    <script src="js/jquery.hashchange.js" ></script>
+	<script>
+		//hash
+		var turl = "";
+    </script> 
+
+    <!-- URL Hash Compatible(IE5+) end -->
+    
+    
+    <!-- Dsure  Development Framework  begin  -->
+    
+        <link rel="stylesheet" type="text/css" href="../../dsure/dsure.flat.css" />
+        <script src="../../dsure/dsure.modernizr.js"></script>
+        <!--[if lt IE 9]>  
+            <script src="../../dsure/dsure.respond.js"></script>  
+        <![endif]-->  
+    
+        <!--[if lt IE 7 ]>
+            <script src="../../dsure/dsure.png.js"></script>
+            <script>
+            DD_belatedPNG.fix('img, a, span, h1, h2, h3, em, section, header');
+            document.execCommand("BackgroundImageCache", false, true);
+            </script>
+        <![endif]-->
+
+    
+    <!-- /Dsure Development Framework  end   -->
+    
+
+    
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+
+    
+
+
+</head>
+<body>
+
+    <!--  loading  -->
+    <div id="loading"></div> 
+    <div id="back-top"><a href="#">Top</a></div>
+
+    <!--  menu  -->
+        <nav id="menu">
+            <div class="main-menu">
+        
+                <ul>
+                    <li class="web-title"><a href="/d-s/Dsure">Dsure</a></li>
+                    <li class="line"></li>
+                    <li class="active"><a href="/d-s/Dsure">Welcome Page</a></li>
+                    <li><a href="/d-s/Dsure/detail-base.html">Base Structure<b>*Required*</b></a></li>
+                    <li><a href="/d-s/Dsure/detail-base2.html">Base Stylesheets<b>*Common*</b></a></li>
+                    <li><a href="/d-s/Dsure/detail-text.html">Text</a></li>
+                    <li><a href="/d-s/Dsure/detail-buttons.html">Buttons</a></li>
+                    <li><a href="/d-s/Dsure/detail-forms.html">Forms</a></li>
+                    <li class="active"><a href="/d-s/Dsure/detail-tables.html">Tables</a></li>
+                    <li><a href="/d-s/Dsure/detail-grids.html">Grids</a></li>
+                    <li><a href="/d-s/Dsure/detail-layouts.html">Layouts</a></li>
+                    <li><a href="/d-s/Dsure/detail-icons.html">Icons</a></li>
+                    <li><a href="/d-s/Dsure/detail-img.html">Images</a></li>
+                    <li><a href="/d-s/Dsure/detail-line.html">Dividing Line</a></li>
+                    <li><a href="/d-s/Dsure/detail-paginators.html">Paginators</a></li>
+                    <li><a href="/d-s/Dsure/detail-navigation.html">Navigation</a></li>
+                    <li><a href="/d-s/Dsure/detail-classification.html">Classification</a></li>
+                    <li><a href="/d-s/Dsure/detail-striking.html">Striking</a></li>
+                    <li><a href="/d-s/Dsure/detail-search.html">Search Box</a></li> 
+                    <li><a href="/d-s/Dsure/detail-tags.html">Tags</a></li> 
+                   
+                </ul>
+
+                            
+            </div>
+           
+         </nav>
+         
+     <!--  /menu  -->
+     
+    
+     
+     <section id="content">
+         <div class="show">
+          
+          <!-- /////////////////   Content    Begin /////////////////// -->
+          
+      <div class="dsure-title-nav dsure-no-hover dsure-bg-silver dsure-radius-small dsure-b-shadow f-i15">
+        <h1>Tables</h1>
+      </div>
+
+      <div id="dir-nav" class="dir-nav dsure-no-hover dsure-bg-silver">
+          <a class="close" data-close="0" href="javascript:">×</a>
+          <div class="clear"></div>
+          <span class="t">Catalog</span>
+          <a href="javascript:" id="b-s1" onClick="navScrollTo('#s1');" >Style 1</a>
+          <a href="javascript:" id="b-s2" onClick="navScrollTo('#s2');" >Style 2</a>
+          <a href="javascript:" id="b-s3" onClick="navScrollTo('#s3');" >Style 3</a>
+          <a href="javascript:" id="b-s4" onClick="navScrollTo('#s4');" >Style 4</a>
+          <a href="javascript:" id="b-s5" onClick="navScrollTo('#s5');" >Style 5</a>
+          <a href="javascript:" id="b-s6" onClick="navScrollTo('#s6');" >Style 6</a>
+          <a href="javascript:" id="b-s7" onClick="navScrollTo('#s7');" >Style 7</a>
+          <a href="javascript:" id="b-s8" onClick="navScrollTo('#s8');" >Style 8</a>
+          <a href="javascript:" id="b-s9" onClick="navScrollTo('#s9');" >Style 9</a>
+         
+
+      </div>
+
+
+      <div class="clear"></div>
+      
+      <div class="codeBox">
+
+            <p class="dsure-tip dsure-tip-success">
+              <i class="dsure-icon dsure-icon-bulb"></i>Use any of the available classes of <strong>Base Stylesheets</strong> to quickly create a custom style. 
+            </p>
+
+      </div><!--  /.codeBox -->
+       
+       
+        <div class="codeBox d-class-area" id="s1">
+           
+           <h2>(1) Style 1</h2>
+
+            <div class="codeBox-content">
+    
+                <table class="dsure-table">
+                    <thead>
+                        <tr>
+                            <th>Number</th>
+                            <th>Name</th>
+                            <th>Phone</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    
+                    <tfoot>
+                        <tr>
+                            <th>Text 1</th>
+                            <th>Text 2</th>
+                            <th>Text 3</th>
+                            <th>Text 4</th>
+                        </tr>
+                    </tfoot>
+                
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>David Lin</td>
+                            <td>123 344 4343</td>
+                            <td>35745784</td>
+                        </tr>
+                
+                        <tr>
+                            <td>2</td>
+                            <td>Co Cheey</td>
+                            <td>231 343 3334</td>
+                            <td>1490933</td>
+                        </tr>
+                
+                        <tr>
+                            <td>3</td>
+                            <td>Foristin</td>
+                            <td>767 929 1212</td>
+                            <td>7954511</td>
+                        </tr>
+                    </tbody>
+     
+                </table>
+                
+                 
+            </div><!--  /.codeBox-content -->
+
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML Code:</span>
+
+&lt;table class="<span class="im-class">dsure-table</span>"&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Number&lt;/th&gt;
+            &lt;th&gt;Name&lt;/th&gt;
+            &lt;th&gt;Phone&lt;/th&gt;
+            &lt;th&gt;Email&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    
+    &lt;tfoot&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Text 1&lt;/th&gt;
+            &lt;th&gt;Text 2&lt;/th&gt;
+            &lt;th&gt;Text 3&lt;/th&gt;
+            &lt;th&gt;Text 4&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/tfoot&gt;
+
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;1&lt;/td&gt;
+            &lt;td&gt;David Lin&lt;/td&gt;
+            &lt;td&gt;123 344 4343&lt;/td&gt;
+            &lt;td&gt;35745784&lt;/td&gt;
+        &lt;/tr&gt;
+
+        &lt;tr&gt;
+            &lt;td&gt;2&lt;/td&gt;
+            &lt;td&gt;Co Cheey&lt;/td&gt;
+            &lt;td&gt;231 343 3334&lt;/td&gt;
+            &lt;td&gt;1490933&lt;/td&gt;
+        &lt;/tr&gt;
+
+        &lt;tr&gt;
+            &lt;td&gt;3&lt;/td&gt;
+            &lt;td&gt;Foristin&lt;/td&gt;
+            &lt;td&gt;767 929 1212&lt;/td&gt;
+            &lt;td&gt;7954511&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+ 
+            
+            </pre>
+            
+            
+        </div><!--  /.codeBox -->
+      
+      
+      
+       <div class="codeBox d-class-area" id="s2">
+           
+           <h2>(2) Style 2</h2>
+           
+           
+            <div class="codeBox-content">
+    
+                <table class="dsure-table dsure-table-horizontal">
+                    <thead>
+                        <tr>
+                            <th>Number</th>
+                            <th>Name</th>
+                            <th>Phone</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>David Lin</td>
+                            <td>123 344 4343</td>
+                            <td>35745784</td>
+                        </tr>
+                
+                        <tr>
+                            <td>2</td>
+                            <td>Co Cheey</td>
+                            <td>231 343 3334</td>
+                            <td>1490933</td>
+                        </tr>
+                
+                        <tr>
+                            <td>3</td>
+                            <td>Foristin</td>
+                            <td>767 929 1212</td>
+                            <td>7954511</td>
+                        </tr>
+                    </tbody>
+                </table>
+                 
+            </div><!--  /.codeBox-content -->
+
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML Code:</span>
+
+&lt;table class="<span class="im-class">dsure-table dsure-table-horizontal</span>"&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Number&lt;/th&gt;
+            &lt;th&gt;Name&lt;/th&gt;
+            &lt;th&gt;Phone&lt;/th&gt;
+            &lt;th&gt;Email&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;1&lt;/td&gt;
+            &lt;td&gt;David Lin&lt;/td&gt;
+            &lt;td&gt;123 344 4343&lt;/td&gt;
+            &lt;td&gt;35745784&lt;/td&gt;
+        &lt;/tr&gt;
+
+        &lt;tr&gt;
+            &lt;td&gt;2&lt;/td&gt;
+            &lt;td&gt;Co Cheey&lt;/td&gt;
+            &lt;td&gt;231 343 3334&lt;/td&gt;
+            &lt;td&gt;1490933&lt;/td&gt;
+        &lt;/tr&gt;
+
+        &lt;tr&gt;
+            &lt;td&gt;3&lt;/td&gt;
+            &lt;td&gt;Foristin&lt;/td&gt;
+            &lt;td&gt;767 929 1212&lt;/td&gt;
+            &lt;td&gt;7954511&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+ 
+            
+            </pre>
+            
+            
+        </div><!--  /.codeBox -->
+
+
+
+        <div class="codeBox d-class-area" id="s3">
+           
+           <h2>(3) Style 3</h2>
+           
+           
+            <div class="codeBox-content">
+    
+                <table class="dsure-table dsure-table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Number</th>
+                            <th>Name</th>
+                            <th>Phone</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                
+                    <tbody>
+                        <tr>
+                            <td>1</td>
+                            <td>David Lin</td>
+                            <td>123 344 4343</td>
+                            <td>35745784</td>
+                        </tr>
+                
+                        <tr>
+                            <td>2</td>
+                            <td>Co Cheey</td>
+                            <td>231 343 3334</td>
+                            <td>1490933</td>
+                        </tr>
+                
+                        <tr>
+                            <td>3</td>
+                            <td>Foristin</td>
+                            <td>767 929 1212</td>
+                            <td>7954511</td>
+                        </tr>
+                    </tbody>
+                </table>
+                 
+            </div><!--  /.codeBox-content -->
+
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML Code:</span>
+
+&lt;table class="<span class="im-class">dsure-table dsure-table-bordered</span>"&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Number&lt;/th&gt;
+            &lt;th&gt;Name&lt;/th&gt;
+            &lt;th&gt;Phone&lt;/th&gt;
+            &lt;th&gt;Email&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+
+    &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;1&lt;/td&gt;
+            &lt;td&gt;David Lin&lt;/td&gt;
+            &lt;td&gt;123 344 4343&lt;/td&gt;
+            &lt;td&gt;35745784&lt;/td&gt;
+        &lt;/tr&gt;
+
+        &lt;tr&gt;
+            &lt;td&gt;2&lt;/td&gt;
+            &lt;td&gt;Co Cheey&lt;/td&gt;
+            &lt;td&gt;231 343 3334&lt;/td&gt;
+            &lt;td&gt;1490933&lt;/td&gt;
+        &lt;/tr&gt;
+
+        &lt;tr&gt;
+            &lt;td&gt;3&lt;/td&gt;
+            &lt;td&gt;Foristin&lt;/td&gt;
+            &lt;td&gt;767 929 1212&lt;/td&gt;
+            &lt;td&gt;7954511&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+ 
+            
+            </pre>
+            
+            
+        </div><!--  /.codeBox -->
+      
+      
+      
+        <div class="codeBox d-class-area" id="s4">
+           
+           <h2>(4) Style 4</h2>
+           
+           
+            <div class="codeBox-content">
+    
+                <table class="dsure-table dsure-table-horizontal">
+                    <thead>
+                        <tr>
+                            <th>Number</th>
+                            <th>Name</th>
+                            <th>Phone</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                
+                    <tbody>
+                        <tr class="dsure-table-odd">
+                            <td>1</td>
+                            <td>David Lin</td>
+                            <td>123 344 4343</td>
+                            <td>35745784</td>
+                        </tr>
+                
+                        <tr>
+                            <td>2</td>
+                            <td>Co Cheey</td>
+                            <td>231 343 3334</td>
+                            <td>1490933</td>
+                        </tr>
+                
+                        <tr class="dsure-table-odd">
+                            <td>3</td>
+                            <td>Foristin</td>
+                            <td>767 929 1212</td>
+                            <td>7954511</td>
+                        </tr>
+                    </tbody>
+                </table>
+                 
+            </div><!--  /.codeBox-content -->
+
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML Code:</span>
+
+&lt;table class="<span class="im-class">dsure-table dsure-table-horizontal</span>"&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Number&lt;/th&gt;
+            &lt;th&gt;Name&lt;/th&gt;
+            &lt;th&gt;Phone&lt;/th&gt;
+            &lt;th&gt;Email&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+
+    &lt;tbody&gt;
+        &lt;tr class="<span class="im-class">dsure-table-odd</span>"&gt;
+            &lt;td&gt;1&lt;/td&gt;
+            &lt;td&gt;David Lin&lt;/td&gt;
+            &lt;td&gt;123 344 4343&lt;/td&gt;
+            &lt;td&gt;35745784&lt;/td&gt;
+        &lt;/tr&gt;
+
+        &lt;tr&gt;
+            &lt;td&gt;2&lt;/td&gt;
+            &lt;td&gt;Co Cheey&lt;/td&gt;
+            &lt;td&gt;231 343 3334&lt;/td&gt;
+            &lt;td&gt;1490933&lt;/td&gt;
+        &lt;/tr&gt;
+
+        &lt;tr class="<span class="im-class">dsure-table-odd</span>"&gt;
+            &lt;td&gt;3&lt;/td&gt;
+            &lt;td&gt;Foristin&lt;/td&gt;
+            &lt;td&gt;767 929 1212&lt;/td&gt;
+            &lt;td&gt;7954511&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+ 
+            
+            </pre>
+            
+            
+        </div><!--  /.codeBox -->
+        
+        
+        <div class="codeBox d-class-area" id="s5">
+           
+           <h2>(5) Style 5</h2>
+
+            <div class="codeBox-content">
+    
+                <table class="dsure-table dsure-table-noborder">
+                
+                    <tbody>
+                    
+                        <tr>
+                            <td class="dsure-table-left-noborder">List 1</td>
+                            <td>Content 1</td>
+                            <td>Remark 1</td>
+                        </tr>
+                
+                        <tr >
+                            <td class="dsure-table-left-noborder">List 2</td>
+                            <td>Content 2</td>
+                            <td>Remark 2</td>
+                        </tr>
+                
+                        <tr>
+                            <td class="dsure-table-left-noborder">List 3</td>
+                            <td>Content 3</td>
+                            <td>Remark 3</td>
+                        </tr>
+                        
+                     </tbody>
+               
+                </table>
+                 
+            </div><!--  /.codeBox-content -->
+
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML Code:</span>
+
+&lt;table class="<span class="im-class">dsure-table dsure-table-noborder</span>"&gt;
+
+     &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td class="<span class="im-class">dsure-table-left-noborder</span>"&gt;List 1&lt;/td&gt;
+            &lt;td&gt;Content 1&lt;/td&gt;
+            &lt;td&gt;Remark 1&lt;/td&gt;
+        &lt;/tr&gt;
+        
+        &lt;tr&gt;
+            &lt;td class="<span class="im-class">dsure-table-left-noborder</span>"&gt;List 2&lt;/td&gt;
+            &lt;td&gt;Content 2&lt;/td&gt;
+            &lt;td&gt;Remark 2&lt;/td&gt;
+        &lt;/tr&gt;
+        
+        &lt;tr&gt;
+            &lt;td class="<span class="im-class">dsure-table-left-noborder</span>"&gt;List 3&lt;/td&gt;
+            &lt;td&gt;Content 3&lt;/td&gt;
+            &lt;td&gt;Remark 3&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+        
+&lt;/table&gt;
+ 
+            
+            </pre>
+            
+            
+        </div><!--  /.codeBox -->
+   
+        <div class="codeBox d-class-area" id="s6">
+           
+           <h2>(6) Style 6</h2>
+
+            <div class="codeBox-content">
+    
+                <table class="dsure-table dsure-table-noborder dsure-table-horizontal">
+
+                    <tbody>
+                    
+                        <tr>
+                            <td>List 1</td>
+                            <td>Content 1</td>
+                            <td>Remark 1</td>
+                        </tr>
+                
+                        <tr>
+                            <td>List 2</td>
+                            <td>Content 2</td>
+                            <td>Remark 2</td>
+                        </tr>
+                
+                        <tr class="dsure-table-bottom-noborder">
+                            <td>List 3</td>
+                            <td>Content 3</td>
+                            <td>Remark 3</td>
+                        </tr>
+                        
+                     </tbody>
+               
+                </table>
+                 
+            </div><!--  /.codeBox-content -->
+
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML Code:</span>
+
+&lt;table class="<span class="im-class">dsure-table dsure-table-noborder dsure-table-horizontal</span>"&gt;
+
+     &lt;tbody&gt;
+        &lt;tr&gt;
+            &lt;td&gt;List 1&lt;/td&gt;
+            &lt;td&gt;Content 1&lt;/td&gt;
+            &lt;td&gt;Remark 1&lt;/td&gt;
+        &lt;/tr&gt;
+        
+        &lt;tr&gt;
+            &lt;td&gt;List 2&lt;/td&gt;
+            &lt;td&gt;Content 2&lt;/td&gt;
+            &lt;td&gt;Remark 2&lt;/td&gt;
+        &lt;/tr&gt;
+        
+        &lt;tr class="<span class="im-class">dsure-table-bottom-noborder</span>"&gt;
+            &lt;td&gt;List 3&lt;/td&gt;
+            &lt;td&gt;Content 3&lt;/td&gt;
+            &lt;td&gt;Remark 3&lt;/td&gt;
+        &lt;/tr&gt;
+    &lt;/tbody&gt;
+        
+&lt;/table&gt;
+ 
+            
+            </pre>
+            
+            
+        </div><!--  /.codeBox -->
+        
+        <div class="codeBox d-class-area" id="s7">
+           
+           <h2>(7) Style 7</h2>
+
+            <div class="codeBox-content">
+    
+                <table class="dsure-table dsure-table-bordered" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th style="width:33.3%">Number</th>
+                            <th style="width:33.3%">Name</th>
+                            <th style="width:33.3%">Phone</th>
+                        </tr>
+                    </thead>
+                
+                    <tbody>
+
+                        <tr>
+                            <td class="dsure-table-t-center">Center</td>
+                            <td class="dsure-table-t-left">Left</td>
+                            <td class="dsure-table-t-right">Right</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+                <table class="dsure-table dsure-table-bordered ma-t30" style="width:100%">
+                    <thead class="dsure-table-t-center">
+                        <tr>
+                            <th style="width:33.3%">Item Title 1 (center)</th>
+                            <th style="width:33.3%">Item Title 2 (center)</th>
+                            <th style="width:33.3%">Item Title 3 (center)</th>
+                        </tr>
+                    </thead>
+                
+                    <tbody>
+
+                        <tr>
+                            <td>content...</td>
+                            <td>content...</td>
+                            <td>content...</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+                
+                
+                
+                <table class="dsure-table dsure-table-bordered ma-t30" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th style="width:33.3%"  class="dsure-table-t-center">Item Title 1 (center)</th>
+                            <th style="width:33.3%"  class="dsure-table-t-center">Item Title 2 (center)</th>
+                            <th style="width:33.3%"  class="dsure-table-t-center">Item Title 3 (center)</th>
+                        </tr>
+                    </thead>
+                
+                    <tbody class="dsure-table-t-center">
+
+                        <tr>
+                            <td>content1 (center)</td>
+                            <td>content2 (center)</td>
+                            <td>content3 (center)</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+           
+                 
+            </div><!--  /.codeBox-content -->
+
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML Code:</span>
+
+&lt;table class="<span class="im-class">dsure-table dsure-table-bordered</span>" style="<span class="im-style">width:100%</span>"&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th style="<span class="im-style">width:33.3%</span>"&gt;Number&lt;/th&gt;
+            &lt;th style="<span class="im-style">width:33.3%</span>"&gt;Name&lt;/th&gt;
+            &lt;th style="<span class="im-style">width:33.3%</span>"&gt;Phone&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+
+    &lt;tbody&gt;
+
+        &lt;tr&gt;
+            &lt;td class="<span class="im-class">dsure-table-t-center</span>"&gt;Center&lt;/td&gt;
+            &lt;td class="<span class="im-class">dsure-table-t-left</span>"&gt;Left&lt;/td&gt;
+            &lt;td class="<span class="im-class">dsure-table-t-right</span>"&gt;Right&lt;/td&gt;
+        &lt;/tr&gt;
+
+    &lt;/tbody&gt;
+&lt;/table&gt;
+
+
+
+&lt;table class="<span class="im-class">dsure-table dsure-table-bordered</span>" style="<span class="im-style">width:100%</span>"&gt;
+    &lt;thead class="<span class="im-class">dsure-table-t-center</span>"&gt;
+        &lt;tr&gt;
+            &lt;th style="<span class="im-style">width:33.3%</span>"&gt;Item Title 1 (center)&lt;/th&gt;
+            &lt;th style="<span class="im-style">width:33.3%</span>"&gt;Item Title 2 (center)&lt;/th&gt;
+            &lt;th style="<span class="im-style">width:33.3%</span>"&gt;Item Title 3 (center)&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+
+    &lt;tbody&gt;
+
+        &lt;tr&gt;
+            &lt;td&gt;content...&lt;/td&gt;
+            &lt;td&gt;content...&lt;/td&gt;
+            &lt;td&gt;content...&lt;/td&gt;
+        &lt;/tr&gt;
+
+    &lt;/tbody&gt;
+&lt;/table&gt;
+
+
+&lt;table class="<span class="im-class">dsure-table dsure-table-bordered</span>" style="width:100%"&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th style="<span class="im-style">width:33.3%</span>"  class="<span class="im-class">dsure-table-t-center</span>"&gt;Item Title 1 (center)&lt;/th&gt;
+            &lt;th style="<span class="im-style">width:33.3%</span>"  class="<span class="im-class">dsure-table-t-center</span>"&gt;Item Title 2 (center)&lt;/th&gt;
+            &lt;th style="<span class="im-style">width:33.3%</span>"  class="<span class="im-class">dsure-table-t-center</span>"&gt;Item Title 3 (center)&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+
+    &lt;tbody class="<span class="im-class">dsure-table-t-center</span>"&gt;
+
+        &lt;tr&gt;
+            &lt;td&gt;content1 (center)&lt;/td&gt;
+            &lt;td&gt;content2 (center)&lt;/td&gt;
+            &lt;td&gt;content3 (center)&lt;/td&gt;
+        &lt;/tr&gt;
+
+    &lt;/tbody&gt;
+&lt;/table&gt;
+            
+            </pre>
+            
+            
+        </div><!--  /.codeBox -->   
+
+        
+        <div class="codeBox d-class-area" id="s8">
+           
+           <h2>(8) Style 8</h2>
+           
+            <p class="dsure-tip">
+            Utilize the <code>dsure-no-hover dsure-bg-black f-c-white</code>or<code>dsure-no-hover dsure-bg-silver f-c-black</code> class within the special tags like <code>&lt;tr&gt;</code>. 
+
+            </p>
+
+            <div class="codeBox-content">
+    
+                <table class="dsure-table dsure-table-bordered">
+                    <thead>
+                        <tr class="dsure-no-hover dsure-bg-black f-c-white">
+                            <th>Number</th>
+                            <th>Name</th>
+                            <th>Phone</th>
+                        </tr>
+                    </thead>
+                
+                    <tbody>
+
+                        <tr>
+                            <td>content...</td>
+                            <td>content...</td>
+                            <td>content...</td>
+                        </tr>
+
+                    </tbody>
+                </table>
+
+                
+           
+                 
+            </div><!--  /.codeBox-content -->
+
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML Code:</span>
+
+&lt;table class="<span class="im-class">dsure-table dsure-table-bordered</span>"&gt;
+    &lt;thead&gt;
+        &lt;tr class="<span class="im-class">dsure-no-hover dsure-bg-black f-c-white</span>"&gt;
+            &lt;th&gt;Number&lt;/th&gt;
+            &lt;th&gt;Name&lt;/th&gt;
+            &lt;th&gt;Phone&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+
+    &lt;tbody&gt;
+
+        &lt;tr&gt;
+            &lt;td&gt;content...&lt;/td&gt;
+            &lt;td&gt;content...&lt;/td&gt;
+            &lt;td&gt;content...&lt;/td&gt;
+        &lt;/tr&gt;
+
+    &lt;/tbody&gt;
+&lt;/table&gt;
+
+
+            
+            </pre>
+            
+            
+        </div><!--  /.codeBox -->   
+        
+        
+        <div class="codeBox d-class-area" id="s9">
+           
+           <h2>(9) Style 9</h2>
+
+            <div class="codeBox-content">
+    
+        
+                <table class="dsure-table dsure-table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Number</th>
+                            <th>Name</th>
+                            <th>Phone</th>
+                            <th>Email</th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody>
+
+                        <tr>
+                            <td>3</td>
+                            <td>Foristin</td>
+                            <td>767 929 1212</td>
+                            <td>7954511</td>
+                        </tr>
+                        
+                        <tr>
+                            <td colspan="2">content</td>
+                            <td colspan="2">content</td>
+                        </tr>
+                        
+                    </tbody>
+     
+                </table>
+            
+
+                 
+            </div><!--  /.codeBox-content -->
+
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML Code:</span>
+
+&lt;table class="<span class="im-class">dsure-table dsure-table-bordered</span>"&gt;
+    &lt;thead&gt;
+        &lt;tr&gt;
+            &lt;th&gt;Number&lt;/th&gt;
+            &lt;th&gt;Name&lt;/th&gt;
+            &lt;th&gt;Phone&lt;/th&gt;
+            &lt;th&gt;Email&lt;/th&gt;
+        &lt;/tr&gt;
+    &lt;/thead&gt;
+    
+    &lt;tbody&gt;
+
+        &lt;tr&gt;
+            &lt;td&gt;3&lt;/td&gt;
+            &lt;td&gt;Foristin&lt;/td&gt;
+            &lt;td&gt;767 929 1212&lt;/td&gt;
+            &lt;td&gt;7954511&lt;/td&gt;
+        &lt;/tr&gt;
+        
+        &lt;tr&gt;
+            &lt;td colspan="2"&gt;content&lt;/td&gt;
+            &lt;td colspan="2"&gt;content&lt;/td&gt;
+        &lt;/tr&gt;
+        
+    &lt;/tbody&gt;
+
+&lt;/table&gt;
+
+
+            
+            </pre>
+            
+            
+        </div><!--  /.codeBox -->         
+          
+          <!-- /////////////////   Content    End /////////////////// -->
+
+    
+
+        </div>
+
+         <footer>
+         
+            <hr>
+           
+            <p>This Product is released under a <a href="http://creativecommons.org/licenses/by-nc/3.0/deed.zh" target="_blank">Creative Commons Attribution 3.0</a> License. It only learning and exchange.</p>
+            <p>
+            &copy;2014 <a href="/d-s/Dsure">Dsure Front-end Development Framework</a> |  Author: <a href="/" target="_blank">没位道</a>
+         
+         <div style="display:none">
+                 <script id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+        <script>
+            if (typeof(LA) !== 'undefined') LA.init({id: "JdyfUJi3RdCZVi9F",ck: "JdyfUJi3RdCZVi9F"});
+        </script>
+         </div>
+           
+           
+      
+          
+            </p>
+             
+         </footer>
+
+     </section>
+     
+     
+
+     
+    
+    <script src="js/jquery.scroller.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/theme.hash.js"></script> <!-- After the main.js -->
+     
+  
+
+</body>
+</html>
+

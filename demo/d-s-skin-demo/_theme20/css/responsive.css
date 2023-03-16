@@ -1,0 +1,285 @@
+				
+/*==================================Responsive Layouts===============================================*/
+
+
+@media screen and (min-width:1200px){
+	
+	
+	
+}
+
+@media screen and (min-width: 960px) and (max-width: 1199px) {
+	
+	/*lalyout*/
+	.col1{width:1000px;}
+	.col2{width:240px;}
+	.col3{width:760px;}
+	.col4{width:500px;}
+	
+	
+	#main3 .portfolio-container ul li{height:180px;}
+	#main3 .portfolio-container .date{display:none}
+	
+	#main4 .service-show-container{width:246px;}
+	
+	#main6 .contact-info{ padding-left:50px; border:none}
+	
+	/*[sub page] - portfolios*/
+    .sub-page .portfolio-container ul li{height:289px;}
+	.sub-page .portfolio-container ul li .img-box{width:422px; height:259px;}
+	
+	
+	/*[sub page] - side background*/
+	.sub-page .sub-side-loop-bg{ background:none}
+	
+	
+	/*[sub page] - team*/
+	.team-container dl dd{ width:750px;}
+	
+	
+	
+	
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+	
+	/*lalyout*/
+	.col1{width:780px;}
+	.col2{width:10px;}
+	.col3{width:770px;}
+	.col4{width:280px;}
+	.col9{width:1px;}
+	.col10{width:750px;}
+	
+	
+	/*logo*/
+	#logo-wrapper,#logo-img{ display:none}
+	
+	
+
+	#main1 .banner .items li img{ margin-top:20%;}
+	#main1 .slider-btn{visibility:hidden}
+	
+	#main2 #main2-service-icon{display:none}
+	
+    #main3 .portfolio-container{ margin-left:50px;}
+	#main3 .categories-list{ margin-left:55px;}
+	#main3 .bg-left{ display:none}
+	#main3 .portfolio-container ul li{width:202px; background:none}
+	#main3 .portfolio-container ul li .img-box{width:190px; height:106px;}
+	
+	#main4 .service-show-container{width:193px;}
+	
+	
+	#main6 .contact-info{ padding-left:100px; border:none}
+	
+	
+	/*[sub page] - portfolios*/
+	.sub-page .portfolio-container ul li{height:219px;}
+	.sub-page .portfolio-container ul li .img-box{width:332px; height:189px;}
+	
+	
+	/*[sub page] - blog list*/
+	.article-post{padding-right:30px;}
+	.page_header,.post-content,.list-tags-box,.article-post hr{margin-left:134px;}
+	.date_author{ left:20px}
+	
+	
+	/*[sub page] - side background*/
+	.sub-page .sub-side-loop-bg{ background:none}
+	
+	
+	/*[sub page] - team*/
+	.team-container dl dd{ width:450px;}
+
+
+	
+}
+@media only screen and (min-width: 480px) and (max-width: 767px){
+	
+
+	/*lalyout*/
+	.col1{width:490px;}
+	.col2{width:10px;}
+	.col3{width:480px;}
+	.col4{width:180px;}
+	.col9{width:1px;}
+	.col10{width:490px;}
+	
+	
+	/*logo*/
+	#logo-wrapper,#logo-img{ display:none}
+	
+	
+	/*navigation*/
+	#mainNav {}
+	#mainNav li.back{visibility:hidden}
+	#mainNav .sf-menu { float:left; width:100%; display:block}
+	#mainNav .sf-menu li {text-align:center; margin-right:0;}
+	#mainNav .sf-menu li a{letter-spacing:0; padding:0 10px 0 10px;}
+	
+	
+
+	#main1 .banner .items li img{ margin-top:20%;}
+	#main1 .slider-btn{visibility:hidden}
+	
+	#main2 #main2-service-icon{display:none}
+	#main2 .main2-about-title{font-size:13px; margin:5px}
+	#main2 .line-hr1{display:none}
+	#main2 .bubble-box .bubble {margin:20px 0 0 50px;}
+	#main2 .bubble-box img{ height:40px}
+	
+	
+    #main3 .portfolio-container{ margin-left:30px;}
+	#main3 .categories-list{ margin-left:35px;}
+	#main3 .bg-left{ display:none}
+	#main3 .portfolio-container ul li{width:202px; height:150px; background:none}
+	#main3 .portfolio-container ul li .img-box{width:190px;  height:106px;}
+	#main3 .main3-title{font-size:13px; margin:5px}
+	#main3 .portfolio-container .date{display:none}
+	#main3 .portfolio-container .title{display:none}
+	#main3 .categories-list a{ font-size:12px;}
+	
+	#main4 .service-show-container{width:120px; line-height:16px;}
+    #main4 .service-content{ width:100%}
+	#main4 .main4-title{display:none}
+	#main4 .service-content strong{ font-size:14px; border:none}
+	#main4 .service-show-container .c { display:none}
+	
+	
+	#main6 .main6-title{font-size:13px; margin:5px}
+	#main6 .contact-info{ padding-left:50px; border:none; margin-top:80px;}
+	#main6  #msgForm{display:none}
+	#main6 .google-map{ background:none}
+	#main6 .google-map{ margin-top:10px}
+	#main6 .google-map iframe{width:214px;height:234px; margin:53px 0 0 0;}
+	
+	
+	#main7 .main7-welcome{margin-top:8%;}
+	
+	#footer .footer-social li a{ width:30px;}
+	
+
+	/*[sub page] - portfolios*/
+	.sub-page .portfolio-container ul li{height:119px;}
+	.sub-page .portfolio-container ul li .img-box{width:202px; height:119px; border:2px solid #fff;}
+	.ajax-body-content .portfolio-detail .portfolio-detail-title{ font-size:14px;}
+	.sub-page .categories-list li{	padding:3px ;margin: 5px 6px 6px 0;}
+	.sub-page .categories-list li a{font-size:12px;}
+	
+	/*[sub page] - page*/
+    #ListPageN a,#ListPageN b { padding:6px;}
+	
+	
+	/*[sub page] - blog list*/
+	.article-post{padding-right:30px;}
+	.page_header,.post-content,.list-tags-box,.article-post hr{margin-left:134px;}
+	.post-content a,.post-content p{display:none;}
+	.date_author{ left:20px}
+	.main5-title{font-size:13px; margin:5px}
+	
+	/*[sub page] - side background*/
+	.sub-page .sub-side-loop-bg{ background:none}
+	
+	
+	/*[sub page] - team*/
+	.team-container dl .job-hover-bg{ background:none;}
+	.team-container dl dd{ width:470px; padding-left:30px; padding-bottom:70px}
+	.team-container dl dd .show{overflow:auto; height:auto}
+	
+	
+}
+@media only screen and (max-width: 479px) {
+
+	/*lalyout*/
+	.col1{width:350px;}
+	.col2{width:10px;}
+	.col3{width:320px;}
+	.col4{width:130px;}
+	.col9{width:1px;}
+	.col10{width:330px;}
+	
+	
+	/*logo*/
+	#logo-wrapper,#logo-img{ display:none}
+	
+	
+	/*navigation*/
+	#mainNav { height:80px;}
+	#mainNav li.back{visibility:hidden}
+	#mainNav .sf-menu { float:left; width:100%; display:block}
+	#mainNav .sf-menu li {text-align:center; margin-right:0;}
+	#mainNav .sf-menu li a{letter-spacing:0; padding:0 10px 0 10px;}
+	
+	
+
+	#main1 .banner .items li img{ margin-top:50%;}
+	#main1 .slider-btn{visibility:hidden}
+	
+	#main2 #main2-service-icon{display:none}
+	#main2 .main2-about-title{font-size:13px; margin:5px}
+	#main2 .line-hr1{display:none}
+	#main2 .bubble-box .bubble {margin:20px 0 0 50px;}
+	#main2 .bubble-box img{ height:40px}
+    #main2 .main2-content-arrow{margin-left:82%;}
+
+    #main3 .portfolio-container{ margin-left:3px;}
+	#main3 .categories-list{ margin-left:6px; width:300px; height:30px;}
+	#main3 .bg-left{ display:none}
+	#main3 .portfolio-container ul li{width:152px; height:120px; background:none}
+	#main3 .portfolio-container ul li .img-box{width:140px;  height:80px;}
+	#main3 .main3-title{font-size:12px; margin:5px}
+	#main3 .portfolio-container .date{display:none}
+	#main3 .portfolio-container .title{display:none}
+	#main3 .categories-list a{ font-size:12px;}
+	
+	#main4 .service-show-container{width:83px; line-height:16px;}
+    #main4 .service-content{ width:100%}
+	#main4 .main4-title{display:none}
+	#main4 .service-content strong{ font-size:14px; border:none}
+	#main4 .service-show-container .c { display:none}
+	
+
+	
+	#main6 .main6-title{font-size:13px; margin:5px}
+	#main6 .contact-info{ padding-left:0; border:none; margin-top:80px; left:4%; width:200px;}
+	#main6  #msgForm{display:none}
+	#main6 .google-map{ display:none}
+	
+	
+	#main7 .main7-welcome{margin-top:30%;}
+	#main7 .main7-title{display:none}
+	
+	#footer .footer-social li a{ width:30px;}
+	
+	/*[sub page] - portfolios*/
+	.sub-page .portfolio-container ul li{height:79px; width:46%; }
+	.sub-page .portfolio-container ul li .img-box{width:145px; height:79px; border:2px solid #fff;}
+	.ajax-body-content .portfolio-detail .portfolio-detail-title{ font-size:14px;}
+	.sub-page .categories-list li{	padding:3px ;margin: 5px 6px 6px 0;}
+	.sub-page .categories-list li a{font-size:12px;}
+	
+	/*[sub page] - page*/
+    #ListPageN a,#ListPageN b { padding:6px;}
+	
+	
+	/*[sub page] - blog list*/
+	.article-post{padding-right:20px;}
+	.page_header,.post-content,.list-tags-box,.article-post hr{margin-left:10px;}
+	.page_header a{font-size:14px}
+	.post-content a,.post-content p{display:none;}
+	.date_author{ display:none;}
+	.main5-title{font-size:13px; margin:5px}
+	#main5-left-bg{background:none}
+	
+	
+	/*[sub page] - side-bg*/
+	.sub-page .sub-side-loop-bg{ background:none}
+	
+	/*[sub page] - team*/
+	.team-container dl .job-hover-bg{ background:none;}
+	.team-container dl dd{ width:310px; padding-left:20px; padding-bottom:70px}
+	.team-container dl dd .show{overflow:auto; height:auto}
+	
+		
+}
+

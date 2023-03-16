@@ -1,0 +1,195 @@
+<!DOCTYPE HTML>
+<!--
+https://www.c945.com  没位道Designer's site Program 产品皮肤预览  未经允许不得仿制及转载
+-->
+
+<!--
+'=========================================
+'
+'    Designer's site Program 全站静态系统
+'    xizon   xizon@c945.com
+'    www.c945.com
+'    技术支持：没位道
+'    未经允许不得私自用于任何商业用途
+'
+'=========================================
+-->
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>没位道 - Designer &#039;s  Site Program 全站静态系统 - 免费建站|个人网站建设|高端网站|UI|创意网站|建站系统|企业建站|HTML5|CSS3-文章分页列表</title>
+<script src="jquery.switch.compatible.min.js?1.4.2"></script>
+
+<script>
+
+
+
+$(document).ready(function(){
+	
+
+	
+	//{#js:columnShow.article}
+	
+	//--------文章列表
+	
+	$(".boxgrid.caption").hover(  
+		function() {  
+		    $("h3 a",this).css("font-weight","bold");
+			$(".dataS",this).css("visibility","visible");
+			
+		},   
+		function() {  
+		    $("h3 a",this).css("font-weight","100");
+			$(".dataS",this).css("visibility","hidden");
+	});  
+	$(".boxgrid").click( 
+		function () {
+			var thisURL = $("h3 a",this).attr("data-url");
+			showac_subitem(thisURL,'',1);
+		}
+	);
+	
+
+	
+
+	$("#breadcrumbs a").click( 
+		function () {
+			var thisURL = $(this).attr("data-url");
+			showac_subitem(thisURL,'',1);
+		}
+	);
+	
+	
+	//{/js:columnShow.article}	
+
+});
+
+
+
+
+</script>
+</head>
+<body class="body-content">
+
+                <!-- 面包屑 -->
+                <ul id="breadcrumbs">
+                    <li><a data-url="/demo/d-s-skin-demo/_theme7/article_1.html" href="javascript:">原创</a></li>
+                    <li class="selected"><a data-url="/demo/d-s-skin-demo/_theme7/article_2.html" href="javascript:">经验分享</a></li>
+                </ul>
+                <br clear="all">
+
+
+
+                 <!--  文章列表   begin -->
+                 
+                      
+                        
+                        <dl class="boxgrid caption use-no-preImg" id="post-LzM4NyytNjg3"> 
+                                <dt>
+                                   <h3><a data-url="/demo/d-s-skin-demo/_theme7/dairyShow.html" href="javascript:" title="">想方设法征服网页设计这块混乱的市场</a></h3>
+                                </dt>
+                                <dd> 
+
+                                      <!--<p class="t_date"><b>2012</b><span>AUG&nbsp;30</span></p> 8月发布 -->
+                                      <!-- 点击 2 评论 0 -->
+                                      <br clear="all">
+                                      <span class="dataS">2012-9-15</span>
+                                </dd> 
+                        </dl>  
+                        
+                        
+                         <dl class="boxgrid caption use-preImg" id="post-LzM4NTRkNjg2"> 
+                                <dt>
+                                    <h3><a data-url="/demo/d-s-skin-demo/_theme7/dairyShow.html" href="javascript:" title="">想方设法征服网页设计混乱的市场</a></h3>
+                                </dt>
+                                <dd> 
+                                      
+                                      <!--<p class="t_date"><b>2012</b><span>AUG&nbsp;30</span></p> 8月发布 -->
+                                      <!-- 点击 2 评论 0 -->
+                                      <br clear="all">
+                                      <span class="dataS">2012-9-15</span>
+                                </dd> 
+                        </dl>       
+    
+    
+    
+        
+                        <dl class="boxgrid caption use-preImg" id="post-LzM4NyytNjg2"> 
+                                <dt>
+                                   <h3><a data-url="/demo/d-s-skin-demo/_theme7/dairyShow.html" href="javascript:" title="">跨平台卖广告：Twitter的新思路</a></h3>
+                                </dt>
+                                <dd> 
+                                      
+                                      <!--<p class="t_date"><b>2012</b><span>AUG&nbsp;30</span></p> 8月发布 -->
+                                      <!-- 点击 2 评论 0 -->
+                                      <br clear="all">
+                                      <span class="dataS">2012-9-15</span>
+                                </dd> 
+                        </dl>  
+                        
+                      
+    
+    
+        
+                        <dl class="boxgrid caption use-preImg" id="post-LzM4NyytNjg2"> 
+                                <dt>
+                                   <h3><a data-url="/demo/d-s-skin-demo/_theme7/dairyShow.html" href="javascript:" title="">跨平台卖广告：Twitter的新思路</a></h3>
+                                </dt>
+                                <dd> 
+                                      
+                                      <!--<p class="t_date"><b>2012</b><span>AUG&nbsp;30</span></p> 8月发布 -->
+                                      <!-- 点击 2 评论 0 -->
+                                      <br clear="all">
+                                      <span class="dataS">2012-9-15</span>
+                                </dd> 
+                        </dl>  
+                        
+                        <dl class="boxgrid caption use-no-preImg" id="post-LzM4NyytNjg3"> 
+                                <dt>
+                                   <h3><a data-url="/demo/d-s-skin-demo/_theme7/dairyShow.html" href="javascript:" title="">想方设法征服网页设计这块混乱的市场</a></h3>
+                                </dt>
+                                <dd> 
+
+                                      <!--<p class="t_date"><b>2012</b><span>AUG&nbsp;30</span></p> 8月发布 -->
+                                      <!-- 点击 2 评论 0 -->
+                                      <br clear="all">
+                                     <span class="dataS">2012-9-15</span>
+                                </dd> 
+                        </dl>  
+             
+
+    
+     
+                    <!--  分页ajax输出 -->
+                    <script>
+                        $(document).ready(function(){    
+                            $.get('pageShow.html', function(data) {
+								
+								/*----分页格式化---------*/
+								data = data.replace("</b>&nbsp;","</b>");
+								data = data.replace("&nbsp;<b>","<b>");
+
+								
+								//遍历初始化分页链接
+								data = data.replace(/href="/g,'href="javascript:showac_subitem(\'');
+								data = data.replace(/#right_content"/g,'\',\'\',1);"');
+
+                               $('#pageShow').html(data);
+
+                            });
+                        }) 
+                    </script>
+                    <span id="pageShow"></span>
+                    
+    
+                <!--  文章列表   end -->
+
+
+     
+     <!-- 底部  begin  -->
+        <script>var turl = "/demo/d-s-skin-demo/_theme7/article_2.html";</script>
+        <script src="comm.nav.js"></script>
+
+
+</body>
+</html>

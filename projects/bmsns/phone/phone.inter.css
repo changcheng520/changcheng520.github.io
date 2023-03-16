@@ -1,0 +1,176 @@
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    -ms-touch-action: none;
+}
+
+body,ul,li {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+body {
+    font-size: 12px;
+    font-family: ubuntu,helvetica,arial;
+    overflow: hidden;
+    background: #080808;
+}
+
+#wrapper {
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    
+}
+
+#wrapper .bg {
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    overflow: hidden;
+}
+
+.parallax-field {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+}
+
+.parallax-field div {
+    position: absolute;
+    width: 100%;
+    overflow: hidden;
+    -webkit-transform: translateZ(0);
+    -moz-transform: translateZ(0);
+    -ms-transform: translateZ(0);
+    -o-transform: translateZ(0);
+    transform: translateZ(0);
+}
+
+#parallax-field1 {
+    z-index: 4;
+}
+
+#parallax-ele1 {
+    z-index: 4;
+    height: 803px;
+    background: url(parallax/bg2.png) no-repeat;
+    top: 700px;
+    margin-top: -100px;
+    background-size: contain;
+}
+
+#parallax-field2 {
+    z-index: 6;
+}
+
+#parallax-ele2 {
+    z-index: 6;
+    height: 627px;
+    background: url(parallax/bg1.png) no-repeat;
+    top: 1100px;
+    margin-top: -100px;
+    background-size: contain;
+}
+
+#parallax-field3 {
+    z-index: 7;
+}
+
+#parallax-ele3 {
+    z-index: 7;
+    height: 508px;
+    background: url(parallax/bg3.png) no-repeat;
+    top: 1100px;
+    background-size: contain;
+}
+
+#parallax-field3_2 {
+    z-index: 7;
+}
+
+#parallax-ele3_2 {
+    z-index: 7;
+    height: 108px;
+    background: url(parallax/bg3_2.png) no-repeat;
+    top: 1200px;
+    background-size: contain;
+}
+
+
+#parallax-field4 {
+    z-index: 8;
+}
+
+#parallax-ele4 {
+    z-index: 8;
+    height: 174px;
+    overflow: hidden;
+    background: url(parallax/bg4.png) no-repeat;
+    top: -200px;
+    background-size: contain;
+}
+
+#parallax-field5 {
+    z-index: 3;
+}
+
+#parallax-ele5 {
+    z-index: 3;
+    height: 244px;
+    overflow: hidden;
+    background: url(parallax/bg5.png) no-repeat;
+    top: 410px;
+    background-size: contain;
+}
+
+#parallax-field6 {
+    z-index: 3;
+}
+
+#parallax-ele6 {
+    z-index: 3;
+    height: 364px;
+    overflow: hidden;
+    background: url(parallax/bg6.png) no-repeat;
+    top: 70px;
+    background-size: contain;
+}
+
+img,.parallax-field {
+    -webkit-transition: 0.5s ease-in-out;
+    -moz-transition: 0.5s ease-in-out;
+    -ms-transition: 0.5s ease-in-out;
+    -o-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+}
+
+.css3-r {
+    margin-top: -30px;
+}
+
+.css3-h {
+    margin-top: 400px;
+}
+
+.hand {
+    background: url(parallax/hands.png);
+    width: 88px;
+    height: 125px;
+    position: absolute;
+    left: 30%;
+    top: 200px;
+    z-index: 20;
+    margin-left: -500px;
+}

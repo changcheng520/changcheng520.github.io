@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="utf-8"/>
+<meta name="robots" content="none" /> 
+<title>没位道 - Designer &#039;s  Site Program 全站静态系统 - 免费建站|个人网站建设|高端网站|UI|创意网站|建站系统|企业建站|HTML5|CSS3-案例作品</title>
+<style>
+@import "caseStyle.css";
+</style>
+
+<script>
+
+var showImgTotal;
+var showImgTotal_length;
+
+$(function () {
+
+  setTimeout('$(".case-Con").fadeOut(100);',800);
+  $("#voteWork").fadeOut(100);
+  $('#slideshow').css("margin-top","30px");	
+  $('#goUrl,#goBack,#editControl').css("top","45px");
+  
+	if (showImgTotal_length <=1) {
+	
+		 
+	}else{
+	     $('a#slideBtnPrev,a#slideBtnNext').fadeIn(500);	
+	}
+	
+	
+	//图片高度获取判断
+	var thisH = Array();
+	$("#slideshow img").each(function(){   
+
+	 var imgH = $(this).height();
+	 thisH.push(imgH);
+
+	
+	});  
+	
+	var imgMaxH = Math.max.apply(Math,thisH); //图片最大高度
+
+
+  
+});
+
+
+$(document).ready(function(){
+	
+    //图片宽度调整
+	$("#slideshow img").each(function(){   
+		 
+     var w = 776;
+	 var h = 385;
+	 var ow = $(this).css("width");
+	 var oh = $(this).css("height");
+	 
+
+	 $(this).css("width",w);
+
+
+	});  
+	
+	
+	
+	$('#goBack').click(function(){
+		
+		$(".cross,#worksShowContainer").fadeOut(1000);
+		$("html,body").animate({ scrollTop: 5 }, "slow");
+		
+	});
+	
+	
+	
+});   
+</script>
+</head>
+
+<body>
+
+    <div id="worksShowBox">
+
+            <div id="workBtn">
+                <a id="goUrl" href="${work_siteURL}" target="_blank">Visit</a>
+                <a id="goBack" href="javascript:">Close</a>
+            
+            </div>
+            
+            <div id="sliderWrapper">
+                <ul id="slideshow">
+                
+                   <li><a href="#"><img  alt="" src="../_demo-img/900X450-1.jpg" ></a></li>
+                   <li><a href="#"><img  alt="" src="../_demo-img/900X450-2.jpg" ></a></li>
+            
+                </ul>
+            </div>  
+            
+            
+            
+            
+            <div class="caseCon">
+                <h1>Designer's site Program</h1>
+                <hr>
+                <p>Description here...</p>
+				<p>Description here...</p>
+				<p>Description here...</p>
+				<p>Description here...</p>
+                <span class="i">(&nbsp;Date:2012-3-27&nbsp;Hits:19&nbsp;)</span>
+            </div>
+
+
+   </div><!-- End #worksShowBox -->
+
+
+</body>
+</html>
+
+

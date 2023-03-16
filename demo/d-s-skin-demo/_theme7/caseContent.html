@@ -1,0 +1,134 @@
+<!DOCTYPE HTML>
+<!--
+https://www.c945.com  没位道Designer's site Program 产品皮肤预览  未经允许不得仿制及转载
+-->
+
+<!--
+'=========================================
+'
+'    Designer's site Program 全站静态系统
+'    xizon   xizon@c945.com
+'    www.c945.com
+'    技术支持：没位道
+'    未经允许不得私自用于任何商业用途
+'
+'=========================================
+-->
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>没位道 - Designer &#039;s  Site Program 全站静态系统 - 免费建站|个人网站建设|高端网站|UI|创意网站|建站系统|企业建站|HTML5|CSS3-案例作品</title>
+<script src="jquery.switch.compatible.min.js?1.4.2"></script>
+</head>
+<style>
+@import "caseStyle.css";
+</style>
+
+<script>
+
+
+var pageContent_case = 1;
+$(function(){
+
+
+	//初始化页面链接
+	$("#secFrame_recent a").each(function(){
+		var dh = $(this).attr("href");
+		dh = dh.replace(webHost,"");
+		$(this).attr("data-url",dh);
+		$(this).attr("href","javascript:");
+	});
+		
+	
+	$("#secFrame_recent a").click( 
+		function () {
+			var thisURL = $(this).attr("data-url");
+			showac_subitem(thisURL,'',1);
+		}
+	);
+	
+	
+	/*----相关网址---------*/
+	var rURL = $("#goUrl").attr("href");
+	if (rURL == "javascript:void(0)"){
+		$("#goUrl").fadeOut(2);
+	}
+	
+	
+	$("#slideshow").imgAutoSize(30);
+	
+	
+  
+});
+
+  
+</script>
+<body class="body-content">
+
+         <!-- 内容区  begin -->
+         
+
+                <!--  案例作品列表   begin -->
+            
+                <div id="worksShowBox">
+     
+                        
+                        
+                          <div id="secFrame_recent">
+                              <div class="bl">
+                                  <a href="/demo/d-s-skin-demo/_theme7/caseContent.html"  Title="" ></a>
+                              </div>
+                              <div class="br">
+                                  <a href="/demo/d-s-skin-demo/_theme7/caseContent.html"  Title=""></a>
+                              </div>
+                          </div>
+                              
+                      
+                      
+                        
+                        <div id="sliderWrapper">
+                            
+                            <a id="goUrl" href="${work_siteURL}" target="_blank">Visit</a>
+                            <a id="goBack" href="javascript:" title="返回列表">Back</a>
+                         
+                         
+                            <div class="caseCon">
+                                <h1>Designer's site Program全站静态程序官方网站</h1>
+                                <hr>
+                                就自己如何做配色方案，做一个简单的教程和经验分享，希望对大家有用。
+        直接取色或者盲目搭配都会降低效率，甚至失败，这里有一个小小的配色方案设计技巧，不一定人人适用，但是可以提高配色的效率，提高色彩质量，增强视觉效果。
+        
+        色彩是设计中的一个难点，也是重中之重，不靠长期积累是不行的，但是提高配色效率，减少作品配色失败率。也是有一些方法的。
+         
+        不论是做网页，还是绘画，还是其它，都可以这样进行配色方案的设计。欢迎拍砖喔
+                                <span class="i">(&nbsp;Date:2012-3-27&nbsp;Hits:19&nbsp;)</span>
+                            </div>
+                            
+                         
+                         
+                            <ul id="slideshow">
+                            
+                               <li><a href="#"><img  alt="" src="../_demo-img/900X450-1.jpg" ></a></li>
+                               <li><a href="#"><img  alt="" src="../_demo-img/900X450-2.jpg" ></a></li>
+                        
+                            </ul>
+                        </div>  
+                        
+                        
+                        
+                       
+
+               </div><!-- End #worksShowBox -->
+               
+
+                <!--  案例作品列表   end -->
+                
+        
+         <!-- 内容区  end -->
+        <script>var turl = "/demo/d-s-skin-demo/_theme7/caseContent.html";</script>
+        <script src="comm.nav.js"></script>
+
+
+</body>
+</html>
+

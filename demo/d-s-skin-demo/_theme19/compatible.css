@@ -1,0 +1,18 @@
+/*▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓兼容性CSS Hack▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓*/
+
+/*导航*/
+.ie6 .nav-intro{visibility:hidden}
+
+/*表单*/
+.ie6 .l-input2{width:280px; padding:10px 20px 10px 20px; margin-bottom:10px; border-radius: 12px; -moz-border-radius: 12px; -webkit-border-radius: 12px;  -o-webkit-border-radius: 12px; border:1px solid #C8C8C8; color:#CDCDCD; margin-left:-34px}
+
+.ie6 .sitedata{display:none}
+
+.ie6 #sideInfo .left_title,.ie7 #sideInfo .left_title,.ie9 #sideInfo .left_title{margin-top:20px}
+
+.ie6 .news-list dl dd a{ display:block; width:223px}
+
+/*按钮*/
+.ie6  .ds-button { height: 34px; display: inline-block; padding: 0px 15px 0px 0px; background:none }
+.ie6  .ds-button-inner {background: url(img/ds-button-bg-blue.png) no-repeat -18px 0px; }
+

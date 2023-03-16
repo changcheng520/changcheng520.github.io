@@ -1,0 +1,700 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js ie ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js ie ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js ie ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js ie ie9"> <![endif]-->
+<!--[if !IE]><!--> <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js"> <!--<![endif]-->
+
+<head>
+    <meta name="viewport" content="width=device-width, user-scalable=yes" />
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
+    <meta charset="utf-8"/>
+    <title>Dsure Front-end Development Framework</title>
+    <meta name="description" content="Improve the efficiency of CSS/HTML website based development and responsive layout.">
+
+    <!-- Jquery.min begin -->
+    <script src="js/jquery.min.js?1.7.1" ></script>
+    <!-- / Jquery.min end -->
+    
+    <!-- URL Hash Compatible(IE5+) begin -->
+    <script src="js/jquery.hashchange.js" ></script>
+	<script>
+		//hash
+		var turl = "";
+    </script> 
+
+    <!-- URL Hash Compatible(IE5+) end -->
+    
+    
+    <!-- Dsure  Development Framework  begin  -->
+    
+        <link rel="stylesheet" type="text/css" href="../../dsure/dsure.flat.css" />
+        <script src="../../dsure/dsure.modernizr.js"></script>
+        <!--[if lt IE 9]>  
+            <script src="../../dsure/dsure.respond.js"></script>  
+        <![endif]-->  
+    
+        <!--[if lt IE 7 ]>
+            <script src="../../dsure/dsure.png.js"></script>
+            <script>
+            DD_belatedPNG.fix('img, a, span, h1, h2, h3, em, section, header');
+            document.execCommand("BackgroundImageCache", false, true);
+            </script>
+        <![endif]-->
+
+    
+    <!-- /Dsure Development Framework  end   -->
+    
+
+    
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+
+    
+
+
+</head>
+<body>
+
+    <!--  loading  -->
+    <div id="loading"></div> 
+    <div id="back-top"><a href="#">Top</a></div>
+
+    <!--  menu  -->
+        <nav id="menu">
+            <div class="main-menu">
+        
+                <ul>
+                    <li class="web-title"><a href="/d-s/Dsure">Dsure</a></li>
+                    <li class="line"></li>
+                    <li><a href="/d-s/Dsure">Welcome Page</a></li>
+                    <li><a href="/d-s/Dsure/detail-base.html">Base Structure<b>*Required*</b></a></li>
+                    <li class="active"><a href="/d-s/Dsure/detail-base2.html">Base Stylesheets<b>*Common*</b></a></li>
+                    <li><a href="/d-s/Dsure/detail-text.html">Text</a></li>
+                    <li><a href="/d-s/Dsure/detail-buttons.html">Buttons</a></li>
+                    <li><a href="/d-s/Dsure/detail-forms.html">Forms</a></li>
+                    <li><a href="/d-s/Dsure/detail-tables.html">Tables</a></li>
+                    <li><a href="/d-s/Dsure/detail-grids.html">Grids</a></li>
+                    <li><a href="/d-s/Dsure/detail-layouts.html">Layouts</a></li>
+                    <li><a href="/d-s/Dsure/detail-icons.html">Icons</a></li>
+                    <li><a href="/d-s/Dsure/detail-img.html">Images</a></li>
+                    <li><a href="/d-s/Dsure/detail-line.html">Dividing Line</a></li>
+                    <li><a href="/d-s/Dsure/detail-paginators.html">Paginators</a></li>
+                    <li><a href="/d-s/Dsure/detail-navigation.html">Navigation</a></li>
+                    <li><a href="/d-s/Dsure/detail-classification.html">Classification</a></li>
+                    <li><a href="/d-s/Dsure/detail-striking.html">Striking</a></li>
+                    <li><a href="/d-s/Dsure/detail-search.html">Search Box</a></li> 
+                    <li><a href="/d-s/Dsure/detail-tags.html">Tags</a></li> 
+                   
+                </ul>
+
+                            
+            </div>
+           
+         </nav>
+         
+     <!--  /menu  -->
+     
+    
+     
+     <section id="content">
+         <div class="show">
+          
+          <!-- /////////////////   Content    Begin /////////////////// -->
+          
+
+      <div class="dsure-title-nav dsure-no-hover dsure-bg-silver dsure-radius-small dsure-b-shadow f-i15">
+        <h1>Base Stylesheets</h1>
+      </div>
+
+      <div id="dir-nav" class="dir-nav dsure-no-hover dsure-bg-silver">
+          <a class="close" data-close="0" href="javascript:">×</a>
+          <div class="clear"></div>
+          <span class="t">Catalog</span>
+          <a href="javascript:" id="b-s1" onClick="navScrollTo('#s1');" >Text</a>
+          <a href="javascript:" id="b-s2" onClick="navScrollTo('#s2');" >Margin</a>
+          <a href="javascript:" id="b-s3" onClick="navScrollTo('#s3');" >Color</a>
+          <a href="javascript:" id="b-s4" onClick="navScrollTo('#s4');" >Container</a>
+          <a href="javascript:" id="b-s5" onClick="navScrollTo('#s5');" >Border&amp;fillet</a>
+          <a href="javascript:" id="b-s6" onClick="navScrollTo('#s6');" >Demo</a>
+
+      </div>
+
+
+      <div class="clear"></div>
+      
+      <div class="codeBox">
+
+            <p class="dsure-tip">
+              <i class="dsure-icon dsure-icon-bulb"></i> Notes appears as a yellow text. 
+            </p>
+           
+       
+
+      </div><!--  /.codeBox -->
+      
+      
+      
+      
+        <div class="codeBox d-class-area" id="s1">
+           
+           <h2>(1) Text</h2>
+
+
+
+            <div class="codeBox-content">
+                            
+                <table class="dsure-table demo-css-detail-table" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>Horizontal Alignment</th>
+                            <th>Vertical Alignment</th>
+                            <th>Font Family</th>
+                            <th>Font Style</th>
+                            <th>Font Color</th>
+                            <th>Wrap</th>
+                            <th>Underline</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>tl<strong>align left</strong></td>
+                            <td>vertical-m<strong>vertically center</strong></td>
+                            <td>f-f-helvetica<strong>Helvetica</strong></td>
+                            <td>f-w-normal<strong>normal</strong></td>
+                            <td>f-c-black<strong>black</strong></td>
+                            <td>noWrap<strong>nowrap</strong></td>
+                            <td>f-d-none<strong>none</strong></td>
+                            
+
+                           
+                        </tr>
+                
+                        <tr>
+                            <td>tc<strong>align center</strong></td>
+                            <td>vertical-b<strong>vertically bottom</strong></td>
+                            <td>f-f-song<strong>simsun</strong></td>
+                            <td>f-w-blod<strong>bold</strong></td>
+                           <td>f-c-white<strong>white</strong></td>
+                           <td>autoWrap<strong>word wrap</strong></td>
+                           <td>f-d-line<strong>underline</strong></td>
+         
+               
+             
+                        </tr>
+                
+                        <tr>
+                            <td>tc<strong>align right</strong></td>
+                            <td>vertical-t<strong>vertically top</strong></td>
+                            <td>f-f-heiti<strong>simhei</strong></td>
+                            <td>f-s-italic<strong>italic</strong></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+
+                       
+ 
+                        </tr>
+                        
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>f-f-yahei<strong>Microsoft YaHei</strong></td>
+                            <td>f-s-normal<strong>normal</strong></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+
+                 
+                        </tr>   
+
+                    </tbody>
+                </table>
+                 
+               <table class="dsure-table demo-css-detail-table ma-t20" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>Font Size</th>
+                            <th>Text Indent</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                           
+                            <td>f<i> + number</i><br><code>E.g. f12</code>
+                               <br><b>(unit: pixels) values range：</b>10，11，12，13，14，15，16，17，18，19，20，21，22，23，24，25，26，27，28，29，30，35，40，45，50，55，60，65，70，75
+                            </td>
+                            <td>f-i<i> + number</i><br><code>E.g. f-i15</code>
+                               <br><b>(unit: pixels) values range：</b>0，5，10，15，20，25，30，35，40，45，50，55，60，65，70，75，80，85，90，95，100
+                            </td>
+                           
+                        </tr>
+                
+                      
+
+                    </tbody>
+                </table>
+                 
+               
+                
+            </div><!--  /.codeBox-content -->
+
+
+        </div><!--  /.codeBox -->
+
+
+       <div class="codeBox d-class-area" id="s2">
+           
+           <h2>(2) Margin</h2>
+
+
+
+            <div class="codeBox-content">
+                            
+                 
+               <table class="dsure-table demo-css-detail-table" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>Margin with four directions</th>
+                            <th>Margin top</th>
+                            <th>Margin bottom</th>
+                            <th>Margin left</th>
+                            <th>Margin right</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                           
+                            <td>ma<i> + number</i><br><code>E.g. ma5</code>
+                               <br><b>(unit: pixels) values range：</b>0，2，3，4，5，10，15，20，25，30，35，40，45，50，55，60，65，70，75，80，85，90，95，100
+                            </td>
+                            <td>ma-t<i> + number</i><br><code>E.g. ma-t20</code>
+                               <br><b>(unit: pixels) values range：</b>2，3，4，5，10，15，20，25，30，35，40，45，50，55，60，65，70，75，80，85，90，95，100
+                            </td>
+                           
+                            <td>ma-b<i> + number</i><br><code>E.g. ma-b20</code>
+                               <br><b>(unit: pixels) values range：</b>2，3，4，5，10，15，20，25，30，35，40，45，50，55，60，65，70，75，80，85，90，95，100
+                            </td>
+                            
+                            <td>ma-l<i> + number</i><br><code>E.g. ma-l20</code>
+                               <br><b>(unit: pixels) values range：</b>2，3，4，5，10，15，20，25，30，35，40，45，50，55，60，65，70，75，80，85，90，95，100
+                            </td>
+                            
+                            <td>ma-r<i> + number</i><br><code>E.g. ma-r20</code>
+                               <br><b>(unit: pixels) values range：</b>2，3，4，5，10，15，20，25，30，35，40，45，50，55，60，65，70，75，80，85，90，95，100
+                            </td>
+                           
+                           
+                        </tr>
+                
+                      
+
+                    </tbody>
+                </table>
+                 
+                 
+
+               <table class="dsure-table demo-css-detail-table ma-t20" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>Padding for four directions</th>
+                            <th>Padding top</th>
+                            <th>Padding bottom</th>
+                            <th>Padding left</th>
+                            <th>Padding right</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                           
+                            <td>pa<i> + number</i><br><code>E.g. pa5</code>
+                               <br><b>(unit: pixels) values range：</b>0，5，10，15，20，25，30，35，40，45，50，55，60，65，70，75，80，85，90，95，100
+                            </td>
+                            <td>pa-t<i> + number</i><br><code>E.g. pa-t20</code>
+                               <br><b>(unit: pixels) values range：</b>5，10，15，20，25，30，35，40，45，50，55，60，65，70，75，80，85，90，95，100
+                            </td>
+                           
+                            <td>pa-b<i> + number</i><br><code>E.g. pa-b20</code>
+                               <br><b>(unit: pixels) values range：</b>5，10，15，20，25，30，35，40，45，50，55，60，65，70，75，80，85，90，95，100
+                            </td>
+                            
+                            <td>pa-l<i> + number</i><br><code>E.g. pa-l20</code>
+                               <br><b>(unit: pixels) values range：</b>5，10，15，20，25，30，35，40，45，50，55，60，65，70，75，80，85，90，95，100
+                            </td>
+                            
+                            <td>pa-r<i> + number</i><br><code>E.g. pa-r20</code>
+                               <br><b>(unit: pixels) values range：</b>5，10，15，20，25，30，35，40，45，50，55，60，65，70，75，80，85，90，95，100
+                            </td>
+                           
+                           
+                        </tr>
+                
+                      
+
+                    </tbody>
+                </table>
+                
+ 
+                
+            </div><!--  /.codeBox-content -->
+
+
+        </div><!--  /.codeBox -->
+        
+        
+       <div class="codeBox d-class-area" id="s3">
+           
+           <h2>(3) Color</h2>
+
+           
+            <p class="dsure-tip">
+             Utilize the<code>.dsure-no-hover</code> class to remove hover effect. Such as <code>dsure-bg-blue dsure-no-hover</code>
+            </p>
+
+
+            <div class="codeBox-content">
+                            
+                            
+               <table class="dsure-table demo-css-detail-table" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th width="16.66%"><button class="dsure-c-btn dsure-bg-blue">&nbsp;</button></th>
+                            <th width="16.66%"><button class="dsure-c-btn dsure-bg-black">&nbsp;</button></th>
+                            <th width="16.66%"><button class="dsure-c-btn dsure-bg-silver">&nbsp;</button></th>
+                            <th width="16.66%"><button class="dsure-c-btn dsure-bg-gray">&nbsp;</button></th>
+                            <th width="16.66%"><button class="dsure-c-btn dsure-bg-red">&nbsp;</button></th>
+                            <th><button class="dsure-c-btn dsure-bg-purple">&nbsp;</button></th>
+                            
+
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            
+                            <td>dsure-bg-blue</td>
+                            <td>dsure-bg-black</td>
+                            <td>dsure-bg-silver</td>
+                            <td>dsure-bg-gray</td>
+                            <td>dsure-bg-red</td>
+                            <td>dsure-bg-purple</td>
+                           
+                        </tr>
+                
+                      
+
+                    </tbody>
+                </table>
+                        
+                 
+               <table class="dsure-table demo-css-detail-table ma-t20" style="width:100%">
+                    <thead>
+                        <tr>
+
+                            <th width="16.66%"><button class="dsure-c-btn dsure-bg-green">&nbsp;</button></th>
+                            <th width="16.66%"><button class="dsure-c-btn dsure-bg-aquamarine">&nbsp;</button></th>
+                            <th width="16.66%"><button class="dsure-c-btn dsure-bg-olivedrab">&nbsp;</button></th>
+                            <th width="16.66%"><button class="dsure-c-btn dsure-bg-pink">&nbsp;</button></th>
+                            <th width="16.66%"><button class="dsure-c-btn dsure-bg-indigo">&nbsp;</button></th>
+                            <th><button class="dsure-c-btn dsure-bg-orange">&nbsp;</button></th>
+                           
+
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            
+
+                            <td>dsure-bg-green</td>
+                            <td>dsure-bg-aquamarine</td>
+                            <td>dsure-bg-olivedrab</td>
+                            <td>dsure-bg-pink</td>
+                            <td>dsure-bg-indigo</td>
+                            <td>dsure-bg-orange</td>
+                          
+
+                        </tr>
+                
+                      
+
+                    </tbody>
+                </table>       
+
+
+                 
+               <table class="dsure-table demo-css-detail-table ma-t20" style="width:100%">
+                    <thead>
+                        <tr>
+
+                            <th width="16.66%"><button class="dsure-c-btn dsure-bg-brown">&nbsp;</button></th>
+                            <th width="16.66%"><button class="dsure-c-btn dsure-bg-yellow">&nbsp;</button></th>
+                            <th width="16.66%"><button class="dsure-c-btn dsure-bg-cadetblue">&nbsp;</button></th>
+                            <th width="16.66%"><button class="dsure-c-btn dsure-bg-lemonchiffon">&nbsp;</button></th>
+                            <th width="16.66%"><button class="dsure-c-btn dsure-bg-lavender">&nbsp;</button></th>
+                            <th><button class="dsure-c-btn dsure-bg-burlywood">&nbsp;</button></th>
+
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+
+                            <td>dsure-bg-brown</td>
+                            <td>dsure-bg-yellow</td>
+                            <td>dsure-bg-cadetblue</td>
+                            <td>dsure-bg-lemonchiffon</td>
+                            <td>dsure-bg-lavender</td>
+                            <td>dsure-bg-burlywood</td>
+
+                        </tr>
+                
+                      
+
+                    </tbody>
+                </table>                       
+            </div><!--  /.codeBox-content -->
+
+
+        </div><!--  /.codeBox -->
+        
+        
+        <div class="codeBox d-class-area" id="s4">
+           
+           <h2>(4) Container</h2>
+
+
+
+            <div class="codeBox-content">
+                            
+                <table class="dsure-table demo-css-detail-table" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>Alignment</th>
+                            <th>Display</th>
+                            <th>Clear Float</th>
+                   
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>fl<strong>float to the left</strong></td>
+                            <td>blo<strong>changing an inline element to a block</strong></td>
+                            <td>clear<strong>elements after a floating element will flow around it</strong></td>
+
+                        </tr>
+                
+                        <tr>
+                            <td>fr<strong>float to the right</strong></td>
+                            <td></td>
+                            <td>clearfix<strong>a clearfix is a way for an element to automatically clear its child elements, so that you don't need to add additional markup. It's generally used in float layouts where elements are floated to be stacked horizontally.</strong></td>
+
+                        </tr>   
+                      
+                        <tr>
+                            <td>box-center<strong>elements will take up the width you specify, then the remaining space will be split evenly between the two margins.</strong></td>
+                            <td></td>
+                            <td></td>
+
+                        </tr>  
+                      
+                      
+                      
+                 
+                    </tbody>
+                </table>
+          
+                <table class="dsure-table demo-css-detail-table ma-t20" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th width="25%">Minimum Height </th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>min-h<i> + number</i><br><code>E.g. min-h300</code>
+                               <br><b>(unit: pixels) values range：</b>100，150，200，250，300，350，400，450，500，550，600，650
+                            </td>
+                 
+                        </tr>
+                
+                       
+                      
+   
+                    </tbody>
+                </table>    
+          
+               
+                
+            </div><!--  /.codeBox-content -->
+
+
+        </div><!--  /.codeBox -->
+        
+        
+        <div class="codeBox d-class-area" id="s5">
+           
+           <h2>(5) Border&amp;fillet</h2>
+
+              <p class="dsure-tip-alert">
+                  Only supports up to IE 9.
+               </p>
+
+            <div class="codeBox-content">
+                            
+                <table class="dsure-table demo-css-detail-table" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>Border</th>
+                            <th>Fillet</th>
+    
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>noborder<strong>specifies no border</strong></td>
+                            <td>dsure-radius-none<strong>specifies no fillet</strong></td>
+                   
+                          
+                        </tr>
+                
+                       
+                        <tr>
+                            <td></td>
+                            <td>dsure-radius-small<strong>round corners (small)</strong></td>
+                   
+                          
+                        </tr>                  
+                      
+                        <tr>
+                           <td></td>
+                            <td>dsure-radius-medium<strong>round corners (medium)</strong></td>
+                   
+                          
+                        </tr> 
+                        
+                        <tr>
+                            <td></td>
+                            <td>dsure-radius-medium2x<strong>round corners (double medium)</strong></td>
+                   
+                          
+                        </tr>     
+                        
+                        
+                        <tr>
+                           <td></td>
+                            <td>dsure-radius-big<strong>round corners (large)</strong></td>
+                   
+                          
+                        </tr> 
+                                                         
+                        <tr>
+                            <td></td>
+                            <td>dsure-radius-full<strong>perfect circles in CSS</strong></td>
+                   
+                          
+                        </tr>  
+                        
+   
+   
+                    </tbody>
+                </table>
+          
+               
+                
+            </div><!--  /.codeBox-content -->
+
+
+        </div><!--  /.codeBox --> 
+        
+        
+     
+
+        <div class="codeBox d-class-area" id="s6">
+           
+           <h2>(6) Demonstrate</h2>
+
+            <div class="codeBox-content">
+            
+                  <div class="pa15 ma-t20 f16 dsure-no-hover dsure-bg-lemonchiffon  dsure-radius-medium">content...</div>
+                  
+                  <div class="ma20 f-c-white dsure-no-hover dsure-bg-black">content...</div>
+                  
+                    <div class="dsure-row">
+                      <div class="dsure-large-6 dsure-columns dsure-no-hover bg-column1"><div class="pa20 ma-t10 fl">content...</div></div>
+                      <div class="dsure-large-6 dsure-columns dsure-no-hover bg-column2"><div class="pa-r10 ma-t10 fr">content...</div></div>
+                    </div>
+                    
+                    <div class="clear"></div>
+                    <div style="width:200px" class="box-center">content...</div>
+                    
+                    
+                 
+            </div><!--  /.codeBox-content -->
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML Code:</span>
+
+&lt;div class="<span class="im-class">pa15 ma-t20 f16 dsure-no-hover dsure-bg-lemonchiffon  dsure-radius-medium</span>"&gt;content...&lt;/div&gt;
+&lt;div class="<span class="im-class">ma20 f-c-white dsure-no-hover dsure-bg-black</span>"&gt;content...&lt;/div&gt;
+&lt;div class="<span class="im-class">pa20 ma-t10 fl</span>"&gt;content...&lt;/div&gt;
+&lt;div class="<span class="im-class">pa-r10 ma-t10 fr</span>"&gt;content...&lt;/div&gt;    
+&lt;div class="<span class="im-class">clear</span>"&gt;&lt;/div&gt; 
+&lt;div style="<span class="im-style">width:200px</span>" class="<span class="im-class">box-center</span>"&gt; content...&lt;/div&gt; 
+            </pre>
+
+
+
+        </div><!--  /.codeBox -->   
+
+          
+          
+          <!-- /////////////////   Content    End /////////////////// -->
+
+    
+
+        </div>
+
+         <footer>
+         
+            <hr>
+           
+            <p>This Product is released under a <a href="http://creativecommons.org/licenses/by-nc/3.0/deed.zh" target="_blank">Creative Commons Attribution 3.0</a> License. It only learning and exchange.</p>
+            <p>
+            &copy;2014 <a href="/d-s/Dsure">Dsure Front-end Development Framework</a> |  Author: <a href="/" target="_blank">没位道</a>
+         
+         <div style="display:none">
+                 <script id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+        <script>
+            if (typeof(LA) !== 'undefined') LA.init({id: "JdyfUJi3RdCZVi9F",ck: "JdyfUJi3RdCZVi9F"});
+        </script>
+         </div>
+           
+           
+      
+          
+            </p>
+             
+         </footer>
+
+     </section>
+     
+     
+
+     
+    
+    <script src="js/jquery.scroller.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/theme.hash.js"></script> <!-- After the main.js -->
+     
+  
+
+</body>
+</html>
+

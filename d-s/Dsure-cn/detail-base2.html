@@ -1,0 +1,701 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js ie ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js ie ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js ie ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js ie ie9"> <![endif]-->
+<!--[if !IE]><!--> <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js"> <!--<![endif]-->
+
+<head>
+    <meta name="viewport" content="width=device-width, user-scalable=yes" />
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
+    <meta charset="utf-8"/>
+    <title>通用样式叠加|Dsure-HTML5网站,前端开发框架</title>
+    <meta name="description" content="Dsure,基于纯CSS的HTML5网站响应式开发框架,专注国内/外交互式网站开发,完美适用于Designers Site Program 全站静态系统">
+    <meta name="keywords" content="Dsure,CSS框架,HTML5网站,HTML5框架,CSS3动画,前端开发,Designers Site,全站静态系统,免费建站,响应式网站,交互式网站,自适应网站,framework">
+    <meta name="author" content="没位道">
+
+    <!-- Jquery.min begin -->
+    <script src="js/jquery.min.js?1.7.1" ></script>
+    <!-- / Jquery.min end -->
+    
+    <!-- URL Hash Compatible(IE5+) begin -->
+    <script src="js/jquery.hashchange.js" ></script>
+	<script>
+		//hash
+		var turl = "";
+    </script> 
+
+    <!-- URL Hash Compatible(IE5+) end -->
+    
+    
+    <!-- Dsure  Development Framework  begin  -->
+    
+        <link rel="stylesheet" type="text/css" href="../../dsure/dsure.css" />
+        <script src="../../dsure/dsure.modernizr.js"></script>
+        <!--[if lt IE 9]>  
+            <script src="../../dsure/dsure.respond.js"></script>  
+        <![endif]-->  
+    
+        <!--[if lt IE 7 ]>
+            <script src="../../dsure/dsure.png.js"></script>
+            <script>
+            DD_belatedPNG.fix('img, a, span, h1, h2, h3, em, section, header');
+            document.execCommand("BackgroundImageCache", false, true);
+            </script>
+        <![endif]-->
+
+    
+    <!-- /Dsure Development Framework  end   -->
+    
+
+    
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+
+    
+
+
+</head>
+<body>
+
+    <!--  loading  -->
+    <div id="loading"></div> 
+    <div id="back-top"><a href="#">Top</a></div>
+
+    <!--  menu  -->
+        <nav id="menu">
+            <div class="main-menu">
+        
+                <ul>
+                    <li class="web-title"><a href="/d-s/Dsure-cn">Dsure</a></li>
+                    <li class="line"></li>
+                    <li><a href="/d-s/Dsure-flat">欢迎页面</a></li>
+                    <li><a href="/d-s/Dsure-cn/detail-base.html">基础框架 <span>(Base)</span> <b>*必须*</b></a></li>
+                    <li class="active"><a href="/d-s/Dsure-cn/detail-base2.html">样式叠加 <span>(Base)</span> <b>*通用*</b></a></li>
+                    <li><a href="/d-s/Dsure-cn/detail-text.html">内容/文本 <span>(Text)</span></a></li>
+                    <li><a href="/d-s/Dsure-cn/detail-buttons.html">按钮 <span>(Buttons)</span></a></li>
+                    <li><a href="/d-s/Dsure-cn/detail-forms.html">表单 <span>(Forms)</span></a></li>
+                    <li><a href="/d-s/Dsure-cn/detail-tables.html">表格 <span>(Tables)</span></a></li>
+                    <li><a href="/d-s/Dsure-cn/detail-grids.html">网格/栅格系统 <span>(Grids)</span> </a></li>
+                    <li><a href="/d-s/Dsure-cn/detail-layouts.html">循环列表布局 <span>(Layouts)</span></a></li>
+                    <li><a href="/d-s/Dsure-cn/detail-icons.html">图标 <span>(Icons)</span></a></li>
+                    <li><a href="/d-s/Dsure-cn/detail-img.html">图片 <span>(Images)</span></a></li>
+                    <li><a href="/d-s/Dsure-cn/detail-line.html">分割线 <span>(Dividing Line)</span></a></li>
+                    <li><a href="/d-s/Dsure-cn/detail-paginators.html">分页 <span>(Paginators)</span></a></li>
+                    <li><a href="/d-s/Dsure-cn/detail-navigation.html">导航菜单 <span>(Navigation)</span></a></li>
+                    <li><a href="/d-s/Dsure-cn/detail-classification.html">分类导航 <span>(Classification)</span></a></li>
+                    <li><a href="/d-s/Dsure-cn/detail-striking.html">醒目牌 <span>(Striking)</span></a></li>
+                    <li><a href="/d-s/Dsure-cn/detail-search.html">搜索框 <span>(Search Box)</span></a></li> 
+                    <li><a href="/d-s/Dsure-cn/detail-tags.html">标签集 <span>(Tags)</span></a></li> 
+                   
+                </ul>
+
+                            
+            </div>
+           
+         </nav>
+         
+     <!--  /menu  -->
+     
+     
+        <section id="content">
+         <div class="show">
+          
+          <!-- /////////////////   Content    Begin /////////////////// -->
+      <div class="dsure-title-nav dsure-no-hover dsure-bg-silver dsure-radius-small dsure-b-shadow f-i15">
+        <h1>样式叠加</h1>
+      </div>
+
+      <div id="dir-nav" class="dir-nav dsure-no-hover dsure-bg-silver">
+          <a class="close" data-close="0" href="javascript:">×</a>
+          <div class="clear"></div>
+          <span class="t">目录导航</span>
+          <a href="javascript:" id="b-s1" onClick="navScrollTo('#s1');" >文字</a>
+          <a href="javascript:" id="b-s2" onClick="navScrollTo('#s2');" >边距</a>
+          <a href="javascript:" id="b-s3" onClick="navScrollTo('#s3');" >色彩</a>
+          <a href="javascript:" id="b-s4" onClick="navScrollTo('#s4');" >容器</a>
+          <a href="javascript:" id="b-s5" onClick="navScrollTo('#s5');" >边框/圆角</a>
+          <a href="javascript:" id="b-s6" onClick="navScrollTo('#s6');" >简单示范</a>
+
+      </div>
+
+
+      <div class="clear"></div>
+      
+      <div class="codeBox">
+
+            <p class="dsure-tip">
+              <i class="dsure-icon dsure-icon-bulb"></i> 黄色字体为注释内容
+            </p>
+           
+            <p class="dsure-tip dsure-tip-success">
+              <i class="dsure-icon dsure-icon-bulb"></i> 所有class都可以叠加使用,创造更个性化的样式效果和细节。您只要拷贝到<code>class=""</code>的<code>双引号</code>中使用即可，注意样式之间用<strong>空格</strong>隔开
+            </p>
+
+      </div><!--  /.codeBox -->
+      
+      
+      
+      
+        <div class="codeBox d-class-area" id="s1">
+           
+           <h2>(1) 文字通用样式</h2>
+
+
+
+            <div class="codeBox-content">
+                            
+                <table class="dsure-table demo-css-detail-table" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>横向对齐</th>
+                            <th>纵向对齐</th>
+                            <th>字体</th>
+                            <th>文字样式</th>
+                            <th>文字颜色</th>
+                            <th>换行</th>
+                            <th>下划线</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>tl<strong>居左</strong></td>
+                            <td>vertical-m<strong>垂直居中</strong></td>
+                            <td>f-f-helvetica<strong>Helvetica</strong></td>
+                            <td>f-w-normal<strong>无粗细</strong></td>
+                            <td>f-c-black<strong>黑色</strong></td>
+                            <td>noWrap<strong>不换行</strong></td>
+                            <td>f-d-none<strong>无</strong></td>
+                            
+
+                           
+                        </tr>
+                
+                        <tr>
+                            <td>tc<strong>居中</strong></td>
+                            <td>vertical-b<strong>垂直居底部</strong></td>
+                            <td>f-f-song<strong>宋体</strong></td>
+                            <td>f-w-blod<strong>粗体</strong></td>
+                           <td>f-c-white<strong>白色</strong></td>
+                           <td>autoWrap<strong>自动换行</strong></td>
+                           <td>f-d-line<strong>有</strong></td>
+         
+               
+             
+                        </tr>
+                
+                        <tr>
+                            <td>tc<strong>居右</strong></td>
+                            <td>vertical-t<strong>垂直居顶部</strong></td>
+                            <td>f-f-heiti<strong>黑体</strong></td>
+                            <td>f-s-italic<strong>斜体</strong></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+
+                       
+ 
+                        </tr>
+                        
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td>f-f-yahei<strong>雅黑</strong></td>
+                            <td>f-s-normal<strong>无斜体</strong></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+
+                 
+                        </tr>   
+
+                    </tbody>
+                </table>
+                 
+               <table class="dsure-table demo-css-detail-table ma-t20" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>文字大小</th>
+                            <th>文字缩进</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                           
+                            <td>f<i> + 数字</i><br><code>格式如：f12</code>
+                               <br><b>数字(px)取值：</b>10，11，12，13，14，15，16，17，18，19，20，21，22，23，24，25，26，27，28，29，30，35，40，45，50，55，60，65，70，75
+                            </td>
+                            <td>f-i<i> + 数字</i><br><code>格式如：f-i15</code>
+                               <br><b>数字(px)取值：</b>0，5，10，15，20，25，30，35，40，45，50，55，60，65，70，75，80，85，90，95，100
+                            </td>
+                           
+                        </tr>
+                
+                      
+
+                    </tbody>
+                </table>
+                 
+               
+                
+            </div><!--  /.codeBox-content -->
+
+
+        </div><!--  /.codeBox -->
+
+
+       <div class="codeBox d-class-area" id="s2">
+           
+           <h2>(2) 边距通用样式</h2>
+
+
+
+            <div class="codeBox-content">
+                            
+                 
+               <table class="dsure-table demo-css-detail-table" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>四周外边距</th>
+                            <th>外上边距</th>
+                            <th>外下边距</th>
+                            <th>外左边距</th>
+                            <th>外右边距</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                           
+                            <td>ma<i> + 数字</i><br><code>格式如：ma5</code>
+                               <br><b>数字(px)取值：</b>0，2，3，4，5，10，15，20，25，30，35，40，45，50，55，60，65，70，75，80，85，90，95，100
+                            </td>
+                            <td>ma-t<i> + 数字</i><br><code>格式如：ma-t20</code>
+                               <br><b>数字(px)取值：</b>2，3，4，5，10，15，20，25，30，35，40，45，50，55，60，65，70，75，80，85，90，95，100
+                            </td>
+                           
+                            <td>ma-b<i> + 数字</i><br><code>格式如：ma-b20</code>
+                               <br><b>数字(px)取值：</b>2，3，4，5，10，15，20，25，30，35，40，45，50，55，60，65，70，75，80，85，90，95，100
+                            </td>
+                            
+                            <td>ma-l<i> + 数字</i><br><code>格式如：ma-l20</code>
+                               <br><b>数字(px)取值：</b>2，3，4，5，10，15，20，25，30，35，40，45，50，55，60，65，70，75，80，85，90，95，100
+                            </td>
+                            
+                            <td>ma-r<i> + 数字</i><br><code>格式如：ma-r20</code>
+                               <br><b>数字(px)取值：</b>2，3，4，5，10，15，20，25，30，35，40，45，50，55，60，65，70，75，80，85，90，95，100
+                            </td>
+                           
+                           
+                        </tr>
+                
+                      
+
+                    </tbody>
+                </table>
+                 
+                 
+
+               <table class="dsure-table demo-css-detail-table ma-t20" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>四周内边距</th>
+                            <th>内上边距</th>
+                            <th>内下边距</th>
+                            <th>内左边距</th>
+                            <th>内右边距</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                           
+                            <td>pa<i> + 数字</i><br><code>格式如：pa5</code>
+                               <br><b>数字(px)取值：</b>0，5，10，15，20，25，30，35，40，45，50，55，60，65，70，75，80，85，90，95，100
+                            </td>
+                            <td>pa-t<i> + 数字</i><br><code>格式如：pa-t20</code>
+                               <br><b>数字(px)取值：</b>5，10，15，20，25，30，35，40，45，50，55，60，65，70，75，80，85，90，95，100
+                            </td>
+                           
+                            <td>pa-b<i> + 数字</i><br><code>格式如：pa-b20</code>
+                               <br><b>数字(px)取值：</b>5，10，15，20，25，30，35，40，45，50，55，60，65，70，75，80，85，90，95，100
+                            </td>
+                            
+                            <td>pa-l<i> + 数字</i><br><code>格式如：pa-l20</code>
+                               <br><b>数字(px)取值：</b>5，10，15，20，25，30，35，40，45，50，55，60，65，70，75，80，85，90，95，100
+                            </td>
+                            
+                            <td>pa-r<i> + 数字</i><br><code>格式如：pa-r20</code>
+                               <br><b>数字(px)取值：</b>5，10，15，20，25，30，35，40，45，50，55，60，65，70，75，80，85，90，95，100
+                            </td>
+                           
+                           
+                        </tr>
+                
+                      
+
+                    </tbody>
+                </table>
+                
+ 
+                
+            </div><!--  /.codeBox-content -->
+
+
+        </div><!--  /.codeBox -->
+        
+        
+       <div class="codeBox d-class-area" id="s3">
+           
+           <h2>(3) 色彩叠加</h2>
+
+           
+            <p class="dsure-tip">
+              取消色彩的hover效果，请叠加<code>.dsure-no-hover</code>样式，比如<code>dsure-bg-blue dsure-no-hover</code>
+            </p>
+
+
+            <div class="codeBox-content">
+                            
+                            
+               <table class="dsure-table demo-css-detail-table" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th width="16.66%"><button class="dsure-c-btn dsure-bg-blue">&nbsp;</button></th>
+                            <th width="16.66%"><button class="dsure-c-btn dsure-bg-black">&nbsp;</button></th>
+                            <th width="16.66%"><button class="dsure-c-btn dsure-bg-silver">&nbsp;</button></th>
+                            <th width="16.66%"><button class="dsure-c-btn dsure-bg-gray">&nbsp;</button></th>
+                            <th width="16.66%"><button class="dsure-c-btn dsure-bg-red">&nbsp;</button></th>
+                            <th><button class="dsure-c-btn dsure-bg-purple">&nbsp;</button></th>
+                            
+
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            
+                            <td>dsure-bg-blue</td>
+                            <td>dsure-bg-black</td>
+                            <td>dsure-bg-silver</td>
+                            <td>dsure-bg-gray</td>
+                            <td>dsure-bg-red</td>
+                            <td>dsure-bg-purple</td>
+                           
+                        </tr>
+                
+                      
+
+                    </tbody>
+                </table>
+                        
+                 
+               <table class="dsure-table demo-css-detail-table ma-t20" style="width:100%">
+                    <thead>
+                        <tr>
+
+                            <th width="16.66%"><button class="dsure-c-btn dsure-bg-green">&nbsp;</button></th>
+                            <th width="16.66%"><button class="dsure-c-btn dsure-bg-aquamarine">&nbsp;</button></th>
+                            <th width="16.66%"><button class="dsure-c-btn dsure-bg-olivedrab">&nbsp;</button></th>
+                            <th width="16.66%"><button class="dsure-c-btn dsure-bg-pink">&nbsp;</button></th>
+                            <th width="16.66%"><button class="dsure-c-btn dsure-bg-indigo">&nbsp;</button></th>
+                            <th><button class="dsure-c-btn dsure-bg-orange">&nbsp;</button></th>
+                           
+
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            
+
+                            <td>dsure-bg-green</td>
+                            <td>dsure-bg-aquamarine</td>
+                            <td>dsure-bg-olivedrab</td>
+                            <td>dsure-bg-pink</td>
+                            <td>dsure-bg-indigo</td>
+                            <td>dsure-bg-orange</td>
+                          
+
+                        </tr>
+                
+                      
+
+                    </tbody>
+                </table>       
+
+
+                 
+               <table class="dsure-table demo-css-detail-table ma-t20" style="width:100%">
+                    <thead>
+                        <tr>
+
+                            <th width="16.66%"><button class="dsure-c-btn dsure-bg-brown">&nbsp;</button></th>
+                            <th width="16.66%"><button class="dsure-c-btn dsure-bg-yellow">&nbsp;</button></th>
+                            <th width="16.66%"><button class="dsure-c-btn dsure-bg-cadetblue">&nbsp;</button></th>
+                            <th width="16.66%"><button class="dsure-c-btn dsure-bg-lemonchiffon">&nbsp;</button></th>
+                            <th width="16.66%"><button class="dsure-c-btn dsure-bg-lavender">&nbsp;</button></th>
+                            <th><button class="dsure-c-btn dsure-bg-burlywood">&nbsp;</button></th>
+
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+
+                            <td>dsure-bg-brown</td>
+                            <td>dsure-bg-yellow</td>
+                            <td>dsure-bg-cadetblue</td>
+                            <td>dsure-bg-lemonchiffon</td>
+                            <td>dsure-bg-lavender</td>
+                            <td>dsure-bg-burlywood</td>
+
+                        </tr>
+                
+                      
+
+                    </tbody>
+                </table>                       
+            </div><!--  /.codeBox-content -->
+
+
+        </div><!--  /.codeBox -->
+        
+        
+        <div class="codeBox d-class-area" id="s4">
+           
+           <h2>(4) 容器通用样式</h2>
+
+
+
+            <div class="codeBox-content">
+                            
+                <table class="dsure-table demo-css-detail-table" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>容器对齐方式</th>
+                            <th>容器类型</th>
+                            <th>清除浮动</th>
+                   
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>fl<strong>向左浮动</strong></td>
+                            <td>blo<strong>转变为块元素</strong></td>
+                            <td>clear<strong>用于两个层容器之间的清除浮动</strong></td>
+
+                        </tr>
+                
+                        <tr>
+                            <td>fr<strong>向右浮动</strong></td>
+                            <td></td>
+                            <td>clearfix<strong>用于父层容器上的清除浮动</strong></td>
+
+                        </tr>   
+                      
+                        <tr>
+                            <td>box-center<strong>居中</strong></td>
+                            <td></td>
+                            <td></td>
+
+                        </tr>  
+                      
+                      
+                      
+                 
+                    </tbody>
+                </table>
+          
+                <table class="dsure-table demo-css-detail-table ma-t20" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th width="25%">设定容器最小高度</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>min-h<i> + 数字</i><br><code>格式如：min-h300</code>
+                               <br><b>数字(px)取值：</b>100，150，200，250，300，350，400，450，500，550，600，650
+                            </td>
+                 
+                        </tr>
+                
+                       
+                      
+   
+                    </tbody>
+                </table>    
+          
+               
+                
+            </div><!--  /.codeBox-content -->
+
+
+        </div><!--  /.codeBox -->
+        
+        
+        <div class="codeBox d-class-area" id="s5">
+           
+           <h2>(5) 边框/圆角效果</h2>
+
+              <p class="dsure-tip-alert">
+                   圆角、圆形效果9.0版本以下IE浏览器无效
+               </p>
+
+            <div class="codeBox-content">
+                            
+                <table class="dsure-table demo-css-detail-table" style="width:100%">
+                    <thead>
+                        <tr>
+                            <th>边框</th>
+                            <th>圆角效果</th>
+    
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>noborder<strong>无边框</strong></td>
+                            <td>dsure-radius-none<strong>无圆角</strong></td>
+                   
+                          
+                        </tr>
+                
+                       
+                        <tr>
+                            <td></td>
+                            <td>dsure-radius-small<strong>小型圆角</strong></td>
+                   
+                          
+                        </tr>                  
+                      
+                        <tr>
+                           <td></td>
+                            <td>dsure-radius-medium<strong>中型圆角</strong></td>
+                   
+                          
+                        </tr> 
+                        
+                        <tr>
+                            <td></td>
+                            <td>dsure-radius-medium2x<strong>两倍中型圆角</strong></td>
+                   
+                          
+                        </tr>     
+                        
+                        
+                        <tr>
+                           <td></td>
+                            <td>dsure-radius-big<strong>大型圆角</strong></td>
+                   
+                          
+                        </tr> 
+                                                         
+                        <tr>
+                            <td></td>
+                            <td>dsure-radius-full<strong>100%圆形圆角</strong></td>
+                   
+                          
+                        </tr>  
+                        
+   
+   
+                    </tbody>
+                </table>
+          
+               
+                
+            </div><!--  /.codeBox-content -->
+
+
+        </div><!--  /.codeBox --> 
+        
+        
+     
+
+        <div class="codeBox d-class-area" id="s6">
+           
+           <h2>(6) 简单示范</h2>
+
+            <div class="codeBox-content">
+            
+                  <div class="pa15 ma-t20 f16 dsure-no-hover dsure-bg-lemonchiffon  dsure-radius-medium">四周内边距15像素 + 外上边距20像素 + 字体大小16像素 + 淡青黄背景 + 中型圆角</div>
+                  
+                  <div class="ma20 f-c-white dsure-no-hover dsure-bg-black">四周外边距20像素 + 字体为白色 + 黑色背景</div>
+                  
+                    <div class="dsure-row">
+                      <div class="dsure-large-6 dsure-columns dsure-no-hover bg-column1"><div class="pa20 ma-t10 fl">四周内边距20像素 + 外上边距10像素 + 左浮动</div></div>
+                      <div class="dsure-large-6 dsure-columns dsure-no-hover bg-column2"><div class="pa-r10 ma-t10 fr">内右边距10像素 + 外上边距10像素 + 右浮动</div></div>
+                    </div>
+                    
+                    <div class="clear">清除浮动</div>
+                    <div style="width:200px" class="box-center">宽度为200像素的层容器居中对齐</div>
+                    
+                    
+                 
+            </div><!--  /.codeBox-content -->
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML代码:</span>
+
+&lt;div class="<span class="im-class">pa15 ma-t20 f16 dsure-no-hover dsure-bg-lemonchiffon  dsure-radius-medium</span>"&gt;四周内边距15像素 + 外上边距20像素 + 字体大小16像素 + 淡青黄背景 + 中型圆角&lt;/div&gt;
+&lt;div class="<span class="im-class">ma20 f-c-white dsure-no-hover dsure-bg-black</span>"&gt;四周外边距20像素 + 字体为白色 + 黑色背景&lt;/div&gt;
+&lt;div class="<span class="im-class">pa20 ma-t10 fl</span>"&gt;四周内边距20像素 + 外上边距10像素 + 左浮动&lt;/div&gt;
+&lt;div class="<span class="im-class">pa-r10 ma-t10 fr</span>"&gt;内右边距10像素 + 外上边距10像素 + 右浮动&lt;/div&gt;    
+&lt;div class="<span class="im-class">clear</span>"&gt;清除浮动&lt;/div&gt; 
+&lt;div style="<span class="im-style">width:200px</span>" class="<span class="im-class">box-center</span>"&gt; 宽度为200像素的层容器居中对齐&lt;/div&gt; 
+            </pre>
+
+
+
+        </div><!--  /.codeBox -->   
+          
+          <!-- /////////////////   Content    End /////////////////// -->
+
+    
+
+        </div>
+
+         <footer>
+         
+            <hr>
+           
+            <p>此开源开发框架基于<a href="/d-s/" target="_blank">Designers Site Program 全站静态系统</a>发布，提供广大网站开发者使用，并着力构建快速设计DS主题框架，设计者可以根据此开发框架设计出网站的纯HTML效果，兼容整套系统体系，再使用主题开发插件进行标签替换和修改，即可设计并使用自己的主题 (您也可以用作其它方面的开发)</p>
+
+            <p>Dsure授权开源许可证基于<a href="http://creativecommons.org/licenses/by-nc/3.0/deed.zh" target="_blank">CC BY-NC 3.0</a>,禁止任何人任何公司机构用于商业用途</p>
+            
+            <p>
+            &copy;2014 Powered By <a href="/" target="_blank">没位道</a>, <a href="/d-s/Dsure-flat">Dsure Web Development Framework</a>
+        
+  
+            &nbsp;&nbsp;        <script id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+        <script>
+            if (typeof(LA) !== 'undefined') LA.init({id: "JdyfUJi3RdCZVi9F",ck: "JdyfUJi3RdCZVi9F"});
+        </script>
+          
+            
+            
+          
+            </p>
+             
+         </footer>
+
+     </section>
+     
+     
+
+     
+    
+    <script src="js/jquery.scroller.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/theme.hash.js"></script> <!-- After the main.js -->
+     
+  
+
+</body>
+</html>
+

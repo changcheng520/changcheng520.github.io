@@ -1,0 +1,112 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <title>ajax-page</title>
+    
+    <!--  ajax page style begin-->
+    <link rel="stylesheet" type="text/css" href="css/theme.template.ajax.page.css" />
+    <!--  /ajax page style end-->
+    
+
+    <!-- Jquery.min begin -->
+    <script src="js/jquery.min.js?1.7.1" ></script>
+    <!-- / Jquery.min end -->
+
+
+    <!-- Used jquery plugins when this page ajax load complated! begin -->
+    <script src="js/jquery.jscroll.js"></script>
+    <script src="js/jquery.tools.min.js"></script>
+    <!-- /Used jquery plugins when this page ajax load complated! end -->
+
+
+    <!-- URL Hash Compatible(IE5+) begin -->
+    <script src="js/jquery.hashchange.js" ></script>
+    <!-- URL Hash Compatible(IE5+) end -->
+    
+	<script>
+	
+		//Sub-page redirection
+		var turl = document.location.href;
+		if (location.hash.indexOf("#!/") == -1) {
+		   window.location.href = "portfolios-list.html#!/" + turl;
+		}
+
+    </script> 
+
+</head>
+
+<body><!-- Can't add class to "body" -->
+   
+   
+   <div class="ajax-body-content">
+   
+   <!-- ++++++++++++++++++++++++  content   begin ++++++++++++++++++++++++-->
+
+   
+            <div class="sub-col1 fl tl portfolio-detail-img">
+                
+                <!--  images code   begin-->
+            
+              
+                
+                      <div class="slider">
+                          <ul class="items">
+                              <li><a href="images/demo/demo800x450-1.jpg" data-lightbox="roadtrip" target="_blank"><img src="images/demo/demo800x450-1.jpg" alt=""></a></li>
+                               <li><a href="images/demo/demo800x450-2.jpg" data-lightbox="roadtrip" target="_blank"><img src="images/demo/demo800x450-2.jpg" alt=""></a></li>
+                          </ul> <!-- /.items -->
+                      </div>
+                      
+                      <div class="clear"></div>
+                      <div class="slider-dots"></div>
+            
+        
+                <!--  images code   end-->
+            
+            </div>
+            
+            
+            
+            <div class="sub-col2 fr tl portfolio-detail">
+            
+                
+                   
+                   
+                   <div class="scroller">
+            
+                       <!--  detail code    begin-->
+                       
+                   
+                   
+                        <h1 class="font-size24 font-color-e3e3e3 font-family-lato main4-title ma-b20 portfolio-detail-title">Design Title</h1>
+    
+                        
+                    
+                        <p>
+                    I'm very proud for receiving FWA Site Of The Day Award! Your email with the info about the award is one of the best emails I have ever received:) I can't stop smiling. I haveread it just after I woke up and now I'm loaded with positive energy for the rest of the day:) So THANKS again!I'm very proud for receiving FWA Site Of The Day Award! Your email with the info about the award is one of the best emails I have ever received:) I can't stop smiling. I haveread it just after I woke up and now I'm loaded with positive energy for the rest of the day:) So THANKS again!I'm very proud for receiving FWA Site Of The Day Award! Your email with the info about the award is one of the best emails I have ever received:) I can't stop smiling. I haveread it just after I woke up and now I'm loaded with positive energy for the rest of the day:) So THANKS again!I'm very proud for receiving FWA Site Of The Day Award! Your email with the info about the award is one of the best emails Your email with the info about the award is one of the best emails I have ever received:) I can't stop smiling. I haveread it just after I woke up and now I'm loaded with positive energy for the rest of the day:) So THANKS again!(123end)
+                    
+                                 
+                        </p>
+                        
+
+                        
+                         <!--  detail code    end--> 
+                    
+
+                   </div>
+                    
+
+            
+            </div>
+
+    
+     <!-- ++++++++++++++++++++++++  content   end ++++++++++++++++++++++++-->
+
+     
+     
+     </div><!-- /.ajax-body-content -->
+
+  
+
+</body>
+</html>

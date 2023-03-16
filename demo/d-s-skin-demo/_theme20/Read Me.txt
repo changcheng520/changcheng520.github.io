@@ -1,0 +1,104 @@
+¡¶MagoColor - Responsive One Page Parallax Theme¡·
+
+
+==================================================================================================
+
+MagoColor is a Premium Responsive One Page Parallax Template. It used Html5/CSS3 and jquery plugins.It is the ultimate single page parallax theme.It has a simple clean design suitable for companies and corporate, agencies, freelancers or small business.
+
+For support visit https://www.c945.com
+Contact: xizon@c945.com
+
+
+
+==================================================================================================
+
+
+
+LICENSE:
+
+1.There is no limit when you purchase.
+
+2.You are free to use anywhere.But must satisfy the first condition.
+
+3.You can be modified to use but may not sublicense or share.
+
+4.This template only sales on themeforest.
+
+5.Prohibition share and only their own use.
+
+
+
+==================================================================================================
+
+Special:
+
+
+    -	Support mouse wheel to switch page-screen
+    -	Support drag and drop page section
+    -	URL Hash compatibility(with jquery1.7+,compatible IE6+)
+    -   Responsive Fullscreen
+    -	Parallax any element
+    -	Parallax Backgrounds
+    -   7 Home Sections
+    -	Valid HTML5 CSS3
+    -   CSS3 Parallax Animation
+    -	Compatible with usual browsers, including IE6+
+    -	All resolutions full screen
+    -	Ipad/Iphone/PC/Mobile Responsive Support
+    -	8 Layered PSD Files(onepage home,nepage home hover,404,blog list,blog detail,portfolios list,portfolios detail,members)
+    -   6 Html Files (Include: .css,.js,.png,.jpg)
+
+
+
+
+Templates Features:
+
+
+    -	Demo included: javascript files,html files,images
+    -	Popular Free Jquery Plugins
+    -	Modern flexible design
+    -	Provides a full 8 Layered PSD Files
+    -	Unique Parallax Slider
+    -	Powerful Animation Generator
+    -	Single page, Multi page or Multi single page
+    -	Include extra free fonts
+    -	Independent blog&portfolios list page
+    -	Portfolios detail show by AJAX Load 
+    -	Rich complete demo pictures
+    -	Full Screen Transition 
+    -	Css3 Animations 
+    -	W3C Valid code
+
+
+==================================================================================================
+
+Credits and Sources:
+
+All images and text used in the preview are just for demonstration purposes.
+
+
+
+[Icons]
+
+http://iconmonstr.com/g/?icon=iconmonstr-paper-plane-3-icon.png
+
+http://iconmonstr.com/qr-code-7-icon/
+
+
+[Font] 
+
+
+http://www.ffonts.net/Lato-Hairline.font.download 
+
+
+[Jquery Plugins]
+
+http://jquery.com
+http://benalman.com/projects/jquery-hashchange-plugin/
+http://jquerytools.org/
+http://www.huddletogether.com/projects/lightbox2/
+http://the-taylors.org/jquery.kinetic 
+http://razorjack.net/quicksand
+http://isotope.metafizzy.co/
+http://www.tumuski.com/2010/09/hoverdelay-jquery-plug-in/
+

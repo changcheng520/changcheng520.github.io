@@ -1,0 +1,25 @@
+@import "../admin/_manage_css/floatWin.css";
+
+
+/*图片展示*/
+#sliderWrapper{margin:6px; margin-top:20px;}
+#slideshow li img{ padding: 3px; border:1px solid #ccc; background-color: #fff; max-width:90%;}
+
+/*返回和相关链接*/
+#work-btn{ padding-top:20px; clear:both; text-align:center}
+a#goUrl,a#goBack{padding:3px; border-bottom:1px dashed #c69c6d; margin-right:20px; color:#2b1e17}
+
+/*内容描述*/
+#caseCon { margin:30px 10px 0 10px; padding-right:140px; clear:both; line-height:22px; margin-bottom:15px;}
+
+/*loading*/
+#case_loading{ top:130px; left:365px; position:absolute; width:321px; height:100px; z-index:9999; color:#FFF; overflow:hidden}
+#case_loading .case_loadingShow{width:250px; height:78px;}
+
+
+/*作品展示页 投票区*/
+#voteWork {}
+
+
+/*前台修改按钮*/
+#editControl {position:absolute; margin:0; z-index:999; top:53px; left:540px;; z-index:351; height:150px; width:240px; text-align:left;}

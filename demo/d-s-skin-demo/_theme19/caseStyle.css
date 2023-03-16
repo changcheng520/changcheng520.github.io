@@ -1,0 +1,7 @@
+/*图片展示*/
+.worksImgShowBox{margin-top:20px; width:100%}
+.worksImgShowBox li img{ padding: 3px; border:1px solid #ccc; background-color: #fff; max-width:100%;}
+
+/*返回和相关链接*/
+a#goUrl,a#goBack{margin-right:20px; text-decoration:underline }
+

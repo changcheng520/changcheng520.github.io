@@ -1,0 +1,541 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js ie ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js ie ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js ie ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js ie ie9"> <![endif]-->
+<!--[if !IE]><!--> <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js"> <!--<![endif]-->
+
+<head>
+    <meta name="viewport" content="width=device-width, user-scalable=yes" />
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
+    <meta charset="utf-8"/>
+    <title>内容文本|Dsure-HTML5网站,前端开发框架</title>
+    <meta name="description" content="Dsure,基于纯CSS的HTML5网站响应式开发框架,专注国内/外交互式网站开发,完美适用于Designers Site Program 全站静态系统">
+    <meta name="keywords" content="Dsure,CSS框架,HTML5网站,HTML5框架,CSS3动画,前端开发,Designers Site,全站静态系统,免费建站,响应式网站,交互式网站,自适应网站,framework">
+    <meta name="author" content="没位道">
+
+    <!-- Jquery.min begin -->
+    <script src="js/jquery.min.js?1.7.1" ></script>
+    <!-- / Jquery.min end -->
+    
+    <!-- URL Hash Compatible(IE5+) begin -->
+    <script src="js/jquery.hashchange.js" ></script>
+	<script>
+		//hash
+		var turl = "";
+    </script> 
+
+    <!-- URL Hash Compatible(IE5+) end -->
+    
+    
+    <!-- Dsure  Development Framework  begin  -->
+    
+        <link rel="stylesheet" type="text/css" href="../../dsure/dsure.css" />
+        <script src="../../dsure/dsure.modernizr.js"></script>
+        <!--[if lt IE 9]>  
+            <script src="../../dsure/dsure.respond.js"></script>  
+        <![endif]-->  
+    
+        <!--[if lt IE 7 ]>
+            <script src="../../dsure/dsure.png.js"></script>
+            <script>
+            DD_belatedPNG.fix('img, a, span, h1, h2, h3, em, section, header');
+            document.execCommand("BackgroundImageCache", false, true);
+            </script>
+        <![endif]-->
+
+    
+    <!-- /Dsure Development Framework  end   -->
+    
+
+    
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+
+    
+
+
+</head>
+<body>
+
+    <!--  loading  -->
+    <div id="loading"></div> 
+    <div id="back-top"><a href="#">Top</a></div>
+
+    <!--  menu  -->
+        <nav id="menu">
+            <div class="main-menu">
+        
+                <ul>
+                    <li class="web-title"><a href="/d-s/Dsure-cn">Dsure</a></li>
+                    <li class="line"></li>
+                    <li><a href="/d-s/Dsure-flat">欢迎页面</a></li>
+                    <li><a href="/d-s/Dsure-cn/detail-base.html">基础框架 <span>(Base)</span> <b>*必须*</b></a></li>
+                    <li><a href="/d-s/Dsure-cn/detail-base2.html">样式叠加 <span>(Base)</span> <b>*通用*</b></a></li>
+                    <li class="active"><a href="/d-s/Dsure-cn/detail-text.html">内容/文本 <span>(Text)</span></a></li>
+                    <li><a href="/d-s/Dsure-cn/detail-buttons.html">按钮 <span>(Buttons)</span></a></li>
+                    <li><a href="/d-s/Dsure-cn/detail-forms.html">表单 <span>(Forms)</span></a></li>
+                    <li><a href="/d-s/Dsure-cn/detail-tables.html">表格 <span>(Tables)</span></a></li>
+                    <li><a href="/d-s/Dsure-cn/detail-grids.html">网格/栅格系统 <span>(Grids)</span> </a></li>
+                    <li><a href="/d-s/Dsure-cn/detail-layouts.html">循环列表布局 <span>(Layouts)</span></a></li>
+                    <li><a href="/d-s/Dsure-cn/detail-icons.html">图标 <span>(Icons)</span></a></li>
+                    <li><a href="/d-s/Dsure-cn/detail-img.html">图片 <span>(Images)</span></a></li>
+                    <li><a href="/d-s/Dsure-cn/detail-line.html">分割线 <span>(Dividing Line)</span></a></li>
+                    <li><a href="/d-s/Dsure-cn/detail-paginators.html">分页 <span>(Paginators)</span></a></li>
+                    <li><a href="/d-s/Dsure-cn/detail-navigation.html">导航菜单 <span>(Navigation)</span></a></li>
+                    <li><a href="/d-s/Dsure-cn/detail-classification.html">分类导航 <span>(Classification)</span></a></li>
+                    <li><a href="/d-s/Dsure-cn/detail-striking.html">醒目牌 <span>(Striking)</span></a></li>
+                    <li><a href="/d-s/Dsure-cn/detail-search.html">搜索框 <span>(Search Box)</span></a></li> 
+                    <li><a href="/d-s/Dsure-cn/detail-tags.html">标签集 <span>(Tags)</span></a></li> 
+                   
+                </ul>
+
+                            
+            </div>
+           
+         </nav>
+         
+     <!--  /menu  -->
+     
+     
+        <section id="content">
+         <div class="show">
+          
+          <!-- /////////////////   Content    Begin /////////////////// -->
+      <div class="dsure-title-nav dsure-no-hover dsure-bg-silver dsure-radius-small dsure-b-shadow f-i15">
+        <h1>内容、文本</h1>
+      </div>
+
+      <div id="dir-nav" class="dir-nav dsure-no-hover dsure-bg-silver">
+          <a class="close" data-close="0" href="javascript:">×</a>
+          <div class="clear"></div>
+          <span class="t">目录导航</span>
+          <a href="javascript:" id="b-s1" onClick="navScrollTo('#s1');" >文章正文</a>
+          <a href="javascript:" id="b-s2" onClick="navScrollTo('#s2');" >块引用</a>
+          <a href="javascript:" id="b-s3" onClick="navScrollTo('#s3');" >标题</a>
+          <a href="javascript:" id="b-s4" onClick="navScrollTo('#s4');" >联系信息</a>
+          <a href="javascript:" id="b-s5" onClick="navScrollTo('#s5');" >插图</a>
+          <a href="javascript:" id="b-s6" onClick="navScrollTo('#s6');" >标题组合</a>
+          <a href="javascript:" id="b-s7" onClick="navScrollTo('#s7');" >时间</a>
+          <a href="javascript:" id="b-s8" onClick="navScrollTo('#s8');" >文字效果</a>
+          
+      </div>
+
+
+      <div class="clear"></div>
+      
+      <div class="codeBox">
+
+            <p class="dsure-tip dsure-tip-success">
+              <i class="dsure-icon dsure-icon-bulb"></i> 所有内容/文本元素都可以使用左侧导航<img src="css/images/m1.jpg" class="ma-l5 ma-r5">的所有class类进行细节样式的调整
+              
+            </p>
+
+                   
+
+      </div><!--  /.codeBox -->
+      
+      
+        <div class="codeBox d-class-area" id="s1">
+           
+           <h2>(1) 文章正文</h2>
+          
+            <div class="codeBox-content">
+
+                   <h3><i class="dsure-icon dsure-icon-file"></i> 默认14号字体</h3>
+      
+                   <div class="dsure-p-article">
+                  
+                        <p>但过去的终归已经过去，再也无法改变。王小波老师说，“人的一切痛苦，本质上都是对自己的无能的愤怒”。我也正是如此，却也只能“休恋逝水、苦海回身、早悟兰因”。过去的都已经无法改变。我只能尽力去改变那些我能改变的未来。本科成绩低、无实验室经历、无科研经历、无发表论文、无海外交流经历，这些是我的过去。托福三项满分，总分114，GRE数学满分，总分326，中国最年轻的一级注册结构，佐治亚理工的博士生录取，这些是我的现在。我的未来，还在路的前面。</p>
+                        
+                        <p>当然，很多事不能强求，我也不认同很多励志故事里舍家撇业、和男友/女友分手的桥段。对我来说，爱情和家庭是最重要的，也是我做所有这些事情的动力。我绝对不会本末倒置。不能说做的很好，但至少没有不放在心上。从高中时候的初恋，一直走到今天的婚姻，成为彼此的精神伴侣，我觉得这是我最大的成就，甚至比留学申请成功还要好。</p>
+                        
+                        <p>
+                        Our primary purpose in collecting personal information is to provide you with a safer trading experience and encourage commerce between buyers and sellers using the Site as a venue. We only collect personal information about you that we consider necessary for this purpose and to achieve this goal.
+                        </p>
+                        
+                        <p>
+                        很多人不理解我，为什么要出去读书？有一注证书，有接近五年的甲级院工作经验，不错的工作还是有很多的。可是，我不想要一眼看到头的生活。就像毛姆老师在《刀锋》里借主人公之口说出的，“你知道，我有个看法，觉得我这一生还可以多做点事情，不能够光卖股票”。我也觉得，我这一生可以做很多事情，我可以去看看这个世界，可以去“晃膀子”。
+                        </p>
+                  </div>
+                  
+                  <h3><i class="dsure-icon dsure-icon-file"></i> 12号字体</h3>
+                  
+                   <div class="dsure-p-article f12">
+                  
+                        <p>但过去的终归已经过去，再也无法改变。王小波老师说，“人的一切痛苦，本质上都是对自己的无能的愤怒”。</p>
+                        
+                        <p>
+                        我也正是如此，却也只能“休恋逝水、苦海回身、早悟兰因”。过去的都已经无法改变。我只能尽力去改变那些我能改变的未来。本科成绩低、无实验室经历、无科研经历、无发表论文、无海外交流经历，这些是我的过去。托福三项满分，总分114，GRE数学满分，总分326，中国最年轻的一级注册结构，佐治亚理工的博士生录取，这些是我的现在。我的未来，还在路的前面。
+                        </p>
+                        
+                  </div>  
+                  
+                  
+                  <h3><i class="dsure-icon dsure-icon-file"></i> 16号字体</h3>
+                  
+                   <div class="dsure-p-article f16">
+                  
+                        <p>但过去的终归已经过去，再也无法改变。王小波老师说，“人的一切痛苦，本质上都是对自己的无能的愤怒”。</p>
+                        
+                        <p>
+                        我也正是如此，却也只能“休恋逝水、苦海回身、早悟兰因”。过去的都已经无法改变。我只能尽力去改变那些我能改变的未来。本科成绩低、无实验室经历、无科研经历、无发表论文、无海外交流经历，这些是我的过去。托福三项满分，总分114，GRE数学满分，总分326，中国最年轻的一级注册结构，佐治亚理工的博士生录取，这些是我的现在。我的未来，还在路的前面。
+                        </p>
+                        
+                  </div>  
+                              
+                   
+
+            </div><!--  /.codeBox-content -->
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML代码:</span>
+
+&lt;div class="<span class="im-class">dsure-p-article</span>"&gt;
+
+    &lt;p&gt;但过去的终归已经过去，再也无法改变。王小波老师说，“人的一切痛苦，本质上都是对自己的无能的愤怒”。我也正是如此，却也只能“休恋逝水、苦海回身、早悟兰因”。过去的都已经无法改变。我只能尽力去改变那些我能改变的未来。本科成绩低、无实验室经历、无科研经历、无发表论文、无海外交流经历，这些是我的过去。托福三项满分，总分114，GRE数学满分，总分326，中国最年轻的一级注册结构，佐治亚理工的博士生录取，这些是我的现在。我的未来，还在路的前面。&lt;/p&gt;
+    
+    &lt;p&gt;当然，很多事不能强求，我也不认同很多励志故事里舍家撇业、和男友/女友分手的桥段。对我来说，爱情和家庭是最重要的，也是我做所有这些事情的动力。我绝对不会本末倒置。不能说做的很好，但至少没有不放在心上。从高中时候的初恋，一直走到今天的婚姻，成为彼此的精神伴侣，我觉得这是我最大的成就，甚至比留学申请成功还要好。&lt;/p&gt;
+    
+    &lt;p&gt;
+    Our primary purpose in collecting personal information is to provide you with a safer trading experience and encourage commerce between buyers and sellers using the Site as a venue. We only collect personal information about you that we consider necessary for this purpose and to achieve this goal.
+    &lt;/p&gt;
+    
+    &lt;p&gt;
+    很多人不理解我，为什么要出去读书？有一注证书，有接近五年的甲级院工作经验，不错的工作还是有很多的。可是，我不想要一眼看到头的生活。就像毛姆老师在《刀锋》里借主人公之口说出的，“你知道，我有个看法，觉得我这一生还可以多做点事情，不能够光卖股票”。我也觉得，我这一生可以做很多事情，我可以去看看这个世界，可以去“晃膀子”。
+    &lt;/p&gt;
+    
+&lt;/div&gt;
+
+
+&lt;div class="<span class="im-class">dsure-p-article f12</span>"&gt;
+
+    &lt;p&gt;但过去的终归已经过去，再也无法改变。王小波老师说，“人的一切痛苦，本质上都是对自己的无能的愤怒”。&lt;/p&gt;
+    
+    &lt;p&gt;
+    我也正是如此，却也只能“休恋逝水、苦海回身、早悟兰因”。过去的都已经无法改变。我只能尽力去改变那些我能改变的未来。本科成绩低、无实验室经历、无科研经历、无发表论文、无海外交流经历，这些是我的过去。托福三项满分，总分114，GRE数学满分，总分326，中国最年轻的一级注册结构，佐治亚理工的博士生录取，这些是我的现在。我的未来，还在路的前面。
+    &lt;/p&gt;
+    
+&lt;/div&gt;  
+
+&lt;div class="<span class="im-class">dsure-p-article f16</span>"&gt;
+
+    &lt;p&gt;但过去的终归已经过去，再也无法改变。王小波老师说，“人的一切痛苦，本质上都是对自己的无能的愤怒”。&lt;/p&gt;
+    
+    &lt;p&gt;
+    我也正是如此，却也只能“休恋逝水、苦海回身、早悟兰因”。过去的都已经无法改变。我只能尽力去改变那些我能改变的未来。本科成绩低、无实验室经历、无科研经历、无发表论文、无海外交流经历，这些是我的过去。托福三项满分，总分114，GRE数学满分，总分326，中国最年轻的一级注册结构，佐治亚理工的博士生录取，这些是我的现在。我的未来，还在路的前面。
+    &lt;/p&gt;
+    
+&lt;/div&gt;  
+
+
+
+            </pre>
+
+
+
+        </div><!--  /.codeBox -->
+      
+      
+
+        <div class="codeBox d-class-area" id="s2">
+           
+           <h2>(2) 块引用</h2>
+          
+            <div class="codeBox-content">
+
+                                      
+                    <p>王小波老师说：</p>
+                    <blockquote cite="http://www.website.org">
+                        “人的一切痛苦，本质上都是对自己的无能的愤怒”。
+                        <small>出自 <cite>网络收集精选</cite></small>
+                    </blockquote>
+                    
+
+            </div><!--  /.codeBox-content -->
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML代码:</span>
+
+&lt;p&gt;王小波老师说：&lt;/p&gt;
+&lt;blockquote cite="http://www.website.org"&gt;
+    “人的一切痛苦，本质上都是对自己的无能的愤怒”。
+    &lt;small&gt;出自 &lt;cite&gt;网络收集精选&lt;/cite&gt;&lt;/small&gt;
+&lt;/blockquote&gt;
+            </pre>
+
+
+
+        </div><!--  /.codeBox -->
+        
+        <div class="codeBox d-class-area" id="s3">
+           
+           <h2>(3) 标题</h2>
+          
+            <div class="codeBox-content">
+
+                                      
+                    <h1 class="demo-tcolor">文章标题文字大小演示</h1>
+                    <h2 class="demo-tcolor">文章标题文字大小演示</h2>
+                    <h3 class="demo-tcolor">文章标题文字大小演示</h3>
+                    <h4 class="demo-tcolor">文章标题文字大小演示</h4>
+                    <h5 class="demo-tcolor">文章标题文字大小演示</h5>
+                    <h6 class="demo-tcolor">文章标题文字大小演示</h6>
+                    
+
+            </div><!--  /.codeBox-content -->
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML代码:</span>
+
+&lt;h1&gt;文章标题文字大小演示&lt;/h1&gt;
+&lt;h2&gt;文章标题文字大小演示&lt;/h2&gt;
+&lt;h3&gt;文章标题文字大小演示&lt;/h3&gt;
+&lt;h4&gt;文章标题文字大小演示&lt;/h4&gt;
+&lt;h5&gt;文章标题文字大小演示&lt;/h5&gt;
+&lt;h6&gt;文章标题文字大小演示&lt;/h6&gt;
+            </pre>
+
+
+
+        </div><!--  /.codeBox -->
+        
+
+        <div class="codeBox d-class-area" id="s4">
+           
+           <h2>(4) 联系信息</h2>
+          
+            <div class="codeBox-content">
+
+                                      
+                    
+                    <address>
+                      <strong>联系人姓名</strong><br>
+                      福建省厦门市 软件园2期 曙光大厦208室<br>
+                      BG 94107号<br>
+                      <abbr title="Phone">手机:</abbr> 13509****08
+                    </address>
+                     
+                    <address>
+                      <strong>联系人姓名</strong><br>
+                      <a href="mailto:#">your@email.com</a>
+                    </address>
+
+                    
+
+            </div><!--  /.codeBox-content -->
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML代码:</span>
+
+&lt;address&gt;
+  &lt;strong&gt;联系人姓名&lt;/strong&gt;&lt;br&gt;
+  福建省厦门市 软件园2期 曙光大厦208室&lt;br&gt;
+  BG 94107号&lt;br&gt;
+  &lt;abbr title="Phone"&gt;手机:&lt;/abbr&gt; 13509****08
+&lt;/address&gt;
+ 
+&lt;address&gt;
+  &lt;strong&gt;联系人姓名&lt;/strong&gt;&lt;br&gt;
+  &lt;a href="mailto:#"&gt;your@email.com&lt;/a&gt;
+&lt;/address&gt;
+            </pre>
+
+
+
+        </div><!--  /.codeBox -->
+        
+
+
+        <div class="codeBox d-class-area" id="s5">
+           
+           <h2>(5) 插图</h2>
+          
+            <div class="codeBox-content">
+
+                                      
+                    
+                    <figure>
+                        <img src="css/images/335x260-2.jpg" width="150">
+                        <figcaption>
+                            图片标题和描述
+                        </figcaption>
+                    </figure>
+
+                    
+
+            </div><!--  /.codeBox-content -->
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML代码:</span>
+
+&lt;figure&gt;
+    &lt;img src="css/images/335x260-2.jpg" width="150"&gt;
+    &lt;figcaption&gt;
+        图片标题和描述
+    &lt;/figcaption&gt;
+&lt;/figure&gt;
+            </pre>
+
+
+
+        </div><!--  /.codeBox -->
+        
+
+        <div class="codeBox d-class-area" id="s6">
+           
+           <h2>(6) 标题组合</h2>
+          
+            <div class="codeBox-content">
+
+                                                          
+                    <hgroup>
+                      <h1 class="demo-tcolor">网站名称</h1>
+                      <h2 class="demo-tcolor">欢迎来到网站副标题</h2>
+                    </hgroup>
+                    
+                    <p>内容啊内容....</p>
+
+                    
+
+            </div><!--  /.codeBox-content -->
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML代码:</span>
+
+&lt;hgroup&gt;
+  &lt;h1&gt;网站名称&lt;/h1&gt;
+  &lt;h2&gt;欢迎来到网站副标题&lt;/h2&gt;
+&lt;/hgroup&gt;
+
+&lt;p&gt;内容啊内容....&lt;/p&gt;
+            </pre>
+
+
+
+        </div><!--  /.codeBox -->
+
+
+        <div class="codeBox d-class-area" id="s7">
+           
+           <h2>(7) 时间</h2>
+          
+            <div class="codeBox-content">
+
+                                                          
+                    <p>
+                        这篇文章发布于<time datetime="2014-02-1" pubdate>今年2月初</time>,希望有更多的人看到。
+                    </p>
+
+                    
+
+            </div><!--  /.codeBox-content -->
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML代码:</span>
+
+&lt;p&gt;
+    这篇文章发布于&lt;time datetime="2014-02-1" pubdate&gt;今年2月初&lt;/time&gt;,希望有更多的人看到。
+&lt;/p&gt;
+            </pre>
+
+
+
+        </div><!--  /.codeBox -->
+
+
+        <div class="codeBox d-class-area" id="s8">
+           
+           <h2>(8) 文字效果</h2>
+          
+            <div class="codeBox-content">
+
+                                                          
+                    <p class="tl">文字居左</p>
+                    <p class="tc">文字居中</p>
+                    <p class="tr">文字居右</p>  
+                    <p><strong>加粗文字</strong></p>
+                    <p><strong class="f-w-normal">正常粗细文字</strong></p>
+                    <p><span class="f-w-blod">加粗文字2</span></p>
+                    <p><span class="f-s-italic">斜体文字</span></p>
+                    <p><span class="f-f-yahei">雅黑字体文字</span></p>
+                    <p><span class="f-d-line">下划线文字</span></p>
+                    <p><a href="#" class="f-d-none">无下划线链接文字</a></p>
+                    <div class="f-i30">30像素缩进文字</div>
+                    <p><span class="f22">22像素大小文字</span></p>
+                    <p><span class="noWrap">不换行文字</span></p>
+                    <p><span class="f-c-black">黑色文字</span></p>
+                    <p><span class="bg-column2 f-c-white">白色文字</span></p>
+                    
+
+            </div><!--  /.codeBox-content -->
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML代码:</span>
+
+&lt;p class="<span class="im-class">tl</span>"&gt;文字居左&lt;/p&gt;
+&lt;p class="<span class="im-class">tc</span>"&gt;文字居中&lt;/p&gt;
+&lt;p class="<span class="im-class">tr</span>"&gt;文字居右&lt;/p&gt;  
+&lt;strong&gt;加粗文字&lt;/strong&gt;
+&lt;strong class="<span class="im-class">f-w-normal</span>"&gt;正常粗细文字&lt;/strong&gt;
+&lt;span class="<span class="im-class">f-w-blod</span>"&gt;加粗文字2&lt;/span&gt;
+&lt;span class="<span class="im-class">f-s-italic</span>"&gt;斜体文字&lt;/span&gt;
+&lt;span class="<span class="im-class">f-f-yahei</span>"&gt;雅黑字体文字&lt;/span&gt;
+&lt;span class="<span class="im-class">f-d-line</span>"&gt;下划线文字&lt;/span&gt;
+&lt;a href="#" class="<span class="im-class">f-d-none</span>"&gt;无下划线链接文字&lt;/a&gt;
+&lt;div class="<span class="im-class">f-i30</span>"&gt;30像素缩进文字&lt;/div&gt;
+&lt;span class="<span class="im-class">f22</span>"&gt;22像素大小文字&lt;/span&gt;
+&lt;span class="<span class="im-class">noWrap</span>"&gt;不换行文字&lt;/span&gt;
+&lt;span class="<span class="im-class">f-c-black</span>"&gt;黑色文字&lt;/span&gt;
+&lt;span class="<span class="im-class">f-c-white</span>"&gt;白色文字&lt;/span&gt;
+            </pre>
+
+
+
+        </div><!--  /.codeBox -->
+
+          
+          <!-- /////////////////   Content    End /////////////////// -->
+
+    
+
+        </div>
+
+         <footer>
+         
+            <hr>
+           
+            <p>此开源开发框架基于<a href="/d-s/" target="_blank">Designers Site Program 全站静态系统</a>发布，提供广大网站开发者使用，并着力构建快速设计DS主题框架，设计者可以根据此开发框架设计出网站的纯HTML效果，兼容整套系统体系，再使用主题开发插件进行标签替换和修改，即可设计并使用自己的主题 (您也可以用作其它方面的开发)</p>
+
+            <p>Dsure授权开源许可证基于<a href="http://creativecommons.org/licenses/by-nc/3.0/deed.zh" target="_blank">CC BY-NC 3.0</a>,禁止任何人任何公司机构用于商业用途</p>
+            
+            <p>
+            &copy;2014 Powered By <a href="/" target="_blank">没位道</a>, <a href="/d-s/Dsure-flat">Dsure Web Development Framework</a>
+        
+  
+            &nbsp;&nbsp;        <script id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+        <script>
+            if (typeof(LA) !== 'undefined') LA.init({id: "JdyfUJi3RdCZVi9F",ck: "JdyfUJi3RdCZVi9F"});
+        </script>
+          
+            
+            
+          
+            </p>
+             
+         </footer>
+
+     </section>
+     
+     
+
+     
+    
+    <script src="js/jquery.scroller.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/theme.hash.js"></script> <!-- After the main.js -->
+     
+  
+
+</body>
+</html>
+

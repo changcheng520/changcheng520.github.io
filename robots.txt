@@ -1,0 +1,8 @@
+# 
+# robots.txt for www.c945.com
+#
+User-agent: *
+Disallow: /template/
+Disallow: /admin/
+
+

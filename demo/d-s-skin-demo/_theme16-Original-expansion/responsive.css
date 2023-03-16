@@ -1,0 +1,188 @@
+				
+/*==================================Responsive Layouts===============================================*/
+
+/*
+
+  注意：下面样式中的 "注释" 部分，请勿包含中文字符，否则可能在某些设备中无法识别响应式样式
+
+*/
+
+@media screen and (min-width:1200px){
+	
+	
+	/*------width:1200px------------*/
+	
+	
+	/*Layout*/
+	.container{width:1200px;}
+	
+	/*navigation*/
+	.navScrollEffect{text-align:center}
+	.navScrollEffect ul.nav{width:1200px; display:block; margin:0 auto}
+	
+	
+}
+
+@media screen and (min-width: 960px) and (max-width: 1199px) {
+	
+	/*------width:1000px------------*/
+	
+	
+	/*Layout*/
+	.container{width:1000px;}
+
+	
+	/*Slider*/
+	.web-slider{height:353px;}
+	.web-slider_nav {top:35%}
+	
+	/*Portfolios*/
+	.dsure-list-dl dt a{height:152px}
+	
+
+	
+	
+}
+@media screen and (min-width: 768px) and (max-width: 959px) {
+	
+	/*------width:760px------------*/
+
+	/*Layout*/
+	.container{width:760px;}
+
+	
+	/*Quick Navigation*/
+	#shortNavLink{display:none}
+
+	
+	
+	/*LOGO*/
+	#web-logo img{ max-width:193px}
+	
+	/*Slider*/
+	.web-slider{height:274px;}
+	.web-slider_nav {top:30%}
+	
+	/*Portfolios*/
+	.dsure-list-dl dt a{height:112px}
+	
+
+
+	
+}
+
+@media only screen and (min-width: 480px) and (max-width: 767px){
+	
+
+	/*------width:470px------------*/
+	
+
+	/*Layout*/
+	.container{width:470px;}
+
+	/*Header*/
+	#header{padding:0}
+	
+    /*navigation*/
+	.dsure-nav{position:relative; top:0; left:0}
+	.dsure-nav ul.nav li.item {margin:0}
+	.dsure-nav ul.nav li.item a{background:#272727;color:#9D9D9D;border-bottom:1px solid #484848;}
+	.dsure-nav ul.nav li.item a:hover,.dsure-nav ul.nav li.item.navSelected a,.dsure-nav ul.nav li.item.navSelected ul a:hover{background:#272727;color:#fff;}
+	.dsure-nav ul.nav li.item a{color:#9D9D9D}
+
+
+	
+	/*Top search*/
+	#search-form{display:none}
+
+
+	
+	/*Quick Navigation*/
+	#shortNavLink{display:none}
+	
+	
+	/*LOGO*/
+	#web-logo{ display:none}
+
+	/*Slider*/
+	.web-slider{height:184px;}
+	.flex-caption,.web-slider_nav {visibility:hidden}
+	
+	/*Portfolios*/
+	.dsure-list-dl dt a{height:72px}
+	.dsure-list-dl dd p,.dsure-list-dl dd h4 {display:none}
+	.dsure-list-dl{margin-bottom:1.5em}
+	
+	/*Sidebar*/
+	.dsure-small-3{ width:1px; height:1px; overflow:hidden;}
+	.dsure-small-9 {width:100%}
+
+	
+	/*Forms*/
+	#linksForm .dsure-div input {width:290px}
+	#msgForm .txt,#msgForm .txt input {width:98%;}
+	#msgForm .txtarea{width:96%}
+	
+	
+
+	
+}
+
+
+
+@media only screen and (max-width: 479px){
+	
+	/*------width:320px------------*/
+	
+	/*Layout*/
+	.container{width:320px;}
+
+	/*Header*/
+	#header{padding:0}
+	
+    /*navigation*/
+	.dsure-nav{position:relative; top:0;}
+	.dsure-nav ul.nav li.item {margin:0}
+	.dsure-nav ul.nav li.item a{background:#272727;color:#9D9D9D;border-bottom:1px solid #484848;}
+	.dsure-nav ul.nav li.item a:hover,.dsure-nav ul.nav li.item.navSelected a,.dsure-nav ul.nav li.item.navSelected ul a:hover{background:#272727;color:#fff;}
+	.dsure-nav ul.nav li.item a{color:#9D9D9D}
+
+
+	
+	/*Top search*/
+	#search-form{display:none}
+
+
+	
+	/*Quick Navigation*/
+	#shortNavLink{display:none}
+	
+	
+	/*LOGO*/
+	#web-logo{ display:none}
+
+	/*Slider*/
+	.web-slider{height:134px;}
+	.flex-caption,.web-slider_nav {visibility:hidden}
+
+	
+	/*Portfolios*/
+	.dsure-list-dl dt a{height:52px}
+	.dsure-list-dl dd p,.dsure-list-dl dd h4 {display:none}
+	.dsure-list-dl{margin-bottom:1.5em}
+
+	/*Sidebar*/
+	.dsure-small-3{ width:1px; height:1px; overflow:hidden;}
+	.dsure-small-9 {width:100%}
+
+	
+	/*Forms*/
+	#linksForm .dsure-div input {width:140px}
+	#msgForm .txt,#msgForm .txt input {width:96%;}
+	#msgForm .txtarea{width:92%}
+	
+}
+
+
+
+

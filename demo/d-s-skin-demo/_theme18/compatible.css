@@ -1,0 +1,14 @@
+/*®à®à®à®à®à®à®à®à®à®à®à®à®à®à®à®à®à®à®à®à®à®à®à®à®àºÊ»›–‘CSS Hack®à®à®à®à®à®à®à®à®à®à®à®à®à®à®à®à®à®à®à®à®à®à®à®à®à®à®à*/
+
+/*µº∫Ω*/
+.ie6 .nav-intro{visibility:hidden}
+
+.ie6 #temp_advBox,.ie7 #temp_advBox,.ie9 #temp_advBox{margin-left:10px}
+
+.ie6 #div_sidebar{padding-left:15px;}
+
+
+/*∞¥≈•*/
+.ie6  .ds-button { height: 34px; display: inline-block; padding: 0px 15px 0px 0px; background:none }
+.ie6  .ds-button-inner {background: url(img/ds-button-bg-blue.png) no-repeat -18px 0px; }
+

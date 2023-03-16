@@ -1,0 +1,1361 @@
+<!DOCTYPE html><html lang="zh-CN"><head><meta charSet="utf-8"/><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/><meta http-equiv="X-UA-Compatible" content="IE=edge"/><title>23种设计模式的完整例子和分类 - 没位道</title><meta name="description" content="设计模式是可复用面向对象软件的基础，也许不知不觉从工作的那时候开始，就已经隐约使用了一些设计模式，但是它们到底是什么呢？常用的设计模式大家并不陌生，搜索引擎也可以搜索到，现在详细回顾一下23种设计模式，如何使用JavaScript实现？"/><meta property="og:title" content="23种设计模式的完整例子和分类 - 没位道"/><meta property="og:description" content="设计模式是可复用面向对象软件的基础，也许不知不觉从工作的那时候开始，就已经隐约使用了一些设计模式，但是它们到底是什么呢？常用的设计模式大家并不陌生，搜索引擎也可以搜索到，现在详细回顾一下23种设计模式，如何使用JavaScript实现？"/><meta property="og:url" content="https://www.c945.com/article/86f20bd39f03310b956c2dc4.html"/><meta property="og:image" content="https://www.c945.comundefined"/><meta name="next-head-count" content="6"/><link rel="icon" href="/assets/images/favicon/favicon-32x32.png" type="image/x-icon"/><link rel="shortcut icon" href="/assets/images/favicon/favicon-32x32.png" sizes="32x32"/><link rel="apple-touch-icon" href="/assets/images/favicon/apple-touch-icon-57x57.png"/><link rel="apple-touch-icon" sizes="72x72" href="/assets/images/favicon/apple-touch-icon-72x72.png"/><link rel="apple-touch-icon" sizes="114x114" href="/assets/images/favicon/apple-touch-icon-114x114.png"/><link rel="preload" href="/_next/static/css/ab4d44a60d7a5fe0.css" as="style"/><link rel="stylesheet" href="/_next/static/css/ab4d44a60d7a5fe0.css" data-n-g=""/><link rel="preload" href="/_next/static/css/a80a7b96b8396f08.css" as="style"/><link rel="stylesheet" href="/_next/static/css/a80a7b96b8396f08.css" data-n-p=""/><noscript data-n-css=""></noscript><script defer="" nomodule="" src="/_next/static/chunks/polyfills-c67a75d1b6f99dc8.js"></script><script src="/_next/static/chunks/webpack-ee7e63bc15b31913.js" defer=""></script><script src="/_next/static/chunks/framework-3b5a00d5d7e8d93b.js" defer=""></script><script src="/_next/static/chunks/main-803820e42116e4e4.js" defer=""></script><script src="/_next/static/chunks/pages/_app-5816f20eb504df5c.js" defer=""></script><script src="/_next/static/chunks/424-328589773c4cbd07.js" defer=""></script><script src="/_next/static/chunks/669-26e51e3e61a246e5.js" defer=""></script><script src="/_next/static/chunks/355-8e546d82173371b2.js" defer=""></script><script src="/_next/static/chunks/782-9ef19db02a591dc2.js" defer=""></script><script src="/_next/static/chunks/pages/article/%5Bid%5D-eb52e5d17e91782f.js" defer=""></script><script src="/_next/static/xA4iFUBUC5JPzbSrRpEKC/_buildManifest.js" defer=""></script><script src="/_next/static/xA4iFUBUC5JPzbSrRpEKC/_ssgManifest.js" defer=""></script></head><body><div id="__next"><main class="main-wrapper"><div class="loading-spirit loaded"><i class="fa fa-spinner fa-spin fa-3x fa-fw margin-bottom"></i></div><div class="styles_back-to-top__xN2cj"><button type="button" class=""><svg width="40" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 300.222 300.221"><g><path d="M299.201,93.188c-14.688-25.704-29.988-50.184-43.452-76.5c-3.06-6.12-12.852-4.284-14.688,1.836 c-7.345,26.316-16.524,58.14-15.301,85.068c0,6.12,6.732,7.344,10.404,4.284c0.612,0.612,1.836,0.612,3.061,0.612 c6.731-0.612,13.464-1.836,19.584-2.448c22.031,55.692,39.779,152.388-44.677,158.508c-8.567,0.612-15.3-1.224-20.195-4.896 c11.628-9.792,21.42-22.031,26.315-36.107c6.732-18.36-6.731-57.528-31.824-46.512c-20.195,9.18-24.479,45.899-20.808,64.26 c1.224,5.508,3.06,10.403,4.896,14.688c-1.837,1.225-3.061,1.836-4.896,3.061c-15.912,9.18-34.883,13.464-53.244,12.852 c-13.464-0.612-21.42-7.956-26.316-17.748c16.524-8.567,29.988-22.032,33.66-36.107c7.344-29.988-31.212-49.572-47.124-20.196 c-7.344,13.464-8.568,32.436-4.284,48.96c-0.612,0.612-1.836,0.612-2.448,1.224c-52.632,21.42-68.544-45.288-38.556-78.336 c2.448-3.06-0.612-7.956-4.284-5.508c-36.108,25.704-33.048,80.784,8.568,98.532c11.016,4.896,26.928,3.06,41.616-1.836 c6.732,13.464,17.748,23.868,33.66,25.704c23.868,3.06,51.408-3.673,73.44-17.137c12.852,10.404,31.212,12.853,50.184,8.568 c80.172-15.912,65.484-113.832,42.228-171.972c6.12-0.612,11.629-0.612,17.748-0.612 C297.978,105.427,302.261,98.083,299.201,93.188z M83.166,240.067c-0.612-4.283-1.224-8.567-1.224-12.852 c0-6.732,1.224-13.464,3.06-19.584c4.284-14.688,29.988-9.792,22.032,9.792C102.138,226.603,92.958,234.559,83.166,240.067z M180.473,229.664c0-8.568,3.673-39.168,16.524-39.78c9.792-0.612,9.792,26.316,9.18,30.6c-2.447,11.629-11.016,21.42-21.42,28.765 C181.697,243.127,180.473,236.395,180.473,229.664z M252.077,43.615c8.568,15.912,17.748,31.212,26.928,46.512 c-12.852,1.836-25.704,4.284-37.943,7.344C246.569,80.947,249.018,61.975,252.077,43.615z"></path></g></svg></button></div><header class="header axil-header axil-header--page header-style-1 splash-header-style "><div class="axil-mainmenu "><div class="container"><div class="header-navbar"><div class="header-logo"><a href="/default.html"><img src="/assets/images/logo-light.png" alt="logo" width="150"/><img class="sticky-logo" src="/assets/images/logo-dark.png" alt="logo" width="100"/></a></div><div class="header-main-nav"><nav class="mainmenu-nav"><ul class="mainmenu"><li class="nav-item"><a class="nav-link active" href="/articles/page/1.html"><i class="fa fa-solid fa-quote-left"></i>文章</a></li><li class="nav-item"><a class="nav-link" href="/works.html"><i class="fa fa-solid fa-briefcase"></i>作品</a></li><li class="nav-item"><a class="nav-link" href="/products.html"><i class="fa fa-solid fa-code"></i>产品</a></li><li class="nav-item"><a class="nav-link" href="/about.html"><i class="fa fa-duotone fa-user"></i>关于</a></li><li class="nav-item"><a class="nav-link" href="/links.html"><i class="fa fa-solid fa-link"></i>友情链接</a></li></ul></nav></div><div class="header-action"><ul class="list-unstyled"><li class="mobile-menu-btn sidemenu-btn d-lg-none d-block"><button class="btn-wrap"><span></span><span></span><span></span></button></li></ul></div></div></div></div><div class="mobilemenu-popup"><div class="mobilemenu-inner"><div class="mobilemenu-header"><div class="mobile-nav-logo"><a href="/"><img src="/assets/images/logo-dark.png" alt="logo" width="100"/></a></div><button class="mobile-menu-close"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512" width="10"><path d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"></path></svg></button></div><div class="mobilemenu-body"><nav class="mainmenu-nav"><ul class="mainmenu"><li class="nav-item"><a class="nav-link active" href="/articles/page/1.html"><i class="fa fa-solid fa-quote-left"></i>文章</a></li><li class="nav-item"><a class="nav-link" href="/works.html"><i class="fa fa-solid fa-briefcase"></i>作品</a></li><li class="nav-item"><a class="nav-link" href="/products.html"><i class="fa fa-solid fa-code"></i>产品</a></li><li class="nav-item"><a class="nav-link" href="/about.html"><i class="fa fa-duotone fa-user"></i>关于</a></li><li class="nav-item"><a class="nav-link" href="/links.html"><i class="fa fa-solid fa-link"></i>友情链接</a></li></ul></nav></div></div></div></header><div class="section call-to-action-area splash-call-to-action call-to-action-area--page"><ul class="list-unstyled shape-group-9"><li class="shape shape-1"><img src="/assets/images/others/bubble-12.png" alt="Comments"/></li><li class="shape shape-2"><img src="/assets/images/others/bubble-16.png" alt="Comments"/></li><li class="shape shape-3"><img src="/assets/images/others/bubble-13.png" alt="Comments"/></li><li class="shape shape-4"><img src="/assets/images/others/bubble-14.png" alt="Comments"/></li><li class="shape shape-5"><img src="/assets/images/others/bubble-16.png" alt="Comments"/></li><li class="shape shape-6"><img src="/assets/images/others/bubble-15.png" alt="Comments"/></li><li class="shape shape-7"><img src="/assets/images/others/bubble-16.png" alt="Comments"/></li></ul></div><nav id="onepagenav" class="service-scroll-nav navbar app-primary-nav app-primary-nav--page"><div class="container"><ul class="nav nav-pills"><li class="nav-item"><a class="nav-link current" href="/articles/page/1.html"><i class="fa fa-solid fa-quote-left"></i>文章</a></li><li class="nav-item"><a class="nav-link" href="/works.html"><i class="fa fa-solid fa-briefcase"></i>作品</a></li><li class="nav-item"><a class="nav-link" href="/products.html"><i class="fa fa-solid fa-code"></i>产品</a></li><li class="nav-item"><a class="nav-link" href="/about.html"><i class="fa fa-duotone fa-user"></i>关于</a></li><li class="nav-item"><a class="nav-link" href="/links.html"><i class="fa fa-solid fa-link"></i>友情链接</a></li></ul></div></nav><section class="section section-padding blog-post-content-show"><div class="container"><div class="row"><div class="blog-post__title"><div class="container"><div class="row"><div class="col-md-8 offset-md-2 col-sm-10 offset-sm-1 text-center"><h1 class="h2">23种设计模式的完整例子和分类</h1><div class="blog-post__author">April<!-- --> <!-- -->04<!-- -->, <!-- -->2022<span><em>  by   </em></span><span class="h6">Chuckie Chang<!-- --> | 分类至:  <a title="开发趣味" href="/articles/sort/%e5%bc%80%e5%8f%91%e8%b6%a3%e5%91%b3/page/1.html"><span>开发趣味</span></a></span></div></div></div></div></div></div></div><div class="container type-blog-output"><div class="row"><div class="col-md-8 offset-md-2"><div><p><strong><em>本文是对国内外大学教材和专业出版书籍的自主学习和总结，部分代码和文字说明均出自书籍(文章中某些原创的个人见解和内容没有一一标注，请自行甄别)，也可能会有自己的理解和改动，以及平时的实战积累与逻辑转化。</em></strong></p>
+<p>设计模式是可复用面向对象软件的基础，也许不知不觉从工作的那时候开始，就已经隐约使用了一些设计模式，但是它们到底是什么呢？常用的设计模式大家并不陌生，搜索引擎也可以搜索到，现在详细回顾一下23种设计模式，如何使用JavaScript实现？</p>
+<p>先打个比方，MVC是采用模型/视图/控制器来构建用户界面，它的主要关系还是由观察者模式(用来让视图关联，可以互相影响)，组合模式(视图可以嵌套)，策略模式(不同的算法构成不同的视图效果)。设计模式无处不在，那么我们还是详细了解一下吧，顺便使用前端来模拟一下，加深印象。</p>
+<p><em>为了更好地代码阅读，实例代码有经过我的优化和改动。</em></p>
+<h3>几个重要概念</h3>
+<h4>设计模式的四个要素：</h4>
+<p>模式名、问题、解决方案、效果</p>
+<h4>面向对象设计的因素：</h4>
+<p>封装、粒度、依赖关系、灵活性、性能、演化、复用等。</p>
+<h4>接口：</h4>
+<p>对象声明的每一个操作指定操作名、作为参数的对象和返回值，是所谓的操作的[<strong>型构</strong>]。对象操作所定义的所有操作型构的集合被称为该对象的接口。</p>
+<h4>多态：</h4>
+<p>为不同数据类型的实现提供统一的接口。</p>
+<h4>鸭子类型：</h4>
+<p>只关心对象的行为，不关心对象本身（起源：意大利软件工程师、Python软件基金会研究员Alex Martelli 于2000年左右在Python的邮件组中最早将这个概念引入了程序设计范畴中。）</p>
+<h4>面向对象设计的原则：</h4>
+<ul>
+<li>a)针对接口编程，而不是针对实现编程</li>
+<li>b) 优先使用对象组合，而不是类继承(组合和继承也经常同时使用)</li>
+</ul>
+<h3 id="分类">分类</h3>
+<p><img src="/static-remote/files/8629b0c3abf260c4c23501d0-matrixflipcomapiwpcontentuploadsbcabfccdjpg.jpg" alt="" width="250" /></p>
+<h3 id="singleton">Singleton</h3>
+<p><strong>● 中文名 ●</strong></p>
+<p>单例</p>
+<p><strong>● 可变的方面 ●</strong></p>
+<p>一个类的唯一实例（提供一个访问它的全局访问点）</p>
+<p><strong>● 使用场景 ●</strong></p>
+<p>当我创建了一个JS库，为了方便全站使用，并且有一个醒目的调用名字，可以把它导出为一个唯一的实例，这个实例可以是惰性单例(是指在需要的时候才创建,即使用new关键字)，但是我常常会直接把工具类的单例new之后再导出，这样就可以在脚本中直接调用。</p>
+<p>重要特点是每次请求只能创建一个实例。</p>
+<pre><code>const Singleton = (function () {
+    let instance;
+
+    function createInstance() {
+        const object = new Object("I am the instance");
+        return object;
+    }
+
+    return {
+        getInstance: function () {
+            if (!instance) {
+                instance = createInstance();
+            }
+            return instance;
+        }
+    };
+})();
+
+
+function run() {
+    const instance1 = Singleton.getInstance();
+    const instance2 = Singleton.getInstance();
+    console.log("Same instance? " + (instance1 === instance2));  
+}
+run();  // Same instance? true
+</code></pre>
+<h3 id="abstract-factory">Abstract Factory</h3>
+<p><strong>● 中文名 ●</strong></p>
+<p>抽象工厂</p>
+<p><strong>● 可变的方面 ●</strong></p>
+<p>产品对象家族（创建相关或相互依赖的结构，无需指定具体类）</p>
+<p><strong>● 使用场景 ●</strong></p>
+<p>不在 JavaScript 中直接使用, 而是声明一个用于创建产品的接口。</p>
+<pre><code>function Employee(name) {
+    this.name = name;
+
+    this.say = function () {
+        console.log("I am employee " + name);
+    };
+}
+
+function EmployeeFactory() {
+
+    this.create = function (name) {
+        return new Employee(name);
+    };
+}
+
+function Vendor(name) {
+    this.name = name;
+
+    this.say = function () {
+        console.log("I am vendor " + name);
+    };
+}
+
+function VendorFactory() {
+
+    this.create = function (name) {
+        return new Vendor(name);
+    };
+}
+
+
+function run() {
+    const persons = [];
+    const employeeFactory = new EmployeeFactory();
+    const vendorFactory = new VendorFactory();
+
+    persons.push(employeeFactory.create("Joan DiSilva"));
+    persons.push(employeeFactory.create("Tim O'Neill"));
+    persons.push(vendorFactory.create("Gerald Watson"));
+    persons.push(vendorFactory.create("Nicole McNight"));
+
+    for (let i = 0, len = persons.length; i &lt; len; i++) {
+        persons[i].say();
+    }
+}
+run();
+/*
+I am employee Joan DiSilva
+I am employee Tim O'Neill
+I am vendor Gerald Watson
+I am vendor Nicole McNight
+*/
+
+</code></pre>
+<h3 id="builder">Builder</h3>
+<p><strong>● 中文名 ●</strong></p>
+<p>创建者</p>
+<p><strong>● 可变的方面 ●</strong></p>
+<p>如何创建一个组合对象</p>
+<p><strong>● 使用场景 ●</strong></p>
+<p>不在 JavaScript 中直接使用, builder用于声明用于创建复杂产品的多个接口（也可以说成需要多个步骤才能创建出一个复杂的产品）。</p>
+<pre><code>class Shop {
+    init(builder) {
+        builder.step1();
+        builder.step2();
+        return builder.get();
+    }
+}
+
+function CarBuilder() {
+    this.car = null;
+
+    this.step1 = () =&gt; this.car = new Car();
+    this.step2 = () =&gt; this.car.addParts();
+    this.get = () =&gt; this.car;
+}
+
+function TruckBuilder() {
+    this.truck = null;
+
+    this.step1 = () =&gt; this.truck = new Truck();
+    this.step2 = () =&gt; this.truck.addParts();
+    this.get = () =&gt; this.truck;
+}
+
+function Car() {
+    this.doors = 0;
+
+    this.addParts = () =&gt; this.doors = 4;
+    this.say = () =&gt; console.log("I am a " + this.doors + "-door car");
+}
+
+function Truck() {
+    this.doors = 0;
+
+    this.addParts = () =&gt; this.doors = 2;
+    this.say = () =&gt; console.log("I am a " + this.doors + "-door truck");
+}
+
+function run() {
+    const shop = new Shop();
+    const carBuilder = new CarBuilder();
+    const truckBuilder = new TruckBuilder();
+    const car = shop.init(carBuilder);
+    const truck = shop.init(truckBuilder);
+
+    car.say();
+    truck.say();
+}
+run();
+/*
+I am a 4-door car
+I am a 2-door truck
+*/
+</code></pre>
+<h3 id="factory-method">Factory Method</h3>
+<p><strong>● 中文名 ●</strong></p>
+<p>工厂方法</p>
+<p><strong>● 可变的方面 ●</strong></p>
+<p>被实例化的子类（定义一个用于创建对象的接口，让子类决定将哪一个类实例化）</p>
+<p><strong>● 使用场景 ●</strong></p>
+<p>Factory创建新产品的“工厂”对象, 所有产品都支持相同的接口（属性和方法）。</p>
+<pre><code>const Factory = function () {
+    this.createEmployee = function (type) {
+        let employee;
+
+        switch(type) {
+            case 'fulltime' :
+                employee = new FullTime();
+                break;
+            case 'parttime' :
+            employee = new PartTime();
+            break;
+
+        }
+
+        employee.type = type;
+        employee.say = function () {
+            console.log(this.type + ": rate " + this.hourly + "/hour");
+        }
+
+        return employee;
+    }
+}
+
+const FullTime = function () {
+    this.hourly = "$25";
+};
+
+const PartTime = function () {
+    this.hourly = "$8";
+};
+
+
+function run() {
+
+    const employees = [];
+    const factory = new Factory();
+
+    employees.push(factory.createEmployee("fulltime"));
+    employees.push(factory.createEmployee("parttime"));
+
+    for (let i = 0, len = employees.length; i &lt; len; i++) {
+        employees[i].say();
+    }
+}
+run();
+/*
+fulltime: rate $25/hour
+parttime: rate $8/hour
+*/
+</code></pre>
+<h3 id="prototype">Prototype</h3>
+<p><strong>● 中文名 ●</strong></p>
+<p>原型</p>
+<p><strong>● 可变的方面 ●</strong></p>
+<p>被实例化的类</p>
+<p><strong>● 使用场景 ●</strong></p>
+<p>可以通过原型克隆来创建一个新对象。</p>
+<pre><code>class CustomerPrototype {
+    constructor(product) {
+        this.productAttrs = product;
+    }
+
+    clone() {
+        const customer = new Customer();
+        customer.first = this.productAttrs.first;
+        customer.last = this.productAttrs.last;
+        customer.status = this.productAttrs.status;
+
+        return customer;
+    }
+    
+}
+
+
+function Customer(first, last, status) {
+
+    this.first = first;
+    this.last = last;
+    this.status = status;
+
+    this.say = function () {
+        return `name: ${this.first} ${this.last}, status: ${this.status}`;
+    };
+}
+
+function run() {
+
+    const product = new Customer("F", "L", "pending");
+    console.log( 'product: ', product.say() );
+
+    //
+    const newProduct = new CustomerPrototype(product);
+    const customer = newProduct.clone();
+    console.log( 'newProduct: ', customer.say() );
+    
+}
+run();
+/*
+product:  name: F L, status: pending
+newProduct:  name: F L, status: pending
+*/
+</code></pre>
+<h3 id="adapter">Adapter</h3>
+<p><strong>● 中文名 ●</strong></p>
+<p>适配器</p>
+<p><strong>● 可变的方面 ●</strong></p>
+<p>对象的接口（将一个类的接口转化为另一个解决兼容性）</p>
+<p><strong>● 使用场景 ●</strong><br />
+客户端调用适配器请求服务后，实现客户期望的接口。同样的输入，可以变成不同的输出或者界面。</p>
+<pre><code>// old interface
+function Shipping() {
+    this.request = function (weight) {
+        return parseFloat(weight) * 1.5;
+    }
+}
+
+// new interface
+function AdvancedShipping() {
+    this.login = function (credentials) { /* ... */ };
+    this.calculate = function (weight) { 
+        return parseFloat(weight) * 2.5;
+    };
+}
+
+// adapter interface
+function ShippingAdapter(credentials) {
+    const shipping = new AdvancedShipping();
+
+    shipping.login(credentials);
+
+    return {
+        request: function (weight) {
+            return shipping.calculate(weight);
+        }
+    };
+}
+
+function run() {
+
+    const shipping = new Shipping();
+    const credentials = { token: "30a8-6ee1" };
+    const adapter = new ShippingAdapter(credentials);
+
+    let cost = shipping.request("2kg");
+    console.log("Old cost: $" + cost);
+
+    //
+    cost = adapter.request("2kg");
+    console.log("New cost: $" + cost);
+}
+run();
+/*
+Old cost: $3
+New cost: $5
+*/
+</code></pre>
+<h3 id="bridge">Bridge</h3>
+<p><strong>● 中文名 ●</strong></p>
+<p>桥接</p>
+<p><strong>● 可变的方面 ●</strong></p>
+<p>对象的实现（抽象与实现分离）</p>
+<p><strong>● 使用场景 ●</strong></p>
+<p>不在 JavaScript 中直接使用，实现和扩展抽象定义的接口。（属性和方法相同，可能存在接口覆盖，改变其输出的结果）</p>
+<pre><code>// input devices
+const EventGestures = function (output) {
+    this.output = output;
+
+    this.tap = function () { this.output.click(); }
+    this.swipe = function () { this.output.move(); }
+};
+
+// output devices
+const Screen = function () {
+    this.click = function () { console.log("Screen select"); }
+    this.move = function () { console.log("Screen move"); }
+};
+
+function run() {
+    const screen = new Screen();
+    const hand = new EventGestures(screen);
+
+    hand.tap();
+    hand.swipe();
+}
+
+run();
+/*
+Screen select
+Screen move
+*/
+</code></pre>
+<h3 id="composite">Composite</h3>
+<p><strong>● 中文名 ●</strong></p>
+<p>组合</p>
+<p><strong>● 可变的方面 ●</strong></p>
+<p>一个对象的结构和组成（单个对象和组合对象的使用一致性）</p>
+<p><strong>● 使用场景 ●</strong></p>
+<p>使用Node(结点)来表示组合中的分支（或子树），维护子组件的集合。</p>
+<pre><code>class Node {
+    constructor(name) {
+        this.children = [];
+        this.name = name;
+    }
+
+    add(child) {
+        this.children.push(child);
+    }
+    remove(child) {
+        const length = this.children.length;
+        for (let i = 0; i &lt; length; i++) {
+            if (this.children[i] === child) {
+                this.children.splice(i, 1);
+                return;
+            }
+        }
+    }
+    getChild(i) {
+        return this.children[i];
+    }
+
+}
+
+
+function run() {
+    const tree = new Node("root");
+    const left = new Node("left")
+    const right = new Node("right");
+
+    tree.add(left);
+    tree.add(right);
+    tree.remove(right);
+    tree.add(right);
+
+    console.log(tree);
+
+}
+
+run();
+/*
+{
+    "children": [
+        {
+            "children": [],
+            "name": "left"
+        },
+        {
+            "children": [],
+            "name": "right"
+        }
+    ],
+    "name": "root"
+}
+*/
+</code></pre>
+<h3 id="decorator">Decorator</h3>
+<p><strong>● 中文名 ●</strong></p>
+<p>装饰</p>
+<p><strong>● 可变的方面 ●</strong></p>
+<p>对象的职责，不生成子类（动态添加职责）</p>
+<p><strong>● 使用场景 ●</strong></p>
+<p>定义一个新的接口(符合原始组件的接口)，来扩展原组件的功能。</p>
+<pre><code>const User = function (name) {
+    this.name = name;
+
+    this.say = function () {
+        console.log("User: " + this.name);
+    };
+}
+
+const DecoratedUser = function (user, street, city) {
+    this.user = user;
+    this.name = user.name;  // ensures interface stays the same
+    this.street = street;
+    this.city = city;
+
+    this.say = function () {
+        console.log("Decorated User: " + this.name + ", " +
+            this.street + ", " + this.city);
+    };
+}
+
+function run() {
+
+    const user = new User("Kelly");
+    user.say();
+
+    const decorated = new DecoratedUser(user, "Broadway", "New York");
+    decorated.say();
+}
+run();
+/*
+User: Kelly
+Decorated User: Kelly, Broadway, New York
+*/
+</code></pre>
+<h3 id="facade">Facade</h3>
+<p><strong>● 中文名 ●</strong></p>
+<p>外观</p>
+<p><strong>● 可变的方面 ●</strong></p>
+<p>一个子系统的接口（定义一个高层接口，一致的界面）</p>
+<p><strong>● 使用场景 ●</strong></p>
+<p>将目标请求委托给适当的子系统对象(例如：A对象传入，分别用函数a,b,c来运行A对象)，实现并执行专门的子系统功能，得出不同的结果。</p>
+<pre><code>const Mortgage = function (name) {
+    this.name = name;
+}
+
+Mortgage.prototype = {
+
+    applyFor: function (amount) {
+        // access multiple subsystems...
+        const status = "approved";
+        if (!new Bank().verify(this.name, amount)) {
+            status = "denied";
+        } else if (!new Credit().get(this.name)) {
+            status = "denied";
+        } else if (!new Background().check(this.name)) {
+            status = "denied";
+        }
+        return `name: ${this.name}, status:  ${status}, amount: ${amount}`;
+    }
+}
+
+const Bank = function () {
+    this.verify = function (name, amount) {
+        // complex logic ...
+        return true;
+    }
+}
+
+const Credit = function () {
+    this.get = function (name) {
+        // complex logic ...
+        return true;
+    }
+}
+
+const Background = function () {
+    this.check = function (name) {
+        // complex logic ...
+        return true;
+    }
+}
+
+function run() {
+    const mortgage = new Mortgage("David");
+    const result = mortgage.applyFor("$100,000");
+
+    console.log(result);
+}
+run();  // name: David, status:  approved, amount: $100,000
+
+</code></pre>
+<h3 id="flyweight">Flyweight</h3>
+<p><strong>● 中文名 ●</strong></p>
+<p>享元</p>
+<p><strong>● 可变的方面 ●</strong></p>
+<p>对象的存储开销（共享技术）</p>
+<p><strong>● 使用场景 ●</strong></p>
+<p>调用享元工厂获取享元对象(享元工厂内可能会有多个对象)，根据对象是否存在，来维护要在应用程序之间共享的内部数据（可以输出数据，也可以处理数据）。也就是将原数据传递下去，共用，分析和处理它们的异同，根据异同来输出不同的结果，于此同时，不需要在其它函数上再次录入新的数据或者原数据。</p>
+<pre><code>const Flyweight = function(make, model, processor) {
+    this.make = make;
+    this.model = model;
+    this.processor = processor;
+};
+
+
+class FlyWeightFactory {
+    static data = {};
+
+    static get(make, model, processor) {
+        if ( this.data[`${make}-${model}`] === undefined ) {
+            this.data[`${make}-${model}`] = new Flyweight(make, model, processor);
+        }
+        return this.data[`${make}-${model}`];
+    }
+
+    static getCount() {
+        let count = 0;
+        for (const f in this.data) count++;
+        return count;
+    }
+}
+
+function ComputerCollection() {
+    const computers = {};
+    let count = 0;
+
+    
+    const Computer = function (make, model, processor, memory, tag) {
+        this.flyweight = FlyWeightFactory.get(make, model, processor);
+        this.memory = memory;
+        this.tag = tag;
+        this.getMake = function () {
+            return this.flyweight.make;
+        }
+        // ...
+    };
+
+    return {
+        add: function (make, model, processor, memory, tag) {
+            computers[tag] = new Computer(make, model, processor, memory, tag);
+            count++;
+        },
+
+        getCount: function () {
+            return count;
+        }
+    };
+}
+
+
+
+function run() {
+    const computers = new ComputerCollection();
+
+    computers.add("Dell", "XPS", "Intel", "5G", "Y755P");
+    computers.add("Dell", "XPS", "Intel", "6G", "X997T");
+    computers.add("HP", "Envy", "Intel", "4G", "CNU883701");
+
+    console.log("Computers: " + computers.getCount());
+    console.log("Flyweights: " + FlyWeightFactory.getCount());
+}
+run();
+/*
+Computers: 3
+Flyweights: 2
+*/
+</code></pre>
+<h3 id="proxy">Proxy</h3>
+<p><strong>● 中文名 ●</strong></p>
+<p>代理</p>
+<p><strong>● 可变的方面 ●</strong></p>
+<p>如何访问一个对象；该对象的位置</p>
+<p><strong>● 使用场景 ●</strong></p>
+<p>客户端调用代理请求操作，代理提供了最后的结果，并维护一个允许代理访问真实对象的引用。代理会处理各种请求，并转发到真正的对象中。</p>
+<p>代理缓存了频繁请求，如果对象未被缓存则执行真正的服务并将结果存储在缓存中。</p>
+<pre><code>function RealOperation() {
+    this.getLatLng = function (address) {
+        switch (address) {
+            case 'Amsterdam' : return "52.3700° N, 4.8900° E";
+            case 'London' : return "51.5171° N, 0.1062° W";
+            default : return '';
+        }
+    };
+}
+
+function GeoProxy() {
+    const geocoder = new RealOperation();
+    const geocache = {};
+
+    return {
+        getLatLng: function (address) {
+            if (!geocache[address]) {
+                geocache[address] = geocoder.getLatLng(address);
+            }
+            console.log(address + ": " + geocache[address]);
+            return geocache[address];
+        },
+        getCount: function () {
+            let count = 0;
+            for (const code in geocache) { count++; }
+            return count;
+        }
+    };
+};
+
+function run() {
+
+    const geo = new GeoProxy();
+
+    geo.getLatLng("Paris");
+    geo.getLatLng("London");
+    geo.getLatLng("Amsterdam");
+    geo.getLatLng("Amsterdam");
+    geo.getLatLng("London");
+    geo.getLatLng("London");
+    geo.getLatLng("London");
+
+    console.log("\nCache size: " + geo.getCount());
+
+}
+run();
+/*
+
+Paris: 
+London: 51.5171° N, 0.1062° W
+Amsterdam: 52.3700° N, 4.8900° E
+Amsterdam: 52.3700° N, 4.8900° E
+London: 51.5171° N, 0.1062° W
+London: 51.5171° N, 0.1062° W
+London: 51.5171° N, 0.1062° W
+
+Cache size: 3
+*/
+</code></pre>
+<h3 id="chain-of-responsibility">Chain of Responsibility</h3>
+<p><strong>● 中文名 ●</strong></p>
+<p>职责链</p>
+<p><strong>● 可变的方面 ●</strong></p>
+<p>满足一个请求的对象（解除请求的发送者和接收者之间的耦合，使多个对象都有机会处理这个请求）</p>
+<p><strong>● 使用场景 ●</strong></p>
+<p>就算很常用的原型链的写法，一个关键点就是方法中的 return, 要返回这个对象，这样才能形成后继的结果链。</p>
+<pre><code>const Request = function (amount) {
+    this.amount = amount;
+    console.log("Requested: $" + amount + "\n");
+}
+
+Request.prototype = {
+    get: function (bill) {
+        const count = Math.floor(this.amount / bill);
+        this.amount -= count * bill;
+        console.log("Dispense " + count + " $" + bill + " bills");
+        return this; //关键
+    }
+}
+function run() {
+    const request = new Request(378);
+    request.get(100).get(50).get(20);
+}
+run();
+/*
+
+Requested: $378
+
+Dispense 3 $100 bills
+Dispense 1 $50 bills
+Dispense 1 $20 bills
+*/
+</code></pre>
+<h3 id="command">Command</h3>
+<p><strong>● 中文名 ●</strong></p>
+<p>命令</p>
+<p><strong>● 可变的方面 ●</strong></p>
+<p>何时、怎样满足一个请求（封装请求，参数化）</p>
+<p><strong>● 使用场景 ●</strong></p>
+<p>客户端引用一个命令接收器(对象)，接收器知道如何执行与命令相关的操作。把这些命令和相关的函数绑定即可。</p>
+<pre><code>function add(x, y) { return x + y; }
+function sub(x, y) { return x - y; }
+
+const Command = function (execute, undo, value) {
+    this.execute = execute;
+    this.undo = undo;
+    this.value = value;
+}
+
+const AddCommand = function (value) {
+    return new Command(add, sub, value);
+};
+
+const SubCommand = function (value) {
+    return new Command(sub, add, value);
+};
+
+
+const Calculator = function () {
+    let current = 0;
+    const commands = [];
+
+    function action(command) {
+        const name = command.execute.toString().substr(9, 3);
+        return name.charAt(0).toUpperCase() + name.slice(1);
+    }
+
+    return {
+        execute: function (command) {
+            current = command.execute(current, command.value);
+            commands.push(command);
+            console.log(action(command) + ": " + command.value);
+        },
+
+        undo: function () {
+            const command = commands.pop();
+            current = command.undo(current, command.value);
+            console.log("Undo " + action(command) + ": " + command.value);
+        },
+
+        getCurrentValue: function () {
+            return current;
+        }
+    }
+}
+
+function run() {
+
+    const calculator = new Calculator();
+
+    // issue commands
+    calculator.execute(new AddCommand(100));
+    calculator.execute(new SubCommand(24));
+
+    // reverse last two commands
+    calculator.undo();
+
+    console.log("\nValue: " + calculator.getCurrentValue());
+}
+run();
+/*
+
+Add: 100
+Sub: 24
+Undo Sub: 24
+
+Value: 100
+*/
+
+</code></pre>
+<h3 id="interpreter">Interpreter</h3>
+<p><strong>● 中文名 ●</strong></p>
+<p>解释器</p>
+<p><strong>● 可变的方面 ●</strong></p>
+<p>一个语言的文法及解释</p>
+<p><strong>● 使用场景 ●</strong></p>
+<p>输入一个字符串，构建出这个字符串的相应的语法树，然后使用相应的表达式输出最后的结果。</p>
+<pre><code>const Context = function (input) {
+    this.input = input;
+    this.output = 0;
+}
+
+Context.prototype = {
+    startsWith: function (str) {
+        return this.input.substr(0, str.length) === str;
+    }
+}
+
+const Expression = function (name, one, four, five, nine, multiplier) {
+    this.name = name;
+    this.one = one;
+    this.four = four;
+    this.five = five;
+    this.nine = nine;
+    this.multiplier = multiplier;
+}
+
+Expression.prototype = {
+    interpret: function (context) {
+        if (context.input.length == 0) {
+            return;
+        }
+        else if (context.startsWith(this.nine)) {
+            context.output += (9 * this.multiplier);
+            context.input = context.input.substr(2);
+        }
+        else if (context.startsWith(this.four)) {
+            context.output += (4 * this.multiplier);
+            context.input = context.input.substr(2);
+        }
+        else if (context.startsWith(this.five)) {
+            context.output += (5 * this.multiplier);
+            context.input = context.input.substr(1);
+        }
+        while (context.startsWith(this.one)) {
+            context.output += (1 * this.multiplier);
+            context.input = context.input.substr(1);
+        }
+    }
+}
+
+function run() {
+    const roman = "MCMXXVIII"
+    const context = new Context(roman);
+    const tree = [];
+
+    tree.push(new Expression("thousand", "M", " ", " ", " ", 1000));
+    tree.push(new Expression("hundred", "C", "CD", "D", "CM", 100));
+    tree.push(new Expression("ten", "X", "XL", "L", "XC", 10));
+    tree.push(new Expression("one", "I", "IV", "V", "IX", 1));
+
+    for (let i = 0, len = tree.length; i &lt; len; i++) {
+        tree[i].interpret(context);
+    }
+
+    console.log(roman + " = " + context.output);
+}
+run();
+/*
+
+MCMXXVIII = 1928
+*/
+</code></pre>
+<h3 id="iterator">Iterator</h3>
+<p><strong>● 中文名 ●</strong></p>
+<p>迭代器</p>
+<p><strong>● 可变的方面 ●</strong></p>
+<p>如何遍历、访问一个聚合的各元素</p>
+<p><strong>● 使用场景 ●</strong></p>
+<p>客户端调用迭代器(通常传入一个数组)，迭代器使用方法 first()、next() 等实现迭代器接口遍历对象。</p>
+<pre><code>
+const Iterator = function (items) {
+    this.index = 0;
+    this.items = items;
+}
+
+Iterator.prototype = {
+    first: function () {
+        this.reset();
+        return this.next();
+    },
+    next: function () {
+        return this.items[this.index++];
+    },
+    hasNext: function () {
+        return this.index &lt;= this.items.length;
+    },
+    reset: function () {
+        this.index = 0;
+    },
+    each: function (callback) {
+        for (let item = this.first(); this.hasNext(); item = this.next()) {
+            callback(item);
+        }
+    }
+}
+
+function run() {
+
+    const items = ["one", 2, "three", true];
+    const iter = new Iterator(items);
+
+    // using for loop
+    for (let item = iter.first(); iter.hasNext(); item = iter.next()) {
+        console.log(item);
+    }
+    console.log("-----");
+
+    // using Iterator's each method
+    iter.each(function (item) {
+        console.log(item);
+    });
+}
+run();
+/*
+
+one
+2
+three
+true
+-----
+one
+2
+three
+true
+*/
+</code></pre>
+<h3 id="mediator">Mediator</h3>
+<p><strong>● 中文名 ●</strong></p>
+<p>中介者</p>
+<p><strong>● 可变的方面 ●</strong></p>
+<p>对象间怎样交互、和谁交互（用一个中介对象封装交互）</p>
+<p><strong>● 使用场景 ●</strong></p>
+<p>中介者提供一个通信的接口(会有多个参与者加入，参与者作为参数传递给中介者)，维护和管理一个或者多个对象的引用。</p>
+<pre><code>const Participant = function (name) {
+    this.name = name;
+    this.chatroom = null;
+};
+
+Participant.prototype = {
+    send: function (message, to) {
+        this.chatroom.send(message, this, to);
+    },
+    receive: function (message, from) {
+        console.log(from.name + " to " + this.name + ": " + message);
+    }
+};
+
+const Chatroom = function () {  // Mediator
+    const participants = {};
+
+    return {
+
+        register: function (participant) {
+            participants[participant.name] = participant;
+            participant.chatroom = this;
+        },
+
+        send: function (message, from, to) {
+            if (to) {                      // single message
+                to.receive(message, from);
+            } else {                       // broadcast message
+                for (key in participants) {
+                    if (participants[key] !== from) {
+                        participants[key].receive(message, from);
+                    }
+                }
+            }
+        }
+    };
+};
+
+function run() {
+
+    const yoko = new Participant("A");
+    const john = new Participant("B");
+
+    const chatroom = new Chatroom();
+    chatroom.register(yoko);
+    chatroom.register(john);
+
+    yoko.send("I am A.");
+    yoko.send("I am 15.");
+    john.send("Hello", yoko);
+}
+run();
+/*
+A to B: I am A.
+A to B: I am 15.
+B to A: Hello
+*/
+</code></pre>
+<h3 id="memento">Memento</h3>
+<p><strong>● 中文名 ●</strong></p>
+<p>备忘录</p>
+<p><strong>● 可变的方面 ●</strong></p>
+<p>一个对象中那些私有信息存放在该对象之外，以及在什么时候进行存储（不破坏封装，捕获对象内部的状态）</p>
+<p><strong>● 使用场景 ●</strong></p>
+<p>通过一个对象来存储原来的对象的属性，它并不改变原来的对象。这样可以方便在不同的状态时使用存储的数据。</p>
+<pre><code>const Person = function (name, state) {
+    this.name = name;
+    this.state = state;
+}
+
+Person.prototype = {
+
+    hydrate: function () {
+        const memento = JSON.stringify(this);
+        return memento;
+    },
+
+    dehydrate: function (memento) {
+        const m = JSON.parse(memento);
+        this.name = m.name;
+        this.state = m.state;
+    }
+}
+
+const CareTaker = function () {
+    this.mementos = {};
+    this.add = function (key, memento) {
+        this.mementos[key] = memento;
+    }
+    this.get = function (key) {
+        return this.mementos[key];
+    }
+}
+
+function run() {
+
+    const mike = new Person("AB", "TX");
+    const john = new Person("CD", "CA");
+    const caretaker = new CareTaker();
+
+    // save state
+    caretaker.add(1, mike.hydrate());
+    caretaker.add(2, john.hydrate());
+
+    // mess up their names
+    mike.name = "GGG";
+    john.name = "MMM";
+
+    // restore original state
+    mike.dehydrate(caretaker.get(1));
+    john.dehydrate(caretaker.get(2));
+
+    console.log(mike.name);
+    console.log(john.name);
+}
+run();
+/*
+AB
+CD
+
+注释掉 dehydrate方法则输出：
+
+GGG
+MMM
+
+*/
+</code></pre>
+<h3 id="observer">Observer</h3>
+<p><strong>● 中文名 ●</strong></p>
+<p>观察者</p>
+<p><strong>● 可变的方面 ●</strong></p>
+<p>多个对象依赖于另外一个对象，而这些对象又如何保持一致（得到通知并自动刷新）</p>
+<p><strong>● 使用场景 ●</strong></p>
+<p>这种模式实现了松耦合，任意数量的观察者对象都可以观察一个目标对象，实现一个让观察者对象订阅或取消订阅的接口。</p>
+<p>当它的状态改变时向它的观察者发送通知，然后可以调用观察者的绑定的函数来触发事件。</p>
+<p>它也可以说是发布订阅模式，他们都可以增加一个第三者(经纪人：Broker)，来通知发布者/订阅者，它们也可以完全解耦，实质上都是为了让对象之间互不相识却可以相互通信。</p>
+<pre><code>function Click() {
+    this.handlers = [];  // observers
+}
+
+Click.prototype = {
+
+    subscribe: function (fn) {
+        this.handlers.push(fn);
+    },
+
+    unsubscribe: function (fn) {
+        this.handlers = this.handlers.filter(
+            function (item) {
+                if (item !== fn) {
+                    return item;
+                }
+            }
+        );
+    },
+
+    fire: function (o, thisObj) {
+        const scope = thisObj || window;
+        this.handlers.forEach(function (item) {
+            item.call(scope, o);
+        });
+    }
+}
+
+function run() {
+
+    const clickHandler = function (item) {
+        console.log("fired: " + item);
+    };
+
+    const click = new Click();
+
+    click.subscribe(clickHandler);
+    click.fire('event #1');
+    click.unsubscribe(clickHandler);
+    click.fire('event #2');
+    click.subscribe(clickHandler);
+    click.fire('event #3');
+}
+run();
+/*
+fired: event #1
+fired: event #3
+*/
+</code></pre>
+<h3 id="state">State</h3>
+<p><strong>● 中文名 ●</strong></p>
+<p>状态</p>
+<p><strong>● 可变的方面 ●</strong></p>
+<p>对象的状态（状态改变时改变它的行为）</p>
+<p><strong>● 使用场景 ●</strong></p>
+<p>创建一个函数 (上下文，即起到一个承上启下的作用，作为一个中间量，根据输入控制输出) 公开支持目标对象的接口，它用来维护这个引用的对象，并允许改变对象的状态属性。根据这些不同的状态，会有不同的事件触发。</p>
+<pre><code>const TrafficLight = function () {
+    let count = 0;
+    let currentState = new Red(this);
+
+    this.change = function (state) {
+        // limits number of changes
+        if (count++ &gt;= 10) return;
+        currentState = state;
+        currentState.go();
+    };
+
+    this.start = function () {
+        currentState.go();
+    };
+}
+
+const Red = function (light) {
+    this.light = light;
+
+    this.go = function () {
+        console.log("Red --&gt; for 1 minute");
+        light.change(new Green(light));
+    }
+};
+
+const Yellow = function (light) {
+    this.light = light;
+
+    this.go = function () {
+        console.log("Yellow --&gt; for 10 seconds");
+        light.change(new Red(light));
+    }
+};
+
+const Green = function (light) {
+    this.light = light;
+
+    this.go = function () {
+        console.log("Green --&gt; for 1 minute");
+        light.change(new Yellow(light));
+    }
+};
+
+function run() {
+
+    const light = new TrafficLight();
+    light.start();
+}
+run();
+/*
+Red --&gt; for 1 minute
+Green --&gt; for 1 minute
+Yellow --&gt; for 10 seconds
+Red --&gt; for 1 minute
+Green --&gt; for 1 minute
+Yellow --&gt; for 10 seconds
+Red --&gt; for 1 minute
+Green --&gt; for 1 minute
+Yellow --&gt; for 10 seconds
+Red --&gt; for 1 minute
+Green --&gt; for 1 minute
+*/
+</code></pre>
+<h3 id="strategy">Strategy</h3>
+<p><strong>● 中文名 ●</strong></p>
+<p>策略</p>
+<p><strong>● 可变的方面 ●</strong></p>
+<p>算法（封装一系列算法，独立于使用它的客户）</p>
+<p><strong>● 使用场景 ●</strong></p>
+<p>创建一个函数 (上下文，即起到一个承上启下的作用，作为一个中间量，根据输入控制输出) 公开支持目标对象的接口，针对当前引用的对象(这个对象可以是纯数据，也可以是其它)，接口允许客户端请求策略计算。</p>
+<p>即相同的数据，提供了不同的算法，来输出不同的结果。</p>
+<pre><code>const Shipping = function () {
+    this.company = "";
+};
+
+Shipping.prototype = {
+    setStrategy: function (company) {
+        this.company = company;
+    },
+
+    calculate: function (package) {
+        return this.company.calculate(package);
+    }
+};
+
+const UPS = function () {
+    this.calculate = function (package) {
+        // calculations...
+        return "$15";
+    }
+};
+
+
+const Fedex = function () {
+    this.calculate = function (package) {
+        // calculations...
+        return "$25";
+    }
+};
+
+function run() {
+
+    const package = { from: "76712", to: "10012", weigth: "lkg" };
+
+    // the 3 strategies
+    const ups = new UPS();
+    const fedex = new Fedex();
+
+    const shipping = new Shipping();
+
+    shipping.setStrategy(ups);
+    console.log("UPS Strategy: " + shipping.calculate(package));
+    shipping.setStrategy(fedex);
+    console.log("Fedex Strategy: " + shipping.calculate(package));
+}
+run();
+/*
+UPS Strategy: $15
+Fedex Strategy: $25
+*/
+</code></pre>
+<h3 id="template-method">Template Method</h3>
+<p><strong>● 中文名 ●</strong></p>
+<p>模板方法</p>
+<p><strong>● 可变的方面 ●</strong></p>
+<p>算法中的某些步骤（定义骨架）</p>
+<p><strong>● 使用场景 ●</strong></p>
+<p>首先为一个函数提供一些接口，这些接口是实现定义算法基本步骤的钩子(也可以为空，也可以指定默认的代码)，开发人员可以轻松通过覆盖的方式定义自己的方法(也就是定义一个自定义的模版)</p>
+<pre><code>const datastore = {
+    process: function () {
+        this.connect();
+        this.select();
+        this.disconnect();
+        return true;
+    }
+};
+
+function inherit(proto) {
+    const F = function () { };
+    F.prototype = proto;
+    return new F();
+}
+
+function run() {
+    const mySql = inherit(datastore);
+
+    // implement template steps
+
+    mySql.connect = function () {
+        console.log("MySQL: connect step");
+    };
+
+    mySql.select = function () {
+        console.log("MySQL: select step");
+    };
+
+    mySql.disconnect = function () {
+        console.log("MySQL: disconnect step");
+    };
+
+    mySql.process();
+}
+run();
+/*
+MySQL: connect step
+MySQL: select step
+MySQL: disconnect step
+*/
+</code></pre>
+<h3 id="visitor">Visitor</h3>
+<p><strong>● 中文名 ●</strong></p>
+<p>访问者</p>
+<p><strong>● 可变的方面 ●</strong></p>
+<p>某些可作用于一个(组)对象上的操作，但不修改这些对象的类（如回调函数，回调传参）</p>
+<p><strong>● 使用场景 ●</strong></p>
+<p>让对象可以通过访问者查询，让对象也可以使用访问者的方法，从而可以改变对象的属性值。</p>
+<p>这样做的好处是无需重新创建一次相同的(不同属性值)对象来使用。</p>
+<pre><code>const Employee = function (name, salary, vacation) {
+    const self = this;
+
+    this.accept = function (visitor) {
+        visitor.visit(self);
+    };
+
+    this.getName = function () {
+        return name;
+    };
+
+    this.getSalary = function () {
+        return salary;
+    };
+
+    this.setSalary = function (sal) {
+        salary = sal;
+    };
+};
+
+const ExtraSalary = function () {
+    this.visit = function (emp) {
+        emp.setSalary(emp.getSalary() * 1.1);
+    };
+};
+
+
+function run() {
+
+    const employees = [
+        new Employee("A", 10000, 10),
+        new Employee("B", 20000, 21),
+    ];
+
+    const visitorSalary = new ExtraSalary();
+
+    for (let i = 0, len = employees.length; i &lt; len; i++) {
+        const emp = employees[i];
+
+        emp.accept(visitorSalary);
+        console.log(`Employee Name: ${emp.getName()} - $${emp.getSalary()} `);
+    }
+}
+run();
+/*
+Employee Name: A - $11000 
+Employee Name: B - $22000 
+
+注释  accept方法后，输出：
+
+Employee Name: A - $10000 
+Employee Name: B - $20000 
+*/
+</code></pre>
+</div><p>本文出自<a class="simple-btn" href="https://www.c945.com/article/86f20bd39f03310b956c2dc4.html">没位道 - Chuckie Chang个人网站</a>，转载请保留出处，谢谢！<br/>文章采用<a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC-BY-4.0"> <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFgAAAAfCAMAAABUFvrSAAAAIGNIUk0AAHolAACAgwAA+f8AAIDpAAB1MAAA6mAAADqYAAAXb5JfxUYAAAAEZ0FNQQAAsY58+1GTAAAAAXNSR0IB2cksfwAAAf5QTFRF////////////////8fHx7+/v6Ofn4+Pj4N/g39/f1tXV09bS0tXS0tXR0dTR0dTQ0NTQ0NPPz9PPztLOztHNzdHNzdHMz8/PzdDMzNDMzNDLzM/Ly8/Ly8/Ky87Kys3Jyc3Jyc3Iy8rLyMzIyMzHx8vHxsrGycjIxsrFxcnFyMfHxcnExMnExMjDw8jDxMfDw8fCwsfCwcXAwMXAwMW/wMS/v8S+v8O+vsO+vsK9vcK9vcK8v7+/vMG8vMG7vMC8u8C7u8C6ur+6ur+5ub65ub64uL23t7y2urm5tru1tbq0tLqztLmzs7iysrixtbW1srexsbewsLavsLWvr7Wur7SusLOvrrStrrOtr7KvrbOsrLKrr6+vq7GqrKurpqqmo6ijoqaho6Ghn6OenqCdn5+fnp2dn5aampiZlpmWlZmUmJaXk5iTkZSRkZORkY+Pj4+PiYyJjIqLjoeLh4aHhIaEhIWEgoWChIGCf4F+gICAfX98fH98fnt8en15eXx5eHV2dnN0dXJzcHJvcHBwbmxsaGVmY19hYGBgXV5dWldYUFFQUFBQQ0RDQEBAPj8+Pzs8Pzc5NTY1MjMxMjExMDAwMS0uLS0tKioqKSopKSkpKCkoKCgoKicnKCUmJCQkIx8gICAgHxscGxsbGRkZEBAQDg4ODQ4NDQwNAAAA4LK4NQAAAAN0Uk5TAAoO5yEBUwAAA+1JREFUeNq1lot3GkUUxlcviEDS7bYbKxC2oaWKSUmRpkkrSBvzIMGkJjGamoSobROtNqRVWyOppli0NBBSHxst+JiYUvr9l57dheVx8ESpncOeOfvbnW92vjv3DtyzeCqN44BIeCh02t/tcXdIDpvN4Tzs9nj9faHBcGR88u2Z2dm56H9vAIdIeCBwyudxOUWBb7FaW/YJYrvL4+sJDCjK0zOzc00pcwgPBE56j0kif3OzqCyiuHmDP+h0H/e/NhCOnJ+avjA7t55THuTWK+P2JOAwFDjpdduF2G7FoN1lwebq8gcGw2MTUzOf5IFsMpkF8le1UVf3JuAQOuV12/g0gEIqHgzGUwUA6RMvuI73hIZGxyc/fISMmYjInMEjddSlf0HA4bTvmF3RLcSNpLXFApA/YXP7+vqHIxM5pIgIUB4grwzKq2Rlo46YOjtNOgEHv0cS0oBsJr0ZZSAtOD3+wNDoGjKWsjBlsB6NruPnj4lWHj5OmHSSsdBFxhgbKRFFuPuoGANkI1Gt8vJBl7e3P/wAVTOakYtGc/iD3f8e8S+woBMzdbIf7iYYW9GIIuxx8rsoHKKaZixgl2/3+F8fQla5T0FdPmURjSL77W3GWMJkqRAyfMQ+J1pi2xpRhN1tN4E41bVF4Ibo9p0ZQJJUJzQvkopMkqgzASBhqRDDn+w3IhNjz6lEEe44sImCkSiYyWbjWneNiArYFA57e/sbCxOZEtuMbYzo5K1fgqrw87qwxBeVZQbVHZydV7uUsvjiPmdXz7lGVhCRYYksSrTul8nIxZeJFhirWOFoBa4RydgxB3cWZcjm+Z1F1YsWh8cf+lULnvbBeqhog21vI7Hw9V9lssTY6urv7NNK8OxWIKiMjGsCJbuDgNX2kj/0FTJUv90yRKbVh49XDNVkVVnAd4bKdttDePhBJUGS1Qny2UYdObKwYNFJjRXGQztxGbLSVawYfr/ZlC4FrxQ1PXhJFHmpq+fc8Jsf5AA5lZQrJedSfk+ibrc0CqRvt/ms2tEONoUOb+8b4bHJd75pqmy622KqF40S5NUzg6PjUzNNHCLg8Iqa0uZ/SunI+WaFu4+KlxsVoZjo6u7rD49NTF+Ya0oYtyThHiBXlSGzWjalL5/omAZwx7G/utAb4wXgR95+C08qjDXb/nt1RxP/4hX9HS0/oF0a0S4i1L1EtcJYcwiXqw/TmGC/UjWm9KMqldJ9zVQ1QBPGHUnkY+Xjf5kXpWofymWzeiqqmag8F1G9MH56z9l2gG+1Wlt5QWx/d6tmTJ0RZRuohtUtgdP51vWzksNud0hnr2/VxqHRF9d7XI5DA+H/+1/hM09J92+7pmyRGJsTpgAAAABJRU5ErkJggg==" alt="CC-BY-4.0"/> 知识共享署名-非商业性使用-相同方式共享 4.0 国际许可协议</a>进行许可。</p></div></div></div></section><section><div class="container"><div class="row"><div class="col-md-8 offset-md-2"><div class="blog-tags"><h6>关键词: </h6><a href="/articles/tag/index.html?page=1&amp;s=javascript">javascript</a><a href="/articles/tag/index.html?page=1&amp;s=%E5%89%8D%E7%AB%AF%E5%BC%80%E5%8F%91">前端开发</a><a href="/articles/tag/index.html?page=1&amp;s=%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F">设计模式</a></div></div></div></div></section><section><div class="container"><div class="row"><div class="col-md-8 offset-md-2"><div class="row justify-content-between pb-5"><div class="col text-start"><a class="simple-btn" href="/article/387801d1d86c145b71221569.html"><i class="fas fa-long-arrow-alt-left"></i>  上一篇</a></div><div class="col text-end"><a class="simple-btn" href="/article/the-complete-guide-to-deploying-a-linux-server-from-scratch-version-2022-for-centos8-nginx-php.html">下一篇 <i class="fas fa-long-arrow-alt-right"></i></a></div></div><hr/><div class="text-center p-3"><a class="axil-btn btn-fill-primary" href="/article/[id]"><span>返回列表</span></a>  <a class="axil-btn btn-fill-secondary" data-title="23种设计模式的完整例子和分类" data-url="https://www.c945.com/article/86f20bd39f03310b956c2dc4.html" data-pic="https://www.c945.comundefined" href="#" data-modal-width="600px" data-modal-height="300px"><svg viewBox="0 0 448 512"><path fill="#0d6efd" d="M352 224c53 0 96-43 96-96s-43-96-96-96s-96 43-96 96c0 4 .2 8 .7 11.9l-94.1 47C145.4 170.2 121.9 160 96 160c-53 0-96 43-96 96s43 96 96 96c25.9 0 49.4-10.2 66.6-26.9l94.1 47c-.5 3.9-.7 7.8-.7 11.9c0 53 43 96 96 96s96-43 96-96s-43-96-96-96c-25.9 0-49.4 10.2-66.6 26.9l-94.1-47c.5-3.9 .7-7.8 .7-11.9s-.2-8-.7-11.9l94.1-47C302.6 213.8 326.1 224 352 224z"></path></svg>分享</a><div class="styles_app-share-modal-box__9M8_R"><a href="#" class="styles_app-share-modal-box__close__gDukx"><svg xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 320 512"><path d="M310.6 150.6c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L160 210.7 54.6 105.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L114.7 256 9.4 361.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0L160 301.3 265.4 406.6c12.5 12.5 32.8 12.5 45.3 0s12.5-32.8 0-45.3L205.3 256 310.6 150.6z"></path></svg></a><div class="styles_app-share-modal-box__content__7Z_58"><div><div class="styles_app-share__wrapper__xvEL0"><h3>分享给朋友!</h3><div><span data-network="true" data-title="23种设计模式的完整例子和分类" data-url="https://www.c945.com/article/86f20bd39f03310b956c2dc4.html" data-pic="https://www.c945.comundefined" data-href="https://tool.oschina.net/action/qrcode/generate?data={u}&amp;output=image%2Fgif&amp;error=L&amp;type=0&amp;margin=0&amp;size=4&amp;1578559516540"><svg xmlns="http://www.w3.org/2000/svg" width="50" viewBox="0 0 576 512"><path fill="#0c7f3a" d="M385.2 167.6c6.4 0 12.6.3 18.8 1.1C387.4 90.3 303.3 32 207.7 32 100.5 32 13 104.8 13 197.4c0 53.4 29.3 97.5 77.9 131.6l-19.3 58.6 68-34.1c24.4 4.8 43.8 9.7 68.2 9.7 6.2 0 12.1-.3 18.3-.8-4-12.9-6.2-26.6-6.2-40.8-.1-84.9 72.9-154 165.3-154zm-104.5-52.9c14.5 0 24.2 9.7 24.2 24.4 0 14.5-9.7 24.2-24.2 24.2-14.8 0-29.3-9.7-29.3-24.2.1-14.7 14.6-24.4 29.3-24.4zm-136.4 48.6c-14.5 0-29.3-9.7-29.3-24.2 0-14.8 14.8-24.4 29.3-24.4 14.8 0 24.4 9.7 24.4 24.4 0 14.6-9.6 24.2-24.4 24.2zM563 319.4c0-77.9-77.9-141.3-165.4-141.3-92.7 0-165.4 63.4-165.4 141.3S305 460.7 397.6 460.7c19.3 0 38.9-5.1 58.6-9.9l53.4 29.3-14.8-48.6C534 402.1 563 363.2 563 319.4zm-219.1-24.5c-9.7 0-19.3-9.7-19.3-19.6 0-9.7 9.7-19.3 19.3-19.3 14.8 0 24.4 9.7 24.4 19.3 0 10-9.7 19.6-24.4 19.6zm107.1 0c-9.7 0-19.3-9.7-19.3-19.6 0-9.7 9.7-19.3 19.3-19.3 14.5 0 24.4 9.7 24.4 19.3.1 10-9.9 19.6-24.4 19.6z"></path></svg></span><em>微信</em></div><div><span data-network="true" data-title="23种设计模式的完整例子和分类" data-url="https://www.c945.com/article/86f20bd39f03310b956c2dc4.html" data-pic="https://www.c945.comundefined" data-href="http://service.weibo.com/share/share.php?title={t}&amp;url={u}&amp;pic={p}"><svg xmlns="http://www.w3.org/2000/svg" width="50" viewBox="0 0 576 512"><path fill="#d90909" d="M407 177.6c7.6-24-13.4-46.8-37.4-41.7-22 4.8-28.8-28.1-7.1-32.8 50.1-10.9 92.3 37.1 76.5 84.8-6.8 21.2-38.8 10.8-32-10.3zM214.8 446.7C108.5 446.7 0 395.3 0 310.4c0-44.3 28-95.4 76.3-143.7C176 67 279.5 65.8 249.9 161c-4 13.1 12.3 5.7 12.3 6 79.5-33.6 140.5-16.8 114 51.4-3.7 9.4 1.1 10.9 8.3 13.1 135.7 42.3 34.8 215.2-169.7 215.2zm143.7-146.3c-5.4-55.7-78.5-94-163.4-85.7-84.8 8.6-148.8 60.3-143.4 116s78.5 94 163.4 85.7c84.8-8.6 148.8-60.3 143.4-116zM347.9 35.1c-25.9 5.6-16.8 43.7 8.3 38.3 72.3-15.2 134.8 52.8 111.7 124-7.4 24.2 29.1 37 37.4 12 31.9-99.8-55.1-195.9-157.4-174.3zm-78.5 311c-17.1 38.8-66.8 60-109.1 46.3-40.8-13.1-58-53.4-40.3-89.7 17.7-35.4 63.1-55.4 103.4-45.1 42 10.8 63.1 50.2 46 88.5zm-86.3-30c-12.9-5.4-30 .3-38 12.9-8.3 12.9-4.3 28 8.6 34 13.1 6 30.8.3 39.1-12.9 8-13.1 3.7-28.3-9.7-34zm32.6-13.4c-5.1-1.7-11.4.6-14.3 5.4-2.9 5.1-1.4 10.6 3.7 12.9 5.1 2 11.7-.3 14.6-5.4 2.8-5.2 1.1-10.9-4-12.9z"></path></svg></span><em>微博</em></div></div></div></div></div></div></div></div></div></section><section class="pb--80 pb_lg--40 pb_md--20"><div class="container"><div class="row"><div class="col-md-8 offset-md-2"><div class="blog-comment-form"><h5>文章评论</h5><hr/><div id="app-remotecomment__comments"></div><div class="app-remotecomment__form"><form id="app-remotecomment-site"><div class="row"><div class="col-lg-6"><div class="form-group"><label>标题 (必填)</label><input type="text" name="title" id="title" class="form-control"/></div></div><div class="col-lg-6"><div class="form-group"><label>电子邮箱 (必填，不公开)</label><input type="email" name="email" id="email" class="form-control"/></div></div><div class="col-lg-12"><div class="form-group"><label>网址</label><input type="url" name="url" id="url" class="form-control" placeholder="https://"/></div></div><div class="col-lg-12"><div class="form-group mb--30"><label>内容</label><textarea id="content" name="content" class="form-control textarea" cols="30" rows="4"></textarea></div></div><div class="col-lg-4 app-remotecomment-captcha-section"><div class="form-group"><label>验证码</label><input type="text" id="captcha" name="captcha" class="form-control"/></div></div><div class="col-lg-8 app-remotecomment-captcha-section"><div class="form-group"><label> </label><div class="captcha-wrapper"><span id="uix-usercenter-refresh-session-captcha"></span></div></div></div><div class="col-lg-5"><div class="form-group"><button type="submit" class="axil-btn btn-fill-primary btn-fluid" name="submit-btn">提交</button></div><p class="status"></p></div></div><input type="hidden" name="toid" id="toid" value="5710210010252565154"/><input type="hidden" name="refer" id="refer" value="https://www.c945.com/article/86f20bd39f03310b956c2dc4.html"/><input type="hidden" name="app-remotecomment-site-security" id="app-remotecomment-site-security"/></form></div></div></div></div></div></section><section class="section section-padding-2 bg-color-dark pb--80 pb_lg--40"><div class="container"><div class="row"><div class="col-md-8 offset-md-2 footer-menu-link footer-menu-link--list"><h5 class="title-white">相关文章推荐</h5><ul></ul></div></div></div></section><footer class="footer-area splash-footer splash-footer--page"><div class="container"><div class="footer-bottom"><div class="row align-items-center"><div class="col-md-12 text-center"><div class="footer-copyright"><p class="copyright-text">&copy; 2010-2023 <a href="/">没位道</a> All Rights Reserved. 本站基于JAMstack技术构建<br />若未特别说明，本站所有内容均遵循<a rel="license" target="_blank" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC-BY-4.0">CC-BY-4.0 国际许可协议</a></p><script id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script><script>
+                            if (typeof(LA) !== 'undefined') LA.init({id: "JdyfUJi3RdCZVi9F",ck: "JdyfUJi3RdCZVi9F"});
+                        </script></div></div></div></div></div></footer></main></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"currentData":{"ID":883333,"author":"1","author_nickname":"wpuser","author_display_name":"Chuckie Chang","author_url":"https://matrixflip.com/api","author_username":"wpuser","author_avatar":"https://secure.gravatar.com/avatar/?s=96\u0026d=mm\u0026r=g","categories":[87],"categories_output":[{"ID":87,"slug":"%e5%bc%80%e5%8f%91%e8%b6%a3%e5%91%b3","name":"开发趣味","term_taxonomy_id":87,"term_group":0,"taxonomy":"category","description":"","parent":0,"count":17}],"tags":[301,96,95],"tags_output":[{"ID":301,"slug":"javascript","name":"javascript","term_taxonomy_id":301,"term_group":0,"taxonomy":"post_tag","description":"","parent":0,"count":2},{"ID":96,"slug":"%e5%89%8d%e7%ab%af%e5%bc%80%e5%8f%91","name":"前端开发","term_taxonomy_id":96,"term_group":0,"taxonomy":"post_tag","description":"","parent":0,"count":10},{"ID":95,"slug":"%e8%ae%be%e8%ae%a1%e6%a8%a1%e5%bc%8f","name":"设计模式","term_taxonomy_id":95,"term_group":0,"taxonomy":"post_tag","description":"","parent":0,"count":1}],"thumbnail":[],"thumbnail_mini":[],"thumbnail_retina":[],"thumbnail_full":[],"date_day":"04","date_month":"04","date_month_e":"April","date_year":"2022","date_weekday":"Monday","title":"23种设计模式的完整例子和分类","excerpt":"设计模式是可复用面向对象软件的基础，也许不知不觉从工作的那时候开始，就已经隐约使用了一些设计模式，但是它们到底是什么呢？常用的设计模式大家并不陌生，搜索引擎也可以搜索到，现在详细回顾一下23种设计模式，如何使用JavaScript实现？","content":"\u003cp\u003e\u003cstrong\u003e\u003cem\u003e本文是对国内外大学教材和专业出版书籍的自主学习和总结，部分代码和文字说明均出自书籍(文章中某些原创的个人见解和内容没有一一标注，请自行甄别)，也可能会有自己的理解和改动，以及平时的实战积累与逻辑转化。\u003c/em\u003e\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e设计模式是可复用面向对象软件的基础，也许不知不觉从工作的那时候开始，就已经隐约使用了一些设计模式，但是它们到底是什么呢？常用的设计模式大家并不陌生，搜索引擎也可以搜索到，现在详细回顾一下23种设计模式，如何使用JavaScript实现？\u003c/p\u003e\n\u003cp\u003e先打个比方，MVC是采用模型/视图/控制器来构建用户界面，它的主要关系还是由观察者模式(用来让视图关联，可以互相影响)，组合模式(视图可以嵌套)，策略模式(不同的算法构成不同的视图效果)。设计模式无处不在，那么我们还是详细了解一下吧，顺便使用前端来模拟一下，加深印象。\u003c/p\u003e\n\u003cp\u003e\u003cem\u003e为了更好地代码阅读，实例代码有经过我的优化和改动。\u003c/em\u003e\u003c/p\u003e\n\u003ch3\u003e几个重要概念\u003c/h3\u003e\n\u003ch4\u003e设计模式的四个要素：\u003c/h4\u003e\n\u003cp\u003e模式名、问题、解决方案、效果\u003c/p\u003e\n\u003ch4\u003e面向对象设计的因素：\u003c/h4\u003e\n\u003cp\u003e封装、粒度、依赖关系、灵活性、性能、演化、复用等。\u003c/p\u003e\n\u003ch4\u003e接口：\u003c/h4\u003e\n\u003cp\u003e对象声明的每一个操作指定操作名、作为参数的对象和返回值，是所谓的操作的[\u003cstrong\u003e型构\u003c/strong\u003e]。对象操作所定义的所有操作型构的集合被称为该对象的接口。\u003c/p\u003e\n\u003ch4\u003e多态：\u003c/h4\u003e\n\u003cp\u003e为不同数据类型的实现提供统一的接口。\u003c/p\u003e\n\u003ch4\u003e鸭子类型：\u003c/h4\u003e\n\u003cp\u003e只关心对象的行为，不关心对象本身（起源：意大利软件工程师、Python软件基金会研究员Alex Martelli 于2000年左右在Python的邮件组中最早将这个概念引入了程序设计范畴中。）\u003c/p\u003e\n\u003ch4\u003e面向对象设计的原则：\u003c/h4\u003e\n\u003cul\u003e\n\u003cli\u003ea)针对接口编程，而不是针对实现编程\u003c/li\u003e\n\u003cli\u003eb) 优先使用对象组合，而不是类继承(组合和继承也经常同时使用)\u003c/li\u003e\n\u003c/ul\u003e\n\u003ch3 id=\"分类\"\u003e分类\u003c/h3\u003e\n\u003cp\u003e\u003cimg src=\"/static-remote/files/8629b0c3abf260c4c23501d0-matrixflipcomapiwpcontentuploadsbcabfccdjpg.jpg\" alt=\"\" width=\"250\" /\u003e\u003c/p\u003e\n\u003ch3 id=\"singleton\"\u003eSingleton\u003c/h3\u003e\n\u003cp\u003e\u003cstrong\u003e● 中文名 ●\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e单例\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e● 可变的方面 ●\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e一个类的唯一实例（提供一个访问它的全局访问点）\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e● 使用场景 ●\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e当我创建了一个JS库，为了方便全站使用，并且有一个醒目的调用名字，可以把它导出为一个唯一的实例，这个实例可以是惰性单例(是指在需要的时候才创建,即使用new关键字)，但是我常常会直接把工具类的单例new之后再导出，这样就可以在脚本中直接调用。\u003c/p\u003e\n\u003cp\u003e重要特点是每次请求只能创建一个实例。\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-js\"\u003econst Singleton = (function () {\r\n    let instance;\r\n\r\n    function createInstance() {\r\n        const object = new Object(\"I am the instance\");\r\n        return object;\r\n    }\r\n\r\n    return {\r\n        getInstance: function () {\r\n            if (!instance) {\r\n                instance = createInstance();\r\n            }\r\n            return instance;\r\n        }\r\n    };\r\n})();\r\n\r\n\r\nfunction run() {\r\n    const instance1 = Singleton.getInstance();\r\n    const instance2 = Singleton.getInstance();\r\n    console.log(\"Same instance? \" + (instance1 === instance2));  \r\n}\r\nrun();  // Same instance? true\r\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch3 id=\"abstract-factory\"\u003eAbstract Factory\u003c/h3\u003e\n\u003cp\u003e\u003cstrong\u003e● 中文名 ●\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e抽象工厂\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e● 可变的方面 ●\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e产品对象家族（创建相关或相互依赖的结构，无需指定具体类）\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e● 使用场景 ●\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e不在 JavaScript 中直接使用, 而是声明一个用于创建产品的接口。\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-js\"\u003efunction Employee(name) {\r\n    this.name = name;\r\n\r\n    this.say = function () {\r\n        console.log(\"I am employee \" + name);\r\n    };\r\n}\r\n\r\nfunction EmployeeFactory() {\r\n\r\n    this.create = function (name) {\r\n        return new Employee(name);\r\n    };\r\n}\r\n\r\nfunction Vendor(name) {\r\n    this.name = name;\r\n\r\n    this.say = function () {\r\n        console.log(\"I am vendor \" + name);\r\n    };\r\n}\r\n\r\nfunction VendorFactory() {\r\n\r\n    this.create = function (name) {\r\n        return new Vendor(name);\r\n    };\r\n}\r\n\r\n\r\nfunction run() {\r\n    const persons = [];\r\n    const employeeFactory = new EmployeeFactory();\r\n    const vendorFactory = new VendorFactory();\r\n\r\n    persons.push(employeeFactory.create(\"Joan DiSilva\"));\r\n    persons.push(employeeFactory.create(\"Tim O'Neill\"));\r\n    persons.push(vendorFactory.create(\"Gerald Watson\"));\r\n    persons.push(vendorFactory.create(\"Nicole McNight\"));\r\n\r\n    for (let i = 0, len = persons.length; i \u0026lt; len; i++) {\r\n        persons[i].say();\r\n    }\r\n}\r\nrun();\r\n/*\r\nI am employee Joan DiSilva\r\nI am employee Tim O'Neill\r\nI am vendor Gerald Watson\r\nI am vendor Nicole McNight\r\n*/\r\n\r\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch3 id=\"builder\"\u003eBuilder\u003c/h3\u003e\n\u003cp\u003e\u003cstrong\u003e● 中文名 ●\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e创建者\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e● 可变的方面 ●\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e如何创建一个组合对象\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e● 使用场景 ●\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e不在 JavaScript 中直接使用, builder用于声明用于创建复杂产品的多个接口（也可以说成需要多个步骤才能创建出一个复杂的产品）。\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-js\"\u003eclass Shop {\r\n    init(builder) {\r\n        builder.step1();\r\n        builder.step2();\r\n        return builder.get();\r\n    }\r\n}\r\n\r\nfunction CarBuilder() {\r\n    this.car = null;\r\n\r\n    this.step1 = () =\u0026gt; this.car = new Car();\r\n    this.step2 = () =\u0026gt; this.car.addParts();\r\n    this.get = () =\u0026gt; this.car;\r\n}\r\n\r\nfunction TruckBuilder() {\r\n    this.truck = null;\r\n\r\n    this.step1 = () =\u0026gt; this.truck = new Truck();\r\n    this.step2 = () =\u0026gt; this.truck.addParts();\r\n    this.get = () =\u0026gt; this.truck;\r\n}\r\n\r\nfunction Car() {\r\n    this.doors = 0;\r\n\r\n    this.addParts = () =\u0026gt; this.doors = 4;\r\n    this.say = () =\u0026gt; console.log(\"I am a \" + this.doors + \"-door car\");\r\n}\r\n\r\nfunction Truck() {\r\n    this.doors = 0;\r\n\r\n    this.addParts = () =\u0026gt; this.doors = 2;\r\n    this.say = () =\u0026gt; console.log(\"I am a \" + this.doors + \"-door truck\");\r\n}\r\n\r\nfunction run() {\r\n    const shop = new Shop();\r\n    const carBuilder = new CarBuilder();\r\n    const truckBuilder = new TruckBuilder();\r\n    const car = shop.init(carBuilder);\r\n    const truck = shop.init(truckBuilder);\r\n\r\n    car.say();\r\n    truck.say();\r\n}\r\nrun();\r\n/*\r\nI am a 4-door car\r\nI am a 2-door truck\r\n*/\r\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch3 id=\"factory-method\"\u003eFactory Method\u003c/h3\u003e\n\u003cp\u003e\u003cstrong\u003e● 中文名 ●\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e工厂方法\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e● 可变的方面 ●\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e被实例化的子类（定义一个用于创建对象的接口，让子类决定将哪一个类实例化）\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e● 使用场景 ●\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003eFactory创建新产品的“工厂”对象, 所有产品都支持相同的接口（属性和方法）。\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-js\"\u003econst Factory = function () {\r\n    this.createEmployee = function (type) {\r\n        let employee;\r\n\r\n        switch(type) {\r\n            case 'fulltime' :\r\n                employee = new FullTime();\r\n                break;\r\n            case 'parttime' :\r\n            employee = new PartTime();\r\n            break;\r\n\r\n        }\r\n\r\n        employee.type = type;\r\n        employee.say = function () {\r\n            console.log(this.type + \": rate \" + this.hourly + \"/hour\");\r\n        }\r\n\r\n        return employee;\r\n    }\r\n}\r\n\r\nconst FullTime = function () {\r\n    this.hourly = \"$25\";\r\n};\r\n\r\nconst PartTime = function () {\r\n    this.hourly = \"$8\";\r\n};\r\n\r\n\r\nfunction run() {\r\n\r\n    const employees = [];\r\n    const factory = new Factory();\r\n\r\n    employees.push(factory.createEmployee(\"fulltime\"));\r\n    employees.push(factory.createEmployee(\"parttime\"));\r\n\r\n    for (let i = 0, len = employees.length; i \u0026lt; len; i++) {\r\n        employees[i].say();\r\n    }\r\n}\r\nrun();\r\n/*\r\nfulltime: rate $25/hour\r\nparttime: rate $8/hour\r\n*/\r\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch3 id=\"prototype\"\u003ePrototype\u003c/h3\u003e\n\u003cp\u003e\u003cstrong\u003e● 中文名 ●\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e原型\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e● 可变的方面 ●\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e被实例化的类\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e● 使用场景 ●\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e可以通过原型克隆来创建一个新对象。\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-js\"\u003eclass CustomerPrototype {\r\n    constructor(product) {\r\n        this.productAttrs = product;\r\n    }\r\n\r\n    clone() {\r\n        const customer = new Customer();\r\n        customer.first = this.productAttrs.first;\r\n        customer.last = this.productAttrs.last;\r\n        customer.status = this.productAttrs.status;\r\n\r\n        return customer;\r\n    }\r\n    \r\n}\r\n\r\n\r\nfunction Customer(first, last, status) {\r\n\r\n    this.first = first;\r\n    this.last = last;\r\n    this.status = status;\r\n\r\n    this.say = function () {\r\n        return `name: ${this.first} ${this.last}, status: ${this.status}`;\r\n    };\r\n}\r\n\r\nfunction run() {\r\n\r\n    const product = new Customer(\"F\", \"L\", \"pending\");\r\n    console.log( 'product: ', product.say() );\r\n\r\n    //\r\n    const newProduct = new CustomerPrototype(product);\r\n    const customer = newProduct.clone();\r\n    console.log( 'newProduct: ', customer.say() );\r\n    \r\n}\r\nrun();\r\n/*\r\nproduct:  name: F L, status: pending\r\nnewProduct:  name: F L, status: pending\r\n*/\r\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch3 id=\"adapter\"\u003eAdapter\u003c/h3\u003e\n\u003cp\u003e\u003cstrong\u003e● 中文名 ●\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e适配器\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e● 可变的方面 ●\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e对象的接口（将一个类的接口转化为另一个解决兼容性）\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e● 使用场景 ●\u003c/strong\u003e\u003cbr /\u003e\n客户端调用适配器请求服务后，实现客户期望的接口。同样的输入，可以变成不同的输出或者界面。\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-js\"\u003e// old interface\r\nfunction Shipping() {\r\n    this.request = function (weight) {\r\n        return parseFloat(weight) * 1.5;\r\n    }\r\n}\r\n\r\n// new interface\r\nfunction AdvancedShipping() {\r\n    this.login = function (credentials) { /* ... */ };\r\n    this.calculate = function (weight) { \r\n        return parseFloat(weight) * 2.5;\r\n    };\r\n}\r\n\r\n// adapter interface\r\nfunction ShippingAdapter(credentials) {\r\n    const shipping = new AdvancedShipping();\r\n\r\n    shipping.login(credentials);\r\n\r\n    return {\r\n        request: function (weight) {\r\n            return shipping.calculate(weight);\r\n        }\r\n    };\r\n}\r\n\r\nfunction run() {\r\n\r\n    const shipping = new Shipping();\r\n    const credentials = { token: \"30a8-6ee1\" };\r\n    const adapter = new ShippingAdapter(credentials);\r\n\r\n    let cost = shipping.request(\"2kg\");\r\n    console.log(\"Old cost: $\" + cost);\r\n\r\n    //\r\n    cost = adapter.request(\"2kg\");\r\n    console.log(\"New cost: $\" + cost);\r\n}\r\nrun();\r\n/*\r\nOld cost: $3\r\nNew cost: $5\r\n*/\r\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch3 id=\"bridge\"\u003eBridge\u003c/h3\u003e\n\u003cp\u003e\u003cstrong\u003e● 中文名 ●\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e桥接\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e● 可变的方面 ●\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e对象的实现（抽象与实现分离）\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e● 使用场景 ●\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e不在 JavaScript 中直接使用，实现和扩展抽象定义的接口。（属性和方法相同，可能存在接口覆盖，改变其输出的结果）\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-js\"\u003e// input devices\r\nconst EventGestures = function (output) {\r\n    this.output = output;\r\n\r\n    this.tap = function () { this.output.click(); }\r\n    this.swipe = function () { this.output.move(); }\r\n};\r\n\r\n// output devices\r\nconst Screen = function () {\r\n    this.click = function () { console.log(\"Screen select\"); }\r\n    this.move = function () { console.log(\"Screen move\"); }\r\n};\r\n\r\nfunction run() {\r\n    const screen = new Screen();\r\n    const hand = new EventGestures(screen);\r\n\r\n    hand.tap();\r\n    hand.swipe();\r\n}\r\n\r\nrun();\r\n/*\r\nScreen select\r\nScreen move\r\n*/\r\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch3 id=\"composite\"\u003eComposite\u003c/h3\u003e\n\u003cp\u003e\u003cstrong\u003e● 中文名 ●\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e组合\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e● 可变的方面 ●\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e一个对象的结构和组成（单个对象和组合对象的使用一致性）\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e● 使用场景 ●\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e使用Node(结点)来表示组合中的分支（或子树），维护子组件的集合。\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-js\"\u003eclass Node {\r\n    constructor(name) {\r\n        this.children = [];\r\n        this.name = name;\r\n    }\r\n\r\n    add(child) {\r\n        this.children.push(child);\r\n    }\r\n    remove(child) {\r\n        const length = this.children.length;\r\n        for (let i = 0; i \u0026lt; length; i++) {\r\n            if (this.children[i] === child) {\r\n                this.children.splice(i, 1);\r\n                return;\r\n            }\r\n        }\r\n    }\r\n    getChild(i) {\r\n        return this.children[i];\r\n    }\r\n\r\n}\r\n\r\n\r\nfunction run() {\r\n    const tree = new Node(\"root\");\r\n    const left = new Node(\"left\")\r\n    const right = new Node(\"right\");\r\n\r\n    tree.add(left);\r\n    tree.add(right);\r\n    tree.remove(right);\r\n    tree.add(right);\r\n\r\n    console.log(tree);\r\n\r\n}\r\n\r\nrun();\r\n/*\r\n{\r\n    \"children\": [\r\n        {\r\n            \"children\": [],\r\n            \"name\": \"left\"\r\n        },\r\n        {\r\n            \"children\": [],\r\n            \"name\": \"right\"\r\n        }\r\n    ],\r\n    \"name\": \"root\"\r\n}\r\n*/\r\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch3 id=\"decorator\"\u003eDecorator\u003c/h3\u003e\n\u003cp\u003e\u003cstrong\u003e● 中文名 ●\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e装饰\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e● 可变的方面 ●\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e对象的职责，不生成子类（动态添加职责）\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e● 使用场景 ●\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e定义一个新的接口(符合原始组件的接口)，来扩展原组件的功能。\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-js\"\u003econst User = function (name) {\r\n    this.name = name;\r\n\r\n    this.say = function () {\r\n        console.log(\"User: \" + this.name);\r\n    };\r\n}\r\n\r\nconst DecoratedUser = function (user, street, city) {\r\n    this.user = user;\r\n    this.name = user.name;  // ensures interface stays the same\r\n    this.street = street;\r\n    this.city = city;\r\n\r\n    this.say = function () {\r\n        console.log(\"Decorated User: \" + this.name + \", \" +\r\n            this.street + \", \" + this.city);\r\n    };\r\n}\r\n\r\nfunction run() {\r\n\r\n    const user = new User(\"Kelly\");\r\n    user.say();\r\n\r\n    const decorated = new DecoratedUser(user, \"Broadway\", \"New York\");\r\n    decorated.say();\r\n}\r\nrun();\r\n/*\r\nUser: Kelly\r\nDecorated User: Kelly, Broadway, New York\r\n*/\r\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch3 id=\"facade\"\u003eFacade\u003c/h3\u003e\n\u003cp\u003e\u003cstrong\u003e● 中文名 ●\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e外观\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e● 可变的方面 ●\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e一个子系统的接口（定义一个高层接口，一致的界面）\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e● 使用场景 ●\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e将目标请求委托给适当的子系统对象(例如：A对象传入，分别用函数a,b,c来运行A对象)，实现并执行专门的子系统功能，得出不同的结果。\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-js\"\u003econst Mortgage = function (name) {\r\n    this.name = name;\r\n}\r\n\r\nMortgage.prototype = {\r\n\r\n    applyFor: function (amount) {\r\n        // access multiple subsystems...\r\n        const status = \"approved\";\r\n        if (!new Bank().verify(this.name, amount)) {\r\n            status = \"denied\";\r\n        } else if (!new Credit().get(this.name)) {\r\n            status = \"denied\";\r\n        } else if (!new Background().check(this.name)) {\r\n            status = \"denied\";\r\n        }\r\n        return `name: ${this.name}, status:  ${status}, amount: ${amount}`;\r\n    }\r\n}\r\n\r\nconst Bank = function () {\r\n    this.verify = function (name, amount) {\r\n        // complex logic ...\r\n        return true;\r\n    }\r\n}\r\n\r\nconst Credit = function () {\r\n    this.get = function (name) {\r\n        // complex logic ...\r\n        return true;\r\n    }\r\n}\r\n\r\nconst Background = function () {\r\n    this.check = function (name) {\r\n        // complex logic ...\r\n        return true;\r\n    }\r\n}\r\n\r\nfunction run() {\r\n    const mortgage = new Mortgage(\"David\");\r\n    const result = mortgage.applyFor(\"$100,000\");\r\n\r\n    console.log(result);\r\n}\r\nrun();  // name: David, status:  approved, amount: $100,000\r\n\r\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch3 id=\"flyweight\"\u003eFlyweight\u003c/h3\u003e\n\u003cp\u003e\u003cstrong\u003e● 中文名 ●\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e享元\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e● 可变的方面 ●\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e对象的存储开销（共享技术）\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e● 使用场景 ●\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e调用享元工厂获取享元对象(享元工厂内可能会有多个对象)，根据对象是否存在，来维护要在应用程序之间共享的内部数据（可以输出数据，也可以处理数据）。也就是将原数据传递下去，共用，分析和处理它们的异同，根据异同来输出不同的结果，于此同时，不需要在其它函数上再次录入新的数据或者原数据。\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-js\"\u003econst Flyweight = function(make, model, processor) {\r\n    this.make = make;\r\n    this.model = model;\r\n    this.processor = processor;\r\n};\r\n\r\n\r\nclass FlyWeightFactory {\r\n    static data = {};\r\n\r\n    static get(make, model, processor) {\r\n        if ( this.data[`${make}-${model}`] === undefined ) {\r\n            this.data[`${make}-${model}`] = new Flyweight(make, model, processor);\r\n        }\r\n        return this.data[`${make}-${model}`];\r\n    }\r\n\r\n    static getCount() {\r\n        let count = 0;\r\n        for (const f in this.data) count++;\r\n        return count;\r\n    }\r\n}\r\n\r\nfunction ComputerCollection() {\r\n    const computers = {};\r\n    let count = 0;\r\n\r\n    \r\n    const Computer = function (make, model, processor, memory, tag) {\r\n        this.flyweight = FlyWeightFactory.get(make, model, processor);\r\n        this.memory = memory;\r\n        this.tag = tag;\r\n        this.getMake = function () {\r\n            return this.flyweight.make;\r\n        }\r\n        // ...\r\n    };\r\n\r\n    return {\r\n        add: function (make, model, processor, memory, tag) {\r\n            computers[tag] = new Computer(make, model, processor, memory, tag);\r\n            count++;\r\n        },\r\n\r\n        getCount: function () {\r\n            return count;\r\n        }\r\n    };\r\n}\r\n\r\n\r\n\r\nfunction run() {\r\n    const computers = new ComputerCollection();\r\n\r\n    computers.add(\"Dell\", \"XPS\", \"Intel\", \"5G\", \"Y755P\");\r\n    computers.add(\"Dell\", \"XPS\", \"Intel\", \"6G\", \"X997T\");\r\n    computers.add(\"HP\", \"Envy\", \"Intel\", \"4G\", \"CNU883701\");\r\n\r\n    console.log(\"Computers: \" + computers.getCount());\r\n    console.log(\"Flyweights: \" + FlyWeightFactory.getCount());\r\n}\r\nrun();\r\n/*\r\nComputers: 3\r\nFlyweights: 2\r\n*/\r\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch3 id=\"proxy\"\u003eProxy\u003c/h3\u003e\n\u003cp\u003e\u003cstrong\u003e● 中文名 ●\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e代理\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e● 可变的方面 ●\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e如何访问一个对象；该对象的位置\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e● 使用场景 ●\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e客户端调用代理请求操作，代理提供了最后的结果，并维护一个允许代理访问真实对象的引用。代理会处理各种请求，并转发到真正的对象中。\u003c/p\u003e\n\u003cp\u003e代理缓存了频繁请求，如果对象未被缓存则执行真正的服务并将结果存储在缓存中。\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-js\"\u003efunction RealOperation() {\r\n    this.getLatLng = function (address) {\r\n        switch (address) {\r\n            case 'Amsterdam' : return \"52.3700° N, 4.8900° E\";\r\n            case 'London' : return \"51.5171° N, 0.1062° W\";\r\n            default : return '';\r\n        }\r\n    };\r\n}\r\n\r\nfunction GeoProxy() {\r\n    const geocoder = new RealOperation();\r\n    const geocache = {};\r\n\r\n    return {\r\n        getLatLng: function (address) {\r\n            if (!geocache[address]) {\r\n                geocache[address] = geocoder.getLatLng(address);\r\n            }\r\n            console.log(address + \": \" + geocache[address]);\r\n            return geocache[address];\r\n        },\r\n        getCount: function () {\r\n            let count = 0;\r\n            for (const code in geocache) { count++; }\r\n            return count;\r\n        }\r\n    };\r\n};\r\n\r\nfunction run() {\r\n\r\n    const geo = new GeoProxy();\r\n\r\n    geo.getLatLng(\"Paris\");\r\n    geo.getLatLng(\"London\");\r\n    geo.getLatLng(\"Amsterdam\");\r\n    geo.getLatLng(\"Amsterdam\");\r\n    geo.getLatLng(\"London\");\r\n    geo.getLatLng(\"London\");\r\n    geo.getLatLng(\"London\");\r\n\r\n    console.log(\"\\nCache size: \" + geo.getCount());\r\n\r\n}\r\nrun();\r\n/*\r\n\r\nParis: \r\nLondon: 51.5171° N, 0.1062° W\r\nAmsterdam: 52.3700° N, 4.8900° E\r\nAmsterdam: 52.3700° N, 4.8900° E\r\nLondon: 51.5171° N, 0.1062° W\r\nLondon: 51.5171° N, 0.1062° W\r\nLondon: 51.5171° N, 0.1062° W\r\n\r\nCache size: 3\r\n*/\r\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch3 id=\"chain-of-responsibility\"\u003eChain of Responsibility\u003c/h3\u003e\n\u003cp\u003e\u003cstrong\u003e● 中文名 ●\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e职责链\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e● 可变的方面 ●\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e满足一个请求的对象（解除请求的发送者和接收者之间的耦合，使多个对象都有机会处理这个请求）\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e● 使用场景 ●\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e就算很常用的原型链的写法，一个关键点就是方法中的 return, 要返回这个对象，这样才能形成后继的结果链。\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-js\"\u003econst Request = function (amount) {\r\n    this.amount = amount;\r\n    console.log(\"Requested: $\" + amount + \"\\n\");\r\n}\r\n\r\nRequest.prototype = {\r\n    get: function (bill) {\r\n        const count = Math.floor(this.amount / bill);\r\n        this.amount -= count * bill;\r\n        console.log(\"Dispense \" + count + \" $\" + bill + \" bills\");\r\n        return this; //关键\r\n    }\r\n}\r\nfunction run() {\r\n    const request = new Request(378);\r\n    request.get(100).get(50).get(20);\r\n}\r\nrun();\r\n/*\r\n\r\nRequested: $378\r\n\r\nDispense 3 $100 bills\r\nDispense 1 $50 bills\r\nDispense 1 $20 bills\r\n*/\r\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch3 id=\"command\"\u003eCommand\u003c/h3\u003e\n\u003cp\u003e\u003cstrong\u003e● 中文名 ●\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e命令\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e● 可变的方面 ●\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e何时、怎样满足一个请求（封装请求，参数化）\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e● 使用场景 ●\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e客户端引用一个命令接收器(对象)，接收器知道如何执行与命令相关的操作。把这些命令和相关的函数绑定即可。\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-js\"\u003efunction add(x, y) { return x + y; }\r\nfunction sub(x, y) { return x - y; }\r\n\r\nconst Command = function (execute, undo, value) {\r\n    this.execute = execute;\r\n    this.undo = undo;\r\n    this.value = value;\r\n}\r\n\r\nconst AddCommand = function (value) {\r\n    return new Command(add, sub, value);\r\n};\r\n\r\nconst SubCommand = function (value) {\r\n    return new Command(sub, add, value);\r\n};\r\n\r\n\r\nconst Calculator = function () {\r\n    let current = 0;\r\n    const commands = [];\r\n\r\n    function action(command) {\r\n        const name = command.execute.toString().substr(9, 3);\r\n        return name.charAt(0).toUpperCase() + name.slice(1);\r\n    }\r\n\r\n    return {\r\n        execute: function (command) {\r\n            current = command.execute(current, command.value);\r\n            commands.push(command);\r\n            console.log(action(command) + \": \" + command.value);\r\n        },\r\n\r\n        undo: function () {\r\n            const command = commands.pop();\r\n            current = command.undo(current, command.value);\r\n            console.log(\"Undo \" + action(command) + \": \" + command.value);\r\n        },\r\n\r\n        getCurrentValue: function () {\r\n            return current;\r\n        }\r\n    }\r\n}\r\n\r\nfunction run() {\r\n\r\n    const calculator = new Calculator();\r\n\r\n    // issue commands\r\n    calculator.execute(new AddCommand(100));\r\n    calculator.execute(new SubCommand(24));\r\n\r\n    // reverse last two commands\r\n    calculator.undo();\r\n\r\n    console.log(\"\\nValue: \" + calculator.getCurrentValue());\r\n}\r\nrun();\r\n/*\r\n\r\nAdd: 100\r\nSub: 24\r\nUndo Sub: 24\r\n\r\nValue: 100\r\n*/\r\n\r\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch3 id=\"interpreter\"\u003eInterpreter\u003c/h3\u003e\n\u003cp\u003e\u003cstrong\u003e● 中文名 ●\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e解释器\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e● 可变的方面 ●\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e一个语言的文法及解释\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e● 使用场景 ●\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e输入一个字符串，构建出这个字符串的相应的语法树，然后使用相应的表达式输出最后的结果。\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-js\"\u003econst Context = function (input) {\r\n    this.input = input;\r\n    this.output = 0;\r\n}\r\n\r\nContext.prototype = {\r\n    startsWith: function (str) {\r\n        return this.input.substr(0, str.length) === str;\r\n    }\r\n}\r\n\r\nconst Expression = function (name, one, four, five, nine, multiplier) {\r\n    this.name = name;\r\n    this.one = one;\r\n    this.four = four;\r\n    this.five = five;\r\n    this.nine = nine;\r\n    this.multiplier = multiplier;\r\n}\r\n\r\nExpression.prototype = {\r\n    interpret: function (context) {\r\n        if (context.input.length == 0) {\r\n            return;\r\n        }\r\n        else if (context.startsWith(this.nine)) {\r\n            context.output += (9 * this.multiplier);\r\n            context.input = context.input.substr(2);\r\n        }\r\n        else if (context.startsWith(this.four)) {\r\n            context.output += (4 * this.multiplier);\r\n            context.input = context.input.substr(2);\r\n        }\r\n        else if (context.startsWith(this.five)) {\r\n            context.output += (5 * this.multiplier);\r\n            context.input = context.input.substr(1);\r\n        }\r\n        while (context.startsWith(this.one)) {\r\n            context.output += (1 * this.multiplier);\r\n            context.input = context.input.substr(1);\r\n        }\r\n    }\r\n}\r\n\r\nfunction run() {\r\n    const roman = \"MCMXXVIII\"\r\n    const context = new Context(roman);\r\n    const tree = [];\r\n\r\n    tree.push(new Expression(\"thousand\", \"M\", \" \", \" \", \" \", 1000));\r\n    tree.push(new Expression(\"hundred\", \"C\", \"CD\", \"D\", \"CM\", 100));\r\n    tree.push(new Expression(\"ten\", \"X\", \"XL\", \"L\", \"XC\", 10));\r\n    tree.push(new Expression(\"one\", \"I\", \"IV\", \"V\", \"IX\", 1));\r\n\r\n    for (let i = 0, len = tree.length; i \u0026lt; len; i++) {\r\n        tree[i].interpret(context);\r\n    }\r\n\r\n    console.log(roman + \" = \" + context.output);\r\n}\r\nrun();\r\n/*\r\n\r\nMCMXXVIII = 1928\r\n*/\r\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch3 id=\"iterator\"\u003eIterator\u003c/h3\u003e\n\u003cp\u003e\u003cstrong\u003e● 中文名 ●\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e迭代器\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e● 可变的方面 ●\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e如何遍历、访问一个聚合的各元素\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e● 使用场景 ●\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e客户端调用迭代器(通常传入一个数组)，迭代器使用方法 first()、next() 等实现迭代器接口遍历对象。\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-js\"\u003e\r\nconst Iterator = function (items) {\r\n    this.index = 0;\r\n    this.items = items;\r\n}\r\n\r\nIterator.prototype = {\r\n    first: function () {\r\n        this.reset();\r\n        return this.next();\r\n    },\r\n    next: function () {\r\n        return this.items[this.index++];\r\n    },\r\n    hasNext: function () {\r\n        return this.index \u0026lt;= this.items.length;\r\n    },\r\n    reset: function () {\r\n        this.index = 0;\r\n    },\r\n    each: function (callback) {\r\n        for (let item = this.first(); this.hasNext(); item = this.next()) {\r\n            callback(item);\r\n        }\r\n    }\r\n}\r\n\r\nfunction run() {\r\n\r\n    const items = [\"one\", 2, \"three\", true];\r\n    const iter = new Iterator(items);\r\n\r\n    // using for loop\r\n    for (let item = iter.first(); iter.hasNext(); item = iter.next()) {\r\n        console.log(item);\r\n    }\r\n    console.log(\"-----\");\r\n\r\n    // using Iterator's each method\r\n    iter.each(function (item) {\r\n        console.log(item);\r\n    });\r\n}\r\nrun();\r\n/*\r\n\r\none\r\n2\r\nthree\r\ntrue\r\n-----\r\none\r\n2\r\nthree\r\ntrue\r\n*/\r\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch3 id=\"mediator\"\u003eMediator\u003c/h3\u003e\n\u003cp\u003e\u003cstrong\u003e● 中文名 ●\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e中介者\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e● 可变的方面 ●\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e对象间怎样交互、和谁交互（用一个中介对象封装交互）\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e● 使用场景 ●\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e中介者提供一个通信的接口(会有多个参与者加入，参与者作为参数传递给中介者)，维护和管理一个或者多个对象的引用。\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-js\"\u003econst Participant = function (name) {\r\n    this.name = name;\r\n    this.chatroom = null;\r\n};\r\n\r\nParticipant.prototype = {\r\n    send: function (message, to) {\r\n        this.chatroom.send(message, this, to);\r\n    },\r\n    receive: function (message, from) {\r\n        console.log(from.name + \" to \" + this.name + \": \" + message);\r\n    }\r\n};\r\n\r\nconst Chatroom = function () {  // Mediator\r\n    const participants = {};\r\n\r\n    return {\r\n\r\n        register: function (participant) {\r\n            participants[participant.name] = participant;\r\n            participant.chatroom = this;\r\n        },\r\n\r\n        send: function (message, from, to) {\r\n            if (to) {                      // single message\r\n                to.receive(message, from);\r\n            } else {                       // broadcast message\r\n                for (key in participants) {\r\n                    if (participants[key] !== from) {\r\n                        participants[key].receive(message, from);\r\n                    }\r\n                }\r\n            }\r\n        }\r\n    };\r\n};\r\n\r\nfunction run() {\r\n\r\n    const yoko = new Participant(\"A\");\r\n    const john = new Participant(\"B\");\r\n\r\n    const chatroom = new Chatroom();\r\n    chatroom.register(yoko);\r\n    chatroom.register(john);\r\n\r\n    yoko.send(\"I am A.\");\r\n    yoko.send(\"I am 15.\");\r\n    john.send(\"Hello\", yoko);\r\n}\r\nrun();\r\n/*\r\nA to B: I am A.\r\nA to B: I am 15.\r\nB to A: Hello\r\n*/\r\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch3 id=\"memento\"\u003eMemento\u003c/h3\u003e\n\u003cp\u003e\u003cstrong\u003e● 中文名 ●\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e备忘录\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e● 可变的方面 ●\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e一个对象中那些私有信息存放在该对象之外，以及在什么时候进行存储（不破坏封装，捕获对象内部的状态）\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e● 使用场景 ●\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e通过一个对象来存储原来的对象的属性，它并不改变原来的对象。这样可以方便在不同的状态时使用存储的数据。\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-js\"\u003econst Person = function (name, state) {\r\n    this.name = name;\r\n    this.state = state;\r\n}\r\n\r\nPerson.prototype = {\r\n\r\n    hydrate: function () {\r\n        const memento = JSON.stringify(this);\r\n        return memento;\r\n    },\r\n\r\n    dehydrate: function (memento) {\r\n        const m = JSON.parse(memento);\r\n        this.name = m.name;\r\n        this.state = m.state;\r\n    }\r\n}\r\n\r\nconst CareTaker = function () {\r\n    this.mementos = {};\r\n    this.add = function (key, memento) {\r\n        this.mementos[key] = memento;\r\n    }\r\n    this.get = function (key) {\r\n        return this.mementos[key];\r\n    }\r\n}\r\n\r\nfunction run() {\r\n\r\n    const mike = new Person(\"AB\", \"TX\");\r\n    const john = new Person(\"CD\", \"CA\");\r\n    const caretaker = new CareTaker();\r\n\r\n    // save state\r\n    caretaker.add(1, mike.hydrate());\r\n    caretaker.add(2, john.hydrate());\r\n\r\n    // mess up their names\r\n    mike.name = \"GGG\";\r\n    john.name = \"MMM\";\r\n\r\n    // restore original state\r\n    mike.dehydrate(caretaker.get(1));\r\n    john.dehydrate(caretaker.get(2));\r\n\r\n    console.log(mike.name);\r\n    console.log(john.name);\r\n}\r\nrun();\r\n/*\r\nAB\r\nCD\r\n\r\n注释掉 dehydrate方法则输出：\r\n\r\nGGG\r\nMMM\r\n\r\n*/\r\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch3 id=\"observer\"\u003eObserver\u003c/h3\u003e\n\u003cp\u003e\u003cstrong\u003e● 中文名 ●\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e观察者\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e● 可变的方面 ●\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e多个对象依赖于另外一个对象，而这些对象又如何保持一致（得到通知并自动刷新）\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e● 使用场景 ●\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e这种模式实现了松耦合，任意数量的观察者对象都可以观察一个目标对象，实现一个让观察者对象订阅或取消订阅的接口。\u003c/p\u003e\n\u003cp\u003e当它的状态改变时向它的观察者发送通知，然后可以调用观察者的绑定的函数来触发事件。\u003c/p\u003e\n\u003cp\u003e它也可以说是发布订阅模式，他们都可以增加一个第三者(经纪人：Broker)，来通知发布者/订阅者，它们也可以完全解耦，实质上都是为了让对象之间互不相识却可以相互通信。\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-js\"\u003efunction Click() {\r\n    this.handlers = [];  // observers\r\n}\r\n\r\nClick.prototype = {\r\n\r\n    subscribe: function (fn) {\r\n        this.handlers.push(fn);\r\n    },\r\n\r\n    unsubscribe: function (fn) {\r\n        this.handlers = this.handlers.filter(\r\n            function (item) {\r\n                if (item !== fn) {\r\n                    return item;\r\n                }\r\n            }\r\n        );\r\n    },\r\n\r\n    fire: function (o, thisObj) {\r\n        const scope = thisObj || window;\r\n        this.handlers.forEach(function (item) {\r\n            item.call(scope, o);\r\n        });\r\n    }\r\n}\r\n\r\nfunction run() {\r\n\r\n    const clickHandler = function (item) {\r\n        console.log(\"fired: \" + item);\r\n    };\r\n\r\n    const click = new Click();\r\n\r\n    click.subscribe(clickHandler);\r\n    click.fire('event #1');\r\n    click.unsubscribe(clickHandler);\r\n    click.fire('event #2');\r\n    click.subscribe(clickHandler);\r\n    click.fire('event #3');\r\n}\r\nrun();\r\n/*\r\nfired: event #1\r\nfired: event #3\r\n*/\r\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch3 id=\"state\"\u003eState\u003c/h3\u003e\n\u003cp\u003e\u003cstrong\u003e● 中文名 ●\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e状态\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e● 可变的方面 ●\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e对象的状态（状态改变时改变它的行为）\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e● 使用场景 ●\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e创建一个函数 (上下文，即起到一个承上启下的作用，作为一个中间量，根据输入控制输出) 公开支持目标对象的接口，它用来维护这个引用的对象，并允许改变对象的状态属性。根据这些不同的状态，会有不同的事件触发。\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-js\"\u003econst TrafficLight = function () {\r\n    let count = 0;\r\n    let currentState = new Red(this);\r\n\r\n    this.change = function (state) {\r\n        // limits number of changes\r\n        if (count++ \u0026gt;= 10) return;\r\n        currentState = state;\r\n        currentState.go();\r\n    };\r\n\r\n    this.start = function () {\r\n        currentState.go();\r\n    };\r\n}\r\n\r\nconst Red = function (light) {\r\n    this.light = light;\r\n\r\n    this.go = function () {\r\n        console.log(\"Red --\u0026gt; for 1 minute\");\r\n        light.change(new Green(light));\r\n    }\r\n};\r\n\r\nconst Yellow = function (light) {\r\n    this.light = light;\r\n\r\n    this.go = function () {\r\n        console.log(\"Yellow --\u0026gt; for 10 seconds\");\r\n        light.change(new Red(light));\r\n    }\r\n};\r\n\r\nconst Green = function (light) {\r\n    this.light = light;\r\n\r\n    this.go = function () {\r\n        console.log(\"Green --\u0026gt; for 1 minute\");\r\n        light.change(new Yellow(light));\r\n    }\r\n};\r\n\r\nfunction run() {\r\n\r\n    const light = new TrafficLight();\r\n    light.start();\r\n}\r\nrun();\r\n/*\r\nRed --\u0026gt; for 1 minute\r\nGreen --\u0026gt; for 1 minute\r\nYellow --\u0026gt; for 10 seconds\r\nRed --\u0026gt; for 1 minute\r\nGreen --\u0026gt; for 1 minute\r\nYellow --\u0026gt; for 10 seconds\r\nRed --\u0026gt; for 1 minute\r\nGreen --\u0026gt; for 1 minute\r\nYellow --\u0026gt; for 10 seconds\r\nRed --\u0026gt; for 1 minute\r\nGreen --\u0026gt; for 1 minute\r\n*/\r\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch3 id=\"strategy\"\u003eStrategy\u003c/h3\u003e\n\u003cp\u003e\u003cstrong\u003e● 中文名 ●\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e策略\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e● 可变的方面 ●\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e算法（封装一系列算法，独立于使用它的客户）\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e● 使用场景 ●\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e创建一个函数 (上下文，即起到一个承上启下的作用，作为一个中间量，根据输入控制输出) 公开支持目标对象的接口，针对当前引用的对象(这个对象可以是纯数据，也可以是其它)，接口允许客户端请求策略计算。\u003c/p\u003e\n\u003cp\u003e即相同的数据，提供了不同的算法，来输出不同的结果。\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-js\"\u003econst Shipping = function () {\r\n    this.company = \"\";\r\n};\r\n\r\nShipping.prototype = {\r\n    setStrategy: function (company) {\r\n        this.company = company;\r\n    },\r\n\r\n    calculate: function (package) {\r\n        return this.company.calculate(package);\r\n    }\r\n};\r\n\r\nconst UPS = function () {\r\n    this.calculate = function (package) {\r\n        // calculations...\r\n        return \"$15\";\r\n    }\r\n};\r\n\r\n\r\nconst Fedex = function () {\r\n    this.calculate = function (package) {\r\n        // calculations...\r\n        return \"$25\";\r\n    }\r\n};\r\n\r\nfunction run() {\r\n\r\n    const package = { from: \"76712\", to: \"10012\", weigth: \"lkg\" };\r\n\r\n    // the 3 strategies\r\n    const ups = new UPS();\r\n    const fedex = new Fedex();\r\n\r\n    const shipping = new Shipping();\r\n\r\n    shipping.setStrategy(ups);\r\n    console.log(\"UPS Strategy: \" + shipping.calculate(package));\r\n    shipping.setStrategy(fedex);\r\n    console.log(\"Fedex Strategy: \" + shipping.calculate(package));\r\n}\r\nrun();\r\n/*\r\nUPS Strategy: $15\r\nFedex Strategy: $25\r\n*/\r\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch3 id=\"template-method\"\u003eTemplate Method\u003c/h3\u003e\n\u003cp\u003e\u003cstrong\u003e● 中文名 ●\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e模板方法\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e● 可变的方面 ●\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e算法中的某些步骤（定义骨架）\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e● 使用场景 ●\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e首先为一个函数提供一些接口，这些接口是实现定义算法基本步骤的钩子(也可以为空，也可以指定默认的代码)，开发人员可以轻松通过覆盖的方式定义自己的方法(也就是定义一个自定义的模版)\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-js\"\u003econst datastore = {\r\n    process: function () {\r\n        this.connect();\r\n        this.select();\r\n        this.disconnect();\r\n        return true;\r\n    }\r\n};\r\n\r\nfunction inherit(proto) {\r\n    const F = function () { };\r\n    F.prototype = proto;\r\n    return new F();\r\n}\r\n\r\nfunction run() {\r\n    const mySql = inherit(datastore);\r\n\r\n    // implement template steps\r\n\r\n    mySql.connect = function () {\r\n        console.log(\"MySQL: connect step\");\r\n    };\r\n\r\n    mySql.select = function () {\r\n        console.log(\"MySQL: select step\");\r\n    };\r\n\r\n    mySql.disconnect = function () {\r\n        console.log(\"MySQL: disconnect step\");\r\n    };\r\n\r\n    mySql.process();\r\n}\r\nrun();\r\n/*\r\nMySQL: connect step\r\nMySQL: select step\r\nMySQL: disconnect step\r\n*/\r\n\u003c/code\u003e\u003c/pre\u003e\n\u003ch3 id=\"visitor\"\u003eVisitor\u003c/h3\u003e\n\u003cp\u003e\u003cstrong\u003e● 中文名 ●\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e访问者\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e● 可变的方面 ●\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e某些可作用于一个(组)对象上的操作，但不修改这些对象的类（如回调函数，回调传参）\u003c/p\u003e\n\u003cp\u003e\u003cstrong\u003e● 使用场景 ●\u003c/strong\u003e\u003c/p\u003e\n\u003cp\u003e让对象可以通过访问者查询，让对象也可以使用访问者的方法，从而可以改变对象的属性值。\u003c/p\u003e\n\u003cp\u003e这样做的好处是无需重新创建一次相同的(不同属性值)对象来使用。\u003c/p\u003e\n\u003cpre\u003e\u003ccode class=\"language-js\"\u003econst Employee = function (name, salary, vacation) {\r\n    const self = this;\r\n\r\n    this.accept = function (visitor) {\r\n        visitor.visit(self);\r\n    };\r\n\r\n    this.getName = function () {\r\n        return name;\r\n    };\r\n\r\n    this.getSalary = function () {\r\n        return salary;\r\n    };\r\n\r\n    this.setSalary = function (sal) {\r\n        salary = sal;\r\n    };\r\n};\r\n\r\nconst ExtraSalary = function () {\r\n    this.visit = function (emp) {\r\n        emp.setSalary(emp.getSalary() * 1.1);\r\n    };\r\n};\r\n\r\n\r\nfunction run() {\r\n\r\n    const employees = [\r\n        new Employee(\"A\", 10000, 10),\r\n        new Employee(\"B\", 20000, 21),\r\n    ];\r\n\r\n    const visitorSalary = new ExtraSalary();\r\n\r\n    for (let i = 0, len = employees.length; i \u0026lt; len; i++) {\r\n        const emp = employees[i];\r\n\r\n        emp.accept(visitorSalary);\r\n        console.log(`Employee Name: ${emp.getName()} - $${emp.getSalary()} `);\r\n    }\r\n}\r\nrun();\r\n/*\r\nEmployee Name: A - $11000 \r\nEmployee Name: B - $22000 \r\n\r\n注释  accept方法后，输出：\r\n\r\nEmployee Name: A - $10000 \r\nEmployee Name: B - $20000 \r\n*/\r\n\u003c/code\u003e\u003c/pre\u003e\n","slug":"86f20bd39f03310b956c2dc4","prev":[{"ID":873333,"title":"数据结构JavaScript实例学习与研究","excerpt":"既然是写程序，绝对少不了数据结构与算法，自己看过了三种不同的数据结构与算法书籍，虽然大同小异，但是总有一些查缺补漏，为了更好地作为温故而知新的学习材料，这里系统化的进行一次整理。本文列出了栈、队列、链表、字典、集合、散列表、二叉树、平衡二叉树、堆(二叉堆)、图的JavaScript的例子，结合书籍的理论，可以更好地去在实践中理解。","slug":"387801d1d86c145b71221569","post_date":"2022-04-04 11:49:30","post_date_gmt":"2022-04-04 11:49:30","thumbnail":[],"thumbnail_mini":[],"thumbnail_retina":[]}],"next":[{"ID":893333,"title":"从零部署Linux服务器完全指南2022版(CentOS 8+Nginx+PHP)","excerpt":"之前我的一个CentOS 7 Apache的站点被攻击，导致流量过载损失了一笔钱，由于也是边学习边部署的，有不少安全隐患，为了避免常见安全隐患再次发生，后来找出大概的原因后决定重新部署一个基于CentOS 8 Nginx的服务器。这也是充分利用Google和自己探索的一些从零部署的技巧和方法。","slug":"the-complete-guide-to-deploying-a-linux-server-from-scratch-version-2022-for-centos8-nginx-php","post_date":"2022-04-06 17:28:22","post_date_gmt":"2022-04-06 17:28:22","thumbnail":["/static-remote/files/c945-com_916eabee741055d527937c48-770x340-4-matrixflipcomapiwpcontentuploadsccomeabeedcxjpg.jpg",770,340,false],"thumbnail_mini":["/static-remote/files/c945-com_916eabee741055d527937c48-770x340-4-150x150-matrixflipcomapiwpcontentuploadsccomeabeedcxxjpg.jpg",150,150,true],"thumbnail_retina":["/static-remote/files/c945-com_916eabee741055d527937c48-770x340-4-matrixflipcomapiwpcontentuploadsccomeabeedcxjpg.jpg",770,340,false]}],"post_date":"2022-04-04 12:15:26","post_date_gmt":"2022-04-04 12:15:26","post_status":"publish","comment_status":"open","ping_status":"open","post_password":"","to_ping":"","pinged":"","post_modified":"2022-12-30 02:47:18","post_modified_gmt":"2022-12-30 02:47:18","post_content_filtered":"","post_parent":0,"guid":"https://matrixflip.com/api/?post_type=post\u0026#038;p=883333","menu_order":0,"post_type":"post","post_mime_type":"","comment_count":"0","filter":"raw"},"postID":"86f20bd39f03310b956c2dc4"},"__N_SSG":true},"page":"/article/[id]","query":{"id":"86f20bd39f03310b956c2dc4.html"},"buildId":"xA4iFUBUC5JPzbSrRpEKC","isFallback":false,"gsp":true,"scriptLoader":[]}</script></body></html>

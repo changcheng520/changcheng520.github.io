@@ -1,0 +1,137 @@
+<!doctype html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <title>修改FSO权限-windows 7</title>
+    <style type="text/css">
+        body {
+            background: #fff
+        }
+
+        p {
+            color: #7B1E2C;
+            font-size: 18px;
+            font-weight: bold;
+            margin-top: 20px;
+            text-align: left
+        }
+
+        #b {
+            width: 1200px;
+            min-height: 900px;
+            height: auto !important;
+            height: 900px;
+            overflow: auto;
+            +overflow: visible;
+            background: #CCCCCC;
+            border: 1px #666666 solid;
+            text-align: center;
+            margin-bottom: 10px;
+            padding-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body style="color:#000000; font-size:13px; margin:10px; text-align:left">
+    <div align="center">
+
+        <div id="b">
+            <p>1.先打开&ldquo;控制面板&rdquo;-&ldquo;程序和功能&rdquo;，添加IIS管理工具</p>
+            <hr />
+            <img src="teach2/1.gif" />
+            <hr />
+            <img src="teach2/1-1.gif" /> <br />
+        </div>
+
+
+        <div id="b">
+            <p>2.再打开&ldquo;控制面板&rdquo;-&ldquo;程序和功能&rdquo;，添加IIS信息服务里的“万维网服务”</p>
+            <hr />
+            <img src="teach2/2.gif" />
+        </div>
+
+
+        <div id="b">
+            <p>3.添加“万维网服务”里的“应用程序开发功能”，按图示添加</p>
+            <hr />
+            <img src="teach2/3.gif" /> <br />
+        </div>
+
+
+        <div id="b">
+            <p>4.在“计算机管理”面板里按图示添加隶属于administrator的新用户</p>
+            <hr />
+            <img src="teach2/4.gif" />
+            <hr />
+            <img src="teach2/4-2.gif" />
+            <hr />
+            <img src="teach2/4-3.gif" /><br />
+        </div>
+
+
+        <div id="b">
+            <p>5.进入控制面板-管理工具-IIS管理，按图示设置父路径的访问权限</p>
+            <hr />
+            <img src="teach2/5.gif" />
+            <hr />
+            <img src="teach2/6.gif" />
+            <hr />
+            <img src="teach2/7.gif" />
+        </div>
+
+
+
+        <div id="b">
+            <p>6.按图示设置身份验证的权限，OK，完成，您可以使用FSO的所有权限了。</p>
+            <hr />
+            <img src="teach2/8.gif" />
+            <hr />
+            <img src="teach2/9.gif" />
+            <hr />
+            <img src="teach2/10.gif" />
+        </div>
+
+
+        <div id="b">
+            <p>7.按图示设置默认文档，网站需要index.html,index.asp.default.html,default.asp 4个默认文档。</p>
+            <hr />
+            <img src="teach2/11.gif" />
+            <hr />
+            <img src="teach2/12.gif" />
+        </div>
+
+        <div id="b">
+            <p>8.如果你不想在重启电脑或注销时看到两个用户选择，则进入“管理中心-计算机管理-用户和用户组”，把系统默认自带的超级管理员按图示选择“帐户已禁用”即可。（建议不要删除它）</p>
+            <hr />
+            <img src="teach2/Snap3.gif" />
+        </div>
+
+
+        <div id="b">
+            <p>9.使用后台上传功能图片上传不成功，可能是服务器大小未设置超过200K，按照图示方法设置一下</p>
+            <hr />
+            <img src="teach2/13.gif" />
+            <img src="teach2/14.gif" />
+        </div>
+
+
+
+
+        <div id="b">
+            <p>【64位系统】默认安装的IIS按照之前的设置配置好IIS后，无法与access数据库连接，需要按照图示进入“应用程序池”设置启用32位IIS。</p>
+            <hr />
+            <img src="teach2/Snap1.gif" />
+            <hr />
+            <img src="teach2/Snap2.gif" />
+        </div>
+
+
+
+
+    </div>
+
+
+</body>
+
+</html>

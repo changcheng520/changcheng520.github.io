@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<!--
+https://www.c945.com  没位道Designer's site Program 产品皮肤预览  未经允许不得仿制及转载
+-->
+
+<!--
+'=========================================
+'
+'    Designer's site Program 全站静态系统
+'    xizon   xizon@c945.com
+'    www.c945.com
+'    技术支持：没位道
+'    未经允许不得私自用于任何商业用途
+'
+'=========================================
+-->
+
+<html>
+<head>
+<meta charset="utf-8"/>
+<title>没位道 - Designer &#039;s  Site Program 全站静态系统 - 免费建站|个人网站建设|高端网站|UI|创意网站|建站系统|企业建站|HTML5|CSS3-作品案例</title>
+<script src="jquery.switch.compatible.min.js?1.4.2"></script>
+
+
+
+<script>
+/*---------搜索页------------*/
+$(function() { 
+
+	//初始化页面链接
+	$("#ul_search a").each(function(){
+		var dh = $(this).attr("href");
+		dh = dh.replace(webHost,"");
+		$(this).attr("data-url",dh);
+		$(this).attr("href","javascript:");
+	});
+		
+	
+	$("#ul_search a").click( 
+		function () {
+			var thisURL = $(this).attr("data-url");
+			showac_subitem(thisURL,'',1);
+	});
+	
+
+	
+	
+});
+				
+</script>
+
+</head>
+<body class="body-content">
+
+    
+                  <!--++++++++++++++++++++++ 内容区   begin++++++++++++++++++++++-->
+            
+                    <!-- 搜索框架  begin -->
+                    
+             
+                        <script>usePara_btnHover = 1;</script>
+
+
+                            <form method="post" action="#" id="search-form-full">
+            
+                                <div class="searchBox" onMouseOver="$('#sug').css('display','block');" onMouseOut="$('#sug').css('display','none');">
+                                    <div id="searchForm">
+                                        <div class="searchOP">
+                                        <span class="selectBox">
+                                        <select name="stable">
+                                        
+                                   
+                                              <option value="article" >文章</option>
+                                              <option value="works">作品</option>
+                                              
+                                        </select></span>
+          
+                                        </div>  
+                                    
+                                        <input name="image" type="image" src="../images/skins/temp_style/search_button_2_big.gif" class="searchBtn" alt="" />
+                                        <input  name="keywords" id="keywords"  class="txt focusJS" type="text" data-value="search.." value=""  maxlength="50" />
+                                    
+                                    </div>
+                                    <div class="clear"></div>
+                                    
+                                                         
+                                    <div id="sug"><span id="txtHint"></span></div>
+                                    
+                                    
+                                    <!--  $$$$$$$$$$$$$$$$$$$$   搜索结果测试-不放置到整合 $$$$$$$$$$$$$$$$$$$$-->
+                                    <br clear="all">
+                                    &nbsp;共<span class="searchAlertFont">4</span>条记录&nbsp;&nbsp;类别：<span class="searchAlertFont">文章</span>&nbsp;&nbsp;关键词：<span class="searchAlertFont">配色&nbsp;</span><hr /> 
+                                    <ul id="ul_search"><li>&nbsp;<a href="/demo/d-s-skin-demo/_theme7/dairyShow.html" title="网页设计中对黑色调的理解"  >网页设计中对黑色调的理解</a></li>	 </ul>  
+                                   
+                                     <hr />&nbsp;共<span class="searchAlertFont">4</span>条记录&nbsp;&nbsp;类别：<span class="searchAlertFont">文章</span>&nbsp;&nbsp;关键词：<span class="searchAlertFont">配色&nbsp;</span>
+                                    <!--  $$$$$$$$$$$$$$$$$$$$ /搜索结果测试-不放置到整合 $$$$$$$$$$$$$$$$$$$$ -->
+                                    
+                                </div>
+            
+                            </form>
+                        
+                     <!-- 搜索框架  end -->
+                     
+                     
+                     
+                 <!-- +++++++++++++++++++++  内容区     end++++++++++++++++++++++++++++++++-->
+                
+
+     
+     <!-- 底部  begin  -->
+        <script>var turl = "/demo/d-s-skin-demo/_theme7/search.html";</script>
+        <script src="comm.nav.js"></script>
+
+
+</body>
+</html>
+
+

@@ -1,0 +1,466 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js ie ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js ie ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js ie ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js ie ie9"> <![endif]-->
+<!--[if !IE]><!--> <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js"> <!--<![endif]-->
+
+<head>
+    <meta name="viewport" content="width=device-width, user-scalable=yes" />
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
+    <meta charset="utf-8"/>
+    <title>导航菜单|Dsure-HTML5网站,前端开发框架</title>
+    <meta name="description" content="Dsure,基于纯CSS的HTML5网站响应式开发框架,专注国内/外交互式网站开发,完美适用于Designers Site Program 全站静态系统">
+    <meta name="keywords" content="Dsure,CSS框架,HTML5网站,HTML5框架,CSS3动画,前端开发,Designers Site,全站静态系统,免费建站,响应式网站,交互式网站,自适应网站,framework">
+    <meta name="author" content="没位道">
+
+    <!-- Jquery.min begin -->
+    <script src="js/jquery.min.js?1.7.1" ></script>
+    <!-- / Jquery.min end -->
+    
+    <!-- URL Hash Compatible(IE5+) begin -->
+    <script src="js/jquery.hashchange.js" ></script>
+	<script>
+		//hash
+		var turl = "";
+    </script> 
+
+    <!-- URL Hash Compatible(IE5+) end -->
+    
+    
+    <!-- Dsure  Development Framework  begin  -->
+    
+        <link rel="stylesheet" type="text/css" href="../../dsure/dsure.flat.css" />
+        <script src="../../dsure/dsure.modernizr.js"></script>
+        <!--[if lt IE 9]>  
+            <script src="../../dsure/dsure.respond.js"></script>  
+        <![endif]-->  
+    
+        <!--[if lt IE 7 ]>
+            <script src="../../dsure/dsure.png.js"></script>
+            <script>
+            DD_belatedPNG.fix('img, a, span, h1, h2, h3, em, section, header');
+            document.execCommand("BackgroundImageCache", false, true);
+            </script>
+        <![endif]-->
+
+    
+    <!-- /Dsure Development Framework  end   -->
+    
+
+    
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+
+    
+
+
+</head>
+<body>
+
+    <!--  loading  -->
+    <div id="loading"></div> 
+    <div id="back-top"><a href="#">Top</a></div>
+
+    <!--  menu  -->
+        <nav id="menu">
+            <div class="main-menu">
+        
+                <ul>
+                    <li class="web-title"><a href="/d-s/Dsure-flat">Dsure.Flat</a></li>
+                    <li class="line"></li>
+                    <li><a href="/d-s/Dsure-flat">欢迎页面</a></li>
+                    <li><a href="/d-s/Dsure-flat/detail-base.html">基础框架 <span>(Base)</span> <b>*必须*</b></a></li>
+                    <li><a href="/d-s/Dsure-flat/detail-base2.html">样式叠加 <span>(Base)</span> <b>*通用*</b></a></li>
+                    <li><a href="/d-s/Dsure-flat/detail-text.html">内容/文本 <span>(Text)</span></a></li>
+                    <li><a href="/d-s/Dsure-flat/detail-buttons.html">按钮 <span>(Buttons)</span></a></li>
+                    <li><a href="/d-s/Dsure-flat/detail-forms.html">表单 <span>(Forms)</span></a></li>
+                    <li><a href="/d-s/Dsure-flat/detail-tables.html">表格 <span>(Tables)</span></a></li>
+                    <li><a href="/d-s/Dsure-flat/detail-grids.html">网格/栅格系统 <span>(Grids)</span> </a></li>
+                    <li><a href="/d-s/Dsure-flat/detail-layouts.html">循环列表布局 <span>(Layouts)</span></a></li>
+                    <li><a href="/d-s/Dsure-flat/detail-icons.html">图标 <span>(Icons)</span></a></li>
+                    <li><a href="/d-s/Dsure-flat/detail-img.html">图片 <span>(Images)</span></a></li>
+                    <li><a href="/d-s/Dsure-flat/detail-line.html">分割线 <span>(Dividing Line)</span></a></li>
+                    <li><a href="/d-s/Dsure-flat/detail-paginators.html">分页 <span>(Paginators)</span></a></li>
+                    <li class="active"><a href="/d-s/Dsure-flat/detail-navigation.html">导航菜单 <span>(Navigation)</span></a></li>
+                    <li><a href="/d-s/Dsure-flat/detail-classification.html">分类导航 <span>(Classification)</span></a></li>
+                    <li><a href="/d-s/Dsure-flat/detail-striking.html">醒目牌 <span>(Striking)</span></a></li>
+                    <li><a href="/d-s/Dsure-flat/detail-search.html">搜索框 <span>(Search Box)</span></a></li> 
+                    <li><a href="/d-s/Dsure-flat/detail-tags.html">标签集 <span>(Tags)</span></a></li> 
+                   
+                </ul>
+
+                            
+            </div>
+           
+         </nav>
+         
+     <!--  /menu  -->
+     
+     
+        
+    
+     
+     <section id="content">
+         <div class="show">
+          
+          <!-- /////////////////   Content    Begin /////////////////// -->
+
+      <div class="dsure-title-nav dsure-no-hover dsure-bg-silver dsure-radius-small dsure-b-shadow f-i15">
+        <h1>导航菜单</h1>
+      </div>
+
+      <div id="dir-nav" class="dir-nav dsure-no-hover dsure-bg-silver">
+          <a class="close" data-close="0" href="javascript:">×</a>
+          <div class="clear"></div>
+          <span class="t">目录导航</span>
+          <a href="javascript:" id="b-s1" onClick="navScrollTo('#s1');" >横向</a>
+          <a href="javascript:" id="b-s2" onClick="navScrollTo('#s2');" >纵向</a>
+          <a href="javascript:" id="b-s3" onClick="navScrollTo('#s3');" >自定义</a>
+          <a href="javascript:" id="b-s4" onClick="navScrollTo('#s4');" >面包屑</a>
+      </div>
+
+
+      <div class="clear"></div>
+      
+      <div class="codeBox">
+
+            <p class="dsure-tip">
+              <i class="dsure-icon dsure-icon-bulb"></i> 导航支持<strong>响应式切换</strong>，您可以调整窗口大小查看效果
+            </p>
+
+            <p class="dsure-tip dsure-tip-success">
+              <i class="dsure-icon dsure-icon-bulb"></i> 所有导航菜单元素都可以使用左侧导航<img src="css/images/m1.jpg" class="ma-l5 ma-r5">的所有class类进行细节样式的调整
+              
+            </p>
+
+                   
+
+      </div><!--  /.codeBox -->
+      
+      
+        <div class="codeBox d-class-area" id="s1">
+           
+           <h2>(1) 横向导航</h2>
+          
+            <div class="codeBox-content">
+
+      
+                    <nav class="dsure-nav" style="height:200px">
+                        <ul class="nav">
+                            
+                            <li class="item"><a href="#" >菜单</a></li>
+                            <li class="item"><a href="#">菜单</a></li>
+                            
+                            <li class="item"><a href="#">菜单</a></li>
+                            
+                            <li class="item navSelected"><a href="#">多级菜单</a> 
+                                <ul class="sub" style="display:block">
+                                    <li class="sub-item"><a href="#">二级菜单</a></li>
+                                    <li class="sub-item"><a href="#">二级菜单</a></li>
+                                    <li class="sub-item"><a href="#">二级菜单文字数量</a></li>
+                                    <li class="sub-item"><a href="#">二级菜单文字数量改变</a></li>
+                                </ul>
+                            </li>
+                            
+                            <li class="item"><a href="#">一级菜单</a> </li>
+                            <li class="item"><a href="#">一级菜单</a></li>
+                            
+                        </ul>
+                    </nav>
+                    
+                    
+
+            </div><!--  /.codeBox-content -->
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML代码:</span>
+
+&lt;nav class="<span class="im-class">dsure-nav</span>"&gt;
+    &lt;ul class="<span class="im-class">nav</span>"&gt;
+        
+        &lt;li class="<span class="im-class">item</span>"&gt;&lt;a href="#" &gt;菜单&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="<span class="im-class">item</span>"&gt;&lt;a href="#"&gt;菜单&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="<span class="im-class">item</span>"&gt;&lt;a href="#"&gt;菜单&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="<span class="im-class">item navSelected</span>"&gt;&lt;a href="#"&gt;多级菜单&lt;/a&gt; 
+            &lt;ul class="<span class="im-class">sub</span>"&gt;
+                &lt;li class="<span class="im-class">sub-item</span>"&gt;&lt;a href="#"&gt;二级菜单&lt;/a&gt;&lt;/li&gt;
+                &lt;li class="<span class="im-class">sub-item</span>"&gt;&lt;a href="#"&gt;二级菜单&lt;/a&gt;&lt;/li&gt;
+                &lt;li class="<span class="im-class">sub-item</span>"&gt;&lt;a href="#"&gt;二级菜单文字数量&lt;/a&gt;&lt;/li&gt;
+                &lt;li class="<span class="im-class">sub-item</span>"&gt;&lt;a href="#"&gt;二级菜单文字数量改变&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;
+        
+        &lt;li class="<span class="im-class">item</span>"&gt;&lt;a href="#"&gt;一级菜单&lt;/a&gt; &lt;/li&gt;
+        &lt;li class="<span class="im-class">item</span>"&gt;&lt;a href="#"&gt;一级菜单&lt;/a&gt;&lt;/li&gt;
+        
+    &lt;/ul&gt;
+&lt;/nav&gt;
+            </pre>
+
+
+
+        </div><!--  /.codeBox -->
+      
+        <div class="codeBox d-class-area" id="s2">
+           
+           <h2>(2) 纵向导航</h2>
+          
+            <div class="codeBox-content">
+            
+                    <nav class="dsure-nav dsure-nav-vertical" style="height:250px; width:200px">
+                        <ul class="nav">
+                            
+                            <li class="item"><a href="#" >菜单</a></li>
+                            <li class="item"><a href="#">菜单</a></li>
+                            
+                            <li class="item"><a href="#">菜单</a></li>
+                            
+                            <li class="item navSelected"><a href="#">多级菜单</a> 
+                                <ul class="sub" style="display:block">
+                                    <li class="sub-item"><a href="#">二级菜单</a></li>
+                                    <li class="sub-item"><a href="#">二级菜单</a></li>
+                                    <li class="sub-item"><a href="#">二级菜单文字数量</a></li>
+                                    <li class="sub-item"><a href="#">二级菜单文字数量改变</a></li>
+                                </ul>
+                            </li>
+                            
+                            <li class="item"><a href="#">一级菜单</a> </li>
+                            <li class="item"><a href="#">一级菜单</a></li>
+                            
+                        </ul>
+                    </nav>
+
+            </div><!--  /.codeBox-content -->
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML代码:</span>
+
+&lt;nav class="<span class="im-class">dsure-nav dsure-nav-vertical</span>" style="<span class="im-style">width:200px</span>"&gt;
+    &lt;ul class="<span class="im-class">nav</span>"&gt;
+        
+        &lt;li class="<span class="im-class">item</span>"&gt;&lt;a href="#" &gt;菜单&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="<span class="im-class">item</span>"&gt;&lt;a href="#"&gt;菜单&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="<span class="im-class">item</span>"&gt;&lt;a href="#"&gt;菜单&lt;/a&gt;&lt;/li&gt;
+        &lt;li class="<span class="im-class">item navSelected</span>"&gt;&lt;a href="#"&gt;多级菜单&lt;/a&gt; 
+            &lt;ul class="<span class="im-class">sub</span>"&gt;
+                &lt;li class="<span class="im-class">sub-item</span>"&gt;&lt;a href="#"&gt;二级菜单&lt;/a&gt;&lt;/li&gt;
+                &lt;li class="<span class="im-class">sub-item</span>"&gt;&lt;a href="#"&gt;二级菜单&lt;/a&gt;&lt;/li&gt;
+                &lt;li class="<span class="im-class">sub-item</span>"&gt;&lt;a href="#"&gt;二级菜单文字数量&lt;/a&gt;&lt;/li&gt;
+                &lt;li class="<span class="im-class">sub-item</span>"&gt;&lt;a href="#"&gt;二级菜单文字数量改变&lt;/a&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/li&gt;
+        
+        &lt;li class="<span class="im-class">item</span>"&gt;&lt;a href="#"&gt;一级菜单&lt;/a&gt; &lt;/li&gt;
+        &lt;li class="<span class="im-class">item</span>"&gt;&lt;a href="#"&gt;一级菜单&lt;/a&gt;&lt;/li&gt;
+        
+    &lt;/ul&gt;
+&lt;/nav&gt;
+            </pre>
+
+        
+
+
+        </div><!--  /.codeBox -->
+
+
+        <div class="codeBox d-class-area" id="s3">
+           
+           <h2>(3) 自定义导航样式</h2>
+          
+            <p class="dsure-tip">
+            如果您想要自定义导航，请自己将以下的代码拷贝到新的样式文件中，修改<code>{ ... }</code>内的内容，<code>增加或者修改</code>现有的样式,不要删除原有的代码
+            </p>  
+            
+            <pre> 
+<span class="bl dsure-bg-black html dsure-radius-small">CSS代码:</span>      
+.dsure-nav ul.nav li.item{
+	/*您可以在此处添加li的间距、高度限制样式*/
+}
+.dsure-nav ul.nav li.item a {
+	padding:.4em .6em;/*注意,此样式元素的padding值不能小于给定的默认值，否则会出现间距bug*/
+}
+.dsure-nav ul.nav li.item a:hover,
+.dsure-nav ul.nav li.item.navSelected a,
+.dsure-nav ul.nav li.item.navSelected ul a:hover {
+	background:#EAEAEA;
+	text-decoration:none
+}
+
+/*Sub navigation*/
+.dsure-nav ul.nav ul {
+	position:absolute;
+	z-index:105;
+	display:none;
+	border:1px solid #EAEAEA;
+}
+.dsure-nav ul.nav ul li.sub-item a {
+	padding:.4em .6em;/*注意,此样式元素的padding值不能小于给定的默认值，否则会出现间距bug*/
+	text-align:left;
+	border:none;
+	font-weight:normal;
+}
+.dsure-nav ul.nav ul li.sub-item a:hover {
+	
+}
+
+.dsure-nav.dsure-nav-vertical ul.nav ul{ 
+    margin-left:100%; 
+    top:0;
+}
+
+
+@media only screen and (min-width: 480px) and (max-width: 767px){
+	
+
+    /*------Init width:470px------*/
+    
+    /*navigation*/
+    .dsure-nav ul.nav li.item a {
+        background:#272727; 
+        color:#9D9D9D; 
+        border-bottom:1px solid #484848;
+    }
+    .dsure-nav ul.nav li.item a:hover,
+    .dsure-nav ul.nav li.item.navSelected a,
+    .dsure-nav ul.nav li.item.navSelected ul a:hover{
+        background:#272727; 
+        color:#fff; 
+    }
+    .dsure-nav ul.nav li.item a{
+        color:#9D9D9D
+    }
+
+	
+}
+
+
+
+@media only screen and (max-width: 479px){
+	
+    /*------Init width:320px------*/
+    
+    /*navigation*/
+    .dsure-nav ul.nav li.item a {
+        background:#272727; 
+        color:#9D9D9D; 
+        border-bottom:1px solid #484848;
+    }
+    .dsure-nav ul.nav li.item a:hover,
+    .dsure-nav ul.nav li.item.navSelected a,
+    .dsure-nav ul.nav li.item.navSelected ul a:hover{
+        background:#272727; 
+        color:#fff; 
+    }
+    .dsure-nav ul.nav li.item a{
+        color:#9D9D9D
+    }
+    
+	
+}
+
+ 
+            </pre>
+
+
+        </div><!--  /.codeBox -->
+
+
+
+        <div class="codeBox d-class-area" id="s4">
+           
+           <h2>(4) 面包屑导航 — 自定义效果，请叠加或改变“通用样式”</h2>
+
+            <div class="dsure-title-nav dsure-no-hover dsure-bg-silver dsure-radius-small dsure-b-shadow f-i10 ma-t20">
+                银白色背景,有淡淡阴影,文字缩进10像素
+            </div>
+            
+            <div class="dsure-title-nav dsure-no-hover dsure-bg-black dsure-radius-big noborder f-c-white f-i20 ma-t20">
+               <span class="f-c-white">黑色背景,文字缩进20像素,大圆角,无边框,白色文字</span>
+            </div>
+            
+            <div class="dsure-title-nav dsure-no-hover dsure-bg-blue f-i15 f20 f-c-white  ma-t20">
+               <span class="f-c-white">蓝色背景,文字缩进15像素,20像素字体大小,白色文字</span>
+            </div>
+            
+            <div class="dsure-title-nav dsure-no-hover dsure-bg-silver dsure-b-shadow2 f-i10 f-f-yahei ma20">
+               银白色背景,有淡淡内阴影,文字缩进10像素,雅黑字体,四周外边距为20像素
+            </div>        
+            
+            <div class="dsure-title-nav dsure-no-hover dsure-bg-silver f-i20 pa-t20 pa-b20 ma-t20">
+               银白色背景,文字缩进20像素,上下内边距为20像素
+            </div>                
+            
+            
+            
+            <pre> 
+<span class="bl dsure-bg-black html dsure-radius-small">HTML代码:</span>      
+
+&lt;div class="<span class="im-class">dsure-title-nav dsure-no-hover dsure-bg-silver dsure-radius-small dsure-b-shadow f-i10</span>"&gt;
+    银白色背景,有淡淡阴影,文字缩进10像素
+&lt;/div&gt;
+
+&lt;div class="<span class="im-class">dsure-title-nav dsure-no-hover dsure-bg-black dsure-radius-big noborder f-c-white f-i20</span>"&gt;
+   黑色背景,文字缩进20像素,大圆角,无边框,白色文字
+&lt;/div&gt;
+
+&lt;div class="<span class="im-class">dsure-title-nav dsure-no-hover dsure-bg-blue f-i15 f20 f-c-white</span>"&gt;
+   蓝色背景,文字缩进15像素,20像素字体大小,白色文字
+&lt;/div&gt;
+
+&lt;div class="<span class="im-class">dsure-title-nav dsure-no-hover dsure-bg-silver dsure-b-shadow2 f-i10 f-f-yahei ma20</span>"&gt;
+   银白色背景,有淡淡内阴影,文字缩进10像素,雅黑字体,四周外边距为20像素
+&lt;/div&gt;        
+
+&lt;div class="<span class="im-class">dsure-title-nav dsure-no-hover dsure-bg-silver f-i20 pa-t20 pa-b20</span>"&gt;
+   银白色背景,文字缩进20像素,上下内边距为20像素
+&lt;/div&gt;           
+            </pre>
+
+
+        </div><!--  /.codeBox -->
+          
+          <!-- /////////////////   Content    End /////////////////// -->
+
+    
+
+        </div>
+
+         <footer>
+         
+            <hr>
+           
+            <p>此开源开发框架基于<a href="/d-s/" target="_blank">Designers Site Program 全站静态系统</a>发布，提供广大网站开发者使用，并着力构建快速设计DS主题框架，设计者可以根据此开发框架设计出网站的纯HTML效果，兼容整套系统体系，再使用主题开发插件进行标签替换和修改，即可设计并使用自己的主题 (您也可以用作其它方面的开发)</p>
+
+            <p>Dsure授权开源许可证基于<a href="http://creativecommons.org/licenses/by-nc/3.0/deed.zh" target="_blank">CC BY-NC 3.0</a>,禁止任何人任何公司机构用于商业用途</p>
+            
+            <p>
+            &copy;2014 Powered By <a href="/" target="_blank">没位道</a>, <a href="/d-s/Dsure-flat">Dsure Web Development Framework</a>
+        
+  
+            &nbsp;&nbsp;        <script id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+        <script>
+            if (typeof(LA) !== 'undefined') LA.init({id: "JdyfUJi3RdCZVi9F",ck: "JdyfUJi3RdCZVi9F"});
+        </script>
+          
+            
+            
+          
+            </p>
+             
+         </footer>
+
+     </section>
+     
+     
+
+     
+    
+    <script src="js/jquery.scroller.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/theme.hash.js"></script> <!-- After the main.js -->
+     
+  
+
+</body>
+</html>
+

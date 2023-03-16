@@ -1,0 +1,11 @@
+
+/*------------------------------------- Lato */
+@font-face{
+	font-family:'Lato';
+	font-style: normal;
+	font-weight: 100;
+    src:url('../fonts/Lato-Hairline.eot');
+	src:url('../fonts/Lato-Hairline.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Lato-Hairline.woff') format('woff'),
+		url('../fonts/Lato-Hairline.ttf') format('truetype');
+}

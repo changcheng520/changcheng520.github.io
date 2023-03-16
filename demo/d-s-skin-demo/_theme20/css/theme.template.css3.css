@@ -1,0 +1,85 @@
+@-webkit-keyframes scrollArrowAnimations{
+	0%{bottom:-25px;}
+	15%{bottom:-20px;}
+	25%{bottom:-15px;}
+	35%{bottom:-8px;}
+	45%{bottom:0;}
+	55%{bottom:-8px;}
+	70%{bottom:-15px;}
+	85%{bottom:-20px;}
+	100%{bottom:-25px;}
+}
+@-moz-keyframes scrollArrowAnimations{
+	0%{bottom:-25px;}
+	15%{bottom:-20px;}
+	25%{bottom:-15px;}
+	35%{bottom:-8px;}
+	45%{bottom:0;}
+	55%{bottom:-8px;}
+	70%{bottom:-15px;}
+	85%{bottom:-20px;}
+	100%{bottom:-25px;}
+}
+@-o-keyframes scrollArrowAnimations{
+	0%{bottom:-25px;}
+	15%{bottom:-20px;}
+	25%{bottom:-15px;}
+	35%{bottom:-8px;}
+	45%{bottom:0;}
+	55%{bottom:-8px;}
+	70%{bottom:-15px;}
+	85%{bottom:-20px;}
+	100%{bottom:-25px;}
+}
+@-ms-keyframes scrollArrowAnimations{
+	0%{bottom:-25px;}
+	15%{bottom:-20px;}
+	25%{bottom:-15px;}
+	35%{bottom:-8px;}
+	45%{bottom:0;}
+	55%{bottom:-8px;}
+	70%{bottom:-15px;}
+	85%{bottom:-20px;}
+	100%{bottom:-25px;}
+}
+@keyframes scrollArrowAnimations{
+	0%{bottom:-25px;}
+	15%{bottom:-20px;}
+	25%{bottom:-15px;}
+	35%{bottom:-8px;}
+	45%{bottom:0;}
+	55%{bottom:-8px;}
+	70%{bottom:-15px;}
+	85%{bottom:-20px;}
+	100%{bottom:-25px;}
+}
+
+
+
+
+
+.sceneEffect-scale-default{
+	-webkit-transform:scale(0.1);
+	-moz-transform:scale(0.1);
+	-o-transform:scale(0.1);
+	transform:scale(0.1);
+	-moz-transition:.7s ease-in-out;
+	-o-transition:.7s ease-in-out;
+	-webkit-transition:.7s ease-in-out;
+	-ms-transition:.7s ease-in-out;
+	transition:.7s ease-in-out;
+	
+}
+
+.sceneEffect-scale-loaded{
+	-webkit-transform:scale(1);
+	-moz-transform:scale(1);
+	-o-transform:scale(1);
+	transform:scale(1);
+	-moz-transition:.7s ease-in-out;
+	-o-transition:.7s ease-in-out;
+	-webkit-transition:.7s ease-in-out;
+	-ms-transition:.7s ease-in-out;
+	transition:.7s ease-in-out;
+	
+}

@@ -1,0 +1,1248 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Designers Site Program全站静态系统 - HTML5交互式免费建站专家</title>
+       
+        <meta name="description" content="致力打造高质量的具有特色界面需求，视觉创意需求，品牌需求的[中小型网站、移动互联网站]产品和衍生UI产品、网站UI云服务产品" />
+        <link rel="stylesheet" type="text/css" href="css/main.min.css" />
+        <link rel="stylesheet" type="text/css" href="css/jquery.lightbox-0.5.css" media="screen" />
+
+        <meta property="og:title" content="Designers Site Program全站静态系统 - HTML5交互式免费建站专家"/>
+        <meta property="og:url" content="https://www.c945.com/d-s/"/>
+        <meta property="og:description" content="致力打造高质量的具有特色界面需求，视觉创意需求，品牌需求的[中小型网站、移动互联网站]产品和衍生UI产品、网站UI云服务产品"/>
+        <meta property="og:image" content=""/>
+        <meta property="og:type" content="website"/>
+        <meta property="og:site_name" content="Designers Site Program全站静态系统"/>
+    
+
+
+        <meta name="author" content="没位道" />
+          <link rel="canonical" href="https://www.c945.com/d-s/" /> 
+
+        <!-- ************************************************************************
+        Copyright:  (C)2010-2012 没位道 Designer Xizon. All Rights Reserved.
+       ************************************************************************ -->
+       
+        
+        <script>
+		
+		
+			//global
+			var _global_skinBoxLeft = 144;
+			var _global_skinBoxItemWidth = 183;
+			var _global_logoFrameLeft = -1300;
+			var _global_scrollViewPage_vertical_defaultMin = 50;
+			var _global_scrollViewPage_horizontal_defaultMin = 40; 
+			var _global_scrollViewPage_vertical_speed_intro = 0; 
+			var _global_scrollViewPage_horizontal_speed_log = 250; 
+			var _global_scrollViewPage_vertical_speed_faq = 150; 
+			var _global_scrollViewPage_horizontal_speed_skin = _global_skinBoxItemWidth;
+		
+
+
+
+			//loader
+			var _webPrograssBarShow = "true";
+			var _mainSceneLoader1 = "mainSceneLoader1";
+			var _mainSceneLoader2 = "mainSceneLoader2";
+			var _mainSceneLoader3 = "mainSceneLoader3";
+			var _mainSceneLoader4 = "keyVisualContainer";
+			var _mainSceneLoader5 = "downloadBgContainer";
+			var _mainSceneLoader_img = "";
+			var _webPrograssBar_Top = "31%"; 
+			var _webPrograssBar_TopPlug = "0px"; 
+			var _webPrograssBar_length =  ""; 
+			var _webPrograssBar_height = 1; 
+			var _webPrograssBar_fontSize = "14px"; 
+			var _webPrograssBar_color = "none"; 
+			var _webPrograssBar_background = "none"; 
+			var _webPrograssBar_windowBackground = "none"; 
+			var _webPrograssBar_textColor = "#050505";
+			var _webPrograssBar_textIndentBar = ""; 
+			var _webPrograssImg = ""; 
+			var _webPrograssTxt = "prograssTxt"; 
+			var _webPrograssImgDefaultHeight = "";
+			var _webPrograssImgDefaultWidth = "";
+			var thisSite = document.location.href;		
+		
+        </script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/jquery.timers-1.1.2.js"></script>
+        <script src="js/jquery.smooth_tabs.js"></script>
+        <script src="js/jquery.lightbox-0.5.min.js"></script>
+        <script src="js/easing/jquery.easing.1.3.js"></script>
+        <script src="js/axios.min.js"></script>
+        <script src="js/d-s.main.min.js"></script>
+        <script src="js/DS.tabs.js"></script>
+        <script src="js/modernizr.js"></script>
+
+
+        <!--[if lt IE 7 ]>
+            <script src="js/png.js"></script>
+            <script>
+            window.location.href="../ie6Alert.html";
+            
+            DD_belatedPNG.fix('img, a, span,em, h3, h1, form,li, input,section,footer');
+            document.execCommand("BackgroundImageCache", false, true);
+                
+            </script>
+        
+        <![endif]-->
+
+    </head>
+
+    <body>
+
+        <div class="mobiletip">此网站不支持移动端</div>
+    
+        <div id="awards">
+              
+              <p class="a1"><a href="http://www.csswinner.com/details/designers-site-program/1832/" target="_blank" title="csswinner">csswinner</a></p>
+              <!--<p class="a2"><a href="http://www.cssawards.net/designers-site-program" target="_blank" title="CSS Awards">CSS Awards</a></p>-->
+        
+
+        </div>   
+         
+         <!-- demo -->
+         <span class="demo"><a href="javascript:" onClick="showContentBox('skin');" title="产品主题在线演示"></a></span>
+         <!-- faq -->
+         <!--
+         <span class="faq"><a href="javascript:" onClick="showContentBox('faq');" title="安装后和初次使用常见问题"></a></span>
+         -->
+         
+         <!--  loading -->
+         <div id="mask"><h1 class="welcome">Welcome to Designer's site...</h1></div>
+         <span id="mask_d"></span>
+         <div id="loading"><span class="line"></span><span class="img"></span><span id="loadingTxt"></span></div>
+         <em id="mask_all"></em>
+         <em id="mask_content"></em>
+    
+         
+         
+        <!-- nav -->
+        <header>
+            <em class="hover"></em>
+            <nav id="mainNav">
+                <ul>
+                    <li class="m1"><a href="javascript:" onClick="showContentBox('intro');" title="参看产品详细介绍">产品介绍</a></li>
+                    <li class="m2"><a href="javascript:" onClick="showContentBox('download');" title="软件下载">软件下载</a></li>
+                    <li class="m3"><a href="javascript:" onClick="showContentBox('log');" title="产品动态,开发日志">开发日志</a></li>
+                    <li class="m4"><a href="javascript:" onClick="showContentBox('msg');" title="项目合作,意见反馈">留言反馈</a></li>
+                    <li class="m6"><a href="javascript:" onClick="showContentBox('skin');" title="各种配套皮肤任你选">皮肤专区</a></li>
+                    <li class="m7"><a href="/default.html" target="_blank" title="访问作者博客">作者博客</a></li>
+        
+                </ul>
+        
+            </nav>
+            
+            <div id="logo"><span id="mainSceneLoader1"></span></div>
+            <span class="topBgMenu"></span>
+            
+
+        </header>
+    
+    
+
+        
+        
+        <!-- bottom -->
+        <div id="bottom"><span id="mainSceneLoader2"></span></div>
+        
+        <!-- keyVisual  -->
+        <div id="keyVisual">
+        
+            <span id="keyVisualContainer"></span>
+            
+            <span id="k-1-1"></span>
+            <span id="k-1-2"></span>
+            <span id="k-2-1"></span>
+            <span id="k-2-2"></span>
+            <span id="k-3-1"></span>
+            <span id="k-3-2"></span>
+            <span id="k-3-3"></span>
+            
+            
+        </div>
+        
+        <div id="keyV_BTN"><a class="l" href="javascript:"></a><a class="r" href="javascript:"></a></div>
+        
+        <div style="background:url(img/num-install-bg.png); width:443px; height:167px; line-height:167px; font-size:24px; font-family:SimHei; color:#fff; z-index:110; position:fixed; top:115px; left:74px;text-indent:70px;"><span style="font-size:48px; font-family:Georgia; color:#e22d14">1053</span>个网站已安装过 :)</div>
+
+        
+    <div class="page-wrapper">
+    
+        <section role="main"> 
+        
+        
+                <!-- ///////////// Introduce   begin////////////////////////-->
+                
+                <section id="intro">
+
+                    <h3>产品介绍</h3>
+                    <a class="close" href="javascript:" onClick="hideContentBox('intro');"></a>
+            
+                    <div class="box">
+                    
+                        <div class="con" id="viewPage_con_-intro-"><!-- 要翻页滚动浏览的内容ID -->
+                        
+                             <!--/////////////begin///////////////-->
+                             <div class="introContainer">
+                                 
+                                 
+                                         <h4 class="introBtn">
+                                         <a href="javascript:" title="产品特色" data-target-id="con1" data-target-class="introBtnSelected" data-default-class="introBtnDefault" class="tabs-btn">产品特色</a> 
+                                         <a href="javascript:" title="功能说明" data-target-id="con2" data-target-class="introBtnSelected" data-default-class="introBtnDefault" class="tabs-btn">功能</a> 
+                
+                                         <a href="javascript:" title="安装及后台在线体验"  data-target-id="con4" data-target-class="introBtnSelected" data-default-class="introBtnDefault" class="tabs-btn">安装及后台体验</a>
+                                         
+                                         <a href="javascript:" title="经典案例"  data-target-id="con3" data-target-class="introBtnSelected" data-default-class="introBtnDefault" class="tabs-btn">经典案例</a>
+                                         
+                                         <a href="javascript:" title="视频演示与教程"  data-target-id="con5" data-target-class="introBtnSelected" data-default-class="introBtnDefault" class="tabs-btn">视频演示与教程</a>
+                                         
+                                         
+                   
+                                         
+                                         </h4>
+                                         
+                                           <div id="con1" style="margin-top:44px" class="tabs-box">
+                                                <hr />
+                                                <h4 class="title">(一)Designer's site全站静态建站系统产品专注：</h4>
+                                                
+                                                <p class="alert">致力打造高质量的具有特色界面需求，视觉创意需求，品牌需求的"中小型网站、移动互联网站"产品和衍生UI产品、网站UI云服务产品，它适用于企业、个人、博客，产品展示，创意/特色/品牌网站。
+                                                </p>
+                                                
+                                                    <p><span class="num">1.</span>这不仅仅是一套产品，使用它，你会感觉是在享受，是在快乐！</p>
+                                                    <p><span class="num">2.</span>高端的网站界面和细节，风格各异的UI体验，打破传统的博客、CMS等，极力增强界面视觉深度</p>
+                                                    <p><span class="num">3.</span>产品85% 提供全站静态自动生成，定时更新机制，更多满足您长久使用和优化。</p>
+                                                    <p><span class="num">4.</span>它基于HTML5+CSS3 的构架，遵循W3C标准，利于SEO优化，它拥有友好的操作性能和震撼的动画视觉效果,拥有创意性，拥有品牌性。</p>
+                                                    <p><span class="num">5.</span>产品独立的"云皮肤"和"云插件"接口，满足使用者的各种特色主题需求和建站扩展。</p>
+                                                    <p><span class="num">6.</span>优质的后台视觉体验和人性化操作。</p>
+                                                
+                                            </div>       
+                    
+                                           <div id="con2" style="display:none; margin-top:44px; height:315px; overflow-y:auto; padding-right:5px; line-height:22px" class="tabs-box">
+                                                <hr />
+                                                <h4 class="title">(二)详细功能：</h4>
+                    
+                    
+                                                <p><span class="num">1.</span><strong>强大快捷、易个性化的模板主题接口和云皮肤接口：</strong><br>
+                                                
+                                                a) 模板主题基于强大的依赖标签系统<br>
+                                                唯一一个静态可视html模板页,修改编辑及其容易，支持后台代码高亮在线修改。模板完全分离程序语言,任由你修改，不用当心弄坏系统，花10分钟了解标签使用方法，便可一键个性化自定义您的皮肤主题。
+                                                <br>
+                                                b) 模板支持云皮肤<br>
+                                                产品独立的"云皮肤"接口，联网状态可远程更换您的皮肤，不需要FTP安装。
+                                                <br>
+                                                c) 自定义背景和字体颜色傻瓜式操作, 满足更多个性化主题定制<br>
+                                                
+                                                 </p> 
+                                                
+                                                <p><span class="num">2.</span><strong>简洁易用的API接口：</strong><br>
+                                                
+                                               a) 支持主题安装时一键安装插件，后台有独立的插件管理面板；拥有云插件接口，帮助使用者扩展更多的即时应用。
+                                               <br>
+                                               b) API数据交互接口，实现"文章、作品案例、站内微博"的数据同步和数据添加交互，实现社会化登录和社会化同步留言录入的接口，增加网站的社会化特征和APP开发的可能性。<br>
+                                               
+                                                </p>  
+                                                
+                                                <p><span class="num">3.</span><strong>便捷的自定义页面扩展功能：</strong><br>
+                                                
+                                                产品拥有大众化的CMS构架，支持后台自定义页面操作；也可以模板页里使用依赖标签即可新建自定义图文单页并创建页面地址，方便快捷，为您的网站创建特定需求的页面组织。(具体参看附带的API文档)
+                                                
+                                                </p>  
+                                                
+                                                <p><span class="num">4.</span><strong>简单而大众的功能体系：</strong><br>
+                                                
+                                                a）产品包含了"文章，作品案例，留言本，搜索，友情链接，站内微博" 几大功能模块，并且支持Banner管理，导航管理等常用设置，信息栏目支持评论顶踩<br>
+                                                b) 文章支持主题图片及在线图片剪裁，作品案例模块支持缩略图，加快页面加载速度。<br>
+                                                c) 支持简单的会员模块，具有相应的留言评论、下载、上传、注册、密保权限和会员反馈、VIP资源共享系统。会员支持超级管理员权限分配，支持多用户管理。<br>
+                                                d) 支持智能机(手机版)文章发布、留言评论等操作，有良好的手机接口<br>
+                                                
+                                                </p>  
+                                                
+                                                <p><span class="num">5.</span><strong>优越的SEO性能：</strong><br>
+                                                
+                                                a) 全站85%以上的模块均采用全站静态自动生成并同步数据技术，整体目录结构均为全站静态模式，支持js和全站静态模式的管理。<br>
+                                                b) 产品基于HTML5+CSS3，采用W3C标准的代码编写模板，更突出的语义标签，更人性的后台SEO集成操作，让您的网站更能满足大量搜索引擎。<br>
+                                                
+                                                </p>  
+                                                <p><span class="num">6.</span><strong>通用模块管理的便捷化和可扩展性：</strong><br>
+                                                
+                                                 "侧边栏模块，首页侧边栏模块，内容区模块" 都支持自定义管理和排序，并且普通标签和模板分离，您可以在模板文件中任意调用标签内容实现静态生成(具体参看附带的API文档)，支持根据分类调用文章列表或者根据频道(二级分类)调用文章分类(三级分类)。
+                                                
+                                                </p>  
+                                                <p><span class="num">7.</span><strong>细致的安全验证及其高级管理通道：</strong><br>
+                                                
+                                                a)数据库的备份还原修改功能，全站采用cookie的24位自定义加密种的MD5安全加密，更方便管理操作。帐号二级验证，随机数验证性能，保障您的网站能安全运行。<br>
+                                                b)支持指定目录批量关键字修改和代码段修改，适用于后期数据量大的用户批量更新操作<br>
+                                                c)支持上传附件管理和其他网站细节设置管理<br>
+                                                
+                                                </p>  
+                                                
+                                                <p><span class="num">8.</span><strong>优质的后台视觉体验和人性化操作.，让您管理自己的网站也是在享受快乐</strong><br>
+                                                
+                                                 </p>  
+                    
+                     
+                                           
+                                            </div>
+                                            
+                                            
+                                          
+                                          
+                                             <div id="con3" style="display:none; margin-top:44px; height:315px; overflow-y:auto; padding-right:5px;" class="tabs-box">
+                                            
+                                                <hr />
+                                                <h4 class="title">(四)经典案例：</h4>
+                                                <p><a href="http://www.oklift.cn/" target="_blank" rel="nofollow"><span style="color:white">上海噢卡欧克电动机械科技有限公司</span>&#160;&#160;&#160;&#160;&#160;<strong>（view）</strong></a></p>
+                                                <p><a href="http://kd15.com/" target="_blank" rel="nofollow"><span style="color:white">咸宁网站建设</span>&#160;&#160;&#160;&#160;&#160;<strong>（view）</strong></a></p>
+                                               <p><a href="http://www.tangmi.cc/" target="_blank" rel="nofollow"><span style="color:white">广西糖蜜网</span>&#160;&#160;&#160;&#160;&#160;<strong>（view）</strong></a></p> 
+                    
+                                                
+                                          </div>
+                                            
+                    
+                                            <div id="con4" style="display:none; margin-top:44px" class="tabs-box">
+                                            
+                                                <hr />
+                                                
+                                               <div id="scrollBox1">
+                                                   <div style="padding:5px;">
+                                                    <!--   *****************content     begin  *****************   -->
+                                                        <h4 class="title">(三)安装及后台在线体验：</h4>
+                                                        <p><span class="num">1.</span>安装过程部分截图 </p>   
+                                                        <div class="clear"></div>
+                                                        <p class="installImg"><a href="preImg/1.jpg"><img src="preImg/s/1.png" alt="" /></a></p>
+                                                        <p class="installImg"><a href="preImg/2.jpg"><img src="preImg/s/2.png" alt="" /></a></p>
+                                                        <div class="clear"></div>
+                                                        <p><span class="num">2.</span>后台在线体验 </p> 
+                                                        <div class="clear"></div>
+                                                        <p><a href="#" class="commLink">已下线</a></p>
+                    
+                                                          
+                                                    <!--   *****************content     end *****************   -->
+                                                    </div>
+                                                </div>
+                    
+                                            
+                                          </div>
+                                          
+                                          
+                                             <div id="con5" style="display:none; margin-top:44px; height:315px; overflow-y:auto; padding-right:5px;" class="tabs-box">
+                                            
+                                                <hr />
+                                                <h4 class="title">(五)视频演示与教程：</h4>
+                                                <p class="video-href"><span style="color:white">测试-调试环境配置</span>&#160;&#160;&#160;&#160;&#160;<strong><a href="http://v.youku.com/v_show/id_XNjM2OTQ2ODEy.html" target="_blank">优酷在线</a> | <a href="http://pan.baidu.com/s/1w0HSW" target="_blank">清晰版下载</a></strong></a></p>
+                                                
+                                                <p class="video-href"><span style="color:white">安装与使用演示</span>&#160;&#160;&#160;&#160;&#160;<strong><a href="http://v.youku.com/v_show/id_XNjM2OTUxNzQ0.html" target="_blank">优酷在线</a> | <a href="http://pan.baidu.com/s/1GJ46u" target="_blank">清晰版下载</a></strong></a></p>
+                                                
+                                                <p class="video-href"><span style="color:white">自定义标签(内容)的使用</span>&#160;&#160;&#160;&#160;&#160;<strong><a href="http://v.youku.com/v_show/id_XNjM2OTc5NzY4.html" target="_blank">优酷在线</a> | <a href="http://pan.baidu.com/s/1nDolF" target="_blank">清晰版下载</a></strong></a></p>
+                                                
+                                                <p class="video-href"><span style="color:white">创建自定义页面</span>&#160;&#160;&#160;&#160;&#160;<strong><a href="http://v.youku.com/v_show/id_XNjM2OTYxNDA4.html" target="_blank">优酷在线</a> | <a href="http://pan.baidu.com/s/1nDosx" target="_blank">清晰版下载</a></strong></a></p>
+                                                
+                                                <p class="video-href"><span style="color:white">更换模板后,如何快速更新全站</span>&#160;&#160;&#160;&#160;&#160;<strong><a href="http://v.youku.com/v_show/id_XNjM2OTg2Mjky.html" target="_blank">优酷在线</a> | <a href="http://pan.baidu.com/s/1rHaql" target="_blank">清晰版下载</a></strong></a></p>
+                                                
+                                                <p class="video-href"><span style="color:white">新模板和主题的开发</span>&#160;&#160;&#160;&#160;&#160;<strong><a href="http://v.youku.com/v_show/id_XNjM2OTk3OTg0.html" target="_blank">优酷在线</a> | <a href="http://pan.baidu.com/s/1h7CBe" target="_blank">清晰版下载</a></strong></a></p>
+                                                
+                                                
+                                               
+                                                
+                                                
+                                          </div>
+        
+                              
+        
+                             </div>
+                                
+                             <!--/////////////end///////////////-->  
+                               
+                                    
+                        </div>
+                  
+                    </div>
+                    
+                </section>
+                
+                <div id="introView_btn">
+                    <!-- 相对应要翻页滚动浏览的内容ID -->
+                    <a class="upView" id="viewPage_btn_up_-intro-" href="javascript:" title="向上翻阅"></a>
+                    <a class="downView" id="viewPage_btn_down_-intro-" href="javascript:" title="向下翻阅"></a>
+                </div>
+
+                  <!-- ///////////// Introduce   end////////////////////////-->
+                  
+                  
+                    <!-- ///////////// download   begin////////////////////////-->
+                    
+                    <div id="download_bg"><span id="downloadBgContainer"></span></div>
+                    <section id="download">
+                
+                        <div class="box">
+                            <div class="l">
+                            
+                                <ul>
+                                    <li><a href="download/" target="_blank" title="兼容之前的数据库和模板，请放心安装升级">官方发布2.0<sup style="color:red">荐</sup></a></li>
+                                    <li><a href="http://down.chinaz.com/soft/33490.htm" target="_blank"  title="中国站长">中国站长2.0</a></li>
+                                    
+                                </ul>
+                            
+                            </div>
+                            
+                            <div class="r">
+                                <p><strong>官方群:</strong>&#160;&#160;17205484 </p>
+                                <p><strong>Update: </strong>&#160;&#160; 2013.12.25(v2.0)</p>
+                            </div>
+                
+                            
+                      
+                        </div>
+                        
+                        
+                        <a class="close" href="javascript:" onClick="hideContentBox('download');"></a>
+                        
+                    </section>
+                    
+                    
+                    <!-- ///////////// download   end////////////////////////-->
+                    
+                    
+                    
+                    
+                    <!-- ///////////// log   begin////////////////////////-->
+                    
+                    <section id="log">
+                    
+                        <h3>开发日志</h3>
+                        <a class="close" href="javascript:" onClick="hideContentBox('log');"></a>
+                
+                        <div class="box">
+                        
+                            <div class="con" id="viewPage_con_-log-"><!-- 要翻页滚动浏览的内容ID -->
+                            
+                                 <!--/////////////begin///////////////-->
+                                 <div class="logContainer">
+                                 
+                                     <ul>
+                                        <li><span class="log_date">[2013.11.19]</span>DS2.0正式版落幕。由于开发者工作等原因,开发者已停止asp版本的新版本升级和开发。暂时只保持产品运营，不会停止云端服务。</li>
+                                        <li><span class="log_date">[2013.11.19]</span>2.0版本发放,兼容之前所有版本的数据库和模板，请放心升级</li>
+                                        <li><span class="log_date">[2013.11.1]</span>2.0版本内核升级中...（作品上传支持本地和外链，修正后台一些体验和bugs，支持本迷你服务器本地调试，默认主题皮肤更加易于扩展和使用等。）</li>
+                                        <li><span class="log_date">[2013.5.1]</span>提供了自定义栏目插件（在云插件专区下载）,满足文章案例之外的栏目需求，让您的新栏目列表更容易管理和个性化。</li>
+                                        <li><span class="log_date">[2013.4.1]</span>用户帮助和主题包下载专区升级。</li>
+                                        <li><span class="log_date">[2012.12.10]</span>系统主题采用点数制，默认会赠送大家12点，尽情享受高端主题。</li>
+                                        <li><span class="log_date">[2012.12.5]</span>系统升级为1.1版本，解决了一些细小的体验问题。后台支持在线升级。</li>
+                                        <li><span class="log_date">[2012.11.1]</span>产品定于11月11日11点11分准时发布。</li>
+                                        <li><span class="log_date">[2012.10.28]</span>添加数据交互API接口，增添您网站的社会化特征，便于后期APP开发。</li>
+                                        <li><span class="log_date">[2012.10.25]</span>正式版产品正式开始运营，陆续出炉系列适用于个人，企业，摄影，相册，游戏，博客等风格的主题，月底至11月初将正式发布互联网</li>
+                                        <li><span class="log_date">[2012.10.24]</span>增加了后台自定义背景图片和文字、链接颜色的快速通道，让您不懂CSS也能快速设置网站</li>
+                                        <li><span class="log_date">[2012.10.23]</span>系统自动升级机制上线，使用者可以手动选择是否后台联网升级，最大限度减少自主升级麻烦</li>
+                                        <li><span class="log_date">[2012.10.22]</span>内部构架优化调整，整体处理速度提高了65%以上，可以完全适用于各种正式站点的管理体验</li>
+                                        <li><span class="log_date">[2012.10.17]</span>整理并测试通过了云插件和本地插件的安装，极大限度满足用户的插件需求</li>
+                                        <li><span class="log_date">[2012.10.15]</span>优化了生成页面的速度，提高了至少60%的批量更新速度</li>
+                                        <li><span class="log_date">[2012.09.10]</span>手机版隆重上线，支持各智能机系统管理和浏览网站，特别添加android安卓UI接口和iphone接口。</li>
+                                        <li><span class="log_date">[2012.08.12]</span>云皮肤模块上线，系统支持联网更换模板主题。</li>
+                                        <li><span class="log_date">[2012.08.01]</span>后台视觉体验和人性化操作全面改版。</li>
+                                        <li><span class="log_date">[2012.06.06]</span>插件模块升级，更换皮肤或者模板时，系统自动加载对应的皮肤插件并支持后台插件入口直接管理。</li>
+                                        <li><span class="log_date">[2012.06.06]</span>增加模板自动配置功能，更方便任何用户DIY模板并署名发布。</li>
+                                        <li><span class="log_date">[2012.06.05]</span>产品最后减肥，去掉了冗余功能，增快了2倍处理速度。</li>
+                                        <li><span class="log_date">[2012.05.30]</span>集成初学使用教程到后台，引导第一次安装使用者。</li>
+                                        <li><span class="log_date">[2012.05.29]</span>完成第二套HTML5+CSS3皮肤整合并完成上线。</li>
+                                        <li><span class="log_date">[2012.05.16]</span>减肥产品，最终定位在高端HTML5+CSS3的位置，定位明确，提高了4倍以上的处理速度，并优化了后台体验。</li>
+                                        <li><span class="log_date">[2012.05.15]</span>后台皮肤在线编辑，新建模板页面编辑，支持代码高亮，提升用户编辑体验。</li>
+                                        <li><span class="log_date">[2012.05.10]</span>安装程序重新优化，更方便安装这一键设置“导航、栏目、重要配置”，简洁化并重点突出。</li>
+                                        <li><span class="log_date">[2012.04.03]</span>产品基本已经全部升级完成，配套免费皮肤制作中，完成后讲一同同步发布到互联网，希望您使用愉快^_^。</li>
+                                        <li><span class="log_date">[2012.04.01]</span>支持文章、作品案例分类列表单页独立创建，更赋予企业个性化需求。</li>
+                                        <li><span class="log_date">[2012.03.23]</span>强大的依赖标签系统，在模板页可以轻松创建您的图文单页并记录地址，满足您建站的个性化需求。</li>
+                                        <li><span class="log_date">[2012.03.20]</span>建立通用普通独立标签，网站生成的内容和模板完全分离，可以自主调用任何通用内容(比如侧边栏，页面某些插件或者信息调用)</li>
+                                        <li><span class="log_date">[2012.03.18]</span>文章支持三级分类，并且可以单独调出某二级分类下的分类链接列表(三级分类即频道)，企业站常用此功能</li>
+                                        <li><span class="log_date">[2012.03.15]</span>标签支持调用相应分类的文章列表</li>
+                                        <li><span class="log_date">[2012.03.04]</span>实现依赖标签和普通标签的概念性升级，支持模板主题，皮肤自定义一键修改。首页、内容页、列表页均在同一个HTML模板文件下修改，方便快捷，并且可以达到生成静态个性化定制效果。</li>
+                                        <li><span class="log_date">[2012.02.14]</span>网站部分栏目支持独立的手机浏览方式和发布文章留言评论。</li>
+                                        <li><span class="log_date">[2012.02.12]</span>网站支持新建模板页面，方便您增加属于您自己的图文单页。</li>
+                                        <li><span class="log_date">[2012.02.02]</span>网站支持自定义 ${标签}, 并可以插入HTML模板任意位置，后台随时管理自定义标签内容[利于企业模板的信息整合]。</li>                          
+                                        <li><span class="log_date">[2012.02.04]</span>支持自定义二级导航。</li>
+                                        <li><span class="log_date">[2012.01.26]</span>皮肤专区即将开启，欢迎广大网友提供反馈和建议，欢迎商家与本站进行合作推广。</li>
+                                        <li><span class="log_date">[2012.01.25]</span>Designer's site 官方网站2012版全新上线。</li>
+                                        <li><span class="log_date">[2012.01.24]</span>Designer's site 1.0正式版即将发布到互联网。</li>
+                                        <li><span class="log_date">[2012.01.24]</span>新版网站上线后，博客的更新日志和开发日志(包括单独的更新包或文件)都会实时展示在网站的"开发日志"栏目中，方便大家对此版本以后的软件进行升级和修改。</li>
+                                        <li><span class="log_date">[2012.01.24]</span>历经2010-2012年的产品优化升级和重构，最终开发了Designer's site全站静态系统。此套程序目标面向HTML5+CSS3，高端网站建设，特色网站建设，品牌需求建站。</li>
+                                        
+                                         
+                                                                
+                                     </ul>
+                                 </div>
+                                 
+                
+                
+                                 <!--/////////////end///////////////-->  
+                                        
+                            </div>
+                      
+                        </div>
+                        
+                    </section>
+                    
+                    
+                    
+                    <div id="logView_btn">
+                        <!-- 相对应要翻页滚动浏览的内容ID -->
+                        <a class="upView" id="viewPage_btn_up_-log-" href="javascript:" title="向上翻阅"></a>
+                        <a class="downView" id="viewPage_btn_down_-log-" href="javascript:" title="向下翻阅"></a>
+                    </div>
+                    
+                    <!-- ///////////// log   end////////////////////////-->
+                    
+                    
+                    
+                    
+                     <!-- ///////////// FAQ   begin////////////////////////-->
+                    
+                    <section id="faq">
+                    
+                        <h3>常见问答</h3>
+                        <a class="close" href="javascript:" onClick="hideContentBox('faq');"></a>
+                
+                        <div class="box">
+                        
+                            <div class="con" id="viewPage_con_-faq-"><!-- 要翻页滚动浏览的内容ID -->
+                            
+                                  <!--/////////////begin///////////////-->
+                                  <div class="faqContainer">
+                                    <ol>
+                                    
+                                      <li>
+                                          安装成功后再进入网站找不到页面，没有生成"default.html"首页,或者无法登陆？
+                                          <p style="display:none" id="faqteach1">
+                                          这是由于您服务器或虚拟主机的默认文档未勾选<strong>写入权限</strong>，如果是虚拟主机，一般可以直接设置；如果是本地测试，您进入iis后，在左侧树形导航的网站列表中右键设置即可<a href="/d-s/img/faq/fso/teach/c2.gif" target="_blank">截图参看这里</a> 
+                                          </p>
+                                      </li>
+                                    
+                                    
+                                      <li>
+                                          如何个性化自己的网站，比如html结构，js特效等等？
+                                          <p style="display:none">整套网站主题都是在template这个文件夹下，您只要自定义这里面的html,css,js和图片，就可以完成个性定制。（这个需要参考"<strong>皮肤主题自定义API教程文档.html</strong>"，花您一点点时间学习网站普通标签和依赖标签的基础API）
+                                          </p>
+                                      </li>
+                                      
+                                      <li>
+                                          更换主题或者进行某些修改操作页面未更新看不到效果？
+                                          <p style="display:none">解决方法：某些操作（<em><strong>Banner、导航、文字包、模板、自定义标签内容</strong></em>）要手动静态生成页面才能及时看到效果，后台有提示提醒。如果不手动生成，则要等待自动生成时间过后，页面至少被访问一次才能更新。（建议做了某些操作就手动生成更新页面）
+                                          </p>
+                                      </li>                  
+                                      
+                                      <li>
+                                          正常安装后上传文件不能正常使用或者上传无反应？
+                                          <p style="display:none">解决方法1：网上搜索配置您的IIS上传限制，可能是文件>200K造成的。方法2：如果您用的是windows7系统，则在IIS管理器中打开asp的"调试属性"面板，把"将错误发送到浏览器"一选项值设为"TRUE" 
+                                          </p>
+                                      </li>
+                                      
+                                      
+                                      <li>
+                                          绑定[安全宝]服务后后台图片剪裁无效？
+                                          <p style="display:none">安全宝还存在影响jpeg组件功能的情况，比如组件的剪裁功能失效，您可以后台设置关闭剪裁功能。</p>
+                                      </li>
+                                      
+                                      
+                                      <li>
+                                          安装成功后无法生成首页和其它页面，FSO权限不正确，怎么配置自己的IIS？
+                                          <p style="display:none">
+                                          <span id="faqteach2">
+            解决方法：<br /> 1.首先按IIS权限教程配置IIS，使用"隶属于管理员"的帐号登录IIS；<br />
+            教程点击这里查看 <a href="/d-s/img/faq/fso/teach/1.gif" target="_blank">winXP/service 2003/其他</a> 
+                <span style=" display:none"><a href="/d-s/img/faq/fso/teach/2.gif" target="_blank"></a><a href="/d-s/img/faq/fso/teach/3.gif" target="_blank"></a><a href="/d-s/img/faq/fso/teach/4.gif" target="_blank"></a><a href="/d-s/img/faq/fso/teach/5.gif" target="_blank"></a><a href="/d-s/img/faq/fso/teach/6.gif" target="_blank"></a><a href="/d-s/img/faq/fso/teach/c1.gif" target="_blank"></a><a href="/d-s/img/faq/fso/teach/c2.gif" target="_blank"></a>
+                </span>
+            </span>
+            
+            <span id="faqteach3">
+             <a href="/d-s/img/faq/fso/teach2/1.gif" target="_blank">windows7</a>
+             
+                <span style=" display:none"><a href="/d-s/img/faq/fso/teach2/1.gif" target="_blank"></a>
+                <a href="/d-s/img/faq/fso/teach2/1-1.gif" target="_blank"></a>
+                <a href="/d-s/img/faq/fso/teach2/2.gif" target="_blank"></a>
+                <a href="/d-s/img/faq/fso/teach2/3.gif" target="_blank"></a>
+                <a href="/d-s/img/faq/fso/teach2/4.gif" target="_blank"></a>
+                <a href="/d-s/img/faq/fso/teach2/4-2.gif" target="_blank"></a>
+                <a href="/d-s/img/faq/fso/teach2/4-3.gif" target="_blank"></a>
+                <a href="/d-s/img/faq/fso/teach2/5.gif" target="_blank"></a>
+                <a href="/d-s/img/faq/fso/teach2/6.gif" target="_blank"></a>
+                <a href="/d-s/img/faq/fso/teach2/7.gif" target="_blank"></a>
+                <a href="/d-s/img/faq/fso/teach2/8.gif" target="_blank"></a>
+                <a href="/d-s/img/faq/fso/teach2/9.gif" target="_blank"></a>
+                <a href="/d-s/img/faq/fso/teach2/10.gif" target="_blank"></a>
+                <a href="/d-s/img/faq/fso/teach2/11.gif" target="_blank"></a>
+                <a href="/d-s/img/faq/fso/teach2/12.gif" target="_blank"></a>
+                <a href="/d-s/img/faq/fso/teach2/Snap3.gif" target="_blank"></a>
+                <a href="/d-s/img/faq/fso/teach2/13.gif" target="_blank"></a>
+                <a href="/d-s/img/faq/fso/teach2/14.gif" target="_blank"></a>
+                <a href="/d-s/img/faq/fso/teach2/Snap1.gif" target="_blank"></a>
+                <a href="/d-s/img/faq/fso/teach2/Snap2.gif" target="_blank"></a>
+                
+                </span>
+            
+             
+             <br />
+            </span>
+            2.运行"C:\WINNT\SYSTEM32\scrrun.dll "注册当前用户FSO文件权限；<br />
+            3.如果仍然无法通过FSO权限，则需要新建一个虚拟目录，并且按示意图(在上面的配置教程里)分配权限，OK<br />
+            4.后退此页面，或者删除此目录的所有文件重新安装，记得一定要刷新页面！ <br />
+            
+                                          
+                                          </p>
+                                      </li> 
+            
+                                      <li>
+                                          有些时候打开某些网站会出现Internet Explorer无法打开Internet站点http://??? 已终止操作？
+                                          <p style="display:none">1.这是属于IE浏览器的问题所致，并不是程序bug<br />
+                                            2.解决方案：打开浏览器--工具--internet选项--删除文件--把"删除所有脱机内容"勾上--确定--确定即可。如果还不行，目前没有很好的解决方案，使用IE6以上或者别的浏览器即可<br />
+                     
+                                          </p>                       
+                                      </li>
+                
+                                      <li>
+                                          上传文件时出现"An error occurred on the server when processing the URL. Please contact the system administrator(处理 URL 时服务器出错。请与系统管理员联系)"的错误信息？
+                                          <p style="display:none">(1)Win7解决方案：打开"管理工具"-"IIS信息服务管理器"，打开ASP的选项，选择【调试属性】-【将错误发送到浏览器】的参数设置成"TRUE"即可 <br/>
+                                            (2)xp解决方案：进入iis里，找到站点属性-主目录-配置-调试，默认是"处理 URL 时服务器出错。请与系统管理员联系。"设定"向客户端发送详细的asp错误信息"。 
+                                          </p>
+                                      </li>
+                                      
+                                      <li>
+                                          上传文件时出现"Persits.Jpeg.1 错误 '800a0004' AspJpeg has expired. Please visit www.aspjpeg.com to purchase a registration key."的错误信息？
+                                          <p style="display:none"> 可能是由于jpeg组件过期引起的，您可以下载官方的aspJpeg组件安装,或者下载本站程序包，附带了永不过期的组件安装包。<br />
+                                          </p>                      
+                                      </li>
+                
+                                      <li>
+                                          浏览页面时出现"HTTP 错误 403.14 - Forbidden/禁止访问此页面需要您登录"的错误信息？
+                                           <p style="display:none">一般情况站点都是不会允许直接读取目录内容的，如果您的站点目录没有有效的默认文档（例如index.html,index.htm,index.asp或default.asp等），那么当客户直接输入该站点的域名+目录名进行浏览的时候将会出现该错误。具体设置方式如下：
+                                            在IIS中的站点属性的"文档"选项中启用默认文档，将您的主页文档加入其中。登录页面详细地址为http://域名.com/admin/admin_login/default.html，要不http://域名.com/admin/admin_login进入不了登录页面 <br />
+                                          </p>                     
+                                      </li>
+                
+            
+                                            
+                                    </ol>
+                                  </div>
+                                  
+                                  <!--/////////////end///////////////--> 
+                
+                
+                                        
+                            </div>
+                      
+                        </div>
+                        
+                    </section>
+                    
+                   
+                    
+                    
+                    <div id="faqView_btn">
+                        <!-- 相对应要翻页滚动浏览的内容ID -->
+                        <a class="upView" id="viewPage_btn_up_-faq-" href="javascript:" title="向上翻阅"></a>
+                        <a class="downView" id="viewPage_btn_down_-faq-" href="javascript:" title="向下翻阅"></a>
+                    </div>   
+                    
+                    
+                    <!-- ///////////// FAQ   end////////////////////////--> 
+                    
+                    
+                    
+                    
+                    
+                    <!-- ///////////// Contact   begin////////////////////////-->
+                    
+                    <section id="contact">
+                    
+                       <div class="box">
+                
+                                <form id="app-remotecomment-site">
+                                    <p id="tip_con"></p>
+                                    
+                                    <input type="text" name="title" id="title" placeholder="Title" />
+
+
+                                    <input type="url" name="url" id="url" placeholder="http://" />
+
+                                    <input type="email" name="email" id="email"placeholder="Email" /><br>
+
+                                    <textarea id="content" name="content" cols="38" rows="4" placeholder="Message"></textarea><br>
+
+
+                                    <input type="text" id="captcha" name="captcha" placeholder="Captcha" />
+                                        
+                                    <div class="app-remotecomment-captcha-section">
+                                        <div class="captcha-wrapper">
+                                            <span id="app-remotecomment-refresh-session-captcha"></span>
+                                        </div>
+                                    </div>
+
+
+                                    <a href="#" class="send"></a>
+                             
+                                    <input type="hidden" name="toid" id="toid" value="900000000001" />
+                                    <input type="hidden" name="refer" id="refer" value="https://www.c945.com/d-s" />
+                                    <input type="hidden" name="app-remotecomment-site-security" id="app-remotecomment-site-security" />
+
+                                    
+
+                                </form>
+
+                                
+
+                        </div>
+                        
+                        
+                        <a class="close" href="javascript:" onClick="hideContentBox('msg');"></a>
+                    
+                    </section>   
+                    
+                    
+                    <!-- ///////////// Contact   end////////////////////////--> 
+                    
+                    
+                    <!-- ///////////// Skin   begin////////////////////////-->
+            
+            
+                    <section id="skin" data-page="1">
+            
+                       <div class="box">
+                           
+            
+                           <div id="viewPage_con_-skin-"><!-- 要翻页滚动浏览的内容ID -->
+                       
+                            <div id="skinListBox">
+                            
+                                <ul class="skinContainer">
+                                    <li id="DSK00021" title="添加日期：2014-1-3">
+                                        <img
+                                            src="img/cover/c945-com_d44a93c04722e077f58b63e0-250x274.jpg"
+                                            alt="Digy"
+                                            style="display: block;"
+                                        /><span class="responsive"></span>
+                                        <p style="display: none;">
+                                            <strong class="t">名称：</strong>Digy<br />
+                                            <strong title="Email:ChocoTemplates">作者：</strong>Choco<br />
+                                            <strong>类型：</strong>商务时尚<br />
+                                            <a
+                                                class="i1"
+                                                href="/demo/d-s-skin-demo/responsiveTester.html?skinID=DSK00021&amp;preImgURL=0&amp;responsive=1&amp;url=/demo/d-s-skin-demo/_theme21"
+                                                target="_blank"
+                                            ></a>
+                                            <a
+                                                class="i2"
+                                                href="javascript:alert('已下架')"
+                                                title="下载安装"
+                                            ></a>
+                                        </p>
+                                    </li>
+                                    <li id="DSK00020" title="添加日期：2013-12-30">
+                                        <img
+                                            src="img/cover/c945-com_91f70c027b4bc0d4a25f7a3b-250x274.jpg"
+                                            alt="MagoColor"
+                                            style="display: block;"
+                                        /><span class="responsive"></span>
+                                        <p style="display: none;">
+                                            <strong class="t">名称：</strong>MagoColor<br />
+                                            <strong title="Email:xizon@c945.com">作者：</strong>没位道<br />
+                                            <strong>类型：</strong>单页交互<br />
+                                            <a
+                                                class="i1"
+                                                href="/demo/d-s-skin-demo/responsiveTester.html?skinID=DSK00020&amp;preImgURL=1&amp;responsive=1&amp;url=/demo/d-s-skin-demo/_theme20"
+                                                target="_blank"
+                                            ></a>
+                                            <a
+                                                class="i2"
+                                                href="javascript:alert('已下架')"
+                                                title="下载安装"
+                                            ></a>
+                                        </p>
+                                    </li>
+                                    <li id="DSK00019" title="添加日期：2013-12-12">
+                                        <img
+                                            src="img/cover/c945-com_84a1ac23b23f4f428590d08a-250x274.jpg"
+                                            alt="Affairs"
+                                            style="display: block;"
+                                        />
+                                        <p style="display: none;">
+                                            <strong class="t">名称：</strong>Affairs<br />
+                                            <strong title="Email:xizon@c945.com">作者：</strong>没位道<br />
+                                            <strong>类型：</strong>商务时尚<br />
+                                            <a
+                                                class="i1"
+                                                href="/demo/d-s-skin-demo/responsiveTester.html?skinID=DSK00019&amp;preImgURL=0&amp;responsive=0&amp;url=/demo/d-s-skin-demo/_theme19"
+                                                target="_blank"
+                                            ></a>
+                                            <a
+                                                class="i2"
+                                                href="javascript:alert('已下架')"
+                                                title="下载安装"
+                                            ></a>
+                                        </p>
+                                    </li>
+                                    <li id="DSK00018" title="添加日期：2013-12-12">
+                                        <img
+                                            src="img/cover/c945-com_e5e1e24ff0f389bec3c1f38a-250x274.jpg"
+                                            alt="A&nbsp;Little"
+                                            style="display: block;"
+                                        />
+                                        <p style="display: none;">
+                                            <strong class="t">名称：</strong>A&nbsp;Little<br />
+                                            <strong title="Email:xizon@c945.com">作者：</strong>没位道<br />
+                                            <strong>类型：</strong>博客文章<br />
+                                            <a
+                                                class="i1"
+                                                href="/demo/d-s-skin-demo/responsiveTester.html?skinID=DSK00018&amp;preImgURL=0&amp;responsive=0&amp;url=/demo/d-s-skin-demo/_theme18"
+                                                target="_blank"
+                                            ></a>
+                                            <a
+                                                class="i2"
+                                                href="javascript:alert('已下架')"
+                                                title="下载安装"
+                                            ></a>
+                                        </p>
+                                    </li>
+                                    <li id="DSK00017" title="添加日期：2013-11-19">
+                                        <img
+                                            src="img/cover/c945-com_8c956740e171ffb9f3a84234-250x274.jpg"
+                                            alt="The&nbsp;Delicious"
+                                            style="display: block;"
+                                        />
+                                        <p style="display: none;">
+                                            <strong class="t">名称：</strong>The&nbsp;Delicious<br />
+                                            <strong title="Email:xxx@gmail.com">作者：</strong
+                                            >Freedom&nbsp;Team<br />
+                                            <strong>类型：</strong>商务时尚<br />
+                                            <a
+                                                class="i1"
+                                                href="/demo/d-s-skin-demo/responsiveTester.html?skinID=DSK00017&amp;preImgURL=0&amp;responsive=0&amp;url=/demo/d-s-skin-demo/_theme17"
+                                                target="_blank"
+                                            ></a>
+                                            <a
+                                                class="i2"
+                                                href="javascript:alert('已下架')"
+                                                title="下载安装"
+                                            ></a>
+                                        </p>
+                                    </li>
+                                    <li id="DSK00016" title="添加日期：2013-8-28">
+                                        <img
+                                            src="img/cover/c945-com_89540e5675fc409b7e7785cc-250x274.jpg"
+                                            alt="DS&nbsp;Initializa"
+                                            style="display: block;"
+                                        /><span class="responsive"></span>
+                                        <p style="display: none;">
+                                            <strong class="t">名称：</strong>DS&nbsp;Initializa<br />
+                                            <strong title="Email:xizon@c945.com">作者：</strong>没位道<br />
+                                            <strong>类型：</strong>HTML5<br />
+                                            <a
+                                                class="i1"
+                                                href="/demo/d-s-skin-demo/responsiveTester.html?skinID=DSK00016&amp;preImgURL=0&amp;responsive=1&amp;url=/demo/d-s-skin-demo/_theme16-Original-expansion/"
+                                                target="_blank"
+                                            ></a>
+                                            <a
+                                            class="i2"
+                                            href="javascript:alert('已下架')"
+                                            title="下载安装"
+                                        ></a>
+                                        </p>
+                                    </li>
+
+
+                                    <li id="DSK00015" title="添加日期：2013-7-12">
+                                        <img
+                                            src="img/cover/c945-com_e637771f5587bcbb221d6aad-250x274.jpg"
+                                            alt="Wsite"
+                                            style="display: block;"
+                                        />
+                                        <p style="display: none;">
+                                            <strong class="t">名称：</strong>Wsite<br />
+                                            <strong title="Email:questions@weebly.com">作者：</strong
+                                            >weebly<br />
+                                            <strong>类型：</strong>游戏主题<br />
+                                            <a
+                                                class="i1"
+                                                href="/demo/d-s-skin-demo/responsiveTester.html?skinID=DSK00015&amp;preImgURL=0&amp;responsive=0&amp;url=/demo/d-s-skin-demo/_theme15"
+                                                target="_blank"
+                                            ></a>
+                                            <a
+                                            class="i2"
+                                            href="javascript:alert('已下架')"
+                                            title="下载安装"
+                                        ></a>
+                                        </p>
+                                    </li>
+                                    <li id="DSK00014" title="添加日期：2013-4-2">
+                                        <img
+                                            src="img/cover/c945-com_01cceef26dd69893786716c5-250x274.jpg"
+                                            alt="Black"
+                                            style="display: block;"
+                                        />
+                                        <p style="display: none;">
+                                            <strong class="t">名称：</strong>Black<br />
+                                            <strong title="Email:xizon@c945.com">作者：</strong>没位道<br />
+                                            <strong>类型：</strong>商务时尚<br />
+                                            <a
+                                                class="i1"
+                                                href="/demo/d-s-skin-demo/responsiveTester.html?skinID=DSK00014&amp;preImgURL=1&amp;responsive=0&amp;url=/demo/d-s-skin-demo/_theme14"
+                                                target="_blank"
+                                            ></a>
+                                            <a
+                                            class="i2"
+                                            href="javascript:alert('已下架')"
+                                            title="下载安装"
+                                        ></a>
+                                        </p>
+                                    </li>
+                                    <li id="DSK00013" title="添加日期：2013-3-4">
+                                        <img
+                                            src="img/cover/c945-com_f62bdd6c0e92ad00fc6f1a39-250x274.jpg"
+                                            alt="守护时间"
+                                            style="display: block;"
+                                        />
+                                        <p style="display: none;">
+                                            <strong class="t">名称：</strong>守护时间<br />
+                                            <strong title="Email:xizon@c945.com">作者：</strong>没位道<br />
+                                            <strong>类型：</strong>博客文章<br />
+                                            <a
+                                                class="i1"
+                                                href="/demo/d-s-skin-demo/responsiveTester.html?skinID=DSK00013&amp;preImgURL=0&amp;responsive=0&amp;url=/demo/d-s-skin-demo/_theme13"
+                                                target="_blank"
+                                            ></a>
+                                            <a
+                                            class="i2"
+                                            href="javascript:alert('已下架')"
+                                            title="下载安装"
+                                        ></a>
+                                        </p>
+                                    </li>
+                                    <li id="DSK00012" title="添加日期：2013-2-8">
+                                        <img
+                                            src="img/cover/c945-com_7e8d2e8f3386da0c2fbdf930-250x274.jpg"
+                                            alt="SoulsPlaint"
+                                        />
+                                        <p>
+                                            <strong class="t">名称：</strong>SoulsPlaint<br />
+                                            <strong title="Email:xizon@c945.com">作者：</strong>没位道<br />
+                                            <strong>类型：</strong>游戏主题<br />
+                                            <a
+                                                class="i1"
+                                                href="/demo/d-s-skin-demo/responsiveTester.html?skinID=DSK00012&amp;preImgURL=1&amp;responsive=0&amp;url=/demo/d-s-skin-demo/_theme12"
+                                                target="_blank"
+                                            ></a>
+                                            <a
+                                            class="i2"
+                                            href="javascript:alert('已下架')"
+                                            title="下载安装"
+                                        ></a>
+                                        </p>
+                                    </li>
+                                    <li id="DSK00011" title="添加日期：2013-1-14">
+                                        <img
+                                            src="img/cover/c945-com_e11bb4ad75301c59456db029-250x274.jpg"
+                                            alt="Habitat"
+                                        />
+                                        <p>
+                                            <strong class="t">名称：</strong>Habitat<br />
+                                            <strong title="Email:xizon@c945.com">作者：</strong>没位道<br />
+                                            <strong>类型：</strong>游戏主题<br />
+                                            <a
+                                                class="i1"
+                                                href="/demo/d-s-skin-demo/responsiveTester.html?skinID=DSK00011&amp;preImgURL=1&amp;responsive=0&amp;url=/demo/d-s-skin-demo/_theme11"
+                                                target="_blank"
+                                            ></a>
+                                            <a
+                                            class="i2"
+                                            href="javascript:alert('已下架')"
+                                            title="下载安装"
+                                        ></a>
+                                        </p>
+                                    </li>
+                                    <li id="DSK00010" title="添加日期：2012-12-25">
+                                        <img
+                                            src="img/cover/c945-com_a8a4234bba8c148e85d99e0a-250x274.jpg"
+                                            alt="停息"
+                                        /><span class="responsive"></span>
+                                        <p>
+                                            <strong class="t">名称：</strong>停息<br />
+                                            <strong title="Email:xizon@c945.com">作者：</strong>没位道<br />
+                                            <strong>类型：</strong>博客文章<br />
+                                            <a
+                                                class="i1"
+                                                href="/demo/d-s-skin-demo/responsiveTester.html?skinID=DSK00010&amp;preImgURL=0&amp;responsive=1&amp;url=/demo/d-s-skin-demo/_theme10"
+                                                target="_blank"
+                                            ></a>
+                                            <a
+                                            class="i2"
+                                            href="javascript:alert('已下架')"
+                                            title="下载安装"
+                                        ></a>
+                                        </p>
+                                    </li>
+
+
+
+                                    <li id="DSK00009" title="添加日期：2012-12-10">
+                                        <img
+                                            src="img/cover/c945-com_9531a1ea7bd47503cb65644d-250x274.jpg"
+                                            alt="圣诞屋"
+                                            style="display: block;"
+                                        />
+                                        <p style="display: none;">
+                                            <strong class="t">名称：</strong>圣诞屋<br />
+                                            <strong title="Email:xizon@c945.com">作者：</strong>没位道<br />
+                                            <strong>类型：</strong>节日主题<br />
+                                            <a
+                                                class="i1"
+                                                href="/demo/d-s-skin-demo/responsiveTester.html?skinID=DSK00009&amp;preImgURL=0&amp;responsive=0&amp;url=/demo/d-s-skin-demo/_theme9"
+                                                target="_blank"
+                                            ></a>
+                                            <a
+                                            class="i2"
+                                            href="javascript:alert('已下架')"
+                                            title="下载安装"
+                                        ></a>
+                                        </p>
+                                    </li>
+                                    <li id="DSK00008" title="添加日期：2012-12-6">
+                                        <img
+                                            src="img/cover/c945-com_e9f5273523e4a4f8a4a1025c-250x274.jpg"
+                                            alt="商务钟"
+                                            style="display: block;"
+                                        />
+                                        <p style="display: none;">
+                                            <strong class="t">名称：</strong>商务钟<br />
+                                            <strong title="Email:xizon@c945.com">作者：</strong>没位道<br />
+                                            <strong>类型：</strong>商务时尚<br />
+                                            <a
+                                                class="i1"
+                                                href="/demo/d-s-skin-demo/responsiveTester.html?skinID=DSK00008&amp;preImgURL=0&amp;responsive=0&amp;url=/demo/d-s-skin-demo/_theme8"
+                                                target="_blank"
+                                            ></a>
+                                            <a
+                                            class="i2"
+                                            href="javascript:alert('已下架')"
+                                            title="下载安装"
+                                        ></a>
+                                        </p>
+                                    </li>
+                                    <li id="DSK00007" title="添加日期：2012-12-6">
+                                        <img
+                                            src="img/cover/c945-com_95f2e6cf9f622b9244e55816-250x274.jpg"
+                                            alt="Extreme&nbsp;Point"
+                                            style="display: block;"
+                                        />
+                                        <p style="display: none;">
+                                            <strong class="t">名称：</strong>Extreme&nbsp;Point<br />
+                                            <strong title="Email:xizon@c945.com">作者：</strong>没位道<br />
+                                            <strong>类型：</strong>单页交互<br />
+                                            <a
+                                                class="i1"
+                                                href="/demo/d-s-skin-demo/responsiveTester.html?skinID=DSK00007&amp;preImgURL=0&amp;responsive=0&amp;url=/demo/d-s-skin-demo/_theme7"
+                                                target="_blank"
+                                            ></a>
+                                            <a
+                                            class="i2"
+                                            href="javascript:alert('已下架')"
+                                            title="下载安装"
+                                        ></a>
+                                        </p>
+                                    </li>
+                                    <li id="DSK00006" title="添加日期：2012-12-6">
+                                        <img
+                                            src="img/cover/c945-com_e888b7a7f02c4b34dcd86fc1-250x274.jpg"
+                                            alt="酷炫主角"
+                                            style="display: block;"
+                                        />
+                                        <p style="display: none;">
+                                            <strong class="t">名称：</strong>酷炫主角<br />
+                                            <strong title="Email:xizon@c945.com">作者：</strong>没位道<br />
+                                            <strong>类型：</strong>博客文章<br />
+                                            <a
+                                                class="i1"
+                                                href="/demo/d-s-skin-demo/responsiveTester.html?skinID=DSK00006&amp;preImgURL=0&amp;responsive=0&amp;url=/demo/d-s-skin-demo/_theme6"
+                                                target="_blank"
+                                            ></a>
+                                            <a
+                                            class="i2"
+                                            href="javascript:alert('已下架')"
+                                            title="下载安装"
+                                        ></a>
+                                        </p>
+                                    </li>
+                                    <li id="DSK00005" title="添加日期：2012-12-6">
+                                        <img
+                                            src="img/cover/c945-com_a5e2ab6b98145e67bfbcbe43-250x274.jpg"
+                                            alt="深度"
+                                            style="display: block;"
+                                        />
+                                        <p style="display: none;">
+                                            <strong class="t">名称：</strong>深度<br />
+                                            <strong title="Email:xizon@c945.com">作者：</strong>xizon<br />
+                                            <strong>类型：</strong>博客文章<br />
+                                            <a
+                                                class="i1"
+                                                href="/demo/d-s-skin-demo/responsiveTester.html?skinID=DSK00005&amp;preImgURL=0&amp;responsive=0&amp;url=/demo/d-s-skin-demo/_theme5"
+                                                target="_blank"
+                                            ></a>
+                                            <a
+                                            class="i2"
+                                            href="javascript:alert('已下架')"
+                                            title="下载安装"
+                                        ></a>
+                                        </p>
+                                    </li>
+                                    <li id="DSK00004" title="添加日期：2012-12-6">
+                                        <img
+                                            src="img/cover/c945-com_d4f678b662b9dfaa5acd1b0b-250x274.jpg"
+                                            alt="Simple"
+                                        />
+                                        <p>
+                                            <strong class="t">名称：</strong>Simple<br />
+                                            <strong title="Email:xizon@c945.com">作者：</strong>xizon<br />
+                                            <strong>类型：</strong>图片相册<br />
+                                            <a
+                                                class="i1"
+                                                href="/demo/d-s-skin-demo/responsiveTester.html?skinID=DSK00004&amp;preImgURL=0&amp;responsive=0&amp;url=/demo/d-s-skin-demo/_theme4"
+                                                target="_blank"
+                                            ></a>
+                                            <a
+                                            class="i2"
+                                            href="javascript:alert('已下架')"
+                                            title="下载安装"
+                                        ></a>
+                                        </p>
+                                    </li>
+
+                                    <li id="DSK00003" title="添加日期：2012-12-6">
+                                        <img
+                                            src="img/cover/c945-com_8e22af62dee7b7f6d25918f8-250x274.jpg"
+                                            alt="Tide"
+                                            style="display: block;"
+                                        />
+                                        <p style="display: none;">
+                                            <strong class="t">名称：</strong>Tide<br />
+                                            <strong title="Email:xizon@c945.com">作者：</strong>xizon<br />
+                                            <strong>类型：</strong>图文展示<br />
+                                            <a
+                                                class="i1"
+                                                href="/demo/d-s-skin-demo/responsiveTester.html?skinID=DSK00003&amp;preImgURL=0&amp;responsive=0&amp;url=/demo/d-s-skin-demo/_theme3"
+                                                target="_blank"
+                                            ></a>
+                                            <a
+                                            class="i2"
+                                            href="javascript:alert('已下架')"
+                                            title="下载安装"
+                                        ></a>
+                                        </p>
+                                    </li>
+                                    <li id="DSK00002" title="添加日期：2012-12-6">
+                                        <img
+                                            src="img/cover/c945-com_ad173e06cedf053a06d76bc8-250x274.jpg"
+                                            alt="灰常体验"
+                                            style="display: block;"
+                                        />
+                                        <p style="display: none;">
+                                            <strong class="t">名称：</strong>灰常体验<br />
+                                            <strong title="Email:xizon@c945.com">作者：</strong>xizon<br />
+                                            <strong>类型：</strong>图文展示<br />
+                                            <a
+                                                class="i1"
+                                                href="/demo/d-s-skin-demo/responsiveTester.html?skinID=DSK00002&amp;preImgURL=0&amp;responsive=0&amp;url=/demo/d-s-skin-demo/_theme1"
+                                                target="_blank"
+                                            ></a>
+                                            <a
+                                            class="i2"
+                                            href="javascript:alert('已下架')"
+                                            title="下载安装"
+                                        ></a>
+                                        </p>
+                                    </li>
+                                    <li id="DSK00001" title="添加日期：2012-12-6">
+                                        <img
+                                            src="img/cover/c945-com_fd1dc46d1861e19b0121f32c-250x274.jpg"
+                                            alt="一分为二"
+                                            style="display: block;"
+                                        />
+                                        <p style="display: none;">
+                                            <strong class="t">名称：</strong>一分为二<br />
+                                            <strong title="Email:xizon@c945.com">作者：</strong>xizon<br />
+                                            <strong>类型：</strong>图文展示<br />
+                                            <a
+                                                class="i1"
+                                                href="/demo/d-s-skin-demo/responsiveTester.html?skinID=DSK00001&amp;preImgURL=0&amp;responsive=0&amp;url=/demo/d-s-skin-demo/_theme2"
+                                                target="_blank"
+                                            ></a>
+                                                                                       
+                                            <a
+                                                class="i2"
+                                                href="javascript:alert('已下架')"
+                                                title="下载安装"
+                                            ></a>
+                                        </p>
+                                    </li>
+
+
+                                </ul>
+                            </div>
+                            
+                               
+                           </div>
+                
+                      
+                        </div>
+                        
+                        
+                        <a class="close" href="javascript:" onClick="hideContentBox('skin');"></a>
+                    
+                    </section>  
+                    
+                    
+                   <div id="classList">
+                       <strong>&#160;主题类型：</strong>
+                          <a href="javascript:" data-id="skin-btn-go-c1">图文展示</a>
+                          <a href="javascript:" data-id="skin-btn-go-c2">图片相册</a>
+                          <a href="javascript:" data-id="skin-btn-go-c3">博客文章</a>
+                          <a href="javascript:" data-id="skin-btn-go-c4">游戏主题</a>
+                          <a href="javascript:" data-id="skin-btn-go-c5">手绘涂鸦</a>
+                          <a href="javascript:" data-id="skin-btn-go-c6">酷炫质感</a>
+                          <a href="javascript:" data-id="skin-btn-go-c7">创意展示</a>
+                          <a href="javascript:" data-id="skin-btn-go-c8">单页交互</a>
+                          <a href="javascript:" data-id="skin-btn-go-c9">商务时尚</a>
+                          <a href="javascript:" data-id="skin-btn-go-c10">节日主题</a>
+                          <a href="javascript:" data-id="skin-btn-go-c11">HTML5</a>
+                   </div>
+                    
+                    <!-- ///////////// Skin   end////////////////////////--> 
+
+                  
+        
+             </section><!-- / role="main" -->
+        </div><!-- /.page-wrapper-->
+        
+       
+
+        
+        <!-- bottomMask -->
+        <div id="bottom_mask"><span id="mainSceneLoader3"></span></div>
+    
+    
+        <script src="js/progress.min.js"></script>
+    
+    
+        <!-- footer -->
+        <footer id="footer">&#169;2014 DESIGNER'S SITE PROGRAM. ALL RIGHTS RESERVED</footer>
+    
+        <script id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+        <script>
+            if (typeof(LA) !== 'undefined') LA.init({id: "JdyfUJi3RdCZVi9F",ck: "JdyfUJi3RdCZVi9F"});
+        </script>
+
+    
+    </body>
+</html>
+
+
+
+

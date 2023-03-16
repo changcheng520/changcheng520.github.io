@@ -1,0 +1,58 @@
+#ListPageN {
+	margin:15px 0 20px 0;
+	text-align:left;
+	text-shadow:1px 1px 1px #fff;
+	margin-left:auto;
+	margin-right:auto;
+	font-family:sans-serif;
+	padding-bottom:40px;
+}
+
+.portfolio-container #ListPageN {
+	padding-left:35px;
+}
+
+#ListPageN a {
+	margin:0 3px 0 3px;
+	padding:12px;
+	text-decoration:none;
+	border:1px solid #ccc;
+	border-bottom:1px solid #aaa;
+	background:#fff;
+	background-image:-moz-linear-gradient(top,#fff,#ececec);
+	/* Firefox */background-image:-webkit-gradient(linear,left top,left bottom,color-stop(0,#fff),color-stop(1,#ececec));
+	/* Saf4+,Chrome */
+
+}
+#ListPageN a:hover {
+	text-decoration:none;
+	background:#ececec;
+	border:1px solid #aaa;
+	border-bottom:1px solid #999;
+	-mo-z-box-shadow:1px 1px 3px #222 inset,1px 1px 1px #fff;
+	-web-kit-box-shadow:1px 1px 3px #222 inset,1px 1px 1px #fff;
+	box-shadow:0 1px 5px #c5c5c5;
+
+	
+}
+#ListPageN b {
+	font-weight:bold;
+	margin:0 3px 0 3px;
+	padding:12px;
+	background:#d7d7d7;
+	border:1px solid #aaa;
+	border-top:1px solid #888;
+	-mo-z-box-shadow:0 1px 5px #b2b2b2 inset,0px 1px 1px #fff;
+	-web-kit-box-shadow:0 1px 5px #b2b2b2 inset,0px 1px 1px #fff;
+	box-shadow:0 2px 2px #b8b8b8 inset,0px 1px 1px #fff;
+
+}
+#pageShow {
+	display:block;
+	width:100%;
+	clear:both
+}
+/*Solve the excess width color*/
+#ListPageN a.prev,#ListPageN a.next {
+	
+}

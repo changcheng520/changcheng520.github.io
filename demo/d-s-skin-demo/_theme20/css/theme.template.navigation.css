@@ -1,0 +1,75 @@
+#mainNav {
+	position:absolute;
+	left:0;
+	top:50px;
+	z-index:99997;
+	background:url(../images/nav-bg.png);
+	height:40px;
+	width:100%;
+	text-shadow:none;
+	text-align:right;
+}
+
+#mainNav .sf-menu {
+	float:right;
+	margin-right:7%;
+	
+
+}
+
+
+#mainNav .sf-menu li {
+	list-style:none;
+	margin-top:10px;
+	float:left;
+	margin-right:15px;
+	position:relative;
+	margin-top:-3px;
+	line-height:44px;
+	z-index:99998;
+}
+
+#mainNav .sf-menu li.item ul{
+	visibility:hidden;
+}
+
+
+#mainNav .sf-menu a {
+	color:#b6b5b5;
+	text-transform: uppercase;
+	display:block;
+	height:44px;
+	padding:0 12px 0 12px;
+	letter-spacing:1px;
+	position:relative;
+	z-index: 99998;
+	
+}
+#mainNav .sf-menu a:hover{
+	color:#fff;
+}
+#mainNav .sf-menu a.active {
+	/*background:url(../images/nav-hover-bg.png) repeat-x;*/
+	color:#fff;
+}
+
+#mainNav .none {
+	display:none
+}
+
+#mainNav li.back {
+	width: 14px;
+	height: 44px;
+	z-index: 99996;
+	position: absolute;
+	background-image:url(../images/nav-hover-bg.png);
+	background-repeat: no-repeat;
+	background-position: right -44px;
+}
+#mainNav li.back .left {
+	height: 44px;
+	margin-right: 14px; /* 7px is the width of the rounded shape */
+	background-image: url(../images/nav-hover-bg.png);
+	background-repeat: no-repeat;
+	background-position: left top;
+}

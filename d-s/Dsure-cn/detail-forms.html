@@ -1,0 +1,1172 @@
+<!doctype html>
+<!--[if lt IE 7 ]> <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js ie ie6"> <![endif]-->
+<!--[if IE 7 ]>    <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js ie ie7"> <![endif]-->
+<!--[if IE 8 ]>    <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js ie ie8"> <![endif]-->
+<!--[if IE 9 ]>    <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js ie ie9"> <![endif]-->
+<!--[if !IE]><!--> <html dir="ltr" lang="zh-CN" xml:lang="zh-CN" class="no-js"> <!--<![endif]-->
+
+<head>
+    <meta name="viewport" content="width=device-width, user-scalable=yes" />
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /><![endif]-->
+    <meta charset="utf-8"/>
+    <title>表单|Dsure-HTML5网站,前端开发框架</title>
+    <meta name="description" content="Dsure,基于纯CSS的HTML5网站响应式开发框架,专注国内/外交互式网站开发,完美适用于Designers Site Program 全站静态系统">
+    <meta name="keywords" content="Dsure,CSS框架,HTML5网站,HTML5框架,CSS3动画,前端开发,Designers Site,全站静态系统,免费建站,响应式网站,交互式网站,自适应网站,framework">
+    <meta name="author" content="没位道">
+
+    <!-- Jquery.min begin -->
+    <script src="js/jquery.min.js?1.7.1" ></script>
+    <!-- / Jquery.min end -->
+    
+    <!-- URL Hash Compatible(IE5+) begin -->
+    <script src="js/jquery.hashchange.js" ></script>
+	<script>
+		//hash
+		var turl = "";
+    </script> 
+
+    <!-- URL Hash Compatible(IE5+) end -->
+    
+    
+    <!-- Dsure  Development Framework  begin  -->
+    
+        <link rel="stylesheet" type="text/css" href="../../dsure/dsure.css" />
+        <script src="../../dsure/dsure.modernizr.js"></script>
+        <!--[if lt IE 9]>  
+            <script src="../../dsure/dsure.respond.js"></script>  
+        <![endif]-->  
+    
+        <!--[if lt IE 7 ]>
+            <script src="../../dsure/dsure.png.js"></script>
+            <script>
+            DD_belatedPNG.fix('img, a, span, h1, h2, h3, em, section, header');
+            document.execCommand("BackgroundImageCache", false, true);
+            </script>
+        <![endif]-->
+
+    
+    <!-- /Dsure Development Framework  end   -->
+    
+
+    
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+
+    
+
+
+</head>
+<body>
+
+    <!--  loading  -->
+    <div id="loading"></div> 
+    <div id="back-top"><a href="#">Top</a></div>
+
+    <!--  menu  -->
+        <nav id="menu">
+            <div class="main-menu">
+        
+                <ul>
+                    <li class="web-title"><a href="/d-s/Dsure-cn">Dsure</a></li>
+                    <li class="line"></li>
+                    <li><a href="/d-s/Dsure-flat">欢迎页面</a></li>
+                    <li><a href="/d-s/Dsure-cn/detail-base.html">基础框架 <span>(Base)</span> <b>*必须*</b></a></li>
+                    <li><a href="/d-s/Dsure-cn/detail-base2.html">样式叠加 <span>(Base)</span> <b>*通用*</b></a></li>
+                    <li><a href="/d-s/Dsure-cn/detail-text.html">内容/文本 <span>(Text)</span></a></li>
+                    <li><a href="/d-s/Dsure-cn/detail-buttons.html">按钮 <span>(Buttons)</span></a></li>
+                    <li class="active"><a href="/d-s/Dsure-cn/detail-forms.html">表单 <span>(Forms)</span></a></li>
+                    <li><a href="/d-s/Dsure-cn/detail-tables.html">表格 <span>(Tables)</span></a></li>
+                    <li><a href="/d-s/Dsure-cn/detail-grids.html">网格/栅格系统 <span>(Grids)</span> </a></li>
+                    <li><a href="/d-s/Dsure-cn/detail-layouts.html">循环列表布局 <span>(Layouts)</span></a></li>
+                    <li><a href="/d-s/Dsure-cn/detail-icons.html">图标 <span>(Icons)</span></a></li>
+                    <li><a href="/d-s/Dsure-cn/detail-img.html">图片 <span>(Images)</span></a></li>
+                    <li><a href="/d-s/Dsure-cn/detail-line.html">分割线 <span>(Dividing Line)</span></a></li>
+                    <li><a href="/d-s/Dsure-cn/detail-paginators.html">分页 <span>(Paginators)</span></a></li>
+                    <li><a href="/d-s/Dsure-cn/detail-navigation.html">导航菜单 <span>(Navigation)</span></a></li>
+                    <li><a href="/d-s/Dsure-cn/detail-classification.html">分类导航 <span>(Classification)</span></a></li>
+                    <li><a href="/d-s/Dsure-cn/detail-striking.html">醒目牌 <span>(Striking)</span></a></li>
+                    <li><a href="/d-s/Dsure-cn/detail-search.html">搜索框 <span>(Search Box)</span></a></li> 
+                    <li><a href="/d-s/Dsure-cn/detail-tags.html">标签集 <span>(Tags)</span></a></li> 
+                   
+                </ul>
+
+                            
+            </div>
+           
+         </nav>
+         
+     <!--  /menu  -->
+     
+     
+        <section id="content">
+         <div class="show">
+          
+          <!-- /////////////////   Content    Begin /////////////////// -->
+
+      <div class="dsure-title-nav dsure-no-hover dsure-bg-silver dsure-radius-small dsure-b-shadow f-i15">
+        <h1>表单</h1>
+      </div>
+
+      <div id="dir-nav" class="dir-nav dsure-no-hover dsure-bg-silver">
+          <a class="close" data-close="0" href="javascript:">×</a>
+          <div class="clear"></div>
+          <span class="t">目录导航</span>
+          <a href="javascript:" id="b-s1" onClick="navScrollTo('#s1');" >样式1</a>
+          <a href="javascript:" id="b-s2" onClick="navScrollTo('#s2');" >样式2</a>
+          <a href="javascript:" id="b-s3" onClick="navScrollTo('#s3');" >样式3</a>
+          <a href="javascript:" id="b-s4" onClick="navScrollTo('#s4');" >样式4</a>
+          <a href="javascript:" id="b-s5" onClick="navScrollTo('#s5');" >样式5</a>
+          <a href="javascript:" id="b-s6" onClick="navScrollTo('#s6');" >样式6</a>
+          <a href="javascript:" id="b-s7" onClick="navScrollTo('#s7');" >样式7</a>
+          <a href="javascript:" id="b-s8" onClick="navScrollTo('#s8');" >样式8</a>
+          <a href="javascript:" id="b-s9" onClick="navScrollTo('#s9');" >样式9</a>
+          <a href="javascript:" id="b-s10" onClick="navScrollTo('#s10');" >样式10</a>
+          <a href="javascript:" id="b-s11" onClick="navScrollTo('#s11');" >样式11</a>
+          <a href="javascript:" id="b-s12" onClick="navScrollTo('#s12');" >样式12</a>
+
+      </div>
+
+
+      <div class="clear"></div>
+      
+      
+      <div class="codeBox">
+            <p class="dsure-tip">
+              <i class="dsure-icon dsure-icon-bulb"></i> 以下示例的按钮都可以实时改变色彩，请参考左侧导航详细的按钮调用方法
+            </p>
+            
+            <p class="dsure-tip dsure-tip-success">
+              <i class="dsure-icon dsure-icon-bulb"></i> 所有表单元素都可以使用左侧导航<img src="css/images/m1.jpg" class="ma-l5 ma-r5">的所有class类进行细节样式的调整
+            </p>
+
+      </div><!--  /.codeBox -->
+
+       
+        <div class="codeBox d-class-area" id="s1">
+           
+           <h2>(1) 紧凑式表单(使用&lt;button&gt;元素和&lt;input&gt;元素按钮)</h2>
+
+            <p class="dsure-tip">
+            a) 如果您想要换行，在<code>label</code>标签上增加样式<code>.dsure-br</code><br>
+            b) 如果是控件换行，在<code>label</code>标签上增加样式<code>.dsure-br-controls</code><br>
+            c) 如果是控件紧凑排列，在<code>label</code>标签上增加样式<code>.dsure-controls</code><br>
+            d) 如果按钮使用了<code>input</code>元素，则在<code>.dsure-c-btn</code>样式基础上叠加<code>.dsure-c-btn-submit</code>样式<br>
+            e) 如果是换行区块，使用<code>&lt;div class="dsure-br-box"&gt; ... &lt;/div&gt;</code>来包裹表单内容
+            <span class="dsure-line dsure-line-gray"></span>
+            <strong><i class="dsure-icon dsure-icon-smiley2"></i> 以上样式属性的使用方法通用于下面所有的例子</strong>
+
+            </p>
+
+            <div class="codeBox-content">
+            
+    
+                <form class="dsure-form" action="#">
+                
+                   <fieldset>
+                        <legend>表单栏目名称:</legend>
+
+                        <label><input type="text" placeholder="文本框"></label>
+                        <label><input type="text" placeholder="文本框"></label>
+                        <label><input type="text" placeholder="文本框"></label>
+                        <label><input type="text" placeholder="文本框"></label>
+                        <label><input type="text" placeholder="文本框"></label>
+                        <label><input type="text" placeholder="文本框"></label>
+                        <label><input type="text" placeholder="文本框"></label>
+                        <label><input type="text" placeholder="文本框"></label>
+                        <label><input type="text" placeholder="文本框"></label>
+
+                        <label class="dsure-br"><input required type="text" style="width:285px" tabindex="5" maxlength="15" placeholder="文本框"></label>
+                        <label class="dsure-br"><input required type="text" style="width:285px" tabindex="6" maxlength="5" placeholder="文本框"></label>
+                        
+                        <div class="dsure-br-box">
+                            <label><input type="text" placeholder="口头禅"></label>
+                            <label><input type="email" placeholder="电子邮箱"></label>
+                            <label><input type="password" placeholder="密码"></label>
+                        </div>
+                        
+                        <label><input type="text" placeholder="姓名"></label>
+                        
+                        <label class="dsure-controls">
+                            <input type="checkbox" value=""> 性取向
+                        </label>
+                        
+                        <label class="dsure-controls">
+                            <span class="dsure-selectBox">
+                                <span class="dsure-selectBox-inner">
+                                    <select>
+                                          <option>爱好1</option>
+                                          <option>爱好2</option>
+                                    </select>
+                                </span>
+                            </span>
+                        </label>
+                        
+                        <label class="dsure-br"><textarea cols="73" rows="5" placeholder="内容"></textarea></label>
+                        
+                        <label class="dsure-br-controls">
+                                <input type="checkbox" value=""> 是否属于人类?
+                        </label>
+                        <label class="dsure-br-controls">
+                        
+                            <label>
+                                <input type="radio" name="demo-radio" value="option1" checked> 男
+                            </label>
+                            
+                            <label>
+                                <input type="radio" name="demo-radio" value="option2"> 女
+                            </label>
+                            
+                        </label>
+                        
+                        <label class="dsure-br-controls">
+                            <span class="dsure-selectBox">
+                                <span class="dsure-selectBox-inner">
+                                    <select>
+                                          <option>我的故乡？</option>
+                                          <option>我最喜欢的动漫是？</option>
+                                    </select>
+                                </span>
+                            </span>
+                        </label>
+                        
+                        <label class="dsure-br-controls">
+                            <label class="dsure-br">
+                                <input type="radio" name="demo-radio2" value="option1" checked> 选择我你就惨了
+                            </label>
+                            
+                            <label class="dsure-br">
+                                <input type="radio" name="demo-radio2" value="option2"> 不选择我你更惨
+                            </label>
+                            
+                        </label>
+                       
+                       <div class="ma-t20">
+                           <button type="submit" class="dsure-c-btn dsure-btn-t-white dsure-bg-blue">Button元素按钮</button>
+                           <button type="reset" class="dsure-c-btn dsure-bg-silver">取消</button>
+                           
+                           <input type="submit" class="dsure-c-btn dsure-btn-t-white dsure-bg-blue dsure-c-btn-submit" value="Input元素按钮">
+                       </div>
+                       
+                       
+                    </fieldset>
+ 
+                </form>
+                
+                
+
+            </div><!--  /.codeBox-content -->
+
+
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML代码:</span>
+
+&lt;form class="<span class="im-class">dsure-form</span>" action="#"&gt;
+
+   &lt;fieldset&gt;
+        &lt;legend&gt;表单栏目名称:&lt;/legend&gt;
+        &lt;label&gt;&lt;input type="text" placeholder="文本框"&gt;&lt;/label&gt;
+        &lt;label&gt;&lt;input type="text" placeholder="文本框"&gt;&lt;/label&gt;
+        &lt;label&gt;&lt;input type="text" placeholder="文本框"&gt;&lt;/label&gt;
+        &lt;label&gt;&lt;input type="text" placeholder="文本框"&gt;&lt;/label&gt;
+        &lt;label&gt;&lt;input type="text" placeholder="文本框"&gt;&lt;/label&gt;
+        &lt;label&gt;&lt;input type="text" placeholder="文本框"&gt;&lt;/label&gt;
+        &lt;label&gt;&lt;input type="text" placeholder="文本框"&gt;&lt;/label&gt;
+        &lt;label&gt;&lt;input type="text" placeholder="文本框"&gt;&lt;/label&gt;
+        &lt;label&gt;&lt;input type="text" placeholder="文本框"&gt;&lt;/label&gt;
+
+        &lt;label class="<span class="im-class">dsure-br</span>"&gt;&lt;input required type="text" style="<span class="im-style">width:285px</span>" tabindex="5" maxlength="15" placeholder="文本框"&gt;&lt;/label&gt;
+        &lt;label class="<span class="im-class">dsure-br</span>"&gt;&lt;input required type="text" style="<span class="im-style">width:285px</span>" tabindex="6" maxlength="5" placeholder="文本框"&gt;&lt;/label&gt;
+        
+        &lt;div class="<span class="im-class">dsure-br-box</span>"&gt;
+            &lt;label&gt;&lt;input type="text" placeholder="口头禅"&gt;&lt;/label&gt;
+            &lt;label&gt;&lt;input type="email" placeholder="电子邮箱"&gt;&lt;/label&gt;
+            &lt;label&gt;&lt;input type="password" placeholder="密码"&gt;&lt;/label&gt;
+        &lt;/div&gt;
+        
+        &lt;label&gt;&lt;input type="text" placeholder="姓名"&gt;&lt;/label&gt;
+        
+        &lt;label class="<span class="im-class">dsure-controls</span>"&gt;
+            &lt;input type="checkbox" value=""&gt; 性取向
+        &lt;/label&gt;
+        
+        &lt;label class="<span class="im-class">dsure-controls</span>"&gt;
+            &lt;span class="<span class="im-class">dsure-selectBox</span>"&gt;
+                &lt;span class="<span class="im-class">dsure-selectBox-inner</span>"&gt;
+                    &lt;select&gt;
+                          &lt;option&gt;爱好1&lt;/option&gt;
+                          &lt;option&gt;爱好2&lt;/option&gt;
+                    &lt;/select&gt;
+                &lt;/span&gt;
+            &lt;/span&gt;
+        &lt;/label&gt;
+        
+        &lt;label class="<span class="im-class">dsure-br</span>"&gt;&lt;textarea cols="73" rows="5" placeholder="内容"&gt;&lt;/textarea&gt;&lt;/label&gt;
+        
+        &lt;label class="<span class="im-class">dsure-br-controls</span>"&gt;
+                &lt;input type="checkbox" value=""&gt; 是否属于人类?
+        &lt;/label&gt;
+        &lt;label class="<span class="im-class">dsure-br-controls</span>"&gt;
+        
+            &lt;label&gt;
+                &lt;input type="radio" name="demo-radio" value="option1" checked&gt; 男
+            &lt;/label&gt;
+            
+            &lt;label&gt;
+                &lt;input type="radio" name="demo-radio" value="option2"&gt; 女
+            &lt;/label&gt;
+            
+        &lt;/label&gt;
+        
+        &lt;label class="<span class="im-class">dsure-br-controls</span>"&gt;
+            &lt;span class="<span class="im-class">dsure-selectBox</span>"&gt;
+                &lt;span class="<span class="im-class">dsure-selectBox-inner</span>"&gt;
+                    &lt;select&gt;
+                          &lt;option&gt;我的故乡？&lt;/option&gt;
+                          &lt;option&gt;我最喜欢的动漫是？&lt;/option&gt;
+                    &lt;/select&gt;
+                &lt;/span&gt;
+            &lt;/span&gt;
+        &lt;/label&gt;
+        
+        &lt;label class="<span class="im-class">dsure-br-controls</span>"&gt;
+            &lt;label class="<span class="im-class">dsure-br</span>"&gt;
+                &lt;input type="radio" name="demo-radio2" value="option1" checked&gt; 选择我你就惨了
+            &lt;/label&gt;
+            
+            &lt;label class="<span class="im-class">dsure-br</span>"&gt;
+                &lt;input type="radio" name="demo-radio2" value="option2"&gt; 不选择我你更惨
+            &lt;/label&gt;
+            
+        &lt;/label&gt;
+
+        &lt;div class="<span class="im-class">ma-t20</span>"&gt;
+           &lt;button type="submit" class="<span class="im-class">dsure-c-btn dsure-btn-t-white dsure-bg-blue</span>"&gt;Button元素按钮&lt;/button&gt;
+           &lt;button type="reset" class="<span class="im-class">dsure-c-btn dsure-bg-silver</span>"&gt;取消&lt;/button&gt;
+           &lt;input type="submit" class="<span class="im-class">dsure-c-btn dsure-btn-t-white dsure-bg-blue dsure-c-btn-submit</span>" value="Input元素按钮"&gt;
+        &lt;/div&gt;
+        
+   &lt;/fieldset&gt;
+        
+&lt;/form&gt;
+
+
+            
+            </pre>
+            
+            
+        </div><!--  /.codeBox -->
+        
+        <div class="codeBox d-class-area" id="s2">
+           
+           <h2>(2) 单行式表单</h2>
+
+            
+            <p class="dsure-tip">
+            注意：超链接按钮<code>&lt;a&gt;...&lt;/a&gt;</code>大小是固定的，不随表单内字体的大小改变而改变
+            </p>
+
+            <div class="codeBox-content">
+            
+    
+                
+                <form class="dsure-form" action="#">
+                    <fieldset>
+                        <label><input type="text" placeholder="网站名称"></label>
+                        <label><input type="text" placeholder="http://"></label>
+                        <a class="dsure-c-btn dsure-btn-t-white dsure-bg-blue" href="#">无圆角按钮</a>
+                        
+                    </fieldset>
+                </form>
+                
+
+                
+
+            </div><!--  /.codeBox-content -->
+
+            
+
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML代码:</span>
+
+&lt;form class="<span class="im-class">dsure-form</span>" action="#"&gt;
+
+    &lt;fieldset&gt;
+        &lt;label&gt;&lt;input type="text" placeholder="网站名称"&gt;&lt;/label&gt;
+        &lt;label&gt;&lt;input type="text" placeholder="http://"&gt;&lt;/label&gt;
+        &lt;a class="<span class="im-class">dsure-i-btn dsure-i-btn-blue</span>" href="#"&gt;&lt;span class="<span class="im-class">dsure-i-btn-inner</span>"&gt;超链接式按钮&lt;/span&gt;&lt;/a&gt;
+        
+    &lt;/fieldset&gt;
+
+&lt;/form&gt;
+ 
+            </pre>
+            
+            
+        </div><!--  /.codeBox -->
+        
+        
+        <div class="codeBox d-class-area" id="s3">
+           
+          <h2>(3) 扩展字体大小的表单</h2>
+           
+            <p class="dsure-tip">
+            如果您想要扩展表单的大小，只要在<code>.dsure-form</code>样式后叠加相应的字体大小样式，属性为<code>font-size</code><br>
+            下面的例子是直接叠加左侧导航 <img src="css/images/m1.jpg"> 内的样式 <br>
+            </p>
+
+            <div class="codeBox-content">
+            
+    
+                <form class="dsure-form f18" action="#">
+
+                        <label class="dsure-br"><input type="text" placeholder="姓名"></label>
+                        <label class="dsure-br"><input type="email" placeholder="电子邮箱"></label>
+                        <label class="dsure-br-controls">
+                            <span class="dsure-selectBox">
+                                <span class="dsure-selectBox-inner">
+                                    <select>
+                                          <option>我的故乡？</option>
+                                          <option>我最喜欢的动漫是？</option>
+                                    </select>
+                                </span>
+                            </span>
+                        </label>
+                        
+                        <div class="clear"></div>
+
+                       <button type="submit" class="dsure-c-btn dsure-btn-t-white dsure-bg-blue">Button元素按钮</button>
+       
+ 
+              </form>
+                
+
+                
+
+          </div><!--  /.codeBox-content -->
+
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML代码:</span>
+
+&lt;form class="<span class="im-class">dsure-form f18</span>" action="#"&gt;
+
+        &lt;label class="<span class="im-class">dsure-br</span>"&gt;&lt;input type="text" placeholder="姓名"&gt;&lt;/label&gt;
+        &lt;label class="<span class="im-class">dsure-br</span>"&gt;&lt;input type="email" placeholder="电子邮箱"&gt;&lt;/label&gt;
+        &lt;label class="<span class="im-class">dsure-br-controls</span>"&gt;
+            &lt;span class="<span class="im-class">dsure-selectBox</span>"&gt;
+                &lt;span class="<span class="im-class">dsure-selectBox-inner</span>"&gt;
+                    &lt;select&gt;
+                          &lt;option&gt;我的故乡？&lt;/option&gt;
+                          &lt;option&gt;我最喜欢的动漫是？&lt;/option&gt;
+                    &lt;/select&gt;
+                &lt;/span&gt;
+            &lt;/span&gt;
+        &lt;/label&gt;
+        
+        &lt;div class="<span class="im-class">clear</span>"&gt;&lt;/div&gt;
+
+       &lt;button type="submit" class="<span class="im-class">dsure-c-btn dsure-btn-t-white dsure-bg-blue</span>"&gt;Button元素按钮&lt;/button&gt;
+
+
+&lt;/form&gt;
+
+            
+            </pre>
+            
+            
+        </div><!--  /.codeBox -->        
+        
+        
+        
+        
+        <div class="codeBox d-class-area" id="s4">
+           
+           <h2>(4) 带Label右对齐文字的行式表单</h2>
+           
+            <p class="dsure-tip">
+                默认文字居右对齐
+            </p> 
+
+            <div class="codeBox-content">
+            
+    
+                <form class="dsure-form" action="#">
+
+                        <div class="dsure-div">
+                            <label class="dsure-text">用户名</label><input type="text" size="30" value="">
+                        </div>
+                        <div class="dsure-div">
+                            <label class="dsure-text">密码</label><input type="password" size="30" value="">
+                        </div>
+                        
+                        <div class="dsure-div-controls">
+                            <label>
+                                <input type="checkbox" value=""> 是否属于人类?
+                            </label>
+                        </div>
+                        <div class="dsure-div-controls">
+                            <label>
+                                <input type="radio" name="demo-radio" value="option1" checked> 男
+                            </label>
+                            
+                            <label>
+                                <input type="radio" name="demo-radio" value="option2"> 女
+                            </label>
+                            
+                        </div>  
+                                            
+
+                        <div class="dsure-div-controls">
+                            <span class="dsure-selectBox">
+                                <span class="dsure-selectBox-inner">
+                                    <select>
+                                          <option>我的故乡？</option>
+                                          <option>我最喜欢的动漫是？</option>
+                                    </select>
+                                </span>
+                            </span>
+                        </div>
+                        
+                        <div class="dsure-div-controls">
+                            <label class="dsure-br">
+                                <input type="radio" name="demo-radio2" value="option1" checked> 选择我你就惨了
+                            </label>
+                            
+                            <label class="dsure-br">
+                                <input type="radio" name="demo-radio2" value="option2"> 不选择我你更惨
+                            </label>
+                            
+                        </div>  
+                        
+
+                        <div class="dsure-div-controls">
+                             <button type="submit" class="dsure-c-btn dsure-c-btn-big dsure-btn-t-white dsure-bg-blue font-weight-blod">提 交</button>
+
+                        </div>
+ 
+                </form> 
+                
+                
+
+            </div><!--  /.codeBox-content -->
+
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML代码:</span>
+
+&lt;form class="<span class="im-class">dsure-form</span>" action="#"&gt;
+
+        &lt;div class="<span class="im-class">dsure-div</span>"&gt;
+            &lt;label class="<span class="im-class">dsure-text</span>"&gt;用户名&lt;/label&gt;&lt;input type="text" size="30" value=""&gt;
+        &lt;/div&gt;
+        &lt;div class="<span class="im-class">dsure-div</span>"&gt;
+            &lt;label class="<span class="im-class">dsure-text</span>"&gt;密码&lt;/label&gt;&lt;input type="password" size="30" value=""&gt;
+        &lt;/div&gt;
+        
+        &lt;div class="<span class="im-class">dsure-div-controls</span>"&gt;
+            &lt;label&gt;
+                &lt;input type="checkbox" value=""&gt; 是否属于人类?
+            &lt;/label&gt;
+        &lt;/div&gt;
+        &lt;div class="<span class="im-class">dsure-div-controls</span>"&gt;
+            &lt;label&gt;
+                &lt;input type="radio" name="demo-radio" value="option1" checked&gt; 男
+            &lt;/label&gt;
+            
+            &lt;label&gt;
+                &lt;input type="radio" name="demo-radio" value="option2"&gt; 女
+            &lt;/label&gt;
+            
+        &lt;/div&gt;  
+                            
+
+        &lt;div class="<span class="im-class">dsure-div-controls</span>"&gt;
+            &lt;span class="<span class="im-class">dsure-selectBox</span>"&gt;
+                &lt;span class="<span class="im-class">dsure-selectBox-inner</span>"&gt;
+                    &lt;select&gt;
+                          &lt;option&gt;我的故乡？&lt;/option&gt;
+                          &lt;option&gt;我最喜欢的动漫是？&lt;/option&gt;
+                    &lt;/select&gt;
+                &lt;/span&gt;
+            &lt;/span&gt;
+        &lt;/div&gt;
+        
+        &lt;div class="<span class="im-class">dsure-div-controls</span>"&gt;
+            &lt;label class="<span class="im-class">dsure-br</span>"&gt;
+                &lt;input type="radio" name="demo-radio2" value="option1" checked&gt; 选择我你就惨了
+            &lt;/label&gt;
+            
+            &lt;label class="<span class="im-class">dsure-br</span>"&gt;
+                &lt;input type="radio" name="demo-radio2" value="option2"&gt; 不选择我你更惨
+            &lt;/label&gt;
+            
+        &lt;/div&gt;  
+        
+
+        &lt;div class="<span class="im-class">dsure-div-controls</span>"&gt;
+             &lt;button type="submit" class="<span class="im-class">dsure-c-btn dsure-c-btn-big dsure-btn-t-white dsure-bg-blue font-weight-blod</span>"&gt;提 交&lt;/button&gt;
+
+        &lt;/div&gt;
+
+&lt;/form&gt; 
+
+            
+            </pre>
+            
+            
+        </div><!--  /.codeBox -->
+      
+        <div class="codeBox d-class-area" id="s5">
+           
+           <h2>(5) 带Label左对齐文字+下拉+小型按钮的行式表单</h2>
+           
+            <p class="dsure-tip">
+                如果想要文字居左对齐，在<code>.dsure-text</code>样式后叠加样式<code>.dsure-text-left</code>即可
+            </p> 
+
+            <div class="codeBox-content">
+
+                
+                <form class="dsure-form" action="#">
+
+                        <div class="dsure-div">
+                            <label class="dsure-text dsure-text-left">用户名</label><input class="ma-l5" type="text" size="30" value="">
+                        </div>
+                        <div class="dsure-div">
+                            <label class="dsure-text dsure-text-left">密码</label><input class="ma-l5" type="password" size="30" value="">
+                        </div>
+                        
+                        <div class="dsure-div ma-t10">
+                            <label class="dsure-text dsure-text-left">回答问题</label>
+                            <span class="dsure-selectBox">
+                                <span class="dsure-selectBox-inner">
+                                    <select>
+                                          <option>我的故乡？</option>
+                                          <option>我最喜欢的动漫是？</option>
+                                    </select>
+                                </span>
+                            </span>
+                        </div>              
+
+                        
+
+                        <div class="dsure-div-controls pa-l5">
+                             <button type="submit" class="dsure-c-btn dsure-c-btn-small dsure-btn-t-white dsure-bg-blue">提 交</button>
+                             
+                             <button type="reset" class="dsure-c-btn dsure-c-btn-small dsure-bg-silver">清 空</button>
+
+                        </div>
+ 
+                </form> 
+                 
+                
+
+                
+
+            </div><!--  /.codeBox-content -->
+
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML代码:</span>
+
+&lt;form class="<span class="im-class">dsure-form</span>" action="#"&gt;
+
+        &lt;div class="<span class="im-class">dsure-div</span>"&gt;
+            &lt;label class="<span class="im-class">dsure-text dsure-text-left</span>"&gt;用户名&lt;/label&gt;&lt;input class="<span class="im-class">ma-l5</span>" type="text" size="30" value=""&gt;
+        &lt;/div&gt;
+        &lt;div class="<span class="im-class">dsure-div</span>"&gt;
+            &lt;label class="<span class="im-class">dsure-text dsure-text-left</span>"&gt;密码&lt;/label&gt;&lt;input class="<span class="im-class">ma-l5</span>" type="password" size="30" value=""&gt;
+        &lt;/div&gt;
+        
+        &lt;div class="<span class="im-class">dsure-div ma-t10</span>"&gt;
+            &lt;label class="<span class="im-class">dsure-text dsure-text-left</span>"&gt;回答问题&lt;/label&gt;
+            &lt;span class="<span class="im-class">dsure-selectBox</span>"&gt;
+                &lt;span class="<span class="im-class">dsure-selectBox-inner</span>"&gt;
+                    &lt;select&gt;
+                          &lt;option&gt;我的故乡？&lt;/option&gt;
+                          &lt;option&gt;我最喜欢的动漫是？&lt;/option&gt;
+                    &lt;/select&gt;
+                &lt;/span&gt;
+            &lt;/span&gt;
+        &lt;/div&gt;              
+
+        
+
+        &lt;div class="<span class="im-class">dsure-div-controls pa-l5</span>"&gt;
+             &lt;button type="submit" class="<span class="im-class">dsure-c-btn dsure-c-btn-small dsure-btn-t-white dsure-bg-blue</span>"&gt;提 交&lt;/button&gt;
+             
+             &lt;button type="reset" class="<span class="im-class">dsure-c-btn dsure-c-btn-small dsure-bg-silver</span>"&gt;清 空&lt;/button&gt;
+
+        &lt;/div&gt;
+
+&lt;/form&gt; 
+   
+            </pre>
+            
+            
+        </div><!--  /.codeBox -->
+      
+      
+       <div class="codeBox d-class-area" id="s6">
+           
+           <h2>(6) 带Label文字的重叠式表单</h2>
+           
+           
+            <div class="codeBox-content">
+    
+                
+                <form class="dsure-form" action="#">
+
+                        
+                            <label class="dsure-br">用户名</label>
+                            <label class="dsure-br"><input type="text" size="30" value=""></label>
+                            
+                            <label class="dsure-br">密码</label>
+                            <label class="dsure-br"><input type="password" size="30" value=""></label>
+
+                            <label class="dsure-br">选择问题</label>
+                            <label class="dsure-br">   
+                                <span class="dsure-selectBox">
+                                    <span class="dsure-selectBox-inner">
+                                        <select>
+                                              <option>我的故乡？</option>
+                                              <option>我最喜欢的动漫是？</option>
+                                        </select>
+                                    </span>
+                                </span>
+                            </label>
+ 
+                            <button type="submit" class="dsure-c-btn dsure-c-btn-medium dsure-btn-t-white dsure-bg-blue font-weight-blod">提 交</button>
+
+
+                </form> 
+                 
+            </div><!--  /.codeBox-content -->
+
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML代码:</span>
+
+&lt;form class="<span class="im-class">dsure-form</span>" action="#"&gt;
+
+        
+            &lt;label class="<span class="im-class">dsure-br</span>"&gt;用户名&lt;/label&gt;
+            &lt;label class="<span class="im-class">dsure-br</span>"&gt;&lt;input type="text" size="30" value=""&gt;&lt;/label&gt;
+            
+            &lt;label class="<span class="im-class">dsure-br</span>"&gt;密码&lt;/label&gt;
+            &lt;label class="<span class="im-class">dsure-br</span>"&gt;&lt;input type="password" size="30" value=""&gt;&lt;/label&gt;
+
+            &lt;label class="<span class="im-class">dsure-br</span>"&gt;选择问题&lt;/label&gt;
+            &lt;label class="<span class="im-class">dsure-br</span>"&gt;   
+                &lt;span class="<span class="im-class">dsure-selectBox</span>"&gt;
+                    &lt;span class="<span class="im-class">dsure-selectBox-inner</span>"&gt;
+                        &lt;select&gt;
+                              &lt;option&gt;我的故乡？&lt;/option&gt;
+                              &lt;option&gt;我最喜欢的动漫是？&lt;/option&gt;
+                        &lt;/select&gt;
+                    &lt;/span&gt;
+                &lt;/span&gt;
+            &lt;/label&gt;
+
+ 
+            &lt;button type="submit" class="<span class="im-class">dsure-c-btn dsure-c-btn-medium dsure-btn-t-white dsure-bg-blue font-weight-blod</span>"&gt;提 交&lt;/button&gt;
+
+
+&lt;/form&gt; 
+            
+            </pre>
+            
+            
+        </div><!--  /.codeBox -->
+
+
+        <div class="codeBox d-class-area" id="s7">
+           
+           <h2>(7) 状态表单</h2>
+
+
+            <p class="dsure-tip">
+            a) 文本框/域禁用，可使用<code>.disabled</code>样式兼容所有浏览器和赋予动态样式<br>
+            b) 文本框/域只可读不可写，可使用<code>.readonly</code>样式兼容所有浏览器和赋予动态样式<br>
+            c) 按钮禁用，在<code>.dsure-c-btn</code>样式的基础上叠加样式<code>.dsure-c-btn-disabled</code>
+
+            </p>
+
+            <div class="codeBox-content">
+
+                
+                <form class="dsure-form" action="#">
+
+                        <label class="dsure-br"><input class="disabled" type="text" size="30" value="禁用输入框" disabled></label>
+                        <label class="dsure-br"><input class="readonly" type="text" size="30" value="只可读不可写" readonly></label>
+                        <button type="submit" class="dsure-c-btn dsure-c-btn-disabled dsure-bg-gray " disabled>提 交</button>
+                      
+                </form> 
+                 
+                
+
+                
+
+            </div><!--  /.codeBox-content -->
+
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML代码:</span>
+
+&lt;form class="<span class="im-class">dsure-form</span>" action="#"&gt;
+
+        &lt;label class="<span class="im-class">dsure-br</span>"&gt;&lt;input class="<span class="im-class">disabled</span>" type="text" size="30" value="禁用输入框" disabled&gt;&lt;/label&gt;
+        &lt;label class="<span class="im-class">dsure-br</span>"&gt;&lt;input class="<span class="im-class">readonly</span>" type="text" size="30" value="只可读不可写" readonly&gt;&lt;/label&gt;
+        &lt;button type="submit" class="<span class="im-class">dsure-c-btn dsure-c-btn-disabled dsure-bg-gray</span>" disabled&gt;提 交&lt;/button&gt;
+
+&lt;/form&gt; 
+ 
+   
+            </pre>
+            
+            
+        </div><!--  /.codeBox -->
+        
+        <div class="codeBox d-class-area" id="s8">
+           
+           <h2>(8) 100%宽度自适应表单</h2>
+
+
+            <p class="dsure-tip">
+            在<code>.dsure-form</code>样式的基础上叠加样式<code>.dsure-form-full-width</code>即可实现100%宽度表单
+
+            </p>
+
+            <div class="codeBox-content">
+
+                
+                <form class="dsure-form dsure-form-full-width" action="#">
+
+                        <label><input type="text"></label>
+                        <label><input type="text"></label>
+                        <label><textarea cols="73" rows="5"></textarea></label>
+                        <label class="dsure-br-controls">
+                            <span class="dsure-selectBox">
+                                <span class="dsure-selectBox-inner">
+                                    <select>
+                                          <option>我的故乡？</option>
+                                          <option>我最喜欢的动漫是？</option>
+                                    </select>
+                                </span>
+                            </span>
+                        </label>
+                        
+                        <button type="submit" class="dsure-c-btn dsure-btn-t-white dsure-bg-blue">Button元素按钮</button>
+                        
+                </form> 
+                 
+                
+
+                
+
+            </div><!--  /.codeBox-content -->
+
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML代码:</span>
+
+&lt;form class="<span class="im-class">dsure-form dsure-form-full-width</span>" action="#"&gt;
+
+        &lt;label&gt;&lt;input type="text"&gt;&lt;/label&gt;
+        &lt;label&gt;&lt;input type="text"&gt;&lt;/label&gt;
+        &lt;label&gt;&lt;textarea cols="73" rows="5"&gt;&lt;/textarea&gt;&lt;/label&gt;
+        &lt;label class="<span class="im-class">dsure-br-controls</span>"&gt;
+            &lt;span class="<span class="im-class">dsure-selectBox</span>"&gt;
+                &lt;span class="<span class="im-class">dsure-selectBox-inner</span>"&gt;
+                    &lt;select&gt;
+                          &lt;option&gt;我的故乡？&lt;/option&gt;
+                          &lt;option&gt;我最喜欢的动漫是？&lt;/option&gt;
+                    &lt;/select&gt;
+                &lt;/span&gt;
+            &lt;/span&gt;
+        &lt;/label&gt;
+        
+        &lt;button type="submit" class="<span class="im-class">dsure-c-btn dsure-btn-t-white dsure-bg-blue</span>"&gt;Button元素按钮&lt;/button&gt;
+        
+&lt;/form&gt; 
+   
+            </pre>
+            
+            
+        </div><!--  /.codeBox -->   
+        
+        
+        <div class="codeBox d-class-area" id="s9">
+           
+           <h2>(9) 图标组合表单</h2>
+           
+            <div class="codeBox-content">
+
+                <form class="dsure-form f20" action="#">
+
+                        <label class="dsure-icon-txt dsure-icon-txt-bg"><i class="dsure-icon dsure-icon-search"></i><input type="text"></label>
+           
+                </form> 
+                 
+                 <span class="dsure-line dsure-line-gray ma-b10 ma-t10"></span>
+                
+                
+                <form class="dsure-form" action="#">
+
+                        <label class="dsure-icon-txt dsure-icon-txt-bg"><i class="dsure-icon dsure-icon-search"></i><input type="text"></label>
+   
+                </form> 
+                 
+                 <span class="dsure-line dsure-line-gray ma-b10 ma-t10"></span>
+                
+                <form class="dsure-form" action="#">
+
+                        <label class="dsure-icon-txt"><i class="dsure-icon dsure-icon-users2"></i><input type="text"></label>
+                        <label class="dsure-icon-txt"><i class="dsure-icon dsure-icon-lock"></i><input type="text"></label>
+                        <button type="submit" class="dsure-c-btn dsure-btn-t-white dsure-bg-blue"><i class="dsure-icon dsure-icon-forward"></i> 提交</button>
+                        
+                </form> 
+                 
+                 <span class="dsure-line dsure-line-gray ma-b10 ma-t10"></span>
+                
+                <form class="dsure-form f25" action="#">
+
+                        <label class="dsure-icon-txt"><i class="dsure-icon dsure-icon-users2"></i><input type="text"></label>
+                        <label class="dsure-icon-txt"><i class="dsure-icon dsure-icon-lock"></i><input type="text"></label>
+                        <button type="submit" class="dsure-c-btn dsure-btn-t-white dsure-bg-blue"><i class="dsure-icon dsure-icon-forward"></i> 提交</button>
+                        
+                </form> 
+                
+                
+
+            </div><!--  /.codeBox-content -->
+
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML代码:</span>
+
+&lt;form class="<span class="im-class">dsure-form f20</span>" action="#"&gt;
+        &lt;label class="<span class="im-class">dsure-icon-txt dsure-icon-txt-bg</span>"&gt;&lt;i class="<span class="im-class">dsure-icon dsure-icon-search</span>"&gt;&lt;/i&gt;&lt;input type="text"&gt;&lt;/label&gt;
+&lt;/form&gt; 
+ 
+
+&lt;form class="<span class="im-class">dsure-form</span>" action="#"&gt;
+        &lt;label class="<span class="im-class">dsure-icon-txt dsure-icon-txt-bg</span>"&gt;&lt;i class="<span class="im-class">dsure-icon dsure-icon-search</span>"&gt;&lt;/i&gt;&lt;input type="text"&gt;&lt;/label&gt;
+&lt;/form&gt; 
+
+
+&lt;form class="<span class="im-class">dsure-form</span>" action="#"&gt;
+        &lt;label class="<span class="im-class">dsure-icon-txt</span>"&gt;&lt;i class="<span class="im-class">dsure-icon dsure-icon-users2</span>"&gt;&lt;/i&gt;&lt;input type="text"&gt;&lt;/label&gt;
+        &lt;label class="<span class="im-class">dsure-icon-txt</span>"&gt;&lt;i class="<span class="im-class">dsure-icon dsure-icon-lock</span>"&gt;&lt;/i&gt;&lt;input type="text"&gt;&lt;/label&gt;
+        &lt;button type="submit" class="<span class="im-class">dsure-c-btn dsure-btn-t-white dsure-bg-blue</span>"&gt;&lt;i class="<span class="im-class">dsure-icon dsure-icon-forward</span>"&gt;&lt;/i&gt; 提交&lt;/button&gt;       
+&lt;/form&gt; 
+
+
+&lt;form class="<span class="im-class">dsure-form f25</span>" action="#"&gt;
+        &lt;label class="<span class="im-class">dsure-icon-txt</span>"&gt;&lt;i class="<span class="im-class">dsure-icon dsure-icon-users2</span>"&gt;&lt;/i&gt;&lt;input type="text"&gt;&lt;/label&gt;
+        &lt;label class="<span class="im-class">dsure-icon-txt</span>"&gt;&lt;i class="<span class="im-class">dsure-icon dsure-icon-lock</span>"&gt;&lt;/i&gt;&lt;input type="text"&gt;&lt;/label&gt;
+        &lt;button type="submit" class="<span class="im-class">dsure-c-btn dsure-btn-t-white dsure-bg-blue</span>"&gt;&lt;i class="<span class="im-class">dsure-icon dsure-icon-forward</span>"&gt;&lt;/i&gt; 提交&lt;/button&gt;       
+&lt;/form&gt; 
+   
+            </pre>
+            
+            
+        </div><!--  /.codeBox -->   
+        
+        <div class="codeBox d-class-area" id="s10">
+           
+           <h2>(10) 无圆角效果的表单</h2>
+
+            <p class="dsure-tip">
+            在需要的地方叠加<code>.dsure-radius-none</code>样式即可
+            </p>
+
+            <div class="codeBox-content">
+            
+    
+                <form class="dsure-form dsure-radius-none" action="#">
+
+                        <label><input type="text" placeholder="文本框"></label>
+                        <label><input type="text" placeholder="文本框"></label>
+
+ 
+                </form>
+                
+                
+
+            </div><!--  /.codeBox-content -->
+
+
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML代码:</span>
+
+&lt;form class="<span class="im-class">dsure-form dsure-radius-none</span>" action="#"&gt;
+
+        &lt;label&gt;&lt;input type="text" placeholder="文本框"&gt;&lt;/label&gt;
+        &lt;label&gt;&lt;input type="text" placeholder="文本框"&gt;&lt;/label&gt;
+       
+&lt;/form&gt;
+
+            
+            </pre>
+            
+            
+        </div><!--  /.codeBox -->
+        
+        
+        <div class="codeBox d-class-area" id="s11">
+           
+           <h2>(11) 无阴影效果的表单</h2>
+
+            <p class="dsure-tip">
+            在需要的地方叠加<code>.dsure-b-shadow-none</code>样式即可<br>
+            </p>
+            
+            <p class="dsure-tip-alert">
+            注意：IE9以下(且不能开启兼容模式)本身无阴影效果
+            </p>
+ 
+
+            <div class="codeBox-content">
+            
+    
+                <form class="dsure-form dsure-b-shadow-none" action="#">
+
+                        <label><input type="text" placeholder="文本框"></label>
+                        <label><input type="text" placeholder="文本框"></label>
+
+ 
+                </form>
+                
+                
+
+            </div><!--  /.codeBox-content -->
+
+
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML代码:</span>
+
+&lt;form class="<span class="im-class">dsure-form dsure-b-shadow-none</span>" action="#"&gt;
+
+        &lt;label&gt;&lt;input type="text" placeholder="文本框"&gt;&lt;/label&gt;
+        &lt;label&gt;&lt;input type="text" placeholder="文本框"&gt;&lt;/label&gt;
+       
+&lt;/form&gt;
+
+            
+            </pre>
+            
+            
+        </div><!--  /.codeBox --> 
+        
+        
+        <div class="codeBox d-class-area" id="s12">
+           
+           <h2>(12) 其它圆角效果的表单</h2>
+
+            <p class="dsure-tip">
+            在需要的地方叠加<code>.dsure-radius-small</code>、<code>.dsure-radius-medium</code>、<code>.dsure-radius-big</code>样式即可<br>
+            <strong>注意：IE9以下(且不能开启兼容模式)无效</strong>
+            </p>
+            
+            <p class="dsure-tip-alert">
+            注意：IE9以下(且不能开启兼容模式)无效
+            </p>
+
+            <div class="codeBox-content">
+            
+    
+                <form class="dsure-form dsure-radius-small" action="#">
+                        <label><input type="text" placeholder="文本框"></label>
+                        <label><input type="text" placeholder="文本框"></label>
+                </form>
+                
+                <form class="dsure-form dsure-radius-medium" action="#">
+                        <label><input type="text" placeholder="文本框"></label>
+                        <label><input type="text" placeholder="文本框"></label>
+                </form>     
+                
+                
+                <form class="dsure-form dsure-radius-big" action="#">
+                        <label><input type="text" placeholder="文本框"></label>
+                        <label><input type="text" placeholder="文本框"></label>
+                </form>  
+                
+
+
+            </div><!--  /.codeBox-content -->
+
+
+
+            <pre> 
+<span class="bl html dsure-radius-small">HTML代码:</span>
+
+&lt;form class="<span class="im-class">dsure-form dsure-radius-small</span>" action="#"&gt;
+        &lt;label&gt;&lt;input type="text" placeholder="文本框"&gt;&lt;/label&gt;
+        &lt;label&gt;&lt;input type="text" placeholder="文本框"&gt;&lt;/label&gt; 
+&lt;/form&gt;
+
+&lt;form class="<span class="im-class">dsure-form dsure-radius-medium</span>" action="#"&gt;
+        &lt;label&gt;&lt;input type="text" placeholder="文本框"&gt;&lt;/label&gt;
+        &lt;label&gt;&lt;input type="text" placeholder="文本框"&gt;&lt;/label&gt; 
+&lt;/form&gt;
+
+&lt;form class="<span class="im-class">dsure-form dsure-radius-big</span>" action="#"&gt;
+        &lt;label&gt;&lt;input type="text" placeholder="文本框"&gt;&lt;/label&gt;
+        &lt;label&gt;&lt;input type="text" placeholder="文本框"&gt;&lt;/label&gt; 
+&lt;/form&gt;
+
+          
+            </pre>
+            
+            
+        </div><!--  /.codeBox --> 
+          
+          <!-- /////////////////   Content    End /////////////////// -->
+
+    
+
+        </div>
+
+         <footer>
+         
+            <hr>
+           
+            <p>此开源开发框架基于<a href="/d-s/" target="_blank">Designers Site Program 全站静态系统</a>发布，提供广大网站开发者使用，并着力构建快速设计DS主题框架，设计者可以根据此开发框架设计出网站的纯HTML效果，兼容整套系统体系，再使用主题开发插件进行标签替换和修改，即可设计并使用自己的主题 (您也可以用作其它方面的开发)</p>
+
+            <p>Dsure授权开源许可证基于<a href="http://creativecommons.org/licenses/by-nc/3.0/deed.zh" target="_blank">CC BY-NC 3.0</a>,禁止任何人任何公司机构用于商业用途</p>
+            
+            <p>
+            &copy;2014 Powered By <a href="/" target="_blank">没位道</a>, <a href="/d-s/Dsure-flat">Dsure Web Development Framework</a>
+        
+  
+            &nbsp;&nbsp;        <script id="LA_COLLECT" src="//sdk.51.la/js-sdk-pro.min.js"></script>
+        <script>
+            if (typeof(LA) !== 'undefined') LA.init({id: "JdyfUJi3RdCZVi9F",ck: "JdyfUJi3RdCZVi9F"});
+        </script>
+          
+            
+            
+          
+            </p>
+             
+         </footer>
+
+     </section>
+     
+     
+
+     
+    
+    <script src="js/jquery.scroller.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/theme.hash.js"></script> <!-- After the main.js -->
+     
+  
+
+</body>
+</html>
+
