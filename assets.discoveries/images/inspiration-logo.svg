@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 720 180" role="img" aria-labelledby="title desc">
+    <title id="title">Inspiration 全球酷站</title>
+    <desc id="desc">Blue and violet globe with orbit rings and the word Inspiration.</desc>
+    <defs>
+        <linearGradient id="globeGradient" x1="20" y1="20" x2="150" y2="150" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#168BFF"/>
+            <stop offset="0.52" stop-color="#028ec0"/>
+            <stop offset="1" stop-color="#008ec0"/>
+        </linearGradient>
+        <linearGradient id="orbitGradient" x1="5" y1="100" x2="160" y2="145" gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#168BFF"/>
+            <stop offset="1" stop-color="#A044F5"/>
+        </linearGradient>
+    </defs>
+    <g transform="translate(18 8)" fill="none" stroke="url(#globeGradient)" stroke-width="7" stroke-linecap="round">
+
+        <path d="M82 23 C54 43 48 121 82 141"/>
+        <path d="M82 23 C110 43 116 121 82 141"/>
+        <path d="M27 65 C57 79 107 79 137 65"/>
+        <path d="M27 99 C57 85 107 85 137 99"/>
+
+
+    </g>
+    <path d="M170 15 C174 34 180 40 197 44 C180 48 174 55 170 73 C166 55 160 48 143 44 C160 40 166 34 170 15Z" fill="#008ec0"/>
+
+    <text x="225" y="91" fill="#182033" font-family="Inter, Arial, Helvetica, sans-serif" font-size="62" font-weight="750" letter-spacing="-2.2">Inspiration</text>
+
+    <path d="M229 119 H310 M555 119 H636" stroke="#9AA3B2" stroke-width="1.5"/>
+    <text x="432" y="128" text-anchor="middle" fill="#687386" font-family="PingFang SC, Microsoft YaHei, Noto Sans CJK SC, sans-serif" font-size="22" font-weight="500" letter-spacing="12">全球酷站</text>
+</svg>
